@@ -111,6 +111,12 @@ a:hover { text-decoration-thickness: 2px; }
 }
 .lang button[aria-pressed="true"] { opacity: 1; text-decoration: underline; text-underline-offset: .3em; }
 .lang button:hover { opacity: 1; }
+/* Monogram: phones only, in place of the section links */
+.mono { display: none; font-family: var(--serif); font-size: 1.1875rem; letter-spacing: .06em; text-decoration: none; white-space: nowrap; padding: .35rem 0; }
+@media (max-width: 767px) {
+  .nav { display: none; }
+  .mono { display: block; }
+}
 @media (min-width: 900px) { /* six items fit in both languages from here; below, the row scrolls with a fade */
   .nav { gap: 1.75rem; overflow: visible; -webkit-mask-image: none; mask-image: none; }
 }
@@ -196,11 +202,12 @@ h2 { font-size: var(--h2); line-height: 1.1; letter-spacing: -.005em; }
 }
 /* Ampersand at 65% of the names, ink centred on the names' x-height (measured) */
 .amp { font-size: .65em; line-height: 1; padding: 0 .12em; vertical-align: .015em; }
+.name2 { white-space: nowrap; } /* the ampersand always travels with Raphaël, never alone on a line */
 @media (max-width: 759px) {
-  /* Stacked: Kassia / & / Raphaël */
-  .names { line-height: 1.02; }
-  .names .name, .names .amp { display: block; }
-  .names .amp { padding: .12em 0 .02em; }
+  /* Stacked: Kassia / & Raphaël */
+  .names { line-height: 1.05; }
+  .names > .name, .names .name2 { display: block; }
+  .names .amp { padding: 0 .04em 0 0; }
 }
 .caption > * { margin: 0 auto; }
 .caption .date { font-size: var(--date-size); letter-spacing: .28em; }
@@ -231,23 +238,19 @@ figcaption { margin-top: .75rem; color: var(--ink-soft); text-align: center; tex
 .drawing .frame { padding: clamp(1rem, 2.2vw, 2rem); } /* the drawing fills its plate, the same margin on all four sides */
 
 /* Map: line drawing in the villa plate's style. Labels are HTML, placed in % of the drawing. */
-.map { padding: clamp(1rem, 2.5vw, 2rem); border: 1px solid var(--silver); color: var(--ink); }
+.map { padding: clamp(.75rem, 2.5vw, 2rem); border: 1px solid var(--silver); color: var(--ink); }
 .map-inner { position: relative; }
+@media (max-width: 759px) { .map .map-more { display: none; } } /* phones: simpler map, no Ciampino, no sea label */
 .map-art { display: block; width: 100%; height: auto; overflow: hidden; }
 .pin { position: absolute; white-space: nowrap; font-size: var(--caps-small); letter-spacing: .18em; text-transform: uppercase; line-height: 1; padding: .2em .3em; background: var(--travertine); }
 .pin--right { transform: translate(.3rem, -50%); }
 .pin--left  { transform: translate(calc(-100% - .35rem), -50%); }
 .pin--fco   { transform: translate(.25rem, calc(-100% - .25rem)); }
-.pin--cia   { transform: translate(.55rem, -50%); }
+.pin--cia   { transform: translate(calc(-100% - .55rem), -50%); } /* left of the cross, clear of the train line */
 .pin-br { display: none; }
-.pin--lake  { text-transform: none; letter-spacing: .02em; font-style: italic; font-size: .875rem; transform: translate(-50%, .15rem); }
-.pin--sea   { text-transform: none; letter-spacing: .04em; font-style: italic; font-size: .875rem; transform: translateY(-100%); opacity: .8; }
+.pin--lake  { text-transform: none; letter-spacing: .02em; font-style: italic; font-size: .875rem; transform: translate(-100%, .45rem); } /* under the lake, ending at its east shore */
 @media (max-width: 759px), (min-width: 1024px) and (max-width: 1279px) { /* where the map is narrow */
   .map .pin-long { display: none; }
-  .map .pin--cg { line-height: 1.25; text-align: right; transform: translate(calc(-100% + .3rem), .4rem); }
-  .map .pin-br { display: inline; }
-  .map .pin--cia { transform: translate(calc(-100% - .4rem), -50%); }
-  .map .pin--lake { line-height: 1.2; transform: translate(.75rem, -50%); }
 }
 
 /* ---------- Welcome ---------- */
@@ -255,7 +258,7 @@ figcaption { margin-top: .75rem; color: var(--ink-soft); text-align: center; tex
 
 /* ---------- Our story: four paragraphs at body size ---------- */
 .story .main p:last-child { margin-bottom: 0; }
-.story-shot { max-width: 24rem; margin-bottom: var(--s-4); } /* phones: label, heading, photo, text */
+.story .story-shot { max-width: 24rem; margin-bottom: var(--s-5); } /* phones: label, heading, photo, text; 48px+ of air under the caption */
 /* Drop cap: first paragraph only, 3 lines on desktop, 2 on phones */
 .story .main > p:first-child::first-letter { float: left; font-size: 3.6em; line-height: .8; margin: .08em .1em 0 0; font-weight: 300; }
 @supports (initial-letter: 3) {
@@ -266,14 +269,14 @@ figcaption { margin-top: .75rem; color: var(--ink-soft); text-align: center; tex
   @supports not (initial-letter: 3) { .story .main > p:first-child::first-letter { font-size: 4.6em; } }
 }
 /* Text starts at its cap height, so the first line sits flush with the top of whatever it is set beside */
-.story .main > p:first-child { text-box: trim-start cap alphabetic; }
+@media (min-width: 1024px) { .story .main > p:first-child { text-box: trim-start cap alphabetic; } }
 @media (min-width: 1024px) {
   /* Title row on its own; photo and text start together on the row below.
      Same 12-column grid and named areas as every section: "head ." / "photo text". */
   .story > .head { grid-area: 1 / left; }
   .story > .side { grid-area: 2 / left; }
   .story > .main { grid-area: 2 / right; }
-  .story-shot { max-width: none; margin-bottom: 0; } /* photo fills columns 1-5, text 7-12 */
+  .story .story-shot { max-width: none; margin-bottom: 0; } /* photo fills columns 1-5, text 7-12 */
 }
 
 /* ---------- Why Italy: a centred breather, label above, ~55 characters per line ---------- */
@@ -287,6 +290,12 @@ figcaption { margin-top: .75rem; color: var(--ink-soft); text-align: center; tex
 .pair .frame img { aspect-ratio: 4 / 5; object-fit: cover; }
 .pair .rest { grid-column: 1 / -1; }
 .rest { margin: var(--s-3) 0 0; font-size: .9375rem; text-align: center; } /* small italic line under the photos */
+@media (max-width: 759px) {
+  /* Phones: drawing, then the tower, then the aerial, each full width with its caption on one line */
+  .pair { grid-template-columns: 1fr; row-gap: var(--s-4); }
+  .pair figcaption { white-space: nowrap; }
+  .pair .rest { margin-top: 0; }
+}
 @media (min-width: 1024px) {
   /* Rows: 1 head | copy, 2 the three frames, 3 their captions, 4 the closing line.
      Drawing and pair share rows 2-3 (subgrid), so all three frames have level tops and bottoms;
@@ -349,7 +358,10 @@ figcaption { margin-top: .75rem; color: var(--ink-soft); text-align: center; tex
 .signoff .quiet { margin: 0 0 var(--s-5); }
 .colophon-line { margin: 0; color: var(--silver); font-size: var(--caps-small); letter-spacing: .2em; text-transform: uppercase; }
 
-@media (max-width: 759px) { .strip { grid-template-columns: 1fr; row-gap: var(--s-5); } } /* phones: stacked, full width, same order */
+@media (max-width: 759px) { /* phones: stacked, same order, each print ~80% wide and centred */
+  .strip { grid-template-columns: 1fr; row-gap: var(--s-4); }
+  .strip .shot { width: 80%; margin-inline: auto; }
+}
 
 /* ---------- Motion: slow fade only ---------- */
 .js .reveal { opacity: 0; transition: opacity 1.4s ease-out; }
