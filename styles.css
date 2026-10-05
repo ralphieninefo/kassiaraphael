@@ -298,7 +298,7 @@ figcaption { margin-top: .75rem; color: var(--ink-soft); }
 /* ---------- Footer: the serene hours, on the same grid ---------- */
 .strip { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--col-gap); margin-bottom: var(--s-5); }
 .shot { margin: 0; }
-.shot figcaption { margin-top: var(--s-3); color: var(--travertine); opacity: .8; } /* same tracked caps as THE TOWER, cream on blue */
+.shot figcaption { margin-top: var(--s-3); color: var(--travertine); opacity: .8; text-align: center; text-wrap: balance; } /* same tracked caps as THE TOWER, cream on blue */
 .footer-drawing { width: min(100%, 18rem); margin: 0 0 var(--s-4); opacity: .85; }
 @media (min-width: 1024px) {
   .colophon > .strip { grid-area: 1 / full; margin-bottom: var(--s-4); }

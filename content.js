@@ -209,10 +209,10 @@ window.SITE_CONTENT = {
     fr: "Raphaël à ski à Jackson Hole, se retournant vers l’objectif",
     fr_status: "needs native review"
   },
-  footer_center_caption: { en: "Utah", fr: "L’Utah", fr_status: "needs native review" },
+  footer_center_caption: { en: "Bryce Canyon National&nbsp;Park", fr: "Parc national de Bryce&nbsp;Canyon", fr_status: "needs native review" },
   footer_center_alt: {
-    en: "Kassia and Raphaël smiling on a winter hike among red rock cliffs in Utah",
-    fr: "Kassia et Raphaël souriants lors d’une randonnée hivernale parmi les falaises rouges de l’Utah",
+    en: "Kassia and Raphaël smiling on a winter hike among red rock cliffs in Bryce Canyon National Park, Utah",
+    fr: "Kassia et Raphaël souriants lors d’une randonnée hivernale parmi les falaises rouges du parc national de Bryce Canyon, dans l’Utah",
     fr_status: "needs native review"
   },
   footer_right_caption: {
