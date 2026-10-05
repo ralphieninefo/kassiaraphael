@@ -3,105 +3,135 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Kassia &amp; Raphaël — October 8, 2027</title>
-  <meta name="description" content="Kassia &amp; Raphaël are getting married Friday, October 8, 2027 at Villa del Cardinale in Castel Gandolfo, Italy. Please hold the date.">
-  <meta property="og:title" content="Kassia &amp; Raphaël — Save the Date">
-  <meta property="og:description" content="Friday, October 8, 2027 · Castel Gandolfo, Italy. Formal invitation to follow.">
-  <meta property="og:type" content="website">
-  <meta name="theme-color" content="#f6f1e9">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <!-- Private site: keep out of search engines. -->
+  <meta name="robots" content="noindex, nofollow">
+  <title>Kassia &amp; Raphaël</title>
+  <meta name="description" content="">
+  <meta name="theme-color" content="#7A1F10">
+  <link rel="preload" href="/fonts/neuton-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/pinyon-script-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/styles.css">
+  <script>document.documentElement.className = "js";</script>
 </head>
 <body>
-  <header class="site-nav" id="top">
-    <a class="monogram" href="#top" aria-label="Kassia and Raphaël, home">K &amp; R</a>
-    <nav aria-label="Primary">
-      <a href="#venue" data-i18n="nav_venue">Venue</a>
-      <a href="#weekend" data-i18n="nav_weekend">Weekend</a>
-      <a href="#travel" data-i18n="nav_travel">Getting there</a>
-      <a href="#stay" data-i18n="nav_stay">Stay</a>
-      <a href="#attire" data-i18n="nav_attire">Attire</a>
+  <a class="skip" href="#main" data-t="skip_link"></a>
+
+  <header class="topbar">
+    <nav class="nav" data-t-aria="nav_label">
+      <a href="#venue" data-t="nav_venue"></a>
+      <a href="#weekend" data-t="nav_weekend"></a>
+      <a href="#travel" data-t="nav_travel"></a>
+      <a href="#stay" data-t="nav_stay"></a>
+      <a href="#questions" data-t="nav_questions"></a>
     </nav>
-    <div class="lang" role="group" aria-label="Language / Langue">
-      <button type="button" data-lang="en" aria-pressed="true">English</button>
-      <button type="button" data-lang="fr" aria-pressed="false">Français</button>
+    <div class="lang" role="group" data-t-aria="lang_label">
+      <button type="button" data-lang="en" aria-pressed="true" lang="en">EN</button>
+      <span aria-hidden="true">|</span>
+      <button type="button" data-lang="fr" aria-pressed="false" lang="fr">FR</button>
     </div>
   </header>
 
-  <main>
-    <section class="hero">
-      <p class="eyebrow" data-i18n="eyebrow">Save the date</p>
-      <h1>Kassia <span class="amp">&amp;</span> Raphaël</h1>
-      <p class="date" data-i18n="date">Friday, October 8, 2027</p>
-      <p class="place" data-i18n="place">Castel Gandolfo, Italy</p>
-      <p class="note" data-i18n="note">Formal invitation to follow</p>
-      <div class="countdown" id="countdown" aria-live="off" hidden>
-        <div><span id="cd-days">0</span><small data-i18n="days">days to go</small></div>
+  <noscript><p class="noscript">This page needs JavaScript to show its text. · Cette page a besoin de JavaScript pour afficher son texte. · raphaelkassia2027@gmail.com</p></noscript>
+
+  <main id="main">
+    <!-- HERO (brick) -->
+    <section class="sheet brick hero">
+      <h1 class="names">Kassia <span class="amp">&amp;</span> Raphaël</h1>
+      <figure class="print reveal">
+        <!-- TODO: replace placeholder with the real black-and-white hero photo (same path). -->
+        <img src="/images/hero-bw.jpg" width="1500" height="1000" data-t-alt="hero_photo_alt" alt="">
+      </figure>
+      <div class="caption">
+        <p class="caps date" data-t="hero_date"></p>
+        <p class="place" data-t="hero_place"></p>
+        <p class="caps quiet" data-t="hero_note"></p>
       </div>
     </section>
 
-    <section class="intro" data-i18n="intro">
-      <p>We're getting married in Italy! The wedding is at a villa above Lake Albano, about 40 minutes outside Rome. Please hold the date. A real invitation and the practical stuff will come later, but we wanted you to have plenty of time to plan.</p>
+    <!-- WELCOME + VENUE (travertine) -->
+    <section class="sheet paper" id="venue" style="--marker: var(--lake)">
+      <div class="block reveal">
+        <p class="label" data-t="welcome_label"></p>
+        <p class="lede" data-t="welcome_text"></p>
+      </div>
+
+      <div class="divider" aria-hidden="true">
+        <!-- Optional: add /images/villa-line-drawing.svg and it replaces the hairline ornament automatically. -->
+        <img src="/images/villa-line-drawing.svg" alt="" hidden onload="this.hidden=false;this.parentNode.classList.add('has-drawing')">
+        <span class="ornament"></span>
+      </div>
+
+      <div class="block reveal">
+        <p class="label" data-t="venue_label"></p>
+        <h2 data-t="venue_title"></h2>
+        <figure class="plate">
+          <!-- TODO: replace placeholder with a real photo of the villa (same path). -->
+          <img src="/images/villa-1.jpg" width="1600" height="1067" loading="lazy" data-t-alt="venue_img_alt" alt="">
+          <figcaption data-t="venue_img_caption"></figcaption>
+        </figure>
+        <p data-t="venue_text"></p>
+        <p class="aside" data-t="venue_aside"></p>
+      </div>
     </section>
 
-    <section id="venue">
-      <h2 data-i18n="h_venue">The venue</h2>
-      <p data-i18n="venue"><strong>Villa del Cardinale</strong> was built in 1629 as a hunting lodge for a Colonna cardinal. It still has its original frescoes and a view over the whole lake, and it's not far from Castel Gandolfo, where the popes have gone for the summer since the 1600s. We looked at a lot of villas in one week, and this is the one we kept comparing everything else to.</p>
+    <!-- WEEKEND (brick) -->
+    <section class="sheet brick" id="weekend" style="--marker: var(--marigold)">
+      <div class="block reveal">
+        <p class="label" data-t="weekend_label"></p>
+        <p class="aside" data-t="weekend_note"></p>
+        <ol class="days">
+          <li><p class="caps" data-t="thu_day"></p><p data-t="thu_text"></p></li>
+          <li class="main"><p class="caps" data-t="fri_day"></p><p data-t="fri_text"></p></li>
+          <li><p class="caps" data-t="sat_day"></p><p data-t="sat_text"></p></li>
+          <li><p class="caps" data-t="sun_day"></p><p data-t="sun_text"></p></li>
+        </ol>
+      </div>
     </section>
 
-    <section id="weekend">
-      <h2 data-i18n="h_weekend">The weekend <em>(loose for now)</em></h2>
-      <ol class="timeline">
-        <li>
-          <div class="day" data-i18n="day_thu">Thursday<br><span>Oct 7</span></div>
-          <p data-i18n="p_thu">If you're in town early, we'll walk from the hotel into Castel Gandolfo around 3 and get a drink. Come for as much or as little as you like.</p>
-        </li>
-        <li class="main">
-          <div class="day" data-i18n="day_fri">Friday<br><span>Oct 8</span></div>
-          <p data-i18n="p_fri">Please arrive by 4:30. The ceremony is at 5, then dinner and a party.</p>
-        </li>
-        <li>
-          <div class="day" data-i18n="day_sat">Saturday<br><span>Oct 9</span></div>
-          <p data-i18n="p_sat">Nothing planned. Sleep in, hang out, or take a train into Rome.</p>
-        </li>
-        <li>
-          <div class="day" data-i18n="day_sun">Sunday<br><span>Oct 10</span></div>
-          <p data-i18n="p_sun">Everyone heads home.</p>
-        </li>
-      </ol>
+    <!-- GETTING THERE + WHERE TO STAY (travertine) -->
+    <section class="sheet paper" id="travel" style="--marker: var(--terracotta)">
+      <div class="block reveal">
+        <h2 data-t="travel_label"></h2>
+        <figure class="plate">
+          <!-- TODO: replace placeholder with a real photo of Lake Albano (same path). -->
+          <img src="/images/lake-1.jpg" width="1600" height="900" loading="lazy" data-t-alt="lake_img_alt" alt="">
+          <figcaption data-t="lake_img_caption"></figcaption>
+        </figure>
+        <p data-t="travel_1"></p>
+        <!-- TODO verify before launch: train route, station name and times on Trenitalia. -->
+        <p data-t="travel_2"></p>
+        <p data-t="travel_3"></p>
+      </div>
+      <hr class="rule">
+      <div class="block reveal" id="stay">
+        <h2 data-t="stay_label"></h2>
+        <p data-t="stay_text"></p>
+      </div>
     </section>
 
-    <section id="travel">
-      <h2 data-i18n="h_travel">Getting there</h2>
-      <p data-i18n="t1">Fly into Rome Fiumicino (FCO), about 40 km away. If you're coming from elsewhere in Europe, Ciampino is a lot closer.</p>
-      <p data-i18n="t2">There's no direct train from the airport. If you're arriving early, we'd go into Rome first, stay a night or two, and take the regional train from Termini out to Castel Gandolfo station on Thursday. It's about 45 minutes. If you have big bags, a taxi from Rome is easier.</p>
-      <p data-i18n="t3">The villa is up the hill in Rocca di Papa, so you'll need a car, taxi, or shuttle from the hotel. We're sorting out a shuttle and will post it here.</p>
-    </section>
-
-    <section id="stay">
-      <h2 data-i18n="h_stay">Where to stay</h2>
-      <p data-i18n="stay"><strong>Hotel Castel Vecchio</strong> in Castel Gandolfo is the hotel the villa works with, and it's a short walk to town. Booking info is coming soon, along with a few other places at different prices.</p>
-    </section>
-
-    <section id="attire">
-      <h2 data-i18n="h_attire">What to wear</h2>
-      <p data-i18n="attire">Black tie optional, and we mean it a little. It's a very fancy villa. More soon.</p>
-    </section>
-
-    <section id="questions">
-      <h2 data-i18n="h_q">Questions?</h2>
-      <p data-i18n="q">Get in touch with us anytime.</p>
-      <!-- TODO: replace with your real contact email -->
-      <p><a class="button" href="mailto:hello@example.com" data-i18n="email">Email us</a></p>
+    <!-- DRESS + QUESTIONS (travertine) -->
+    <section class="sheet paper" id="questions" style="--marker: var(--terracotta)">
+      <div class="block reveal">
+        <h2 data-t="dress_label"></h2>
+        <p data-t="dress_text"></p>
+      </div>
+      <hr class="rule">
+      <div class="block reveal">
+        <h2 data-t="questions_label"></h2>
+        <p data-t="questions_text"></p>
+        <p><a class="email" data-t="email" data-t-mailto="email"></a></p>
+      </div>
     </section>
   </main>
 
-  <footer>
-    <p data-i18n="footer">Kassia &amp; Raphaël · October 8, 2027 · Castel Gandolfo</p>
+  <!-- FOOTER (brick) -->
+  <footer class="sheet brick footer">
+    <p class="motto" lang="la" data-t="footer_motto"></p>
+    <p class="gloss" data-t="footer_translation"></p>
+    <p class="caps quiet" data-t="footer_names"></p>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="/content.js"></script>
+  <script src="/script.js"></script>
 </body>
 </html>
