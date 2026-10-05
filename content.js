@@ -152,8 +152,7 @@ window.SITE_CONTENT = {
     fr: "Écrivez-nous quand vous voulez.",
     fr_status: "needs native review"
   },
-  /* TODO before launch: set up forwarding for hello@kassiaraphael.com (see README). */
-  email: { text: "hello@kassiaraphael.com" },
+  email: { text: "raphaelkassia2027@gmail.com" },
 
   /* Footer: the serene hours */
   serene_dip_alt: {
