@@ -73,7 +73,7 @@
     <section class="sheet paper" id="welcome">
       <div class="grid welcome reveal">
         <header class="head">
-          <p class="label" data-t="welcome_label"></p>
+          <p class="label"><span class="num">I</span><span data-t="welcome_label"></span></p>
           <h2 data-t="welcome_title"></h2>
         </header>
         <div class="main">
@@ -86,11 +86,12 @@
     <section class="sheet albano" id="story">
       <div class="grid story reveal">
         <header class="head">
-          <p class="label" data-t="story_label"></p>
+          <p class="label"><span class="num">II</span><span data-t="story_label"></span></p>
           <h2 data-t="story_title"></h2>
         </header>
-        <figure class="side print story-print">
-          <img src="/images/story-graduation.jpg" width="768" height="960" loading="lazy" data-t-alt="story_photo_alt" alt="">
+        <figure class="side shot story-shot">
+          <div class="print"><img src="/images/story-graduation.jpg" width="768" height="960" loading="lazy" data-t-alt="story_photo_alt" alt=""></div>
+          <figcaption data-t="story_caption"></figcaption>
         </figure>
         <div class="main">
           <p data-t="story_p1"></p>
@@ -103,35 +104,43 @@
 
     <!-- WHY ITALY + VENUE (cream) -->
     <section class="sheet paper" id="venue">
-      <div class="grid italy reveal">
-        <p class="head label" data-t="italy_label"></p>
-        <p class="main" data-t="italy_text"></p>
+      <!-- A short breather: centred, no heading -->
+      <div class="italy reveal">
+        <p class="label"><span class="num">III</span><span data-t="italy_label"></span></p>
+        <p class="italy-text" data-t="italy_text"></p>
       </div>
 
       <hr class="rule">
 
       <div class="grid venue reveal">
         <header class="head">
-          <p class="label" data-t="venue_label"></p>
+          <p class="label"><span class="num">IV</span><span data-t="venue_label"></span></p>
           <h2 data-t="venue_title"></h2>
         </header>
+        <p class="main copy" data-t="venue_text"></p>
+        <!-- Row 2: three frames with level tops and bottoms. The place in colour, people in black and white. -->
         <figure class="side plate drawing">
-          <img src="/images/villa-line-drawing-ink.svg" width="2000" height="893" loading="lazy" data-t-alt="venue_img_alt" alt="">
+          <div class="frame"><img src="/images/villa-line-drawing-ink.svg" width="1972" height="865" loading="lazy" data-t-alt="venue_img_alt" alt=""></div>
           <figcaption data-t="venue_img_caption"></figcaption>
         </figure>
-        <p class="copy" data-t="venue_text"></p>
-        <!-- The place in colour, people in black and white. -->
         <div class="pair">
           <figure class="plate framed">
-            <img src="/images/venue-tower.jpg" width="1000" height="1250" loading="lazy" data-t-alt="tower_alt" alt="">
+            <div class="frame"><img src="/images/venue-tower.jpg" width="1000" height="1250" loading="lazy" data-t-alt="tower_alt" alt=""></div>
             <figcaption data-t="tower_caption"></figcaption>
           </figure>
           <figure class="plate framed">
-            <img src="/images/venue-aerial.jpg" width="1000" height="1250" loading="lazy" data-t-alt="aerial_alt" alt="">
+            <div class="frame"><img src="/images/venue-aerial.jpg" width="1000" height="1250" loading="lazy" data-t-alt="aerial_alt" alt=""></div>
             <figcaption data-t="aerial_caption"></figcaption>
           </figure>
+          <p class="aside rest" data-t="venue_rest"></p>
         </div>
-        <p class="aside rest" data-t="venue_rest"></p>
+      </div>
+
+      <!-- Closing beat: hairline, then the sundial's motto -->
+      <hr class="rule">
+      <div class="motto-block reveal" aria-label="Horas non numero nisi serenas">
+        <p class="motto" lang="la" data-t="footer_motto"></p>
+        <p class="gloss" data-t="footer_translation"></p>
       </div>
     </section>
 
@@ -139,9 +148,8 @@
     <section class="sheet albano" id="weekend">
       <div class="grid weekend reveal">
         <header class="head">
-          <p class="label" data-t="weekend_label"></p>
+          <p class="label"><span class="num">V</span><span data-t="weekend_label"></span></p>
           <h2 data-t="weekend_title"></h2>
-          <p class="aside" data-t="weekend_note"></p>
         </header>
         <ol class="main days">
           <li><p class="caps" data-t="thu_day"></p><div><p data-t="thu_text"></p></div></li>
@@ -153,8 +161,9 @@
           <li><p class="caps" data-t="sun_day"></p><div><p data-t="sun_text"></p></div></li>
           <li class="dress"><p class="caps" data-t="dress_label"></p><div><p data-t="dress_text"></p></div></li>
         </ol>
-        <figure class="side print">
-          <img src="/images/weekend-toast.jpg" width="512" height="640" loading="lazy" data-t-alt="toast_alt" alt="">
+        <figure class="side shot weekend-shot">
+          <div class="print"><img src="/images/weekend-toast.jpg" width="512" height="640" loading="lazy" data-t-alt="toast_alt" alt=""></div>
+          <figcaption data-t="toast_caption"></figcaption>
         </figure>
       </div>
     </section>
@@ -163,7 +172,7 @@
     <section class="sheet paper" id="travel">
       <div class="grid travel reveal">
         <header class="head">
-          <p class="label" data-t="travel_label"></p>
+          <p class="label"><span class="num">VI</span><span data-t="travel_label"></span></p>
           <h2 data-t="travel_title"></h2>
         </header>
         <div class="main">
@@ -171,9 +180,28 @@
           <div class="leg"><h3 class="caps" data-t="train_label"></h3><p data-t="train_text"></p></div>
           <div class="leg"><h3 class="caps" data-t="villa_label"></h3><p data-t="villa_text"></p></div>
         </div>
-        <figure class="side plate framed">
-          <img src="/images/lake-1.jpg" width="2000" height="1000" loading="lazy" data-t-alt="lake_img_alt" alt="">
-          <figcaption data-t="lake_img_caption"></figcaption>
+        <!-- Line map. Coast: Natural Earth 1:10m. Places plotted from real latitude/longitude; Lago Albano: an ellipse fitted to
+             its shoreline on a reference map (3.5 x 2.1 km, long axis NW-SE) at its published centre; the villa marker is approximate. -->
+        <figure class="side plate map-plate">
+          <div class="map" role="img" data-t-aria="map_alt"><div class="map-inner">
+            <svg class="map-art" viewBox="0 0 480 332" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M230.9 364.1 L157.2 296.9 L147.1 287.3 L126.7 282.5 L116.6 272.9 L111.5 271.3 L88.6 266.5 L83.5 264.9 L73.4 250.5 L68.3 234.5 L65.7 215.3 L63.2 196.1 L60.7 178.5 L53 159.3 L35.2 128.9 L20 104.9 L-48.6 52.1 L-56.2 47.3 L-63.9 39.3 L-66.4 28.1 L-71.5 20.1 L-89.3 18.5 L-96.9 13.7 L-107.1 4.1 L-117.2 -7.1" vector-effect="non-scaling-stroke"/>
+              <circle cx="269.6" cy="108.1" r="89.5" stroke-width=".75" stroke-dasharray="1 3.5" opacity=".55" vector-effect="non-scaling-stroke"/>
+              <circle cx="269.6" cy="108.1" r="18.7" vector-effect="non-scaling-stroke"/>
+              <path d="M269.2 108 L374.3 253.5" stroke-dasharray="3.5 3.5" vector-effect="non-scaling-stroke"/>
+              <ellipse class="lake" cx="385.1" cy="251.6" rx="14.8" ry="9.1" transform="rotate(-140.6 385.1 251.6)" vector-effect="non-scaling-stroke"/>
+              <path d="M78.9 203.4 h10 M83.9 198.4 v10 M330.2 204.3 h10 M335.2 199.3 v10" vector-effect="non-scaling-stroke"/>
+              <circle cx="374.3" cy="253.5" r="2" fill="currentColor" stroke="none"/>
+              <path d="M396 241.4 l4 4.5 l-4 4.5 l-4 -4.5 z" fill="currentColor" stroke="none"/>
+            </svg>
+            <span class="pin pin--right" style="left:60.075229782459076%;top:32.56%"><span data-t="map_rome"></span></span>
+            <span class="pin pin--fco" style="left:17.48%;top:61.27%"><span class="pin-long">Fiumicino&nbsp;·&nbsp;</span>FCO</span>
+            <span class="pin pin--right pin--cia" style="left:69.83%;top:61.54%"><span class="pin-long">Ciampino&nbsp;·&nbsp;</span>CIA</span>
+            <span class="pin pin--left pin--cg" style="left:77.98%;top:76.36%">Castel <br class="pin-br">Gandolfo</span>
+            <span class="pin pin--lake" style="left:80.23%;top:80.27122811783354%">Lago <br class="pin-br">Albano</span>
+            <span class="pin pin--sea" style="left:2%;top:99%">Mar Tirreno</span>
+          </div></div>
+          <figcaption data-t="map_caption"></figcaption>
         </figure>
       </div>
 
@@ -181,7 +209,7 @@
 
       <div class="grid reveal" id="stay">
         <header class="head">
-          <p class="label" data-t="stay_label"></p>
+          <p class="label"><span class="num">VII</span><span data-t="stay_label"></span></p>
           <h2 data-t="stay_title"></h2>
         </header>
         <div class="main">
@@ -193,7 +221,7 @@
 
       <div class="grid reveal" id="questions">
         <header class="head">
-          <p class="label" data-t="questions_label"></p>
+          <p class="label"><span class="num">VIII</span><span data-t="questions_label"></span></p>
           <h2 data-t="questions_title"></h2>
         </header>
         <div class="main">
@@ -220,11 +248,10 @@
           <figcaption data-t="footer_right_caption"></figcaption>
         </figure>
       </div>
-      <img class="side footer-drawing" src="/images/villa-line-drawing-cream.svg" width="2000" height="893" alt="" loading="lazy">
-      <div class="main">
-        <p class="motto" lang="la" data-t="footer_motto"></p>
-        <p class="gloss" data-t="footer_translation"></p>
+      <div class="signoff">
+        <img class="footer-drawing" src="/images/villa-line-drawing-cream.svg" width="2000" height="893" alt="" loading="lazy">
         <p class="caps quiet" data-t="footer_names"></p>
+        <p class="colophon-line" data-t="colophon"></p>
       </div>
     </div>
   </footer>
