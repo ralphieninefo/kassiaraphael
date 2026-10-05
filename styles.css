@@ -241,14 +241,14 @@ figcaption { margin-top: .75rem; color: var(--ink-soft); }
 /* ---------- Our story: four paragraphs at body size ---------- */
 .story .main p:last-child { margin-bottom: 0; }
 .story-shot { max-width: 24rem; margin-bottom: var(--s-4); } /* phones: label, heading, photo, text */
-/* Drop cap: first paragraph only, ~3 lines (2 on phones), Neuton in the text colour */
-.story .main > p:first-child::first-letter { float: left; font-size: 3.6em; line-height: .8; margin: .08em .1em 0 0; font-weight: 300; }
+/* Drop cap: first paragraph only, 4 lines on desktop (the paragraph's full height), 3 on phones */
+.story .main > p:first-child::first-letter { float: left; font-size: 4.6em; line-height: .8; margin: .08em .1em 0 0; font-weight: 300; }
 @supports (initial-letter: 3) {
-  .story .main > p:first-child::first-letter { float: none; font-size: inherit; line-height: inherit; margin: 0 .12em 0 0; initial-letter: 2; }
+  .story .main > p:first-child::first-letter { float: none; font-size: inherit; line-height: inherit; margin: 0 .14em 0 0; initial-letter: 3; }
 }
 @media (min-width: 760px) {
-  @supports (initial-letter: 3) { .story .main > p:first-child::first-letter { initial-letter: 3; } }
-  @supports not (initial-letter: 3) { .story .main > p:first-child::first-letter { font-size: 4.6em; } }
+  @supports (initial-letter: 3) { .story .main > p:first-child::first-letter { initial-letter: 4; } }
+  @supports not (initial-letter: 3) { .story .main > p:first-child::first-letter { font-size: 5.9em; } }
 }
 /* Text starts at its cap height, so the first line sits flush with the top of whatever it is set beside */
 .story .main > p:first-child { text-box: trim-start cap alphabetic; }
