@@ -29,8 +29,7 @@ Rule: people in black and white, the place in colour (and only on cream).
   **Interim crops from screenshots**: replace with the originals at the same paths (1000x1250 or larger)
 - `images/villa-line-drawing-ink.svg`: villa drawing in ink lines, for cream sections (used in the venue)
 - `images/villa-line-drawing-cream.svg`: the same drawing in cream lines, for blue sections (footer)
-- **Our story print (reserved):** `index.html` has an empty, hidden `.story-print` figure. Add one straight
-  black-and-white photo there (with width, height, `loading="lazy"` and alt text in `content.js`) and remove `hidden`.
+- `images/story-graduation.jpg`: Our story print (4:5), graduation day, cropped so no strangers appear
 
 ## Mockups
 `mockups/` (screenshots, contact sheet, French review sheet) is for review only. It's in `.gitignore`, so it is never deployed.

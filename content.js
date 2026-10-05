@@ -62,6 +62,11 @@ window.SITE_CONTENT = {
     fr_status: "needs native review",
     fr_flag: "The lede: should stay dry and a little cheeky."
   },
+  story_photo_alt: {
+    en: "Raphaël kissing Kassia’s cheek at their graduation, both in caps and gowns, black-and-white photograph",
+    fr: "Raphaël embrasse Kassia sur la joue le jour de leur remise de diplômes, en toge et toque, photographie en noir et blanc",
+    fr_status: "needs native review"
+  },
   story_p1: {
     en: "We met in our first week at San Francisco State University and became fast friends, hanging out constantly years before it was anything more. Then Raphaël left for a year in Paris, and we kept chatting from nine hours apart.",
     fr: "Nous nous sommes rencontrés dès notre première semaine à San Francisco State University et sommes très vite devenus amis, inséparables, des années avant qu’il se passe quoi que ce soit. Puis Raphaël est parti un an à Paris, et nous avons continué à nous écrire, à neuf heures de décalage.",
