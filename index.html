@@ -36,6 +36,8 @@
 
   <!-- Sticky, minimal. Nav labels are the section labels (same content keys). -->
   <header class="topbar">
+    <!-- Phones: the monogram stands in for the section links -->
+    <a class="mono" href="#main" aria-label="Kassia &amp; Raphaël">K&nbsp;&amp;&nbsp;R</a>
     <nav class="nav" data-t-aria="nav_label">
       <a href="#story" data-t="story_label"></a>
       <a href="#venue" data-t="venue_label"></a>
@@ -56,7 +58,7 @@
   <main id="main">
     <!-- HERO (albano) -->
     <section class="sheet albano hero">
-      <h1 class="names"><span class="name">Kassia</span> <span class="amp">&amp;</span> <span class="name">Raphaël</span></h1>
+      <h1 class="names"><span class="name">Kassia</span> <span class="name2"><span class="amp">&amp;</span>&nbsp;<span class="name">Raphaël</span></span></h1>
       <!-- Above the fold: no fade, high priority, 800px file for phones. -->
       <figure class="print print--hero">
         <img src="/images/hero-bw.jpg" srcset="/images/hero-bw-800.jpg 800w, /images/hero-bw.jpg 1600w"
@@ -184,22 +186,21 @@
              its shoreline on a reference map (3.5 x 2.1 km, long axis NW-SE) at its published centre; the villa marker is approximate. -->
         <figure class="side plate map-plate">
           <div class="map" role="img" data-t-aria="map_alt"><div class="map-inner">
-            <svg class="map-art" viewBox="0 0 480 332" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M230.9 364.1 L157.2 296.9 L147.1 287.3 L126.7 282.5 L116.6 272.9 L111.5 271.3 L88.6 266.5 L83.5 264.9 L73.4 250.5 L68.3 234.5 L65.7 215.3 L63.2 196.1 L60.7 178.5 L53 159.3 L35.2 128.9 L20 104.9 L-48.6 52.1 L-56.2 47.3 L-63.9 39.3 L-66.4 28.1 L-71.5 20.1 L-89.3 18.5 L-96.9 13.7 L-107.1 4.1 L-117.2 -7.1" vector-effect="non-scaling-stroke"/>
-              <circle cx="269.6" cy="108.1" r="89.5" stroke-width=".75" stroke-dasharray="1 3.5" opacity=".55" vector-effect="non-scaling-stroke"/>
-              <circle cx="269.6" cy="108.1" r="18.7" vector-effect="non-scaling-stroke"/>
-              <path d="M269.2 108 L374.3 253.5" stroke-dasharray="3.5 3.5" vector-effect="non-scaling-stroke"/>
-              <ellipse class="lake" cx="385.1" cy="251.6" rx="14.8" ry="9.1" transform="rotate(-140.6 385.1 251.6)" vector-effect="non-scaling-stroke"/>
-              <path d="M78.9 203.4 h10 M83.9 198.4 v10 M330.2 204.3 h10 M335.2 199.3 v10" vector-effect="non-scaling-stroke"/>
-              <circle cx="374.3" cy="253.5" r="2" fill="currentColor" stroke="none"/>
-              <path d="M396 241.4 l4 4.5 l-4 4.5 l-4 -4.5 z" fill="currentColor" stroke="none"/>
+            <svg class="map-art" viewBox="0 0 480 258" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M244.1 358.5 L152.1 274.7 L139.4 262.7 L114.1 256.7 L101.4 244.7 L95.1 242.7 L66.5 236.7 L60.2 234.7 L47.5 216.8 L41.1 196.8 L38 172.9 L34.8 148.9 L31.6 126.9 L22.1 103 L-0.1 65.1 L-19.1 35.1 L-104.7 -30.8 L-114.2 -36.7 L-123.7 -46.7 L-126.9 -60.7 L-133.2 -70.7 L-155.4 -72.7 L-164.9 -78.7 L-177.6 -90.6 L-190.3 -104.6" vector-effect="non-scaling-stroke"/>
+              <circle cx="292.3" cy="39.1" r="23.4" vector-effect="non-scaling-stroke"/>
+              <path d="M291.8 39 L423 220.6" stroke-dasharray="3.5 3.5" vector-effect="non-scaling-stroke"/>
+              <ellipse class="lake" cx="436.4" cy="218.1" rx="18.4" ry="11.4" transform="rotate(-140.6 436.4 218.1)" vector-effect="non-scaling-stroke"/>
+              <path d="M55.7 158.1 h10 M60.7 153.1 v10" vector-effect="non-scaling-stroke"/>
+              <path class="map-more" d="M369.2 159.1 h10 M374.2 154.1 v10" vector-effect="non-scaling-stroke"/>
+              <circle cx="423" cy="220.6" r="2" fill="currentColor" stroke="none"/>
+              <path d="M450.1 206.5 l4 4.5 l-4 4.5 l-4 -4.5 z" fill="currentColor" stroke="none"/>
             </svg>
-            <span class="pin pin--right" style="left:60.075229782459076%;top:32.56%"><span data-t="map_rome"></span></span>
-            <span class="pin pin--fco" style="left:17.48%;top:61.27%"><span class="pin-long">Fiumicino&nbsp;·&nbsp;</span>FCO</span>
-            <span class="pin pin--right pin--cia" style="left:69.83%;top:61.54%"><span class="pin-long">Ciampino&nbsp;·&nbsp;</span>CIA</span>
-            <span class="pin pin--left pin--cg" style="left:77.98%;top:76.36%">Castel <br class="pin-br">Gandolfo</span>
-            <span class="pin pin--lake" style="left:80.23%;top:80.27122811783354%">Lago <br class="pin-br">Albano</span>
-            <span class="pin pin--sea" style="left:2%;top:99%">Mar Tirreno</span>
+            <span class="pin pin--right" style="left:65.77258027903152%;top:15.16%"><span data-t="map_rome"></span></span>
+            <span class="pin pin--fco" style="left:12.65%;top:61.28%"><span class="pin-long">Fiumicino&nbsp;·&nbsp;</span>FCO</span>
+            <span class="pin pin--right pin--cia map-more" style="left:77.96%;top:61.67%"><span class="pin-long">Ciampino&nbsp;·&nbsp;</span>CIA</span>
+            <span class="pin pin--left pin--cg" style="left:88.13%;top:85.5%">Castel <br class="pin-br">Gandolfo</span>
+            <span class="pin pin--lake" style="left:93.57777106128992%;top:90.29880540435022%">Lago Albano</span>
           </div></div>
           <figcaption data-t="map_caption"></figcaption>
         </figure>
