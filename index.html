@@ -56,8 +56,10 @@
     <!-- HERO (brick) -->
     <section class="sheet brick hero">
       <h1 class="names"><span class="name">Kassia</span> <span class="amp">&amp;</span> <span class="name">Raphaël</span></h1>
-      <figure class="print print--hero reveal">
-        <img src="/images/hero-bw.jpg" width="1600" height="998" data-t-alt="hero_photo_alt" alt="">
+      <!-- Above the fold: no fade, high priority, 800px file for phones. -->
+      <figure class="print print--hero">
+        <img src="/images/hero-bw.jpg" srcset="/images/hero-bw-800.jpg 800w, /images/hero-bw.jpg 1600w"
+             sizes="(max-width: 759px) 100vw, 46rem" width="1600" height="998" fetchpriority="high" data-t-alt="hero_photo_alt" alt="">
       </figure>
       <div class="caption">
         <p class="caps date" data-t="hero_date"></p>
@@ -89,22 +91,20 @@
           <img src="/images/villa-line-drawing-ink.svg" width="2000" height="893" data-t-alt="venue_img_alt" alt="">
           <figcaption data-t="venue_img_caption"></figcaption>
         </figure>
-        <div class="main">
-          <p class="copy" data-t="venue_text"></p>
-          <!-- The place in colour, people in black and white. Interim crops from screenshots:
-               replace with the originals at the same paths. -->
-          <div class="pair">
-            <figure class="plate framed">
-              <img src="/images/venue-tower.jpg" width="1000" height="1250" loading="lazy" data-t-alt="tower_alt" alt="">
-              <figcaption data-t="tower_caption"></figcaption>
-            </figure>
-            <figure class="plate framed">
-              <img src="/images/venue-aerial.jpg" width="1000" height="1250" loading="lazy" data-t-alt="aerial_alt" alt="">
-              <figcaption data-t="aerial_caption"></figcaption>
-            </figure>
-          </div>
-          <p class="aside" data-t="venue_rest"></p>
+        <p class="copy" data-t="venue_text"></p>
+        <!-- The place in colour, people in black and white. Interim crops from screenshots:
+             replace with the originals at the same paths. -->
+        <div class="pair">
+          <figure class="plate framed">
+            <img src="/images/venue-tower.jpg" width="1000" height="1250" loading="lazy" data-t-alt="tower_alt" alt="">
+            <figcaption data-t="tower_caption"></figcaption>
+          </figure>
+          <figure class="plate framed">
+            <img src="/images/venue-aerial.jpg" width="1000" height="1250" loading="lazy" data-t-alt="aerial_alt" alt="">
+            <figcaption data-t="aerial_caption"></figcaption>
+          </figure>
         </div>
+        <p class="aside rest" data-t="venue_rest"></p>
       </div>
     </section>
 
@@ -126,8 +126,8 @@
           <li><p class="caps" data-t="sun_day"></p><div><p data-t="sun_text"></p></div></li>
           <li class="dress"><p class="caps" data-t="dress_label"></p><div><p data-t="dress_text"></p></div></li>
         </ol>
-        <figure class="side print print--flat">
-          <img src="/images/couple-2.jpg" width="800" height="1000" loading="lazy" data-t-alt="couple_2_alt" alt="">
+        <figure class="side print">
+          <img src="/images/weekend-toast.jpg" width="800" height="1000" loading="lazy" data-t-alt="toast_alt" alt="">
         </figure>
       </div>
     </section>
@@ -145,7 +145,7 @@
           <div class="leg"><h3 class="caps" data-t="train_label"></h3><p data-t="train_text"></p></div>
           <div class="leg"><h3 class="caps" data-t="villa_label"></h3><p data-t="villa_text"></p></div>
         </div>
-        <figure class="full plate framed">
+        <figure class="side plate framed">
           <img src="/images/lake-1.jpg" width="2000" height="1000" loading="lazy" data-t-alt="lake_img_alt" alt="">
           <figcaption data-t="lake_img_caption"></figcaption>
         </figure>
@@ -179,6 +179,11 @@
 
   <!-- FOOTER (brick) -->
   <footer class="sheet brick footer">
+    <div class="strip">
+      <figure class="print"><img src="/images/serene-dip.jpg" width="900" height="900" loading="lazy" data-t-alt="serene_dip_alt" alt=""></figure>
+      <figure class="print"><img src="/images/serene-conservatory.jpg" width="900" height="900" loading="lazy" data-t-alt="serene_conservatory_alt" alt=""></figure>
+      <figure class="print"><img src="/images/serene-sculpture.jpg" width="900" height="900" loading="lazy" data-t-alt="serene_sculpture_alt" alt=""></figure>
+    </div>
     <img class="footer-drawing" src="/images/villa-line-drawing-cream.svg" width="2000" height="893" alt="" loading="lazy">
     <p class="motto" lang="la" data-t="footer_motto"></p>
     <p class="gloss" data-t="footer_translation"></p>

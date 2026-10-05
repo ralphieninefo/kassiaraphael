@@ -15,6 +15,9 @@ Type ordinary spaces in French; the non-breaking spaces before `: ; ! ?` and ins
 - `images/hero-bw.jpg`: hero photo (shown as a tilted archival print)
 - `images/couple-2.jpg`: second print, in the Weekend section
 Rule: people in black and white, the place in colour.
+- `images/hero-bw.jpg` + `hero-bw-800.jpg`: hero photo (1600px and an 800px copy for phones)
+- `images/weekend-toast.jpg`: Weekend print (4:5)
+- `images/serene-dip.jpg`, `serene-conservatory.jpg`, `serene-sculpture.jpg`: footer triptych (1:1)
 - `images/lake-1.jpg`: Lake Albano from the villa, cropped 2:1, colour
 - `images/venue-tower.jpg`, `images/venue-aerial.jpg`: 4:5 colour, under the venue copy.
   **Interim crops from screenshots**: replace with the originals at the same paths (1000x1250 or larger)
@@ -23,6 +26,10 @@ Rule: people in black and white, the place in colour.
 
 ## Icons
 `favicon.ico` (16/32), `images/icon-192.png`, `images/apple-touch-icon.png`: K&R monogram on brick.
+
+## Layout
+One spacing scale (`--s-1` to `--s-6`, clamp-based) and one 12-column grid from 1024px, with named
+areas `left` (columns 1-5) and `right` (7-12; 6-12 between 1024 and 1279px). Content box: 1200px max.
 
 ## Fonts
 Neuton and Pinyon Script, self-hosted in `fonts/` (SIL Open Font License).

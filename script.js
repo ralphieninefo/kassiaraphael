@@ -46,7 +46,14 @@
   each(".lang button", function (b) {
     b.addEventListener("click", function () {
       lang = b.dataset.lang;
+      // Keep the reader's place: pin the first block below the sticky bar across the re-render.
+      var barBottom = document.querySelector(".topbar").getBoundingClientRect().bottom;
+      var anchor = [].filter.call(document.querySelectorAll("main [data-t], footer [data-t]"), function (n) {
+        return n.getBoundingClientRect().top >= barBottom;
+      })[0];
+      var before = anchor && anchor.getBoundingClientRect().top;
       render(lang);
+      if (anchor && window.scrollY > 0) window.scrollBy({ top: anchor.getBoundingClientRect().top - before, behavior: "instant" });
       try { localStorage.setItem("lang", lang); } catch (e) {}
       // Keep the address bar in step (/ or /fr) when served over http(s).
       if (/^https?:$/.test(location.protocol) && history.replaceState) {

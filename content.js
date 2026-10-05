@@ -39,7 +39,7 @@ window.SITE_CONTENT = {
 
   /* Welcome */
   welcome_label: { en: "Welcome", fr: "Bienvenue", fr_status: "needs native review" },
-  welcome_title: { en: "We hope you’ll join us.", fr: "Nous espérons vous y&nbsp;voir.", fr_status: "needs native review" },
+  welcome_title: { en: "We hope you’ll join&nbsp;us.", fr: "Nous espérons vous y&nbsp;voir.", fr_status: "needs native review" },
   welcome_text: {
     en: "We are getting married on Friday, October&nbsp;8, 2027, at a villa above Lake Albano, about forty minutes from Rome. A formal invitation with full details will follow. For now, we wanted you to have time to plan.",
     fr: "Nous nous marions le vendredi 8&nbsp;octobre 2027, dans une villa qui domine le lac Albano, à une quarantaine de minutes de Rome. Une invitation officielle, avec tous les détails, suivra. Nous voulions simplement vous laisser le temps de vous organiser.",
@@ -74,9 +74,9 @@ window.SITE_CONTENT = {
   weekend_label: { en: "Weekend", fr: "Week-end", fr_status: "needs native review" },
   weekend_title: { en: "Thursday to Sunday", fr: "Du jeudi au dimanche", fr_status: "needs native review" },
   weekend_note: { en: "Details to follow.", fr: "Détails à suivre.", fr_status: "needs native review" },
-  couple_2_alt: {
-    en: "Kassia and Raphaël spinning around on a garden lawn, black-and-white photograph",
-    fr: "Kassia et Raphaël tournoyant sur la pelouse d’un jardin, photographie en noir et blanc",
+  toast_alt: {
+    en: "Raphaël opening a bottle of wine beside Kassia in a garden, black-and-white photograph",
+    fr: "Raphaël ouvre une bouteille de vin à côté de Kassia dans un jardin, photographie en noir et blanc",
     fr_status: "needs native review"
   },
   thu_day: { en: "Thursday, October&nbsp;7", fr: "jeudi 7&nbsp;octobre", fr_status: "needs native review" },
@@ -155,7 +155,22 @@ window.SITE_CONTENT = {
   /* TODO before launch: set up forwarding for hello@kassiaraphael.com (see README). */
   email: { text: "hello@kassiaraphael.com" },
 
-  /* Footer */
+  /* Footer: the serene hours */
+  serene_dip_alt: {
+    en: "Raphaël dipping Kassia on a garden lawn, black-and-white photograph",
+    fr: "Raphaël fait basculer Kassia sur la pelouse d’un jardin, photographie en noir et blanc",
+    fr_status: "needs native review"
+  },
+  serene_conservatory_alt: {
+    en: "Kassia and Raphaël in sunglasses in front of a white Victorian glasshouse, black-and-white photograph",
+    fr: "Kassia et Raphaël, lunettes de soleil, devant une serre victorienne blanche, photographie en noir et blanc",
+    fr_status: "needs native review"
+  },
+  serene_sculpture_alt: {
+    en: "Kassia laughing in Raphaël’s arms beside a sculpture of a beaded crown, black-and-white photograph",
+    fr: "Kassia rit dans les bras de Raphaël à côté d’une sculpture en forme de couronne de perles, photographie en noir et blanc",
+    fr_status: "needs native review"
+  },
   footer_motto: { text: "Horas non numero nisi serenas" },
   footer_translation: {
     en: "I count only the serene hours. Sundial at Villa del Cardinale.",
