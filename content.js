@@ -66,6 +66,7 @@ window.SITE_CONTENT = {
     fr: "La Villa del Cardinale et ses jardins, au-dessus du lac Albano",
     fr_status: "needs native review"
   },
+  photo_to_come: { en: "Photograph to come", fr: "Photographie à venir", fr_status: "needs native review" },
   venue_img_caption: { text: "Villa del Cardinale · Rocca di Papa" },
   venue_text: {
     en: "Villa del Cardinale was built in 1629 as a hunting lodge for a Colonna cardinal. It still has its original frescoes and a view over the whole lake, and it’s not far from Castel Gandolfo, where the popes have gone for the summer since the 1600s. We looked at a lot of villas in one week, and this is the one we kept comparing everything else to.",
@@ -78,8 +79,9 @@ window.SITE_CONTENT = {
     fr_status: "needs native review"
   },
 
-  /* Weekend */
+  /* Weekend (What to wear is its last row) */
   weekend_label: { en: "The weekend", fr: "Le week-end", fr_status: "needs native review" },
+  weekend_title: { en: "Thursday to Sunday", fr: "Du jeudi au dimanche", fr_status: "needs native review" },
   weekend_note: { en: "Loose for now", fr: "Programme encore souple", fr_status: "needs native review" },
   thu_day: { en: "Thursday, October 7", fr: "jeudi 7 octobre", fr_status: "needs native review" },
   thu_text: {
@@ -88,6 +90,7 @@ window.SITE_CONTENT = {
     fr_status: "needs native review"
   },
   fri_day: { en: "Friday, October 8", fr: "vendredi 8 octobre", fr_status: "needs native review" },
+  fri_time: { en: "5:00 pm, Villa del Cardinale", fr: "17 h, Villa del Cardinale", fr_status: "needs native review" },
   fri_text: {
     en: "Please arrive by 4:30. The ceremony is at 5, then dinner and a party.",
     fr: "Merci d’arriver avant 16 h 30. La cérémonie est à 17 h, suivie du dîner et de la fête.",
@@ -102,8 +105,9 @@ window.SITE_CONTENT = {
   sun_day: { en: "Sunday, October 10", fr: "dimanche 10 octobre", fr_status: "needs native review" },
   sun_text: { en: "Everyone heads home.", fr: "Chacun rentre chez soi.", fr_status: "needs native review" },
 
-  /* Getting there + where to stay */
+  /* Getting there + where to stay + questions */
   travel_label: { en: "Getting there", fr: "Comment venir", fr_status: "needs native review" },
+  travel_title: { en: "From Rome to the lake", fr: "De Rome au lac", fr_status: "needs native review" },
   lake_img_alt: {
     en: "Lake Albano seen from the hills above Castel Gandolfo",
     fr: "Le lac Albano vu des collines au-dessus de Castel Gandolfo",
@@ -127,21 +131,21 @@ window.SITE_CONTENT = {
     fr_status: "needs native review"
   },
   stay_label: { en: "Where to stay", fr: "Où dormir", fr_status: "needs native review" },
+  stay_title: { en: "In Castel Gandolfo", fr: "À Castel Gandolfo", fr_status: "needs native review" },
   stay_text: {
     en: "Hotel Castel Vecchio in Castel Gandolfo is the hotel the villa works with, and it’s a short walk to town. Booking info is coming soon, along with a few other places at different prices.",
     fr: "L’hôtel Castel Vecchio, à Castel Gandolfo, est l’hôtel partenaire de la villa, à quelques pas du centre. Les informations de réservation arrivent bientôt, avec quelques autres adresses à différents prix.",
     fr_status: "needs native review"
   },
 
-  /* Dress + questions */
   dress_label: { en: "What to wear", fr: "Tenue", fr_status: "needs native review" },
   dress_text: {
     en: "Black tie optional: tuxedo or long dress. We mean it a little. It’s a very fancy villa. More soon.",
     fr: "Tenue de soirée : smoking ou robe longue souhaités. Nous y tenons un peu, la villa est très chic. Plus de détails bientôt.",
     fr_status: "needs native review"
   },
-  questions_label: { en: "Questions?", fr: "Des questions ?", fr_status: "needs native review" },
-  questions_text: {
+  questions_label: { en: "Questions", fr: "Questions", fr_status: "needs native review" },
+  questions_title: {
     en: "Write to us anytime.",
     fr: "Écrivez-nous quand vous voulez.",
     fr_status: "needs native review"

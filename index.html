@@ -49,7 +49,7 @@
 
     <!-- WELCOME + VENUE (travertine) -->
     <section class="sheet paper" id="venue" style="--marker: var(--lake)">
-      <div class="block reveal">
+      <div class="block welcome reveal">
         <p class="label" data-t="welcome_label"></p>
         <p class="lede" data-t="welcome_text"></p>
       </div>
@@ -58,29 +58,42 @@
         <img src="/images/villa-line-drawing.svg" width="2000" height="893" alt="">
       </div>
 
-      <div class="block reveal">
-        <p class="label" data-t="venue_label"></p>
-        <h2 data-t="venue_title"></h2>
-        <figure class="plate">
-          <!-- TODO: replace placeholder with a real photo of the villa (same path). -->
-          <img src="/images/villa-1.jpg" width="1600" height="1067" loading="lazy" data-t-alt="venue_img_alt" alt="">
+      <div class="venue reveal">
+        <header class="head">
+          <p class="label" data-t="venue_label"></p>
+          <h2 data-t="venue_title"></h2>
+        </header>
+        <!-- TODO: replace the placeholder with a real photo of the villa (same path), then remove
+             the "is-placeholder" class and the span. -->
+        <figure class="plate is-placeholder">
+          <img src="/images/villa-1.jpg" width="1600" height="1200" loading="lazy" data-t-alt="venue_img_alt" alt="">
+          <span class="ph-label" data-t="photo_to_come" aria-hidden="true"></span>
           <figcaption data-t="venue_img_caption"></figcaption>
         </figure>
-        <p data-t="venue_text"></p>
-        <p class="aside" data-t="venue_aside"></p>
+        <div class="body">
+          <p data-t="venue_text"></p>
+          <p class="aside" data-t="venue_aside"></p>
+        </div>
       </div>
     </section>
 
-    <!-- WEEKEND (brick) -->
+    <!-- WEEKEND + DRESS (brick) -->
     <section class="sheet brick" id="weekend" style="--marker: var(--marigold)">
       <div class="block reveal">
-        <p class="label" data-t="weekend_label"></p>
-        <p class="aside" data-t="weekend_note"></p>
+        <header class="head">
+          <p class="label" data-t="weekend_label"></p>
+          <h2 data-t="weekend_title"></h2>
+          <p class="aside" data-t="weekend_note"></p>
+        </header>
         <ol class="days">
-          <li><p class="caps" data-t="thu_day"></p><p data-t="thu_text"></p></li>
-          <li class="main"><p class="caps" data-t="fri_day"></p><p data-t="fri_text"></p></li>
-          <li><p class="caps" data-t="sat_day"></p><p data-t="sat_text"></p></li>
-          <li><p class="caps" data-t="sun_day"></p><p data-t="sun_text"></p></li>
+          <li><p class="caps" data-t="thu_day"></p><div><p data-t="thu_text"></p></div></li>
+          <li class="main">
+            <p class="caps" data-t="fri_day"></p>
+            <div><p class="when" data-t="fri_time"></p><p data-t="fri_text"></p></div>
+          </li>
+          <li><p class="caps" data-t="sat_day"></p><div><p data-t="sat_text"></p></div></li>
+          <li><p class="caps" data-t="sun_day"></p><div><p data-t="sun_text"></p></div></li>
+          <li class="dress"><p class="caps" data-t="dress_label"></p><div><p data-t="dress_text"></p></div></li>
         </ol>
       </div>
       <figure class="print print--small reveal">
@@ -88,15 +101,22 @@
       </figure>
     </section>
 
-    <!-- GETTING THERE + WHERE TO STAY (travertine) -->
+    <!-- TRAVEL + STAY + QUESTIONS (travertine) -->
     <section class="sheet paper" id="travel" style="--marker: var(--terracotta)">
       <div class="block reveal">
-        <h2 data-t="travel_label"></h2>
-        <figure class="plate">
-          <!-- TODO: replace placeholder with a real photo of Lake Albano (same path). -->
-          <img src="/images/lake-1.jpg" width="1600" height="900" loading="lazy" data-t-alt="lake_img_alt" alt="">
-          <figcaption data-t="lake_img_caption"></figcaption>
-        </figure>
+        <header class="head">
+          <p class="label" data-t="travel_label"></p>
+          <h2 data-t="travel_title"></h2>
+        </header>
+      </div>
+      <!-- TODO: replace the placeholder with a real photo of Lake Albano (same path), then remove
+           the "is-placeholder" class and the span. -->
+      <figure class="plate wide is-placeholder reveal">
+        <img src="/images/lake-1.jpg" width="1600" height="800" loading="lazy" data-t-alt="lake_img_alt" alt="">
+        <span class="ph-label" data-t="photo_to_come" aria-hidden="true"></span>
+        <figcaption data-t="lake_img_caption"></figcaption>
+      </figure>
+      <div class="block reveal">
         <p data-t="travel_1"></p>
         <!-- TODO verify before launch: train route, station name and times on Trenitalia. -->
         <p data-t="travel_2"></p>
@@ -104,21 +124,18 @@
       </div>
       <hr class="rule">
       <div class="block reveal" id="stay">
-        <h2 data-t="stay_label"></h2>
+        <header class="head">
+          <p class="label" data-t="stay_label"></p>
+          <h2 data-t="stay_title"></h2>
+        </header>
         <p data-t="stay_text"></p>
       </div>
-    </section>
-
-    <!-- DRESS + QUESTIONS (travertine) -->
-    <section class="sheet paper" id="questions" style="--marker: var(--terracotta)">
-      <div class="block reveal">
-        <h2 data-t="dress_label"></h2>
-        <p data-t="dress_text"></p>
-      </div>
       <hr class="rule">
-      <div class="block reveal">
-        <h2 data-t="questions_label"></h2>
-        <p data-t="questions_text"></p>
+      <div class="block reveal" id="questions">
+        <header class="head">
+          <p class="label" data-t="questions_label"></p>
+          <h2 data-t="questions_title"></h2>
+        </header>
         <p><a class="email" data-t="email" data-t-mailto="email"></a></p>
       </div>
     </section>
