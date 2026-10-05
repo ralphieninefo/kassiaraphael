@@ -62,15 +62,19 @@ window.SITE_CONTENT = {
   venue_label: { en: "The venue", fr: "Le lieu", fr_status: "needs native review" },
   venue_title: { text: "Villa del Cardinale" },
   venue_img_alt: {
-    en: "Villa del Cardinale and its gardens, above Lake Albano",
-    fr: "La Villa del Cardinale et ses jardins, au-dessus du lac Albano",
+    en: "Line drawing of the front of Villa del Cardinale, with its bell tower and two cypress trees",
+    fr: "Dessin au trait de la façade de la Villa del Cardinale, avec son clocher et deux cyprès",
     fr_status: "needs native review"
   },
-  photo_to_come: { en: "Photograph to come", fr: "Photographie à venir", fr_status: "needs native review" },
   venue_img_caption: { text: "Villa del Cardinale · Rocca&nbsp;di&nbsp;Papa" },
   venue_text: {
     en: "Villa del Cardinale was built in 1629 as a hunting lodge for a Colonna cardinal. It still has its original frescoes and a view over the whole lake, and it’s not far from Castel Gandolfo, where the popes have gone for the summer since the 1600s. We looked at a lot of villas in one week, and this is the one we kept comparing everything else to.",
     fr: "La Villa del Cardinale a été construite en 1629 comme pavillon de chasse pour un cardinal de la famille Colonna. Elle a conservé ses fresques d’origine et sa vue sur tout le lac, et se trouve tout près de Castel Gandolfo, où les papes passent l’été depuis le XVII<sup>e</sup> siècle. Nous avons visité beaucoup de villas en une semaine, et c’est à celle-ci que nous avons comparé toutes les autres.",
+    fr_status: "needs native review"
+  },
+  venue_rest: {
+    en: "We’ll show you the rest in person.",
+    fr: "Le reste, nous vous le montrerons sur place.",
     fr_status: "needs native review"
   },
   venue_aside: {
@@ -109,8 +113,8 @@ window.SITE_CONTENT = {
   travel_label: { en: "Getting there", fr: "Comment venir", fr_status: "needs native review" },
   travel_title: { en: "From Rome to the lake", fr: "De Rome au lac", fr_status: "needs native review" },
   lake_img_alt: {
-    en: "Lake Albano seen from the hills above Castel Gandolfo",
-    fr: "Le lac Albano vu des collines au-dessus de Castel Gandolfo",
+    en: "Lake Albano from above, black-and-white photograph taken at the villa",
+    fr: "Le lac Albano vu d’en haut, photographie en noir et blanc prise à la villa",
     fr_status: "needs native review"
   },
   lake_img_caption: { text: "Lago Albano" },

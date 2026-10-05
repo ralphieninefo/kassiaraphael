@@ -14,8 +14,9 @@ Type ordinary spaces in French; the non-breaking spaces before `: ; ! ?` and ins
 ## Images
 - `images/hero-bw.jpg`: hero photo (shown as a tilted archival print)
 - `images/couple-2.jpg`: second print, in the Weekend section
-- `images/villa-line-drawing.svg`: villa drawing (vector trace), used as the divider
-- `images/villa-1.jpg`, `images/lake-1.jpg`: **placeholders**, replace the files and keep the paths
+- `images/lake-1.jpg`: Lake Albano from the villa, cropped 2:1 and converted to black and white
+- `images/villa-line-drawing-ink.svg`: villa drawing in ink lines, for cream sections (used in the venue)
+- `images/villa-line-drawing-cream.svg`: the same drawing in cream lines, for brick sections
 
 ## Fonts
 Neuton and Pinyon Script, self-hosted in `fonts/` (SIL Open Font License).
@@ -24,7 +25,6 @@ To use a different script face, add its `@font-face` and change `--script` in `s
 ## Before launch
 - Verify the train route, station name and times on Trenitalia (`travel_2` in `content.js`).
 - French copy reviewed by a native speaker.
-- Replace the villa and lake placeholder images.
 
 ## Local preview
     python3 -m http.server 8000
