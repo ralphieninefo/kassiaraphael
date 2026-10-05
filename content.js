@@ -2,7 +2,7 @@
  * ALL SITE COPY LIVES HERE. Edit text in this file only; index.html just has slots.
  *
  * Each entry: { en, fr, fr_status }. An entry with only "text" is the same in both languages.
- * Simple inline HTML is allowed (<em>, <strong>, <sup>, &nbsp;).
+ * Simple inline HTML is allowed (<em>, <strong>, <sup>, <br>, &nbsp;).
  *
  * French typography: type ordinary spaces. Before : ; ! ? », after «, and in "15 h",
  * script.js swaps them for the correct non-breaking spaces automatically.
@@ -200,8 +200,8 @@ window.SITE_CONTENT = {
 
   /* Footer: the serene hours */
   footer_left_caption: {
-    en: "Jackson&nbsp;Hole&nbsp;· Photographed&nbsp;by&nbsp;Kassia",
-    fr: "Jackson&nbsp;Hole&nbsp;· Photo : Kassia",
+    en: "Jackson&nbsp;Hole<br>Photographed&nbsp;by&nbsp;Kassia",
+    fr: "Jackson&nbsp;Hole<br>Photo : Kassia",
     fr_status: "needs native review"
   },
   footer_left_alt: {
@@ -216,8 +216,8 @@ window.SITE_CONTENT = {
     fr_status: "needs native review"
   },
   footer_right_caption: {
-    en: "The&nbsp;Dolomites&nbsp;· Photographed&nbsp;by&nbsp;Raphaël",
-    fr: "Les&nbsp;Dolomites&nbsp;· Photo : Raphaël",
+    en: "The&nbsp;Dolomites<br>Photographed&nbsp;by&nbsp;Raphaël",
+    fr: "Les&nbsp;Dolomites<br>Photo : Raphaël",
     fr_status: "needs native review"
   },
   footer_right_alt: {
