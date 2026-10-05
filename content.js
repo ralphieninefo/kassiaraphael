@@ -54,6 +54,7 @@ window.SITE_CONTENT = {
 
   /* Welcome + venue */
   welcome_label: { en: "Welcome", fr: "Bienvenue", fr_status: "needs native review" },
+  welcome_title: { en: "Save the date", fr: "Réservez la date", fr_status: "needs native review" },
   welcome_text: {
     en: "We’re getting married in Italy! The wedding is at a villa above Lake Albano, about 40 minutes outside Rome. Please hold the date. A real invitation and the practical stuff will come later, but we wanted you to have plenty of time to plan.",
     fr: "Nous nous marions en Italie ! Le mariage aura lieu dans une villa qui domine le lac Albano, à une quarantaine de minutes de Rome. Merci de réserver la date. Une véritable invitation et les informations pratiques suivront, mais nous voulions vous laisser tout le temps de vous organiser.",
@@ -164,8 +165,8 @@ window.SITE_CONTENT = {
     fr_status: "needs native review"
   },
   footer_names: {
-    en: "Kassia & Raphaël · October 8, 2027",
-    fr: "Kassia & Raphaël · 8 octobre 2027",
+    en: "Kassia&nbsp;&amp;&nbsp;Raphaël · October&nbsp;8,&nbsp;2027",
+    fr: "Kassia&nbsp;&amp;&nbsp;Raphaël · 8&nbsp;octobre&nbsp;2027",
     fr_status: "needs native review"
   }
 };

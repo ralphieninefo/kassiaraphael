@@ -36,7 +36,7 @@
   <main id="main">
     <!-- HERO (brick) -->
     <section class="sheet brick hero">
-      <h1 class="names">Kassia <span class="amp">&amp;</span> Raphaël</h1>
+      <h1 class="names"><span class="name">Kassia</span> <span class="amp">&amp;</span> <span class="name">Raphaël</span></h1>
       <figure class="print reveal">
         <img src="/images/hero-bw.jpg" width="1600" height="998" data-t-alt="hero_photo_alt" alt="">
       </figure>
@@ -47,26 +47,31 @@
       </div>
     </section>
 
-    <!-- WELCOME + VENUE (travertine) -->
+    <!-- WELCOME + VENUE (travertine). Desktop: 12-column grid, header (+ image) left, content right. -->
     <section class="sheet paper" id="venue" style="--marker: var(--lake)">
-      <div class="block welcome reveal">
-        <p class="label" data-t="welcome_label"></p>
-        <p class="lede" data-t="welcome_text"></p>
+      <div class="grid welcome reveal">
+        <header class="head">
+          <p class="label" data-t="welcome_label"></p>
+          <h2 data-t="welcome_title"></h2>
+        </header>
+        <div class="main">
+          <p class="lede" data-t="welcome_text"></p>
+        </div>
       </div>
 
       <hr class="rule">
 
-      <div class="venue reveal">
+      <div class="grid venue reveal">
         <header class="head">
           <p class="label" data-t="venue_label"></p>
           <h2 data-t="venue_title"></h2>
         </header>
         <!-- Line drawing, not a photo. On brick, use /images/villa-line-drawing-cream.svg instead. -->
-        <figure class="plate drawing">
+        <figure class="side plate drawing">
           <img src="/images/villa-line-drawing-ink.svg" width="2000" height="893" data-t-alt="venue_img_alt" alt="">
           <figcaption data-t="venue_img_caption"></figcaption>
         </figure>
-        <div class="body">
+        <div class="main">
           <p data-t="venue_text"></p>
           <p class="aside" data-t="venue_rest"></p>
           <p class="aside" data-t="venue_aside"></p>
@@ -76,15 +81,15 @@
 
     <!-- WEEKEND + DRESS (brick) -->
     <section class="sheet brick" id="weekend" style="--marker: var(--marigold)">
-      <div class="block reveal">
+      <div class="grid weekend reveal">
         <header class="head">
           <p class="label" data-t="weekend_label"></p>
           <h2 data-t="weekend_title"></h2>
           <p class="aside" data-t="weekend_note"></p>
         </header>
-        <ol class="days">
+        <ol class="main days">
           <li><p class="caps" data-t="thu_day"></p><div><p data-t="thu_text"></p></div></li>
-          <li class="main">
+          <li class="fri">
             <p class="caps" data-t="fri_day"></p>
             <div><p class="when" data-t="fri_time"></p><p data-t="fri_text"></p></div>
           </li>
@@ -92,10 +97,10 @@
           <li><p class="caps" data-t="sun_day"></p><div><p data-t="sun_text"></p></div></li>
           <li class="dress"><p class="caps" data-t="dress_label"></p><div><p data-t="dress_text"></p></div></li>
         </ol>
+        <figure class="side print print--small">
+          <img src="/images/couple-2.jpg" width="1000" height="1016" loading="lazy" data-t-alt="couple_2_alt" alt="">
+        </figure>
       </div>
-      <figure class="print print--small reveal">
-        <img src="/images/couple-2.jpg" width="1000" height="1016" loading="lazy" data-t-alt="couple_2_alt" alt="">
-      </figure>
     </section>
 
     <!-- TRAVEL + STAY + QUESTIONS (travertine) -->
