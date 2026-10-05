@@ -60,6 +60,10 @@ window.SITE_CONTENT = {
     fr: "La Villa del Cardinale a été construite en 1629 comme pavillon de chasse pour un cardinal de la famille Colonna. Ses fresques sont d’origine, ses terrasses dominent tout le lac Albano, et la résidence d’été des papes, à Castel Gandolfo, est toute proche. De toutes les villas visitées en une semaine, c’est celle à laquelle nous revenions sans cesse.",
     fr_status: "needs native review"
   },
+  tower_alt: { en: "Tower of Villa del Cardinale", fr: "La tour de la Villa del Cardinale", fr_status: "needs native review" },
+  tower_caption: { en: "The tower", fr: "La tour", fr_status: "needs native review" },
+  aerial_alt: { en: "Villa del Cardinale above Lake Albano", fr: "La Villa del Cardinale au-dessus du lac Albano", fr_status: "needs native review" },
+  aerial_caption: { en: "Above Lake Albano", fr: "Au-dessus du lac Albano", fr_status: "needs native review" },
   venue_rest: {
     en: "We’ll show you the rest in person.",
     fr: "Le reste, nous vous le montrerons sur place.",
@@ -107,8 +111,8 @@ window.SITE_CONTENT = {
   travel_label: { en: "Travel", fr: "Accès", fr_status: "needs native review" },
   travel_title: { en: "From Rome to the lake", fr: "De Rome au lac", fr_status: "needs native review" },
   lake_img_alt: {
-    en: "Lake Albano from above, black-and-white photograph taken at the villa",
-    fr: "Le lac Albano vu d’en haut, photographie en noir et blanc prise à la villa",
+    en: "Lake Albano from above, photographed at the villa",
+    fr: "Le lac Albano vu d’en haut, photographié depuis la villa",
     fr_status: "needs native review"
   },
   lake_img_caption: { text: "Lago Albano" },

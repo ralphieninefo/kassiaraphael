@@ -14,7 +14,10 @@ Type ordinary spaces in French; the non-breaking spaces before `: ; ! ?` and ins
 ## Images
 - `images/hero-bw.jpg`: hero photo (shown as a tilted archival print)
 - `images/couple-2.jpg`: second print, in the Weekend section
-- `images/lake-1.jpg`: Lake Albano from the villa, cropped 2:1 and converted to black and white
+Rule: people in black and white, the place in colour.
+- `images/lake-1.jpg`: Lake Albano from the villa, cropped 2:1, colour
+- `images/venue-tower.jpg`, `images/venue-aerial.jpg`: 4:5 colour, under the venue copy.
+  **Interim crops from screenshots**: replace with the originals at the same paths (1000x1250 or larger)
 - `images/villa-line-drawing-ink.svg`: villa drawing in ink lines, for cream sections (used in the venue)
 - `images/villa-line-drawing-cream.svg`: the same drawing in cream lines, for brick sections
 

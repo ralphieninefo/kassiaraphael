@@ -224,6 +224,16 @@ figcaption { margin-top: .75rem; color: var(--pine); }
 .framed img { padding: clamp(8px, 1.2vw, 14px); border: 1px solid var(--silver); }
 .grid > .full.plate { margin-bottom: 0; }
 
+/* ---------- Venue photo pair: colour, silver hairline frames ---------- */
+.pair { display: grid; gap: 2rem; margin: 2.5rem 0 2rem; }
+.pair .plate { margin: 0; }
+@media (min-width: 1024px) {
+  /* The venue's right column spans the full 6 grid columns; each photo is exactly 3 */
+  .venue > .main { max-width: none; }
+  .venue .copy { max-width: 38rem; }
+  .pair { grid-template-columns: 1fr 1fr; column-gap: 2rem; }
+}
+
 /* ---------- Travel legs ---------- */
 .leg h3 { margin: 0 0 .5rem; }
 .leg p { margin: 0; }
