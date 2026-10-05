@@ -222,7 +222,7 @@ h2 { font-size: var(--h2); line-height: 1.1; letter-spacing: -.005em; }
 .print img { filter: grayscale(1) contrast(1.05); width: 100%; background: #8d8d8b; }
 /* Only the hero print tilts. Its width follows the height left in the viewport (16:10 photo). */
 .print--hero {
-  width: clamp(min(100%, 20rem), calc(1.5 * ((var(--print-h) - 2 * var(--print-border)) * 1.6 * .95 + 2 * var(--print-border))), min(100%, 69rem)); /* 1.5x */
+  width: clamp(min(100%, 20rem), calc((var(--print-h) - 2 * var(--print-border)) * 1.6 * .95 + 2 * var(--print-border)), min(100%, 52rem)); /* as large as fits above the fold */
   max-width: none;
   margin-bottom: var(--s-4);
   transform: rotate(-2.4deg);
@@ -234,6 +234,16 @@ h2 { font-size: var(--h2); line-height: 1.1; letter-spacing: -.005em; }
 figcaption { margin-top: .75rem; color: var(--ink-soft); }
 .drawing img { padding: clamp(1rem, 2.5vw, 2rem); border: 1px solid var(--silver); } /* even margin all round */
 .framed img { padding: clamp(8px, 1.2vw, 14px); border: 1px solid var(--silver); }
+/* Two drawings of the same map: a compact one for phones, the full one from 760px.
+   Label size is in map units, set per layout so labels land at ~11-13px on screen. */
+.map.map--wide { display: none; }
+.map--narrow text { font-size: 11.5px; }
+/* Full map where it has room (single column 760-1023px, and 1280px+); compact one in the narrow 1024-1279px column */
+@media (min-width: 760px) and (max-width: 1023px), (min-width: 1280px) { .map.map--wide { display: block; } .map.map--narrow { display: none; } }
+.map text { font-family: var(--serif); letter-spacing: .16em; }
+.map--wide text { font-size: 11px; }   /* single column, map up to 608px wide */
+@media (min-width: 1280px) { .map--wide text { font-size: 13.5px; } } /* left column, 450-485px */
+.map { display: block; width: 100%; height: auto; padding: clamp(1rem, 2.5vw, 2rem); border: 1px solid var(--silver); color: var(--ink); overflow: visible; }
 
 /* ---------- Welcome ---------- */
 .lede { font-size: clamp(1.375rem, 1.2rem + .5vw, 1.5rem); line-height: 1.55; margin: 0; } /* 22-24px */
@@ -241,14 +251,14 @@ figcaption { margin-top: .75rem; color: var(--ink-soft); }
 /* ---------- Our story: four paragraphs at body size ---------- */
 .story .main p:last-child { margin-bottom: 0; }
 .story-shot { max-width: 24rem; margin-bottom: var(--s-4); } /* phones: label, heading, photo, text */
-/* Drop cap: first paragraph only, 4 lines on desktop (the paragraph's full height), 3 on phones */
+/* Drop cap: first paragraph only, ~3.6 lines on desktop (the last line wraps back under it), 3 on phones */
 .story .main > p:first-child::first-letter { float: left; font-size: 4.6em; line-height: .8; margin: .08em .1em 0 0; font-weight: 300; }
 @supports (initial-letter: 3) {
   .story .main > p:first-child::first-letter { float: none; font-size: inherit; line-height: inherit; margin: 0 .14em 0 0; initial-letter: 3; }
 }
 @media (min-width: 760px) {
-  @supports (initial-letter: 3) { .story .main > p:first-child::first-letter { initial-letter: 4; } }
-  @supports not (initial-letter: 3) { .story .main > p:first-child::first-letter { font-size: 5.9em; } }
+  @supports (initial-letter: 3) { .story .main > p:first-child::first-letter { initial-letter: 3.6 3; } }
+  @supports not (initial-letter: 3) { .story .main > p:first-child::first-letter { font-size: 5.4em; } }
 }
 /* Text starts at its cap height, so the first line sits flush with the top of whatever it is set beside */
 .story .main > p:first-child { text-box: trim-start cap alphabetic; }

@@ -185,9 +185,40 @@
           <div class="leg"><h3 class="caps" data-t="train_label"></h3><p data-t="train_text"></p></div>
           <div class="leg"><h3 class="caps" data-t="villa_label"></h3><p data-t="villa_text"></p></div>
         </div>
-        <figure class="side plate framed">
-          <img src="/images/lake-1.jpg" width="2000" height="1000" loading="lazy" data-t-alt="lake_img_alt" alt="">
-          <figcaption data-t="lake_img_caption"></figcaption>
+        <!-- Line map (inline so it uses Neuton): Rome, the airports, the train and the lake.
+             Placed from real coordinates; the villa marker is approximate. -->
+        <figure class="side plate drawing map-plate">
+          <svg class="map map--wide" viewBox="22 0 480 250" role="img" data-t-aria="map_alt" fill="none" stroke="currentColor" stroke-width="1">
+          <circle cx="237.1" cy="48.1" r="14"/><circle cx="237.1" cy="48.1" r="1.8" fill="currentColor"/>
+          <path d="M237.1 48.1 L345.5 197.7" stroke-dasharray="3 3"/>
+          <ellipse cx="356.1" cy="196.1" rx="15.4" ry="10.1" transform="rotate(-35 356.1 196.1)"/>
+          <path d="M41.9 146.1 h10 M46.9 141.1 v10"/><path d="M300.3 147.0 h10 M305.3 142.0 v10"/>
+          <circle cx="345.5" cy="197.7" r="1.8" fill="currentColor"/><circle cx="389.2" cy="184.2" r="1.8" fill="currentColor"/>
+          <path d="M369.2 184.3 l3.5 4 l-3.5 4 l-3.5 -4 z" fill="currentColor" stroke="none"/>
+          <g class="map-labels" stroke="none" fill="currentColor">
+            <text x="258.1" y="48.1" dominant-baseline="middle">ROMA</text>
+            <text x="46.9" y="168.1" text-anchor="middle">FIUMICINO</text>
+            <text x="294.3" y="147.0" dominant-baseline="middle" text-anchor="end">CIAMPINO</text>
+            <text x="335.5" y="199.7" dominant-baseline="middle" text-anchor="end">CASTEL GANDOLFO</text>
+            <text x="397.2" y="184.2" dominant-baseline="middle">ROCCA DI PAPA</text>
+          </g>
+        </svg>
+        <svg class="map map--narrow" viewBox="0 0 300 166" role="img" data-t-aria="map_alt" fill="none" stroke="currentColor" stroke-width="1">
+          <circle cx="148.2" cy="30.1" r="10"/><circle cx="148.2" cy="30.1" r="1.6" fill="currentColor"/>
+          <path d="M148.2 30.1 L215.9 123.6" stroke-dasharray="3 3"/>
+          <ellipse cx="222.6" cy="122.6" rx="9.6" ry="6.3" transform="rotate(-35 222.6 122.6)"/>
+          <path d="M25.3 91.3 h8 M29.3 87.3 v8"/><path d="M186.8 91.9 h8 M190.8 87.9 v8"/>
+          <circle cx="215.9" cy="123.6" r="1.6" fill="currentColor"/><circle cx="243.2" cy="115.1" r="1.6" fill="currentColor"/>
+          <path d="M230.8 114.2 l3 3.5 l-3 3.5 l-3 -3.5 z" fill="currentColor" stroke="none"/>
+          <g class="map-labels" stroke="none" fill="currentColor">
+            <text x="163.2" y="30.1" dominant-baseline="middle">ROMA</text>
+            <text x="10" y="109.8">FIUMICINO</text>
+            <text x="181.8" y="91.9" dominant-baseline="middle" text-anchor="end">CIAMPINO</text>
+            <text x="206.9" y="124.6" dominant-baseline="middle" text-anchor="end">CASTEL GANDOLFO</text>
+            <text x="294" y="145.1" text-anchor="end">ROCCA DI PAPA</text>
+          </g>
+        </svg>
+          <figcaption data-t="map_caption"></figcaption>
         </figure>
       </div>
 

@@ -68,7 +68,7 @@ window.SITE_CONTENT = {
   },
   story_p1: {
     en: "We met in our first week at San Francisco State University and became fast friends. Then Raphaël left for Paris junior year, nine hours ahead, and we kept&nbsp;chatting.",
-    fr: "Nous nous sommes rencontrés dès notre première semaine à San Francisco State University et sommes très vite devenus amis. Puis Raphaël est parti un an à Paris, avec neuf heures d’avance, et nous avons continué à nous écrire.",
+    fr: "Nous nous sommes rencontrés dès notre première semaine à San Francisco State University et sommes très vite devenus amis. Puis Raphaël est parti un an à Paris, avec neuf heures d’avance, et nous avons continué à nous&nbsp;écrire.",
     fr_status: "needs native review"
   },
   story_p2: {
@@ -176,6 +176,12 @@ window.SITE_CONTENT = {
     fr_status: "needs native review"
   },
   lake_img_caption: { text: "Lago Albano" },
+  map_alt: {
+    en: "Line map: Rome, Fiumicino and Ciampino airports, the train line to Castel Gandolfo, Lake Albano and the villa near Rocca di Papa",
+    fr: "Carte au trait : Rome, les aéroports de Fiumicino et de Ciampino, la ligne de train vers Castel Gandolfo, le lac Albano et la villa près de Rocca di Papa",
+    fr_status: "needs native review"
+  },
+  map_caption: { en: "Dashed line: the train from Termini<br>◆&nbsp;Villa del&nbsp;Cardinale", fr: "En pointillé : le train depuis Termini<br>◆&nbsp;Villa del&nbsp;Cardinale", fr_status: "needs native review" },
   air_label: { en: "By air", fr: "En avion", fr_status: "needs native review" },
   air_text: {
     en: "Fly into Rome Fiumicino (FCO), about 40 km away. If you’re coming from elsewhere in Europe, Ciampino (CIA) is a lot closer.",
