@@ -56,31 +56,30 @@ window.SITE_CONTENT = {
     fr_status: "needs native review",
     fr_flag: "Idiom chosen for “the long way around” (taking the scenic, slow route). Does it land?"
   },
-  story_lede: {
-    en: "Our friends would like it on the record that this took a while.",
-    fr: "Nos amis tiennent à ce que ce soit dit : cela a pris un certain temps.",
-    fr_status: "needs native review",
-    fr_flag: "The lede: should stay dry and a little cheeky."
-  },
   story_photo_alt: {
     en: "Raphaël kissing Kassia’s cheek at their graduation, both in caps and gowns, black-and-white photograph",
     fr: "Raphaël embrasse Kassia sur la joue le jour de leur remise de diplômes, en toge et toque, photographie en noir et blanc",
     fr_status: "needs native review"
   },
   story_p1: {
-    en: "We met in our first week at San Francisco State University and became fast friends, hanging out constantly years before it was anything more. Then Raphaël left for a year in Paris, and we kept chatting from nine hours apart.",
-    fr: "Nous nous sommes rencontrés dès notre première semaine à San Francisco State University et sommes très vite devenus amis, inséparables, des années avant qu’il se passe quoi que ce soit. Puis Raphaël est parti un an à Paris, et nous avons continué à nous écrire, à neuf heures de décalage.",
+    en: "We met in our first week at San Francisco State University and became fast friends. Then Raphaël left for a year in Paris, nine hours ahead, and we kept chatting.",
+    fr: "Nous nous sommes rencontrés dès notre première semaine à San Francisco State University et sommes très vite devenus amis. Puis Raphaël est parti un an à Paris, avec neuf heures d’avance, et nous avons continué à nous écrire.",
     fr_status: "needs native review"
   },
   story_p2: {
-    en: "He spent the following summer on the American River, where he paddled the chase kayak at a raft rental and herded tipsy Sacramentans back to the dock on time, and came back tanned and noticeably stronger. Kassia noticed. By senior year she was choosing his company over almost any other plan, and he had become a fixture at her all-girls house, the lone man at wine nights, dinners, and rom coms. We did not do anything about it until nearly graduation.",
-    fr: "L’été suivant, il l’a passé sur l’American River, à pagayer dans le kayak de sécurité d’un loueur de rafts et à ramener à l’heure au ponton des habitants de Sacramento un peu éméchés. Il en est revenu bronzé et nettement plus costaud. Kassia l’a remarqué. En dernière année, elle préférait sa compagnie à presque tout autre programme, et il était devenu un habitué de sa colocation entre filles, le seul homme des soirées vin, des dîners et des comédies romantiques. Nous n’en avons rien fait avant la remise des diplômes, ou presque.",
+    en: "He spent the next summer on the American River, paddling the chase kayak and herding tipsy Sacramentans to the dock, and returned to school tanned and noticeably stronger. Kassia noticed. By spring of senior year he was a fixture at her all-girls house, the lone man at wine nights and rom&nbsp;coms. It took us until almost graduation to do something about it.",
+    fr: "L’été suivant, il l’a passé sur l’American River, à pagayer dans le kayak de sécurité et à ramener au ponton des habitants de Sacramento un peu éméchés, avant de rentrer à la fac bronzé et nettement plus costaud. Kassia l’a remarqué. Au printemps de notre dernière année, il était devenu un habitué de sa colocation entre filles, le seul homme des soirées vin et des comédies romantiques. Il nous a fallu attendre presque la remise des diplômes pour nous décider.",
     fr_status: "needs native review",
-    fr_flag: "Check: “chase kayak” (kayak de sécurité), “tipsy Sacramentans” (habitants de Sacramento un peu éméchés), “tanned and noticeably stronger” (bronzé et nettement plus costaud), “all-girls house” (colocation entre filles), “rom coms” (comédies romantiques)."
+    fr_flag: "Check: “chase kayak” (kayak de sécurité), “tipsy Sacramentans” (habitants de Sacramento un peu éméchés), “returned to school tanned and noticeably stronger” (rentrer à la fac bronzé et nettement plus costaud), “all-girls house” (colocation entre filles), “rom coms” (comédies romantiques)."
   },
   story_p3: {
-    en: "This year marks ten years together, and we are finally ready to get married. We hope you’ll be there.",
-    fr: "Cette année, cela fait dix ans que nous sommes ensemble, et nous sommes enfin prêts à nous marier. Nous espérons que vous serez là.",
+    en: "Then came the firsts. Raphaël taught Kassia to drive and, during the pandemic, to ski: six months on the road, a month at a time from Jackson&nbsp;Hole to Taos, more than thirty days on skis in her first season. Chamonix, Zermatt, the&nbsp;Dolomites. Thailand, Istanbul, Cairo. France and Italy, roughly ten times. Somewhere in there, we grew up.",
+    fr: "Puis sont venues les premières fois. Raphaël a appris à Kassia à conduire et, pendant la pandémie, à skier : six mois sur la route, un mois à la fois, de Jackson&nbsp;Hole à Taos, plus de trente jours de ski dès sa première saison. Chamonix, Zermatt, les&nbsp;Dolomites. La Thaïlande, Istanbul, Le&nbsp;Caire. La France et l’Italie, une dizaine de fois. Quelque part en chemin, nous avons grandi.",
+    fr_status: "needs native review"
+  },
+  story_p4: {
+    en: "Ten years in, we are finally ready to get married. We hope you’ll be there.",
+    fr: "Dix ans plus tard, nous sommes enfin prêts à nous marier. Nous espérons que vous serez là.",
     fr_status: "needs native review"
   },
 
