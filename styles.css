@@ -2,7 +2,6 @@
 @font-face { font-family: "Neuton"; font-style: normal; font-weight: 300; font-display: swap; src: url(/fonts/neuton-300.woff2) format("woff2"); }
 @font-face { font-family: "Neuton"; font-style: normal; font-weight: 400; font-display: swap; src: url(/fonts/neuton-400.woff2) format("woff2"); }
 @font-face { font-family: "Neuton"; font-style: italic; font-weight: 400; font-display: swap; src: url(/fonts/neuton-400-italic.woff2) format("woff2"); }
-@font-face { font-family: "Pinyon Script"; font-style: normal; font-weight: 400; font-display: swap; src: url(/fonts/pinyon-script-400.woff2) format("woff2"); }
 
 :root {
   /* Palette */
@@ -17,7 +16,6 @@
 
   /* Type */
   --serif: "Neuton", "Iowan Old Style", Georgia, serif;
-  --script: "Pinyon Script", "Snell Roundhand", cursive; /* swap the script face here only */
   --text: clamp(1.125rem, .971rem + .24vw, 1.1875rem); /* 18px phones, 19px at 1440 */
   --leading: 1.6;             /* body line-height, every section */
   --measure-text: 24em;       /* single column only: ~65 characters of Neuton per line */
@@ -71,6 +69,20 @@ p, li, figcaption { text-wrap: pretty; } /* no one-word last lines */
 a { color: inherit; text-decoration-color: currentColor; text-decoration-thickness: 1px; text-underline-offset: .22em; }
 a:hover { text-decoration-thickness: 2px; }
 :focus-visible { outline: 1px solid currentColor; outline-offset: 4px; }
+
+/* Visually hidden, still read by screen readers and search (the script lines' words) */
+.vh { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
+
+/* Script lines: Pinyon Script outlined to SVG paths (no web font). Each SVG is the text's em box:
+   ascender 1768 + descender 787 on a 2048 grid, baseline on the text baseline, and vertical margins
+   that give it the same line box as the text had (--lh = that line's line-height). The script lines
+   themselves have line-height 0, so only the SVGs set their height, exactly as the font's text did. */
+.glyphs { --m: calc((var(--lh, 1.2476) - 1.2476) / 2); /* half-leading, in em */
+          height: 1.2476em; margin-block: calc(var(--m) * 1em); fill: currentColor; overflow: visible;
+          vertical-align: calc((-.3843 - var(--m)) * 1em); } /* an inline SVG's baseline is its bottom margin edge */
+/* Spaces between the outlined words: Neuton's space (305/2048) widened to Pinyon's (503/2048) */
+.names, .place { word-spacing: .0967em; }
+html[lang="fr"] .only-en, html:not([lang="fr"]) .only-fr { display: none; }
 
 .skip { position: absolute; left: -999px; top: 8px; background: var(--travertine); color: var(--ink); padding: .4rem .8rem; z-index: 30; }
 .skip:focus { left: 8px; }
@@ -194,25 +206,25 @@ h2 { font-size: var(--h2); line-height: 1.1; letter-spacing: -.005em; }
   padding-block: var(--hero-pad);
 }
 .names {
-  font-family: var(--script);
+  --lh: 1.15; /* the line's height, carried by the SVGs */
   font-weight: 400;
   font-size: var(--names-size); /* never below ~22px mobile / 28px desktop */
-  line-height: 1.15;
+  line-height: 0;
   margin: 0 0 var(--s-3);
   max-width: none;
 }
 /* Ampersand at 65% of the names, ink centred on the names' x-height (measured) */
-.amp { font-size: .65em; line-height: 1; padding: 0 .12em; vertical-align: .015em; }
+.amp { font-size: .65em; line-height: 0; --lh: 1; padding: 0 .12em; vertical-align: .015em; }
 .name2 { white-space: nowrap; } /* the ampersand always travels with Raphaël, never alone on a line */
 @media (max-width: 759px) {
   /* Stacked: Kassia / & Raphaël */
-  .names { line-height: 1.05; }
+  .names { --lh: 1.05; }
   .names > .name, .names .name2 { display: block; }
   .names .amp { padding: 0 .04em 0 0; }
 }
 .caption > * { margin: 0 auto; }
 .caption .date { font-size: var(--date-size); letter-spacing: .28em; }
-.place { font-family: var(--script); font-size: var(--place-size); line-height: 1.3; margin: var(--s-1) auto var(--s-2) !important; }
+.place { --lh: 1.3; font-size: var(--place-size); line-height: 0; margin: var(--s-1) auto var(--s-2) !important; }
 .quiet { opacity: .8; font-size: var(--caps); letter-spacing: .24em; }
 
 /* ---------- Prints: photographs of people, cream border + faux shadow ---------- */

@@ -42,8 +42,11 @@ One spacing scale (`--s-1` to `--s-6`, clamp-based) and one 12-column grid from 
 areas `left` (columns 1-5) and `right` (7-12; 6-12 between 1024 and 1279px). Content box: 1200px max.
 
 ## Fonts
-Neuton and Pinyon Script, self-hosted in `fonts/` (SIL Open Font License).
-To use a different script face, add its `@font-face` and change `--script` in `styles.css`.
+Neuton, self-hosted in `fonts/` (SIL Open Font License).
+The script lines (the names and "Castel Gandolfo, Italy/Italie") are not live text: they are Pinyon Script
+(SIL OFL) outlined to inline SVG paths in `index.html`, shaped with HarfBuzz so kerning matches the font.
+The words are kept as visually hidden text for screen readers. Changing that wording means regenerating
+the SVG paths from the Pinyon Script font (Google Fonts); the font file itself is no longer on the site.
 
 ## Before launch
 - **Link previews:** `images/og.jpg` (1200x630, hero crop). The `og:` tags use absolute
