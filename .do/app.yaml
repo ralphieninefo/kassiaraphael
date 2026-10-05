@@ -1,6 +1,6 @@
 # DigitalOcean App Platform spec — static site, no build step.
-# Update the repo/branch if needed, then add your custom domain under
-# Settings > Domains in the App Platform dashboard (or the `domains:` block below).
+# Deploys `main` on every push. DNS for the domains below is managed in the
+# App Platform dashboard (Settings > Domains) or at your registrar.
 name: kassiaraphael
 static_sites:
   - name: wedding-site
@@ -10,7 +10,10 @@ static_sites:
       deploy_on_push: true
     source_dir: /
     index_document: index.html
-    error_document: index.html
-# domains:
-#   - domain: yourdomain.com
-#     type: PRIMARY
+    # Any unknown path (e.g. /fr) serves index.html with a 200; script.js picks the language.
+    catchall_document: index.html
+domains:
+  - domain: kassiaraphael.com
+    type: PRIMARY
+  - domain: www.kassiaraphael.com
+    type: ALIAS
