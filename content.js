@@ -200,8 +200,8 @@ window.SITE_CONTENT = {
 
   /* Footer: the serene hours */
   footer_left_caption: {
-    en: "Jackson Hole · Photographed&nbsp;by&nbsp;Kassia",
-    fr: "Jackson Hole · Photo : Kassia",
+    en: "Jackson&nbsp;Hole&nbsp;· Photographed&nbsp;by&nbsp;Kassia",
+    fr: "Jackson&nbsp;Hole&nbsp;· Photo : Kassia",
     fr_status: "needs native review"
   },
   footer_left_alt: {
@@ -216,8 +216,8 @@ window.SITE_CONTENT = {
     fr_status: "needs native review"
   },
   footer_right_caption: {
-    en: "The Dolomites · Photographed&nbsp;by&nbsp;Raphaël",
-    fr: "Les Dolomites · Photo : Raphaël",
+    en: "The&nbsp;Dolomites&nbsp;· Photographed&nbsp;by&nbsp;Raphaël",
+    fr: "Les&nbsp;Dolomites&nbsp;· Photo : Raphaël",
     fr_status: "needs native review"
   },
   footer_right_alt: {
