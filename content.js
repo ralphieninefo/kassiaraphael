@@ -61,8 +61,13 @@ window.SITE_CONTENT = {
     fr: "Raphaël embrasse Kassia sur la joue le jour de leur remise de diplômes, en toge et toque, photographie en noir et blanc",
     fr_status: "needs native review"
   },
+  story_caption: {
+    en: "San Francisco State · Graduation",
+    fr: "San Francisco State · Remise des diplômes",
+    fr_status: "needs native review"
+  },
   story_p1: {
-    en: "We met in our first week at San Francisco State University and became fast friends. Then Raphaël left for a year in Paris, nine hours ahead, and we kept chatting.",
+    en: "We met in our first week at San Francisco State University and became fast friends. Then Raphaël left for Paris junior year, nine hours ahead, and we kept&nbsp;chatting.",
     fr: "Nous nous sommes rencontrés dès notre première semaine à San Francisco State University et sommes très vite devenus amis. Puis Raphaël est parti un an à Paris, avec neuf heures d’avance, et nous avons continué à nous écrire.",
     fr_status: "needs native review"
   },
@@ -73,7 +78,7 @@ window.SITE_CONTENT = {
     fr_flag: "Check: “chase kayak” (kayak de sécurité), “tipsy Sacramentans” (habitants de Sacramento un peu éméchés), “returned to school tanned and noticeably stronger” (rentrer à la fac bronzé et nettement plus costaud), “all-girls house” (colocation entre filles), “rom coms” (comédies romantiques)."
   },
   story_p3: {
-    en: "Then came the firsts. Raphaël taught Kassia to drive and, during the pandemic, to ski: six months on the road, a month at a time from Jackson&nbsp;Hole to Taos, more than thirty days on skis in her first season. Chamonix, Zermatt, the&nbsp;Dolomites. Thailand, Istanbul, Cairo. France and Italy, roughly ten times. Somewhere in there, we grew up.",
+    en: "Then came the firsts. The summer after graduation, Raphaël taught Kassia to drive. In the winter of 2020, mid-pandemic, he taught her to ski: six months on the road, a month at a time from Jackson&nbsp;Hole to Taos, more than thirty days on skis in her first season. Chamonix, Zermatt, the&nbsp;Dolomites. Thailand, Istanbul, Cairo. France and Italy, roughly ten times. Somewhere in there, we grew up.",
     fr: "Puis sont venues les premières fois. Raphaël a appris à Kassia à conduire et, pendant la pandémie, à skier : six mois sur la route, un mois à la fois, de Jackson&nbsp;Hole à Taos, plus de trente jours de ski dès sa première saison. Chamonix, Zermatt, les&nbsp;Dolomites. La Thaïlande, Istanbul, Le&nbsp;Caire. La France et l’Italie, une dizaine de fois. Quelque part en chemin, nous avons grandi.",
     fr_status: "needs native review"
   },
@@ -109,6 +114,11 @@ window.SITE_CONTENT = {
   tower_caption: { en: "The tower", fr: "La tour", fr_status: "needs native review" },
   aerial_alt: { en: "Villa del Cardinale above Lake Albano", fr: "La Villa del Cardinale au-dessus du lac Albano", fr_status: "needs native review" },
   aerial_caption: { en: "Above Lake Albano", fr: "Au-dessus du lac Albano", fr_status: "needs native review" },
+  band_alt: {
+    en: "Lake Albano from the villa’s terrace, over its terracotta roofs",
+    fr: "Le lac Albano vu de la terrasse de la villa, au-dessus de ses toits de tuiles",
+    fr_status: "needs native review"
+  },
   venue_rest: {
     en: "We’ll show you the rest in person.",
     fr: "Le reste, nous vous le montrerons sur place.",
@@ -122,6 +132,11 @@ window.SITE_CONTENT = {
   toast_alt: {
     en: "Raphaël opening a bottle of wine beside Kassia in a garden, black-and-white photograph",
     fr: "Raphaël ouvre une bouteille de vin à côté de Kassia dans un jardin, photographie en noir et blanc",
+    fr_status: "needs native review"
+  },
+  toast_caption: {
+    en: "The Conservatory of&nbsp;Flowers · The day we got engaged",
+    fr: "Le Conservatory of&nbsp;Flowers · Le jour de nos fiançailles",
     fr_status: "needs native review"
   },
   thu_day: { en: "Thursday, October&nbsp;7", fr: "jeudi 7&nbsp;octobre", fr_status: "needs native review" },
@@ -229,6 +244,11 @@ window.SITE_CONTENT = {
   footer_translation: {
     en: "I count only the serene hours. Sundial at Villa del Cardinale.",
     fr: "Je ne compte que les heures sereines. Cadran solaire de la Villa del Cardinale.",
+    fr_status: "needs native review"
+  },
+  colophon: {
+    en: "Set in Neuton. Built by Raphaël.",
+    fr: "Composé en Neuton. Réalisé par Raphaël.",
     fr_status: "needs native review"
   },
   footer_names: {

@@ -11,17 +11,18 @@
   --ink: #3E3E3C;
   --silver: #A9ABAD;
   --ink-soft: #55534E;  /* captions and asides on cream */
-  --flammeum: #D9692A;  /* small marks on blue: markers, underlines, focus */
+  --flammeum: #D9692A;  /* orange: section-label dots and the Friday marker only */
   --terracotta: #B5543A; /* small marks on cream */
   --cream-rule: rgba(246, 243, 236, .32);
 
   /* Type */
   --serif: "Neuton", "Iowan Old Style", Georgia, serif;
   --script: "Pinyon Script", "Snell Roundhand", cursive; /* swap the script face here only */
-  --text: 1.1875rem;          /* 19px body on phones */
+  --text: 1.125rem;           /* 18px body */
+  --measure-text: 21.5em;       /* ~65 characters of Neuton per line (measured) */
   --caps: .875rem;            /* 14px tracked labels */
   --caps-small: .8125rem;     /* 13px: nav (minimum) */
-  --h2: clamp(2.125rem, 1.5rem + 2vw, 3.25rem);
+  --h2: clamp(2.375rem, 1.6rem + 2.1vw, 3.25rem); /* 38px phones, 52px at 1440 */
 
   /* One spacing scale for the whole page */
   --s-1: .5rem;
@@ -49,7 +50,6 @@
   /* Narrow phones: tighter frame so the text column keeps a readable width. */
   :root { --frame-outer: 12px; --frame-inner: 18px; --print-border: 12px; }
 }
-@media (min-width: 900px) { :root { --text: 1.3125rem; } } /* 21px */
 @media (min-width: 1024px) { :root { --content: 75rem; } } /* ~1200px, never stretched wider */
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -58,7 +58,7 @@ body {
   margin: 0;
   background: var(--albano);
   color: var(--ink);
-  font: 400 var(--text)/1.65 var(--serif);
+  font: 400 var(--text)/1.75 var(--serif);
   font-kerning: normal;
   overflow-x: clip;
 }
@@ -66,9 +66,10 @@ img { display: block; max-width: 100%; height: auto; }
 p { margin: 0 0 1em; }
 h1, h2, h3 { margin: 0; font-weight: 300; text-wrap: balance; }
 p, li, figcaption { text-wrap: pretty; } /* no one-word last lines */
-a { color: inherit; text-decoration-color: var(--flammeum); text-decoration-thickness: 1px; text-underline-offset: .22em; }
-a:hover { text-decoration-thickness: 2px; } /* flammeum fails AA as text colour; keep it to the underline */
-:focus-visible { outline: 1px solid var(--flammeum); outline-offset: 4px; }
+/* Links: underline in the text colour (charcoal on cream, cream on navy), never orange */
+a { color: inherit; text-decoration-color: currentColor; text-decoration-thickness: 1px; text-underline-offset: .22em; }
+a:hover { text-decoration-thickness: 2px; }
+:focus-visible { outline: 1px solid currentColor; outline-offset: 4px; }
 
 .skip { position: absolute; left: -999px; top: 8px; background: var(--travertine); color: var(--ink); padding: .4rem .8rem; z-index: 30; }
 .skip:focus { left: 8px; }
@@ -101,14 +102,14 @@ a:hover { text-decoration-thickness: 2px; } /* flammeum fails AA as text colour;
 }
 .nav::-webkit-scrollbar { display: none; }
 .nav a { text-decoration: none; opacity: .86; padding: .35rem 0; letter-spacing: .16em; font-size: var(--caps-small); }
-.nav a:hover, .nav a:focus-visible { opacity: 1; text-decoration: underline; text-decoration-color: var(--flammeum); }
+.nav a:hover, .nav a:focus-visible { opacity: 1; text-decoration: underline; }
 .lang { display: flex; align-items: center; gap: .35rem; flex: none; }
 .lang span { opacity: .7; }
 .lang button {
   font: inherit; letter-spacing: inherit; color: inherit; background: none; border: 0;
   padding: .35rem .25rem; cursor: pointer; opacity: .78;
 }
-.lang button[aria-pressed="true"] { opacity: 1; text-decoration: underline; text-decoration-color: var(--flammeum); text-underline-offset: .3em; }
+.lang button[aria-pressed="true"] { opacity: 1; text-decoration: underline; text-underline-offset: .3em; }
 .lang button:hover { opacity: 1; }
 @media (min-width: 900px) { /* six items fit in both languages from here; below, the row scrolls with a fade */
   .nav { gap: 1.75rem; overflow: visible; -webkit-mask-image: none; mask-image: none; }
@@ -145,6 +146,9 @@ a:hover { text-decoration-thickness: 2px; } /* flammeum fails AA as text colour;
 .head { margin-bottom: var(--s-4); }
 .label { margin: 0 0 var(--s-2); display: flex; align-items: center; gap: .7rem; }
 .label::before { content: ""; width: 5px; height: 5px; background: var(--marker); transform: rotate(45deg); flex: none; }
+.label .num::after { content: "·"; margin-left: .7rem; } /* "I · Welcome" */
+/* Body columns never run past ~65 characters */
+.main > p, .copy, .leg p, .days div p, .rest { max-width: var(--measure-text); }
 h2 { font-size: var(--h2); line-height: 1.1; letter-spacing: -.005em; }
 .head .aside { margin: var(--s-2) 0 0; }
 .aside { font-style: italic; font-size: max(1.125rem, .9em); opacity: .88; }
@@ -182,7 +186,7 @@ h2 { font-size: var(--h2); line-height: 1.1; letter-spacing: -.005em; }
   /* Height left for the print once names, gaps and caption are placed */
   --print-h: calc(100svh - var(--bar-h) - 2 * var(--hero-pad) - 1.15 * var(--names-size) - var(--s-3) - var(--s-4)
                   - 1.5 * var(--date-size) - 1.3 * var(--place-size) - var(--s-1) - var(--s-2) - 1.5 * var(--caps));
-  min-height: min(calc(100svh - var(--bar-h)), 64rem);
+  min-height: calc(100svh - var(--bar-h)); /* full viewport */
   display: flex; flex-direction: column; justify-content: center; align-items: center;
   text-align: center;
   padding-block: var(--hero-pad);
@@ -218,7 +222,7 @@ h2 { font-size: var(--h2); line-height: 1.1; letter-spacing: -.005em; }
 .print img { filter: grayscale(1) contrast(1.05); width: 100%; background: #8d8d8b; }
 /* Only the hero print tilts. Its width follows the height left in the viewport (16:10 photo). */
 .print--hero {
-  width: clamp(min(100%, 20rem), calc((var(--print-h) - 2 * var(--print-border)) * 1.6 * .95 + 2 * var(--print-border)), min(100%, 46rem));
+  width: clamp(min(100%, 20rem), calc(1.5 * ((var(--print-h) - 2 * var(--print-border)) * 1.6 * .95 + 2 * var(--print-border))), min(100%, 69rem)); /* 1.5x */
   max-width: none;
   margin-bottom: var(--s-4);
   transform: rotate(-2.4deg);
@@ -228,7 +232,7 @@ h2 { font-size: var(--h2); line-height: 1.1; letter-spacing: -.005em; }
 .plate { margin: 0; }
 .plate img { width: 100%; }
 figcaption { margin-top: .75rem; color: var(--ink-soft); }
-.drawing img { padding: clamp(1.5rem, 5vw, 3.5rem) clamp(1rem, 4vw, 3rem); border: 1px solid var(--silver); }
+.drawing img { padding: clamp(1rem, 2.5vw, 2rem); border: 1px solid var(--silver); } /* even margin all round */
 .framed img { padding: clamp(8px, 1.2vw, 14px); border: 1px solid var(--silver); }
 
 /* ---------- Welcome ---------- */
@@ -236,7 +240,16 @@ figcaption { margin-top: .75rem; color: var(--ink-soft); }
 
 /* ---------- Our story: four paragraphs at body size ---------- */
 .story .main p:last-child { margin-bottom: 0; }
-.story-print { max-width: 24rem; margin-bottom: var(--s-4); } /* phones: label, heading, photo, text */
+.story-shot { max-width: 24rem; margin-bottom: var(--s-4); } /* phones: label, heading, photo, text */
+/* Drop cap: first paragraph only, ~3 lines (2 on phones), Neuton in the text colour */
+.story .main > p:first-child::first-letter { float: left; font-size: 3.6em; line-height: .8; margin: .08em .1em 0 0; font-weight: 300; }
+@supports (initial-letter: 3) {
+  .story .main > p:first-child::first-letter { float: none; font-size: inherit; line-height: inherit; margin: 0 .12em 0 0; initial-letter: 2; }
+}
+@media (min-width: 760px) {
+  @supports (initial-letter: 3) { .story .main > p:first-child::first-letter { initial-letter: 3; } }
+  @supports not (initial-letter: 3) { .story .main > p:first-child::first-letter { font-size: 4.6em; } }
+}
 /* Text starts at its cap height, so the first line sits flush with the top of whatever it is set beside */
 .story .main > p:first-child { text-box: trim-start cap alphabetic; }
 @media (min-width: 1024px) {
@@ -245,25 +258,28 @@ figcaption { margin-top: .75rem; color: var(--ink-soft); }
   .story > .head { grid-area: 1 / left; }
   .story > .side { grid-area: 2 / left; }
   .story > .main { grid-area: 2 / right; }
-  .story-print { max-width: none; margin-bottom: 0; }
+  .story-shot { max-width: none; margin-bottom: 0; }
 }
 
-/* ---------- Why Italy: a label and one paragraph, no heading ---------- */
-.italy .label { margin-bottom: var(--s-2); }
-.italy .main { margin: 0; }
-@media (min-width: 1024px) {
-  .italy .label { margin: .45em 0 0; } /* sit on the paragraph's first line */
-}
+/* ---------- Why Italy: a centred breather, label above, ~55 characters per line ---------- */
+.italy { text-align: center; }
+.italy .label { justify-content: center; margin-bottom: var(--s-3); }
+.italy-text { max-width: 22.5em; margin: 0 auto; text-wrap: balance; }
 
-/* ---------- Venue: head | copy, drawing | photo pair, . | closing line ---------- */
+/* ---------- Venue: head | copy, drawing | the tower with the closing line beside it ---------- */
 .venue .drawing { margin-bottom: var(--s-4); }
-.pair { display: grid; gap: var(--col-gap); margin: var(--s-4) 0; }
+/* Right column reads straight down: text, the tower at the text's width, the closing line */
+.pair { display: grid; gap: var(--s-3); margin: var(--s-4) 0 0; max-width: var(--measure-text); }
 .rest { margin: 0; }
 @media (min-width: 1024px) {
   .venue .drawing, .pair { margin: 0; }
-  .pair { grid-template-columns: 1fr 1fr; }
   .venue .copy { margin: 0; }
+  .venue > .side { align-self: center; } /* the drawing sits level with the middle of the photo */
 }
+
+/* ---------- Lake band: full bleed, between the venue and the motto ---------- */
+.band { margin: 0; line-height: 0; background: var(--albano); }
+.band img { width: 100%; height: clamp(16rem, 65vh, 46rem); object-fit: cover; object-position: 50% 60%; }
 
 /* ---------- Weekend ---------- */
 .days { list-style: none; padding: 0; margin: 0; border-top: 1px solid var(--rule); }
@@ -276,12 +292,12 @@ figcaption { margin-top: .75rem; color: var(--ink-soft); }
 .days .fri .when { font-size: 1.35em; line-height: 1.3; margin: 0 0 var(--s-1); }
 .days .fri div p:not(.when) { font-size: 1.08em; }
 .days .dress { border-bottom: 0; padding-top: var(--s-4); }
-.weekend .print { margin-top: var(--s-5); max-width: 24rem; }
+.weekend-shot { margin-top: var(--s-5); max-width: 24rem; }
 @media (min-width: 760px) {
   .days li { display: grid; grid-template-columns: 13rem 1fr; gap: 1.25rem; align-items: baseline; }
 }
 @media (min-width: 1024px) {
-  .weekend .print { margin-top: 0; max-width: none; width: 100%; }
+  .weekend-shot { margin-top: 0; max-width: none; width: 100%; }
 }
 
 /* ---------- Travel ---------- */
@@ -299,16 +315,18 @@ figcaption { margin-top: .75rem; color: var(--ink-soft); }
 .strip { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--col-gap); margin-bottom: var(--s-5); }
 .shot { margin: 0; }
 .shot figcaption { margin-top: var(--s-3); color: var(--travertine); opacity: .8; text-align: center; text-wrap: balance; } /* same tracked caps as THE TOWER, cream on blue */
-.footer-drawing { width: min(100%, 18rem); margin: 0 0 var(--s-4); opacity: .85; }
-@media (min-width: 1024px) {
-  .colophon > .strip { grid-area: 1 / full; margin-bottom: var(--s-4); }
-  .colophon > .side  { grid-area: 2 / 1 / auto / span 3; width: 100%; } /* columns 1-3 */
-  .colophon > .main  { grid-area: 2 / right; }
-  .footer-drawing { margin: 0; }
-}
-.motto { font-style: italic; font-size: clamp(1.5rem, 1.2rem + 1.2vw, 2.1rem); line-height: 1.3; margin-bottom: var(--s-1); }
-.gloss { font-style: italic; font-size: max(1.125rem, .9em); opacity: .86; margin-bottom: var(--s-4); }
-.footer > p:last-child { margin-bottom: 0; }
+@media (min-width: 1024px) { .colophon > .strip { grid-area: 1 / full; margin-bottom: var(--s-4); } }
+/* Sign-off: drawing, names and date, colophon, all centred */
+.signoff { text-align: center; }
+@media (min-width: 1024px) { .colophon > .signoff { grid-area: 2 / full; } }
+.footer-drawing { width: min(70%, 16rem); margin: var(--s-3) auto var(--s-4); opacity: .85; }
+.signoff .quiet { margin: 0 0 var(--s-5); }
+.colophon-line { margin: 0; color: var(--silver); font-size: var(--caps-small); letter-spacing: .2em; text-transform: uppercase; }
+
+/* ---------- Motto interlude (cream band): large Neuton italic, translation beneath ---------- */
+.interlude { padding-block: calc(var(--frame-inner) + var(--s-6) * 1.35); text-align: center; }
+.motto { font-style: italic; font-weight: 400; font-size: clamp(2.25rem, 1.2rem + 3.6vw, 4.25rem); line-height: 1.15; margin: 0 auto var(--s-3); text-wrap: balance; }
+.gloss { font-style: italic; font-size: max(1.125rem, .9em); color: var(--ink-soft); margin: 0 auto; }
 @media (max-width: 759px) { .strip { grid-template-columns: 1fr; row-gap: var(--s-5); } } /* phones: stacked, full width, same order */
 
 /* ---------- Motion: slow fade only ---------- */

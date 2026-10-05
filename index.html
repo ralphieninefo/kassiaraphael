@@ -73,7 +73,7 @@
     <section class="sheet paper" id="welcome">
       <div class="grid welcome reveal">
         <header class="head">
-          <p class="label" data-t="welcome_label"></p>
+          <p class="label"><span class="num">I</span><span data-t="welcome_label"></span></p>
           <h2 data-t="welcome_title"></h2>
         </header>
         <div class="main">
@@ -86,11 +86,12 @@
     <section class="sheet albano" id="story">
       <div class="grid story reveal">
         <header class="head">
-          <p class="label" data-t="story_label"></p>
+          <p class="label"><span class="num">II</span><span data-t="story_label"></span></p>
           <h2 data-t="story_title"></h2>
         </header>
-        <figure class="side print story-print">
-          <img src="/images/story-graduation.jpg" width="768" height="960" loading="lazy" data-t-alt="story_photo_alt" alt="">
+        <figure class="side shot story-shot">
+          <div class="print"><img src="/images/story-graduation.jpg" width="768" height="960" loading="lazy" data-t-alt="story_photo_alt" alt=""></div>
+          <figcaption data-t="story_caption"></figcaption>
         </figure>
         <div class="main">
           <p data-t="story_p1"></p>
@@ -103,16 +104,17 @@
 
     <!-- WHY ITALY + VENUE (cream) -->
     <section class="sheet paper" id="venue">
-      <div class="grid italy reveal">
-        <p class="head label" data-t="italy_label"></p>
-        <p class="main" data-t="italy_text"></p>
+      <!-- A short breather: centred, no heading -->
+      <div class="italy reveal">
+        <p class="label"><span class="num">III</span><span data-t="italy_label"></span></p>
+        <p class="italy-text" data-t="italy_text"></p>
       </div>
 
       <hr class="rule">
 
       <div class="grid venue reveal">
         <header class="head">
-          <p class="label" data-t="venue_label"></p>
+          <p class="label"><span class="num">IV</span><span data-t="venue_label"></span></p>
           <h2 data-t="venue_title"></h2>
         </header>
         <figure class="side plate drawing">
@@ -121,17 +123,28 @@
         </figure>
         <p class="copy" data-t="venue_text"></p>
         <!-- The place in colour, people in black and white. -->
+        <!-- The tower beside the closing line; the aerial view is the full-width band below -->
         <div class="pair">
           <figure class="plate framed">
             <img src="/images/venue-tower.jpg" width="1000" height="1250" loading="lazy" data-t-alt="tower_alt" alt="">
             <figcaption data-t="tower_caption"></figcaption>
           </figure>
-          <figure class="plate framed">
-            <img src="/images/venue-aerial.jpg" width="1000" height="1250" loading="lazy" data-t-alt="aerial_alt" alt="">
-            <figcaption data-t="aerial_caption"></figcaption>
-          </figure>
+          <p class="aside rest" data-t="venue_rest"></p>
         </div>
-        <p class="aside rest" data-t="venue_rest"></p>
+      </div>
+    </section>
+
+    <!-- LAKE BAND: edge to edge, no frame, no text over it -->
+    <div class="band">
+      <img src="/images/lake-band.jpg" srcset="/images/lake-band-1440.jpg 1440w, /images/lake-band.jpg 2880w" sizes="100vw"
+           width="2880" height="1171" loading="lazy" data-t-alt="band_alt" alt="">
+    </div>
+
+    <!-- MOTTO INTERLUDE (cream) -->
+    <section class="sheet paper interlude" aria-label="Horas non numero nisi serenas">
+      <div class="motto-block reveal">
+        <p class="motto" lang="la" data-t="footer_motto"></p>
+        <p class="gloss" data-t="footer_translation"></p>
       </div>
     </section>
 
@@ -139,7 +152,7 @@
     <section class="sheet albano" id="weekend">
       <div class="grid weekend reveal">
         <header class="head">
-          <p class="label" data-t="weekend_label"></p>
+          <p class="label"><span class="num">V</span><span data-t="weekend_label"></span></p>
           <h2 data-t="weekend_title"></h2>
           <p class="aside" data-t="weekend_note"></p>
         </header>
@@ -153,8 +166,9 @@
           <li><p class="caps" data-t="sun_day"></p><div><p data-t="sun_text"></p></div></li>
           <li class="dress"><p class="caps" data-t="dress_label"></p><div><p data-t="dress_text"></p></div></li>
         </ol>
-        <figure class="side print">
-          <img src="/images/weekend-toast.jpg" width="512" height="640" loading="lazy" data-t-alt="toast_alt" alt="">
+        <figure class="side shot weekend-shot">
+          <div class="print"><img src="/images/weekend-toast.jpg" width="512" height="640" loading="lazy" data-t-alt="toast_alt" alt=""></div>
+          <figcaption data-t="toast_caption"></figcaption>
         </figure>
       </div>
     </section>
@@ -163,7 +177,7 @@
     <section class="sheet paper" id="travel">
       <div class="grid travel reveal">
         <header class="head">
-          <p class="label" data-t="travel_label"></p>
+          <p class="label"><span class="num">VI</span><span data-t="travel_label"></span></p>
           <h2 data-t="travel_title"></h2>
         </header>
         <div class="main">
@@ -181,7 +195,7 @@
 
       <div class="grid reveal" id="stay">
         <header class="head">
-          <p class="label" data-t="stay_label"></p>
+          <p class="label"><span class="num">VII</span><span data-t="stay_label"></span></p>
           <h2 data-t="stay_title"></h2>
         </header>
         <div class="main">
@@ -193,7 +207,7 @@
 
       <div class="grid reveal" id="questions">
         <header class="head">
-          <p class="label" data-t="questions_label"></p>
+          <p class="label"><span class="num">VIII</span><span data-t="questions_label"></span></p>
           <h2 data-t="questions_title"></h2>
         </header>
         <div class="main">
@@ -220,11 +234,10 @@
           <figcaption data-t="footer_right_caption"></figcaption>
         </figure>
       </div>
-      <img class="side footer-drawing" src="/images/villa-line-drawing-cream.svg" width="2000" height="893" alt="" loading="lazy">
-      <div class="main">
-        <p class="motto" lang="la" data-t="footer_motto"></p>
-        <p class="gloss" data-t="footer_translation"></p>
+      <div class="signoff">
+        <img class="footer-drawing" src="/images/villa-line-drawing-cream.svg" width="2000" height="893" alt="" loading="lazy">
         <p class="caps quiet" data-t="footer_names"></p>
+        <p class="colophon-line" data-t="colophon"></p>
       </div>
     </div>
   </footer>
