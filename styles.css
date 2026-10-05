@@ -19,10 +19,10 @@
   --serif: "Neuton", "Iowan Old Style", Georgia, serif;
   --script: "Pinyon Script", "Snell Roundhand", cursive; /* swap the script face here only */
   --text: 1.125rem;           /* 18px body */
-  --measure-text: 21.5em;       /* ~65 characters of Neuton per line (measured) */
+  --measure-text: 24em;       /* ~65 characters of Neuton per line (measured) */
   --caps: .875rem;            /* 14px tracked labels */
   --caps-small: .8125rem;     /* 13px: nav (minimum) */
-  --h2: clamp(2.375rem, 1.6rem + 2.1vw, 3.25rem); /* 38px phones, 52px at 1440 */
+  --h2: clamp(2.125rem, 1.4rem + 1.9vw, 3rem); /* 34px phones, 48px at 1440 */
 
   /* One spacing scale for the whole page */
   --s-1: .5rem;
@@ -222,7 +222,7 @@ h2 { font-size: var(--h2); line-height: 1.1; letter-spacing: -.005em; }
 .print img { filter: grayscale(1) contrast(1.05); width: 100%; background: #8d8d8b; }
 /* Only the hero print tilts. Its width follows the height left in the viewport (16:10 photo). */
 .print--hero {
-  width: clamp(min(100%, 20rem), calc((var(--print-h) - 2 * var(--print-border)) * 1.6 * .95 + 2 * var(--print-border)), min(100%, 52rem)); /* as large as fits above the fold */
+  width: clamp(min(100%, 20rem), calc(1.5 * ((var(--print-h) - 2 * var(--print-border)) * 1.6 * .95 + 2 * var(--print-border))), min(100%, 78rem)); /* 1.5x the fit-to-fold size */
   max-width: none;
   margin-bottom: var(--s-4);
   transform: rotate(-2.4deg);
@@ -232,7 +232,7 @@ h2 { font-size: var(--h2); line-height: 1.1; letter-spacing: -.005em; }
 .plate { margin: 0; }
 .plate img { width: 100%; }
 figcaption { margin-top: .75rem; color: var(--ink-soft); }
-.drawing img { padding: clamp(1rem, 2.5vw, 2rem); border: 1px solid var(--silver); } /* even margin all round */
+.drawing img { padding: clamp(.6rem, 1.2vw, 1rem); border: 1px solid var(--silver); } /* the drawing fills its frame, even margin all round */
 .framed img { padding: clamp(8px, 1.2vw, 14px); border: 1px solid var(--silver); }
 /* Two drawings of the same map: a compact one for phones, the full one from 760px.
    Label size is in map units, set per layout so labels land at ~11-13px on screen. */
@@ -251,14 +251,14 @@ figcaption { margin-top: .75rem; color: var(--ink-soft); }
 /* ---------- Our story: four paragraphs at body size ---------- */
 .story .main p:last-child { margin-bottom: 0; }
 .story-shot { max-width: 24rem; margin-bottom: var(--s-4); } /* phones: label, heading, photo, text */
-/* Drop cap: first paragraph only, ~3.6 lines on desktop (the last line wraps back under it), 3 on phones */
-.story .main > p:first-child::first-letter { float: left; font-size: 4.6em; line-height: .8; margin: .08em .1em 0 0; font-weight: 300; }
+/* Drop cap: first paragraph only, 3 lines on desktop, 2 on phones */
+.story .main > p:first-child::first-letter { float: left; font-size: 3.6em; line-height: .8; margin: .08em .1em 0 0; font-weight: 300; }
 @supports (initial-letter: 3) {
-  .story .main > p:first-child::first-letter { float: none; font-size: inherit; line-height: inherit; margin: 0 .14em 0 0; initial-letter: 3; }
+  .story .main > p:first-child::first-letter { float: none; font-size: inherit; line-height: inherit; margin: 0 .14em 0 0; initial-letter: 2; }
 }
 @media (min-width: 760px) {
-  @supports (initial-letter: 3) { .story .main > p:first-child::first-letter { initial-letter: 3.6 3; } }
-  @supports not (initial-letter: 3) { .story .main > p:first-child::first-letter { font-size: 5.4em; } }
+  @supports (initial-letter: 3) { .story .main > p:first-child::first-letter { initial-letter: 3; } }
+  @supports not (initial-letter: 3) { .story .main > p:first-child::first-letter { font-size: 4.6em; } }
 }
 /* Text starts at its cap height, so the first line sits flush with the top of whatever it is set beside */
 .story .main > p:first-child { text-box: trim-start cap alphabetic; }
@@ -268,7 +268,7 @@ figcaption { margin-top: .75rem; color: var(--ink-soft); }
   .story > .head { grid-area: 1 / left; }
   .story > .side { grid-area: 2 / left; }
   .story > .main { grid-area: 2 / right; }
-  .story-shot { max-width: none; margin-bottom: 0; }
+  .story-shot { max-width: var(--measure-text); margin-bottom: 0; } /* photo and text the same width */
 }
 
 /* ---------- Why Italy: a centred breather, label above, ~55 characters per line ---------- */
@@ -278,14 +278,16 @@ figcaption { margin-top: .75rem; color: var(--ink-soft); }
 
 /* ---------- Venue: head | copy, drawing | the tower with the closing line beside it ---------- */
 .venue .drawing { margin-bottom: var(--s-4); }
-/* Right column reads straight down: text, the tower at the text's width, the closing line */
-.pair { display: grid; gap: var(--s-3); margin: var(--s-4) 0 0; max-width: var(--measure-text); }
-.rest { margin: 0; }
+/* Venue: title row, then the drawing beside the text (tops level), then the tower under the text */
+.venue .tower { margin: var(--s-4) 0 0; max-width: var(--measure-text); }
 @media (min-width: 1024px) {
-  .venue .drawing, .pair { margin: 0; }
-  .venue .copy { margin: 0; }
-  .venue > .side { align-self: center; } /* the drawing sits level with the middle of the photo */
+  .venue > .head  { grid-area: 1 / left; }
+  .venue > .side  { grid-area: 2 / left; margin: 0; }
+  .venue > .copy  { grid-area: 2 / right; margin: 0; text-box: trim-start cap alphabetic; }
+  .venue > .tower { grid-area: 3 / right; margin: 0; }
 }
+/* Closing line, small and centred under the lake band */
+.band-note { margin: 0 auto var(--s-6); font-style: italic; font-size: .9375rem; color: var(--ink-soft); text-align: center; }
 
 /* ---------- Lake band: full bleed, between the venue and the motto ---------- */
 .band { margin: 0; line-height: 0; background: var(--albano); }
@@ -334,8 +336,8 @@ figcaption { margin-top: .75rem; color: var(--ink-soft); }
 .colophon-line { margin: 0; color: var(--silver); font-size: var(--caps-small); letter-spacing: .2em; text-transform: uppercase; }
 
 /* ---------- Motto interlude (cream band): large Neuton italic, translation beneath ---------- */
-.interlude { padding-block: calc(var(--frame-inner) + var(--s-6) * 1.35); text-align: center; }
-.motto { font-style: italic; font-weight: 400; font-size: clamp(2.25rem, 1.2rem + 3.6vw, 4.25rem); line-height: 1.15; margin: 0 auto var(--s-3); text-wrap: balance; }
+.interlude { padding-block: calc(var(--frame-inner) + var(--s-4)) calc(var(--frame-inner) + var(--s-6) * 1.35); text-align: center; }
+.motto { font-style: italic; font-weight: 400; font-size: clamp(2.75rem, 1rem + 5.2vw, 5.75rem); /* the largest text after the names */ line-height: 1.15; margin: 0 auto var(--s-3); text-wrap: balance; }
 .gloss { font-style: italic; font-size: max(1.125rem, .9em); color: var(--ink-soft); margin: 0 auto; }
 @media (max-width: 759px) { .strip { grid-template-columns: 1fr; row-gap: var(--s-5); } } /* phones: stacked, full width, same order */
 

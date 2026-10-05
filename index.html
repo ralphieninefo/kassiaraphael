@@ -123,14 +123,11 @@
         </figure>
         <p class="copy" data-t="venue_text"></p>
         <!-- The place in colour, people in black and white. -->
-        <!-- The tower beside the closing line; the aerial view is the full-width band below -->
-        <div class="pair">
-          <figure class="plate framed">
-            <img src="/images/venue-tower.jpg" width="1000" height="1250" loading="lazy" data-t-alt="tower_alt" alt="">
-            <figcaption data-t="tower_caption"></figcaption>
-          </figure>
-          <p class="aside rest" data-t="venue_rest"></p>
-        </div>
+        <!-- The tower under the text; the aerial view is the full-width band below -->
+        <figure class="plate framed tower">
+          <img src="/images/venue-tower.jpg" width="1000" height="1250" loading="lazy" data-t-alt="tower_alt" alt="">
+          <figcaption data-t="tower_caption"></figcaption>
+        </figure>
       </div>
     </section>
 
@@ -140,8 +137,9 @@
            width="2880" height="1171" loading="lazy" data-t-alt="band_alt" alt="">
     </div>
 
-    <!-- MOTTO INTERLUDE (cream) -->
+    <!-- MOTTO INTERLUDE (cream), opened by the venue's closing line, set small under the band -->
     <section class="sheet paper interlude" aria-label="Horas non numero nisi serenas">
+      <p class="band-note" data-t="venue_rest"></p>
       <div class="motto-block reveal">
         <p class="motto" lang="la" data-t="footer_motto"></p>
         <p class="gloss" data-t="footer_translation"></p>
@@ -154,7 +152,6 @@
         <header class="head">
           <p class="label"><span class="num">V</span><span data-t="weekend_label"></span></p>
           <h2 data-t="weekend_title"></h2>
-          <p class="aside" data-t="weekend_note"></p>
         </header>
         <ol class="main days">
           <li><p class="caps" data-t="thu_day"></p><div><p data-t="thu_text"></p></div></li>

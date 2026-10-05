@@ -128,7 +128,6 @@ window.SITE_CONTENT = {
   /* Weekend (What to wear is its last row) */
   weekend_label: { en: "Weekend", fr: "Week-end", fr_status: "needs native review" },
   weekend_title: { en: "Thursday to Sunday", fr: "Du jeudi au dimanche", fr_status: "needs native review" },
-  weekend_note: { en: "Details to follow.", fr: "Détails à suivre.", fr_status: "needs native review" },
   toast_alt: {
     en: "Raphaël opening a bottle of wine beside Kassia in a garden, black-and-white photograph",
     fr: "Raphaël ouvre une bouteille de vin à côté de Kassia dans un jardin, photographie en noir et blanc",
