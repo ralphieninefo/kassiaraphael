@@ -41,7 +41,7 @@ window.SITE_CONTENT = {
   welcome_label: { en: "Welcome", fr: "Bienvenue", fr_status: "needs native review" },
   welcome_title: { en: "We hope you’ll join us.", fr: "Nous espérons vous y&nbsp;voir.", fr_status: "needs native review" },
   welcome_text: {
-    en: "We are getting married on Friday, October&nbsp;8, 2027, at a villa above Lake Albano, about forty minutes from Rome. A formal invitation with every detail will follow. For now, we wanted you to have time to plan.",
+    en: "We are getting married on Friday, October&nbsp;8, 2027, at a villa above Lake Albano, about forty minutes from Rome. A formal invitation with full details will follow. For now, we wanted you to have time to plan.",
     fr: "Nous nous marions le vendredi 8&nbsp;octobre 2027, dans une villa qui domine le lac Albano, à une quarantaine de minutes de Rome. Une invitation officielle, avec tous les détails, suivra. Nous voulions simplement vous laisser le temps de vous organiser.",
     fr_status: "needs native review"
   },
@@ -56,8 +56,8 @@ window.SITE_CONTENT = {
   },
   venue_img_caption: { text: "Villa del Cardinale, 1629" },
   venue_text: {
-    en: "Villa del Cardinale was built in 1629 as a hunting lodge for a Colonna cardinal. Its frescoes are original, its terraces look over the whole of Lake Albano, and the papal summer residence at Castel Gandolfo is close by. Of all the villas we saw in a week, it is the one we kept returning to.",
-    fr: "La Villa del Cardinale a été construite en 1629 comme pavillon de chasse pour un cardinal de la famille Colonna. Ses fresques sont d’origine, ses terrasses dominent tout le lac Albano, et la résidence d’été des papes, à Castel Gandolfo, est toute proche. De toutes les villas visitées en une semaine, c’est celle à laquelle nous revenions sans cesse.",
+    en: "Villa del Cardinale was built in 1629 as a hunting lodge for Cardinal Gerolamo Colonna. It stands on the remains of a Roman house, at the highest point of the crater that holds Lake Albano, a short distance from the papal summer palace at Castel Gandolfo. Its frescoes are original. Of all the villas we saw in a week, it is the one we knew at once.",
+    fr: "La Villa del Cardinale a été construite en 1629 comme pavillon de chasse pour le cardinal Gerolamo Colonna. Elle s’élève sur les vestiges d’une maison romaine, au point le plus haut du cratère qui abrite le lac Albano, non loin du palais d’été des papes à Castel Gandolfo. Ses fresques sont d’origine. De toutes les villas visitées en une semaine, c’est celle que nous avons reconnue tout de suite.",
     fr_status: "needs native review"
   },
   tower_alt: { en: "Tower of Villa del Cardinale", fr: "La tour de la Villa del Cardinale", fr_status: "needs native review" },
@@ -81,8 +81,8 @@ window.SITE_CONTENT = {
   },
   thu_day: { en: "Thursday, October&nbsp;7", fr: "jeudi 7&nbsp;octobre", fr_status: "needs native review" },
   thu_text: {
-    en: "For those arriving early, a walk from the hotel into the old town of Castel Gandolfo at three, followed by an aperitivo. Join us for as much or as little as you like.",
-    fr: "Pour ceux qui arrivent en avance : promenade depuis l’hôtel jusqu’au vieux bourg de Castel Gandolfo à 15 h, suivie d’un aperitivo. Joignez-vous à nous le temps que vous voudrez.",
+    en: "Arriving early? Join us on Thursday for a walk into the old town of Castel Gandolfo, followed by an aperitivo hosted by us. Details to follow.",
+    fr: "Vous arrivez en avance ? Rejoignez-nous le jeudi pour une promenade dans le vieux bourg de Castel Gandolfo, suivie d’un aperitivo que nous offrons. Détails à suivre.",
     fr_status: "needs native review"
   },
   fri_day: { en: "Friday, October&nbsp;8", fr: "vendredi 8&nbsp;octobre", fr_status: "needs native review" },
@@ -94,8 +94,8 @@ window.SITE_CONTENT = {
   },
   sat_day: { en: "Saturday, October&nbsp;9", fr: "samedi 9&nbsp;octobre", fr_status: "needs native review" },
   sat_text: {
-    en: "No plans. A day to rest, explore the lake, or take the train into Rome.",
-    fr: "Aucun programme. Une journée pour se reposer, découvrir le lac ou prendre le train pour Rome.",
+    en: "No plans. A day to rest by the lake, visit the papal palace and gardens in Castel Gandolfo, or take the train into Rome.",
+    fr: "Aucun programme. Une journée pour se reposer au bord du lac, visiter le palais pontifical et ses jardins à Castel Gandolfo, ou prendre le train pour Rome.",
     fr_status: "needs native review"
   },
   sun_day: { en: "Sunday, October&nbsp;10", fr: "dimanche 10&nbsp;octobre", fr_status: "needs native review" },
@@ -118,15 +118,15 @@ window.SITE_CONTENT = {
   lake_img_caption: { text: "Lago Albano" },
   air_label: { en: "By air", fr: "En avion", fr_status: "needs native review" },
   air_text: {
-    en: "Fly into Rome Fiumicino (FCO), about 40 km away. If you’re coming from elsewhere in Europe, Ciampino is a lot closer.",
-    fr: "Le plus simple est d’atterrir à Rome Fiumicino (FCO), à environ 40 km. Si vous venez d’ailleurs en Europe, Ciampino est beaucoup plus proche.",
+    en: "Fly into Rome Fiumicino (FCO), about 40 km away. If you’re coming from elsewhere in Europe, Ciampino (CIA) is a lot closer.",
+    fr: "Le plus simple est d’atterrir à Rome Fiumicino (FCO), à environ 40 km. Si vous venez d’ailleurs en Europe, Ciampino (CIA) est beaucoup plus proche.",
     fr_status: "needs native review"
   },
   train_label: { en: "By train", fr: "En train", fr_status: "needs native review" },
   train_text: {
     _todo: "Verify before launch on Trenitalia: train route, station name, journey time.",
-    en: "There’s no direct train from the airport. If you’re arriving early, we’d go into Rome first, stay a night or two, and take the regional train from Termini out to Castel Gandolfo station on Thursday. It’s about 45 minutes. If you have big bags, a taxi from Rome is easier.",
-    fr: "Il n’y a pas de train direct depuis l’aéroport. Si vous arrivez en avance, nous vous conseillons de passer d’abord par Rome, d’y rester une nuit ou deux, puis de prendre le jeudi le train régional de Termini jusqu’à la gare de Castel Gandolfo. Le trajet dure environ 45 minutes. Avec de gros bagages, un taxi depuis Rome est plus simple.",
+    en: "There’s no direct train from the airport. If you’re arriving early, we’d go into Rome first, stay a night or two, and take the regional train from Termini out to Castel Gandolfo station on Thursday. It’s about 45 minutes.",
+    fr: "Il n’y a pas de train direct depuis l’aéroport. Si vous arrivez en avance, nous vous conseillons de passer d’abord par Rome, d’y rester une nuit ou deux, puis de prendre le jeudi le train régional de Termini jusqu’à la gare de Castel Gandolfo. Le trajet dure environ 45 minutes.",
     fr_status: "needs native review"
   },
   villa_label: { en: "To the villa", fr: "Jusqu’à la villa", fr_status: "needs native review" },
