@@ -67,7 +67,7 @@ window.SITE_CONTENT = {
     fr_status: "needs native review"
   },
   photo_to_come: { en: "Photograph to come", fr: "Photographie à venir", fr_status: "needs native review" },
-  venue_img_caption: { text: "Villa del Cardinale · Rocca di Papa" },
+  venue_img_caption: { text: "Villa del Cardinale · Rocca&nbsp;di&nbsp;Papa" },
   venue_text: {
     en: "Villa del Cardinale was built in 1629 as a hunting lodge for a Colonna cardinal. It still has its original frescoes and a view over the whole lake, and it’s not far from Castel Gandolfo, where the popes have gone for the summer since the 1600s. We looked at a lot of villas in one week, and this is the one we kept comparing everything else to.",
     fr: "La Villa del Cardinale a été construite en 1629 comme pavillon de chasse pour un cardinal de la famille Colonna. Elle a conservé ses fresques d’origine et sa vue sur tout le lac, et se trouve tout près de Castel Gandolfo, où les papes passent l’été depuis le XVII<sup>e</sup> siècle. Nous avons visité beaucoup de villas en une semaine, et c’est à celle-ci que nous avons comparé toutes les autres.",
