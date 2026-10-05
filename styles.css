@@ -19,6 +19,7 @@
   --serif: "Neuton", "Iowan Old Style", Georgia, serif;
   --script: "Pinyon Script", "Snell Roundhand", cursive; /* swap the script face here only */
   --text: clamp(1.125rem, .971rem + .24vw, 1.1875rem); /* 18px phones, 19px at 1440 */
+  --leading: 1.6;             /* body line-height, every section */
   --measure-text: 24em;       /* single column only: ~65 characters of Neuton per line */
   --caps: .875rem;            /* 14px tracked labels */
   --caps-small: .8125rem;     /* 13px: nav (minimum) */
@@ -58,7 +59,7 @@ body {
   margin: 0;
   background: var(--albano);
   color: var(--ink);
-  font: 400 var(--text)/1.6 var(--serif);
+  font: 400 var(--text)/var(--leading) var(--serif);
   font-kerning: normal;
   overflow-x: clip;
 }
@@ -245,8 +246,9 @@ figcaption { margin-top: .75rem; color: var(--ink-soft); text-align: center; tex
 .pin { position: absolute; white-space: nowrap; font-size: var(--caps-small); letter-spacing: .18em; text-transform: uppercase; line-height: 1; padding: .2em .3em; background: var(--travertine); }
 .pin--right { transform: translate(.3rem, -50%); }
 .pin--left  { transform: translate(calc(-100% - .35rem), -50%); }
+.pin--cg    { transform: translate(calc(-100% - .7rem), -50%); } /* clear of the crater rim */
 .pin--fco   { transform: translate(.25rem, calc(-100% - .25rem)); }
-.pin--cia   { transform: translate(calc(-100% - .55rem), -50%); } /* left of the cross, clear of the train line */
+.pin--cia   { transform: translate(calc(-100% - .3rem), .35rem); } /* below-left of the cross, clear of the train line and Fiumicino */
 .pin-br { display: none; }
 .pin--lake  { text-transform: none; letter-spacing: .02em; font-style: italic; font-size: .875rem; transform: translate(-100%, .45rem); } /* under the lake, ending at its east shore */
 @media (max-width: 759px), (min-width: 1024px) and (max-width: 1279px) { /* where the map is narrow */
@@ -282,7 +284,7 @@ figcaption { margin-top: .75rem; color: var(--ink-soft); text-align: center; tex
 /* ---------- Why Italy: a centred breather, label above, ~55 characters per line ---------- */
 .italy { text-align: center; }
 .italy .label { justify-content: center; margin-bottom: var(--s-3); }
-.italy-text { max-width: 22.5em; margin: 0 auto; text-wrap: balance; }
+.italy-text { font-size: var(--text); line-height: var(--leading); max-width: 34rem; margin: 0 auto; text-wrap: balance; } /* the same body token as every section */
 
 /* ---------- Venue: head | copy, then drawing | tower + aerial, then the motto ---------- */
 .venue .drawing { margin-bottom: var(--s-4); }
