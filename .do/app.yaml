@@ -1,0 +1,16 @@
+# DigitalOcean App Platform spec — static site, no build step.
+# Update the repo/branch if needed, then add your custom domain under
+# Settings > Domains in the App Platform dashboard (or the `domains:` block below).
+name: kassiaraphael
+static_sites:
+  - name: wedding-site
+    github:
+      repo: ralphieninefo/kassiaraphael
+      branch: main
+      deploy_on_push: true
+    source_dir: /
+    index_document: index.html
+    error_document: index.html
+# domains:
+#   - domain: yourdomain.com
+#     type: PRIMARY
