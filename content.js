@@ -199,19 +199,30 @@ window.SITE_CONTENT = {
   email: { text: "raphaelkassia2027@gmail.com" },
 
   /* Footer: the serene hours */
-  serene_dip_alt: {
-    en: "Raphaël dipping Kassia on a garden lawn, black-and-white photograph",
-    fr: "Raphaël fait basculer Kassia sur la pelouse d’un jardin, photographie en noir et blanc",
+  footer_left_caption: {
+    en: "Jackson Hole · Photographed&nbsp;by&nbsp;Kassia",
+    fr: "Jackson Hole · Photo : Kassia",
     fr_status: "needs native review"
   },
-  serene_conservatory_alt: {
-    en: "Kassia and Raphaël in sunglasses in front of a white Victorian glasshouse, black-and-white photograph",
-    fr: "Kassia et Raphaël, lunettes de soleil, devant une serre victorienne blanche, photographie en noir et blanc",
+  footer_left_alt: {
+    en: "Raphaël skiing in Jackson Hole, looking back at the camera",
+    fr: "Raphaël à ski à Jackson Hole, se retournant vers l’objectif",
     fr_status: "needs native review"
   },
-  serene_sculpture_alt: {
-    en: "Kassia laughing in Raphaël’s arms beside a sculpture of a beaded crown, black-and-white photograph",
-    fr: "Kassia rit dans les bras de Raphaël à côté d’une sculpture en forme de couronne de perles, photographie en noir et blanc",
+  footer_center_caption: { en: "Utah", fr: "L’Utah", fr_status: "needs native review" },
+  footer_center_alt: {
+    en: "Kassia and Raphaël smiling on a winter hike among red rock cliffs in Utah",
+    fr: "Kassia et Raphaël souriants lors d’une randonnée hivernale parmi les falaises rouges de l’Utah",
+    fr_status: "needs native review"
+  },
+  footer_right_caption: {
+    en: "The Dolomites · Photographed&nbsp;by&nbsp;Raphaël",
+    fr: "Les Dolomites · Photo : Raphaël",
+    fr_status: "needs native review"
+  },
+  footer_right_alt: {
+    en: "Kassia skiing below a frozen waterfall in the Dolomites, looking back",
+    fr: "Kassia à ski sous une cascade gelée dans les Dolomites, se retournant",
     fr_status: "needs native review"
   },
   footer_motto: { text: "Horas non numero nisi serenas" },

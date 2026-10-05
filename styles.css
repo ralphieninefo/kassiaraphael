@@ -297,6 +297,8 @@ figcaption { margin-top: .75rem; color: var(--ink-soft); }
 
 /* ---------- Footer: the serene hours, on the same grid ---------- */
 .strip { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--col-gap); margin-bottom: var(--s-5); }
+.shot { margin: 0; }
+.shot figcaption { margin-top: var(--s-3); color: var(--travertine); opacity: .8; } /* same tracked caps as THE TOWER, cream on blue */
 .footer-drawing { width: min(100%, 18rem); margin: 0 0 var(--s-4); opacity: .85; }
 @media (min-width: 1024px) {
   .colophon > .strip { grid-area: 1 / full; margin-bottom: var(--s-4); }
@@ -307,7 +309,7 @@ figcaption { margin-top: .75rem; color: var(--ink-soft); }
 .motto { font-style: italic; font-size: clamp(1.5rem, 1.2rem + 1.2vw, 2.1rem); line-height: 1.3; margin-bottom: var(--s-1); }
 .gloss { font-style: italic; font-size: max(1.125rem, .9em); opacity: .86; margin-bottom: var(--s-4); }
 .footer > p:last-child { margin-bottom: 0; }
-@media (max-width: 600px) { .strip { gap: .75rem; } .strip .print { --print-border: 8px; } .strip .print::before { transform: translate(5px, 6px); } }
+@media (max-width: 759px) { .strip { grid-template-columns: 1fr; row-gap: var(--s-5); } } /* phones: stacked, full width, same order */
 
 /* ---------- Motion: slow fade only ---------- */
 .js .reveal { opacity: 0; transition: opacity 1.4s ease-out; }
