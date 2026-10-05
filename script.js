@@ -55,6 +55,12 @@
     });
   });
 
+  // Sticky top bar: show its hairline once the page has scrolled.
+  var bar = document.querySelector(".topbar");
+  function onScroll() { bar.classList.toggle("stuck", window.scrollY > 8); }
+  window.addEventListener("scroll", onScroll, { passive: true });
+  onScroll();
+
   // Slow fade-in on scroll. CSS skips it entirely for prefers-reduced-motion.
   var items = document.querySelectorAll(".reveal");
   if (!("IntersectionObserver" in window)) {

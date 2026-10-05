@@ -24,7 +24,6 @@
   --frame-inner: 36px;
   --gutter: 20px;
   --measure: 38rem; /* ~62-68 characters of Neuton at 21px */
-  --wide: 64rem;
 
   --grain: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .24 0 0 0 0 .22 0 0 0 0 .2 0 0 0 1 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.06'/%3E%3C/svg%3E");
 }
@@ -34,7 +33,7 @@
 }
 
 *, *::before, *::after { box-sizing: border-box; }
-html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+html { scroll-behavior: smooth; scroll-padding-top: 72px; -webkit-text-size-adjust: 100%; }
 body {
   margin: 0;
   background: var(--brick);
@@ -46,7 +45,7 @@ body {
 @media (min-width: 900px) { body { font-size: 1.3125rem; } } /* 21px */
 img { display: block; max-width: 100%; height: auto; }
 p { margin: 0 0 1em; }
-h1, h2 { margin: 0; font-weight: 300; }
+h1, h2, h3 { margin: 0; font-weight: 300; }
 sup { font-size: .62em; line-height: 0; }
 a { color: inherit; text-decoration-color: var(--flammeum); text-decoration-thickness: 1px; text-underline-offset: .22em; }
 a:hover { text-decoration-thickness: 2px; } /* flammeum fails AA as text color; keep it to the underline */
@@ -56,36 +55,44 @@ a:hover { text-decoration-thickness: 2px; } /* flammeum fails AA as text color; 
 .skip:focus { left: 8px; }
 .noscript { background: var(--travertine); text-align: center; padding: 2rem var(--gutter); margin: 0; }
 
-/* Labels and captions: tracked capitals (never below 13px) */
+/* Labels and captions: tracked capitals (13px minimum, cream at 70%+ opacity) */
 .caps, .label, .nav a, .lang, figcaption {
   text-transform: uppercase;
   letter-spacing: .2em;
   font-size: .875rem; /* 14px */
+  font-weight: 400;
   line-height: 1.5;
 }
 
-/* ---------- Top bar ---------- */
+/* ---------- Top bar: sticky, minimal ---------- */
 .topbar {
-  display: flex; flex-wrap: wrap-reverse; align-items: center; justify-content: center;
-  gap: .6rem 1.5rem;
-  padding: 14px var(--gutter) 6px;
-  color: var(--travertine);
+  position: sticky; top: 0; z-index: 20;
+  display: flex; align-items: center; justify-content: space-between; gap: 1rem;
+  padding: 10px var(--gutter);
+  background: var(--brick); color: var(--travertine);
+  border-bottom: 1px solid transparent;
+  transition: border-color .4s ease;
 }
-.nav { display: flex; flex-wrap: wrap; justify-content: center; gap: .25rem 1.25rem; }
-.nav a { text-decoration: none; opacity: .86; padding: .3rem 0; letter-spacing: .16em; font-size: .8125rem; }
+.topbar.stuck { border-bottom-color: rgba(246, 243, 236, .32); }
+.nav {
+  display: flex; gap: 1.1rem; flex: 1; min-width: 0;
+  overflow-x: auto; white-space: nowrap; scrollbar-width: none;
+  -webkit-mask-image: linear-gradient(to right, #000 85%, transparent); mask-image: linear-gradient(to right, #000 85%, transparent);
+}
+.nav::-webkit-scrollbar { display: none; }
+.nav a { text-decoration: none; opacity: .86; padding: .35rem 0; letter-spacing: .16em; font-size: .8125rem; } /* 13px */
 .nav a:hover { opacity: 1; text-decoration: underline; text-decoration-color: var(--flammeum); }
-.lang { display: flex; align-items: center; gap: .35rem; width: 100%; justify-content: flex-end; }
-.lang span { opacity: .5; }
+.lang { display: flex; align-items: center; gap: .35rem; flex: none; }
+.lang span { opacity: .7; }
 .lang button {
   font: inherit; letter-spacing: inherit; color: inherit; background: none; border: 0;
-  padding: .3rem .25rem; cursor: pointer; opacity: .78;
+  padding: .35rem .25rem; cursor: pointer; opacity: .78;
 }
 .lang button[aria-pressed="true"] { opacity: 1; text-decoration: underline; text-decoration-color: var(--flammeum); text-underline-offset: .3em; }
 .lang button:hover { opacity: 1; }
 @media (min-width: 760px) {
-  .topbar { flex-wrap: nowrap; justify-content: space-between; padding: 18px calc(var(--frame-inner) + 8px) 4px; }
-  .nav { justify-content: flex-start; gap: 1.75rem; }
-  .lang { width: auto; }
+  .topbar { padding: 12px calc(var(--frame-inner) + 8px); }
+  .nav { gap: 1.75rem; overflow: visible; -webkit-mask-image: none; mask-image: none; }
 }
 
 /* ---------- Sections and frame ---------- */
@@ -97,7 +104,6 @@ a:hover { text-decoration-thickness: 2px; } /* flammeum fails AA as text color; 
   .sheet { padding: calc(var(--frame-inner) + 112px) calc(var(--frame-inner) + 48px) calc(var(--frame-inner) + 120px); }
 }
 .sheet > * { max-width: var(--measure); margin-left: auto; margin-right: auto; }
-.sheet > .wide { max-width: var(--wide); }
 .sheet::before, .sheet::after { content: ""; position: absolute; pointer-events: none; }
 .sheet::before { inset: var(--frame-outer); border: 1.5px solid var(--frame); }
 .sheet::after { inset: var(--frame-inner); border: 1px solid var(--frame-soft); }
@@ -129,35 +135,32 @@ h2 {
 .head .aside { margin: 1rem 0 0; }
 .aside { font-style: italic; font-size: max(1.125rem, .9em); opacity: .88; }
 .paper .aside { color: var(--pine); opacity: 1; }
-.rule { border: 0; border-top: 1px solid var(--rule); margin: 5rem auto; max-width: 8rem; }
+/* Hairline rules span the full grid width, not a short centred dash */
+.sheet > .rule { max-width: 80rem; border: 0; border-top: 1px solid var(--rule); margin: 5rem auto; }
 
-/* ---------- Hero ---------- */
-.hero { text-align: center; padding-top: calc(var(--frame-inner) + 48px); }
+/* ---------- Hero: everything fits a 1440x800 viewport ---------- */
+.hero { text-align: center; padding-top: calc(var(--frame-inner) + 28px); padding-bottom: calc(var(--frame-inner) + 64px); }
 .names {
   font-family: var(--script);
   font-weight: 400;
-  font-size: clamp(3.6rem, 15vw, 7rem); /* never below ~22px mobile / 28px desktop */
+  font-size: clamp(3.6rem, min(15vw, 13vh), 7rem); /* never below ~22px mobile / 28px desktop */
   line-height: 1.15;
-  margin: 0 auto 2.75rem;
+  margin: 0 auto 1.25rem;
   max-width: none;
 }
-/* Ampersand at 65% of the names, centred on the names' x-height */
-.amp { font-size: .65em; line-height: 1; padding: 0 .12em; vertical-align: .015em; } /* ink centre = x-height centre (measured) */
+/* Ampersand at 65% of the names, ink centred on the names' x-height (measured) */
+.amp { font-size: .65em; line-height: 1; padding: 0 .12em; vertical-align: .015em; }
 @media (max-width: 759px) {
   /* Stacked: Kassia / & / Raphaël */
-  .names { line-height: 1.02; }
+  .names { line-height: 1.02; margin-bottom: 2rem; }
   .names .name, .names .amp { display: block; }
   .names .amp { padding: .12em 0 .02em; }
 }
 
 .print {
   position: relative; isolation: isolate;
-  width: min(100%, 45rem); /* +12.5% on desktop */
-  margin: 0 auto 4rem;
   padding: 16px;
-  transform: rotate(-2.4deg);
 }
-.hero .print { max-width: none; }
 .print::after { /* the cream paper; paints above the shadow, below the photo */
   content: ""; position: absolute; inset: 0; z-index: -1; background: var(--travertine);
 }
@@ -167,8 +170,17 @@ h2 {
   transform: translate(10px, 13px);
   filter: blur(3px);
 }
-.print--small { width: min(78%, 20rem); margin: 4.5rem auto 0; transform: rotate(2deg); }
 .print img { filter: grayscale(1) contrast(1.05); width: 100%; background: #8d8d8b; }
+/* Only the hero print is tilted. Width follows viewport height so the whole hero fits on screen. */
+.print--hero {
+  width: min(100%, 45rem, calc((100svh - 480px) * 1.6));
+  min-width: min(100%, 22rem);
+  margin: 0 auto 2.5rem;
+  transform: rotate(-2.4deg);
+}
+.hero .print { max-width: none; }
+.print--flat { width: min(100%, 17rem); }
+.grid > .print--flat, .print--flat { margin: 3.5rem 0 0; } /* straight, on the left margin */
 
 .caption > * { margin: 0 auto; }
 .caption .date { font-size: clamp(1.0625rem, 2.8vw, 1.375rem); letter-spacing: .28em; }
@@ -176,16 +188,14 @@ h2 {
   font-family: var(--script);
   font-size: clamp(1.75rem, 6vw, 3.1rem); /* ~40-45% of the names */
   line-height: 1.3;
-  margin: 1.1rem auto 1.5rem !important;
+  margin: .6rem auto .9rem !important;
 }
 .quiet { opacity: .8; font-size: .875rem; letter-spacing: .24em; } /* 14px */
 
 /* ---------- 12-column grid (desktop): header + image left, content right ---------- */
 .sheet > .grid { max-width: 80rem; }
 .grid > * { max-width: var(--measure); margin-left: auto; margin-right: auto; }
-@media (max-width: 1023px) {
-  .grid > .side { margin-top: 0; }
-}
+.grid > .full { max-width: none; margin-top: 3rem; }
 @media (min-width: 1024px) {
   .grid {
     display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: 2rem;
@@ -196,8 +206,9 @@ h2 {
   .grid > .side { grid-column: 1 / span 5; grid-row: 2; }
   .grid > .main { grid-column: 7 / -1; grid-row: 1 / span 2; max-width: 38rem; } /* ~65 characters at 21px */
   .grid > .main.days { max-width: none; }
-  .grid > .print--small { justify-self: center; width: min(70%, 20rem); margin-top: .5rem; }
-  .welcome .main { padding-top: .35rem; }
+  .grid > .full { grid-column: 1 / -1; grid-row: 3; margin-top: 4.5rem; }
+  .grid > .print--flat { justify-self: start; margin-top: .5rem; }
+  .welcome .main, .grid > .main:not(.days) { padding-top: .35rem; }
 }
 
 /* ---------- Welcome ---------- */
@@ -208,10 +219,15 @@ h2 {
 .plate { position: relative; margin: 0 0 2.25rem; }
 .plate img { width: 100%; }
 figcaption { margin-top: .75rem; color: var(--pine); }
-.sheet > .plate.wide { margin: 0 auto 3rem; }
-/* Villa line drawing, framed with a silver hairline on cream */
-.drawing img { padding: clamp(1.5rem, 5vw, 3.5rem) clamp(1rem, 4vw, 3rem); border: 1px solid var(--silver); background: none; }
-.plate.wide img { background: #8d8d8b; }
+/* Silver hairline frames on cream: the villa drawing and the lake photo match */
+.drawing img { padding: clamp(1.5rem, 5vw, 3.5rem) clamp(1rem, 4vw, 3rem); border: 1px solid var(--silver); }
+.framed img { padding: clamp(8px, 1.2vw, 14px); border: 1px solid var(--silver); }
+.grid > .full.plate { margin-bottom: 0; }
+
+/* ---------- Travel legs ---------- */
+.leg h3 { margin: 0 0 .5rem; }
+.leg p { margin: 0; }
+.leg + .leg { margin-top: 1.75rem; padding-top: 1.75rem; border-top: 1px solid var(--rule); }
 
 /* ---------- Weekend ---------- */
 .days { list-style: none; padding: 0; margin: 1rem 0 0; border-top: 1px solid var(--rule); }
@@ -234,6 +250,7 @@ figcaption { margin-top: .75rem; color: var(--pine); }
 
 /* ---------- Footer ---------- */
 .footer { text-align: center; }
+.footer-drawing { width: min(60%, 13rem); margin: 0 auto 2.25rem; opacity: .85; }
 .motto { font-style: italic; font-size: clamp(1.5rem, 4.5vw, 2.1rem); line-height: 1.3; margin-bottom: .6rem; }
 .gloss { font-style: italic; font-size: max(1.125rem, .9em); opacity: .86; margin-bottom: 2.5rem; }
 
@@ -244,4 +261,5 @@ figcaption { margin-top: .75rem; color: var(--pine); }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   .js .reveal { opacity: 1; transition: none; }
+  .topbar { transition: none; }
 }

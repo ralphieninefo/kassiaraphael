@@ -18,11 +18,18 @@ Type ordinary spaces in French; the non-breaking spaces before `: ; ! ?` and ins
 - `images/villa-line-drawing-ink.svg`: villa drawing in ink lines, for cream sections (used in the venue)
 - `images/villa-line-drawing-cream.svg`: the same drawing in cream lines, for brick sections
 
+## Icons
+`favicon.ico` (16/32), `images/icon-192.png`, `images/apple-touch-icon.png`: K&R monogram on brick.
+
 ## Fonts
 Neuton and Pinyon Script, self-hosted in `fonts/` (SIL Open Font License).
 To use a different script face, add its `@font-face` and change `--script` in `styles.css`.
 
 ## Before launch
+- **Email:** the site lists `hello@kassiaraphael.com`. Set up forwarding at your domain/DNS provider
+  (e.g. Cloudflare Email Routing or ImprovMX, both free) to raphaelkassia2027@gmail.com, then send a test.
+- **Link previews:** `images/og.jpg` (1200x630, hero crop). The `og:` tags use absolute
+  `https://kassiaraphael.com/` URLs, so previews only work once the domain is live.
 - Verify the train route, station name and times on Trenitalia (`travel_2` in `content.js`).
 - French copy reviewed by a native speaker.
 
