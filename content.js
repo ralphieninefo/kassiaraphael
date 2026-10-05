@@ -124,8 +124,8 @@ window.SITE_CONTENT = {
   weekend_label: { en: "Weekend", fr: "Week-end", fr_status: "needs native review" },
   weekend_title: { en: "Thursday to Sunday", fr: "Du jeudi au dimanche", fr_status: "needs native review" },
   toast_alt: {
-    en: "Raphaël opening a bottle of wine beside Kassia in a garden, black-and-white photograph",
-    fr: "Raphaël ouvre une bouteille de vin à côté de Kassia dans un jardin, photographie en noir et blanc",
+    en: "Raphaël holding Kassia from behind in front of the white glasshouse dome of the Conservatory of Flowers, black-and-white photograph",
+    fr: "Raphaël enlace Kassia devant le dôme de verre blanc du Conservatoire des fleurs, photographie en noir et blanc",
     fr_status: "needs native review"
   },
   toast_caption: {
