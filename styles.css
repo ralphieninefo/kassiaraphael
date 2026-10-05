@@ -10,11 +10,9 @@
   --travertine: #F6F3EC;
   --ink: #3E3E3C;
   --silver: #A9ABAD;
-  --flammeum: #D9692A;
-  --marigold: #D9A21B;
-  --terracotta: #B5543A;
-  --lake: #2F7F8F;
-  --pine: #3F5B45;
+  --ink-soft: #55534E;  /* captions and asides on cream */
+  --flammeum: #D9692A;  /* small marks on blue: markers, underlines, focus */
+  --terracotta: #B5543A; /* small marks on cream */
   --cream-rule: rgba(246, 243, 236, .32);
 
   /* Type */
@@ -66,7 +64,8 @@ body {
 }
 img { display: block; max-width: 100%; height: auto; }
 p { margin: 0 0 1em; }
-h1, h2, h3 { margin: 0; font-weight: 300; }
+h1, h2, h3 { margin: 0; font-weight: 300; text-wrap: balance; }
+p, li, figcaption { text-wrap: pretty; } /* no one-word last lines */
 a { color: inherit; text-decoration-color: var(--flammeum); text-decoration-thickness: 1px; text-underline-offset: .22em; }
 a:hover { text-decoration-thickness: 2px; } /* flammeum fails AA as text colour; keep it to the underline */
 :focus-visible { outline: 1px solid var(--flammeum); outline-offset: 4px; }
@@ -111,7 +110,7 @@ a:hover { text-decoration-thickness: 2px; } /* flammeum fails AA as text colour;
 }
 .lang button[aria-pressed="true"] { opacity: 1; text-decoration: underline; text-decoration-color: var(--flammeum); text-underline-offset: .3em; }
 .lang button:hover { opacity: 1; }
-@media (min-width: 760px) {
+@media (min-width: 900px) { /* six items fit in both languages from here; below, the row scrolls with a fade */
   .nav { gap: 1.75rem; overflow: visible; -webkit-mask-image: none; mask-image: none; }
 }
 @media (min-width: 1024px) {
@@ -128,6 +127,7 @@ a:hover { text-decoration-thickness: 2px; } /* flammeum fails AA as text colour;
 
 .albano {
   background: var(--albano); color: var(--travertine);
+  --marker: var(--flammeum);
   --frame: rgba(246, 243, 236, .62);
   --frame-soft: rgba(246, 243, 236, .38);
   --rule: var(--cream-rule);
@@ -135,6 +135,7 @@ a:hover { text-decoration-thickness: 2px; } /* flammeum fails AA as text colour;
 .paper {
   background: var(--travertine) var(--grain);
   color: var(--ink);
+  --marker: var(--terracotta);
   --frame: var(--silver);
   --frame-soft: color-mix(in srgb, var(--silver) 75%, var(--travertine));
   --rule: var(--silver);
@@ -143,11 +144,11 @@ a:hover { text-decoration-thickness: 2px; } /* flammeum fails AA as text colour;
 /* Section header, one pattern everywhere: dotted label, then a Neuton heading */
 .head { margin-bottom: var(--s-4); }
 .label { margin: 0 0 var(--s-2); display: flex; align-items: center; gap: .7rem; }
-.label::before { content: ""; width: 5px; height: 5px; background: var(--marker, var(--terracotta)); transform: rotate(45deg); flex: none; }
+.label::before { content: ""; width: 5px; height: 5px; background: var(--marker); transform: rotate(45deg); flex: none; }
 h2 { font-size: var(--h2); line-height: 1.1; letter-spacing: -.005em; }
 .head .aside { margin: var(--s-2) 0 0; }
 .aside { font-style: italic; font-size: max(1.125rem, .9em); opacity: .88; }
-.paper .aside { color: var(--pine); opacity: 1; }
+.paper .aside { color: var(--ink-soft); opacity: 1; }
 /* Hairlines span the full content box, never a short centred dash */
 .sheet > .rule { border: 0; border-top: 1px solid var(--rule); margin-block: var(--s-5); }
 
@@ -226,12 +227,33 @@ h2 { font-size: var(--h2); line-height: 1.1; letter-spacing: -.005em; }
 /* ---------- Plates: the place, in colour, in silver hairline frames ---------- */
 .plate { margin: 0; }
 .plate img { width: 100%; }
-figcaption { margin-top: .75rem; color: var(--pine); }
+figcaption { margin-top: .75rem; color: var(--ink-soft); }
 .drawing img { padding: clamp(1.5rem, 5vw, 3.5rem) clamp(1rem, 4vw, 3rem); border: 1px solid var(--silver); }
 .framed img { padding: clamp(8px, 1.2vw, 14px); border: 1px solid var(--silver); }
 
 /* ---------- Welcome ---------- */
 .lede { font-size: clamp(1.375rem, 1.2rem + .5vw, 1.5rem); line-height: 1.55; margin: 0; } /* 22-24px */
+
+/* ---------- Our story: four paragraphs at body size ---------- */
+.story .main p:last-child { margin-bottom: 0; }
+.story-print { max-width: 24rem; margin-bottom: var(--s-4); } /* phones: label, heading, photo, text */
+/* Text starts at its cap height, so the first line sits flush with the top of whatever it is set beside */
+.story .main > p:first-child { text-box: trim-start cap alphabetic; }
+@media (min-width: 1024px) {
+  /* Title row on its own; photo and text start together on the row below.
+     Same 12-column grid and named areas as every section: "head ." / "photo text". */
+  .story > .head { grid-area: 1 / left; }
+  .story > .side { grid-area: 2 / left; }
+  .story > .main { grid-area: 2 / right; }
+  .story-print { max-width: none; margin-bottom: 0; }
+}
+
+/* ---------- Why Italy: a label and one paragraph, no heading ---------- */
+.italy .label { margin-bottom: var(--s-2); }
+.italy .main { margin: 0; }
+@media (min-width: 1024px) {
+  .italy .label { margin: .45em 0 0; } /* sit on the paragraph's first line */
+}
 
 /* ---------- Venue: head | copy, drawing | photo pair, . | closing line ---------- */
 .venue .drawing { margin-bottom: var(--s-4); }
@@ -250,7 +272,7 @@ figcaption { margin-top: .75rem; color: var(--pine); }
 .days p:last-child { margin-bottom: var(--s-1); }
 .days .fri { padding: var(--s-4) 0 var(--s-3); border-top: 1px solid rgba(246, 243, 236, .7); border-bottom-color: rgba(246, 243, 236, .7); margin-top: -1px; }
 .days .fri > .caps { opacity: 1; }
-.days .fri > .caps::after { content: ""; display: inline-block; width: 5px; height: 5px; margin-left: .7rem; background: var(--marigold); transform: rotate(45deg); vertical-align: .15em; }
+.days .fri > .caps::after { content: ""; display: inline-block; width: 5px; height: 5px; margin-left: .7rem; background: var(--marker); transform: rotate(45deg); vertical-align: .15em; }
 .days .fri .when { font-size: 1.35em; line-height: 1.3; margin: 0 0 var(--s-1); }
 .days .fri div p:not(.when) { font-size: 1.08em; }
 .days .dress { border-bottom: 0; padding-top: var(--s-4); }
@@ -273,15 +295,21 @@ figcaption { margin-top: .75rem; color: var(--pine); }
 .email { font-size: 1.1em; word-break: break-word; }
 #questions .main p { margin: 0; }
 
-/* ---------- Footer: the serene hours ---------- */
-.footer { text-align: center; }
+/* ---------- Footer: the serene hours, on the same grid ---------- */
 .strip { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--col-gap); margin-bottom: var(--s-5); }
-.strip .print { --print-border: clamp(6px, 1vw, 14px); }
-.footer-drawing { width: min(60%, 13rem); margin: 0 auto var(--s-4); opacity: .85; }
+.shot { margin: 0; }
+.shot figcaption { margin-top: var(--s-3); color: var(--travertine); opacity: .8; text-align: center; text-wrap: balance; } /* same tracked caps as THE TOWER, cream on blue */
+.footer-drawing { width: min(100%, 18rem); margin: 0 0 var(--s-4); opacity: .85; }
+@media (min-width: 1024px) {
+  .colophon > .strip { grid-area: 1 / full; margin-bottom: var(--s-4); }
+  .colophon > .side  { grid-area: 2 / 1 / auto / span 3; width: 100%; } /* columns 1-3 */
+  .colophon > .main  { grid-area: 2 / right; }
+  .footer-drawing { margin: 0; }
+}
 .motto { font-style: italic; font-size: clamp(1.5rem, 1.2rem + 1.2vw, 2.1rem); line-height: 1.3; margin-bottom: var(--s-1); }
 .gloss { font-style: italic; font-size: max(1.125rem, .9em); opacity: .86; margin-bottom: var(--s-4); }
 .footer > p:last-child { margin-bottom: 0; }
-@media (max-width: 600px) { .strip { gap: .75rem; } .strip .print::before { transform: translate(5px, 6px); } }
+@media (max-width: 759px) { .strip { grid-template-columns: 1fr; row-gap: var(--s-5); } } /* phones: stacked, full width, same order */
 
 /* ---------- Motion: slow fade only ---------- */
 .js .reveal { opacity: 0; transition: opacity 1.4s ease-out; }

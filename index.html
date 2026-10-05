@@ -37,6 +37,7 @@
   <!-- Sticky, minimal. Nav labels are the section labels (same content keys). -->
   <header class="topbar">
     <nav class="nav" data-t-aria="nav_label">
+      <a href="#story" data-t="story_label"></a>
       <a href="#venue" data-t="venue_label"></a>
       <a href="#weekend" data-t="weekend_label"></a>
       <a href="#travel" data-t="travel_label"></a>
@@ -68,8 +69,8 @@
       </div>
     </section>
 
-    <!-- WELCOME + VENUE (cream). Desktop: 12-column grid, header (+ image) left, content right. -->
-    <section class="sheet paper" id="venue" style="--marker: var(--lake)">
+    <!-- WELCOME (cream). Every section below: 12-column grid, label + heading left, content right. -->
+    <section class="sheet paper" id="welcome">
       <div class="grid welcome reveal">
         <header class="head">
           <p class="label" data-t="welcome_label"></p>
@@ -78,6 +79,33 @@
         <div class="main">
           <p class="lede" data-t="welcome_text"></p>
         </div>
+      </div>
+    </section>
+
+    <!-- OUR STORY (albano) -->
+    <section class="sheet albano" id="story">
+      <div class="grid story reveal">
+        <header class="head">
+          <p class="label" data-t="story_label"></p>
+          <h2 data-t="story_title"></h2>
+        </header>
+        <figure class="side print story-print">
+          <img src="/images/story-graduation.jpg" width="768" height="960" loading="lazy" data-t-alt="story_photo_alt" alt="">
+        </figure>
+        <div class="main">
+          <p data-t="story_p1"></p>
+          <p data-t="story_p2"></p>
+          <p data-t="story_p3"></p>
+          <p data-t="story_p4"></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY ITALY + VENUE (cream) -->
+    <section class="sheet paper" id="venue">
+      <div class="grid italy reveal">
+        <p class="head label" data-t="italy_label"></p>
+        <p class="main" data-t="italy_text"></p>
       </div>
 
       <hr class="rule">
@@ -88,12 +116,11 @@
           <h2 data-t="venue_title"></h2>
         </header>
         <figure class="side plate drawing">
-          <img src="/images/villa-line-drawing-ink.svg" width="2000" height="893" data-t-alt="venue_img_alt" alt="">
+          <img src="/images/villa-line-drawing-ink.svg" width="2000" height="893" loading="lazy" data-t-alt="venue_img_alt" alt="">
           <figcaption data-t="venue_img_caption"></figcaption>
         </figure>
         <p class="copy" data-t="venue_text"></p>
-        <!-- The place in colour, people in black and white. Interim crops from screenshots:
-             replace with the originals at the same paths. -->
+        <!-- The place in colour, people in black and white. -->
         <div class="pair">
           <figure class="plate framed">
             <img src="/images/venue-tower.jpg" width="1000" height="1250" loading="lazy" data-t-alt="tower_alt" alt="">
@@ -109,7 +136,7 @@
     </section>
 
     <!-- WEEKEND + DRESS (albano) -->
-    <section class="sheet albano" id="weekend" style="--marker: var(--marigold)">
+    <section class="sheet albano" id="weekend">
       <div class="grid weekend reveal">
         <header class="head">
           <p class="label" data-t="weekend_label"></p>
@@ -127,13 +154,13 @@
           <li class="dress"><p class="caps" data-t="dress_label"></p><div><p data-t="dress_text"></p></div></li>
         </ol>
         <figure class="side print">
-          <img src="/images/weekend-toast.jpg" width="800" height="1000" loading="lazy" data-t-alt="toast_alt" alt="">
+          <img src="/images/weekend-toast.jpg" width="512" height="640" loading="lazy" data-t-alt="toast_alt" alt="">
         </figure>
       </div>
     </section>
 
     <!-- TRAVEL + STAY + QUESTIONS (cream) -->
-    <section class="sheet paper" id="travel" style="--marker: var(--terracotta)">
+    <section class="sheet paper" id="travel">
       <div class="grid travel reveal">
         <header class="head">
           <p class="label" data-t="travel_label"></p>
@@ -141,7 +168,6 @@
         </header>
         <div class="main">
           <div class="leg"><h3 class="caps" data-t="air_label"></h3><p data-t="air_text"></p></div>
-          <!-- TODO verify before launch: train route, station name and times on Trenitalia. -->
           <div class="leg"><h3 class="caps" data-t="train_label"></h3><p data-t="train_text"></p></div>
           <div class="leg"><h3 class="caps" data-t="villa_label"></h3><p data-t="villa_text"></p></div>
         </div>
@@ -179,15 +205,28 @@
 
   <!-- FOOTER (albano) -->
   <footer class="sheet albano footer">
-    <div class="strip">
-      <figure class="print"><img src="/images/serene-dip.jpg" width="900" height="900" loading="lazy" data-t-alt="serene_dip_alt" alt=""></figure>
-      <figure class="print"><img src="/images/serene-conservatory.jpg" width="900" height="900" loading="lazy" data-t-alt="serene_conservatory_alt" alt=""></figure>
-      <figure class="print"><img src="/images/serene-sculpture.jpg" width="900" height="900" loading="lazy" data-t-alt="serene_sculpture_alt" alt=""></figure>
+    <div class="grid colophon">
+      <div class="strip">
+        <figure class="shot">
+          <div class="print"><img src="/images/footer-jackson-hole.jpg" width="615" height="615" loading="lazy" data-t-alt="footer_left_alt" alt=""></div>
+          <figcaption data-t="footer_left_caption"></figcaption>
+        </figure>
+        <figure class="shot">
+          <div class="print"><img src="/images/footer-utah.jpg" width="700" height="700" loading="lazy" data-t-alt="footer_center_alt" alt=""></div>
+          <figcaption data-t="footer_center_caption"></figcaption>
+        </figure>
+        <figure class="shot">
+          <div class="print"><img src="/images/footer-dolomites.jpg" width="640" height="640" loading="lazy" data-t-alt="footer_right_alt" alt=""></div>
+          <figcaption data-t="footer_right_caption"></figcaption>
+        </figure>
+      </div>
+      <img class="side footer-drawing" src="/images/villa-line-drawing-cream.svg" width="2000" height="893" alt="" loading="lazy">
+      <div class="main">
+        <p class="motto" lang="la" data-t="footer_motto"></p>
+        <p class="gloss" data-t="footer_translation"></p>
+        <p class="caps quiet" data-t="footer_names"></p>
+      </div>
     </div>
-    <img class="footer-drawing" src="/images/villa-line-drawing-cream.svg" width="2000" height="893" alt="" loading="lazy">
-    <p class="motto" lang="la" data-t="footer_motto"></p>
-    <p class="gloss" data-t="footer_translation"></p>
-    <p class="caps quiet" data-t="footer_names"></p>
   </footer>
 
   <script src="/content.js"></script>

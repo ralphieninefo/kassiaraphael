@@ -2,7 +2,7 @@
  * ALL SITE COPY LIVES HERE. Edit text in this file only; index.html just has slots.
  *
  * Each entry: { en, fr, fr_status }. An entry with only "text" is the same in both languages.
- * Simple inline HTML is allowed (<em>, <strong>, <sup>, &nbsp;).
+ * Simple inline HTML is allowed (<em>, <strong>, <sup>, <br>, &nbsp;).
  *
  * French typography: type ordinary spaces. Before : ; ! ? », after «, and in "15 h",
  * script.js swaps them for the correct non-breaking spaces automatically.
@@ -11,6 +11,8 @@
  * "reviewed" once Raph's family has checked it.
  *
  * Section labels double as the nav labels, so the two always match.
+ *
+ * "fr_flag" marks phrases Raph's family should look at specifically (idioms, jokes, local references).
  */
 window.SITE_CONTENT = {
   meta_title: {
@@ -43,6 +45,49 @@ window.SITE_CONTENT = {
   welcome_text: {
     en: "We are getting married on Friday, October&nbsp;8, 2027, at a villa above Lake Albano, about forty minutes from Rome. A formal invitation with full details will follow. For now, we wanted you to have time to plan.",
     fr: "Nous nous marions le vendredi 8&nbsp;octobre 2027, dans une villa qui domine le lac Albano, à une quarantaine de minutes de Rome. Une invitation officielle, avec tous les détails, suivra. Nous voulions simplement vous laisser le temps de vous organiser.",
+    fr_status: "needs native review"
+  },
+
+  /* Our story */
+  story_label: { en: "Our story", fr: "Notre histoire", fr_status: "needs native review" },
+  story_title: {
+    en: "The long way around",
+    fr: "Par le chemin des écoliers",
+    fr_status: "needs native review",
+    fr_flag: "Idiom chosen for “the long way around” (taking the scenic, slow route). Does it land?"
+  },
+  story_photo_alt: {
+    en: "Raphaël kissing Kassia’s cheek at their graduation, both in caps and gowns, black-and-white photograph",
+    fr: "Raphaël embrasse Kassia sur la joue le jour de leur remise de diplômes, en toge et toque, photographie en noir et blanc",
+    fr_status: "needs native review"
+  },
+  story_p1: {
+    en: "We met in our first week at San Francisco State University and became fast friends. Then Raphaël left for a year in Paris, nine hours ahead, and we kept chatting.",
+    fr: "Nous nous sommes rencontrés dès notre première semaine à San Francisco State University et sommes très vite devenus amis. Puis Raphaël est parti un an à Paris, avec neuf heures d’avance, et nous avons continué à nous écrire.",
+    fr_status: "needs native review"
+  },
+  story_p2: {
+    en: "He spent the next summer on the American River, paddling the chase kayak and herding tipsy Sacramentans to the dock, and returned to school tanned and noticeably stronger. Kassia noticed. By spring of senior year he was a fixture at her all-girls house, the lone man at wine nights and rom&nbsp;coms. It took us until almost graduation to do something about it.",
+    fr: "L’été suivant, il l’a passé sur l’American River, à pagayer dans le kayak de sécurité et à ramener au ponton des habitants de Sacramento un peu éméchés, avant de rentrer à la fac bronzé et nettement plus costaud. Kassia l’a remarqué. Au printemps de notre dernière année, il était devenu un habitué de sa colocation entre filles, le seul homme des soirées vin et des comédies romantiques. Il nous a fallu attendre presque la remise des diplômes pour nous décider.",
+    fr_status: "needs native review",
+    fr_flag: "Check: “chase kayak” (kayak de sécurité), “tipsy Sacramentans” (habitants de Sacramento un peu éméchés), “returned to school tanned and noticeably stronger” (rentrer à la fac bronzé et nettement plus costaud), “all-girls house” (colocation entre filles), “rom coms” (comédies romantiques)."
+  },
+  story_p3: {
+    en: "Then came the firsts. Raphaël taught Kassia to drive and, during the pandemic, to ski: six months on the road, a month at a time from Jackson&nbsp;Hole to Taos, more than thirty days on skis in her first season. Chamonix, Zermatt, the&nbsp;Dolomites. Thailand, Istanbul, Cairo. France and Italy, roughly ten times. Somewhere in there, we grew up.",
+    fr: "Puis sont venues les premières fois. Raphaël a appris à Kassia à conduire et, pendant la pandémie, à skier : six mois sur la route, un mois à la fois, de Jackson&nbsp;Hole à Taos, plus de trente jours de ski dès sa première saison. Chamonix, Zermatt, les&nbsp;Dolomites. La Thaïlande, Istanbul, Le&nbsp;Caire. La France et l’Italie, une dizaine de fois. Quelque part en chemin, nous avons grandi.",
+    fr_status: "needs native review"
+  },
+  story_p4: {
+    en: "Ten years in, we are finally ready to get married. We hope you’ll be there.",
+    fr: "Dix ans plus tard, nous sommes enfin prêts à nous marier. Nous espérons que vous serez là.",
+    fr_status: "needs native review"
+  },
+
+  /* Why Italy (small block above the venue, no heading) */
+  italy_label: { en: "Why Italy", fr: "Pourquoi l’Italie", fr_status: "needs native review" },
+  italy_text: {
+    en: "Italy came to us in stages. Kassia’s aunt and cousins lived in Florence for several years, and she was spoiled with visits long before this. Then Raphaël’s parents settled a short drive from Lake Albano. We could not think of a better excuse to bring everyone we love.",
+    fr: "L’Italie est venue à nous par étapes. La tante et les cousins de Kassia ont vécu plusieurs années à Florence, et elle a eu la chance de leur rendre visite bien souvent, bien avant tout cela. Puis les parents de Raphaël se sont installés à quelques minutes du lac Albano. Nous ne pouvions rêver meilleur prétexte pour réunir tous ceux que nous aimons.",
     fr_status: "needs native review"
   },
 
@@ -124,7 +169,6 @@ window.SITE_CONTENT = {
   },
   train_label: { en: "By train", fr: "En train", fr_status: "needs native review" },
   train_text: {
-    _todo: "Verify before launch on Trenitalia: train route, station name, journey time.",
     en: "There’s no direct train from the airport. If you’re arriving early, we’d go into Rome first, stay a night or two, and take the regional train from Termini out to Castel Gandolfo station on Thursday. It’s about 45 minutes.",
     fr: "Il n’y a pas de train direct depuis l’aéroport. Si vous arrivez en avance, nous vous conseillons de passer d’abord par Rome, d’y rester une nuit ou deux, puis de prendre le jeudi le train régional de Termini jusqu’à la gare de Castel Gandolfo. Le trajet dure environ 45 minutes.",
     fr_status: "needs native review"
@@ -155,19 +199,30 @@ window.SITE_CONTENT = {
   email: { text: "raphaelkassia2027@gmail.com" },
 
   /* Footer: the serene hours */
-  serene_dip_alt: {
-    en: "Raphaël dipping Kassia on a garden lawn, black-and-white photograph",
-    fr: "Raphaël fait basculer Kassia sur la pelouse d’un jardin, photographie en noir et blanc",
+  footer_left_caption: {
+    en: "Jackson&nbsp;Hole<br>Photographed&nbsp;by&nbsp;Kassia",
+    fr: "Jackson&nbsp;Hole<br>Photo : Kassia",
     fr_status: "needs native review"
   },
-  serene_conservatory_alt: {
-    en: "Kassia and Raphaël in sunglasses in front of a white Victorian glasshouse, black-and-white photograph",
-    fr: "Kassia et Raphaël, lunettes de soleil, devant une serre victorienne blanche, photographie en noir et blanc",
+  footer_left_alt: {
+    en: "Raphaël skiing in Jackson Hole, looking back at the camera",
+    fr: "Raphaël à ski à Jackson Hole, se retournant vers l’objectif",
     fr_status: "needs native review"
   },
-  serene_sculpture_alt: {
-    en: "Kassia laughing in Raphaël’s arms beside a sculpture of a beaded crown, black-and-white photograph",
-    fr: "Kassia rit dans les bras de Raphaël à côté d’une sculpture en forme de couronne de perles, photographie en noir et blanc",
+  footer_center_caption: { en: "Bryce Canyon National&nbsp;Park", fr: "Parc national de Bryce&nbsp;Canyon", fr_status: "needs native review" },
+  footer_center_alt: {
+    en: "Kassia and Raphaël smiling on a winter hike among red rock cliffs in Bryce Canyon National Park, Utah",
+    fr: "Kassia et Raphaël souriants lors d’une randonnée hivernale parmi les falaises rouges du parc national de Bryce Canyon, dans l’Utah",
+    fr_status: "needs native review"
+  },
+  footer_right_caption: {
+    en: "The&nbsp;Dolomites<br>Photographed&nbsp;by&nbsp;Raphaël",
+    fr: "Les&nbsp;Dolomites<br>Photo : Raphaël",
+    fr_status: "needs native review"
+  },
+  footer_right_alt: {
+    en: "Kassia skiing below a frozen waterfall in the Dolomites, looking back",
+    fr: "Kassia à ski sous une cascade gelée dans les Dolomites, se retournant",
     fr_status: "needs native review"
   },
   footer_motto: { text: "Horas non numero nisi serenas" },

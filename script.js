@@ -49,6 +49,10 @@
       // Keep the reader's place: pin the first block below the sticky bar across the re-render.
       var barBottom = document.querySelector(".topbar").getBoundingClientRect().bottom;
       var anchor = [].filter.call(document.querySelectorAll("main [data-t], footer [data-t]"), function (n) {
+        // skip text inside sticky headings: they don't move with the page, so they can't hold the place
+        for (var el = n; el && el !== document.body; el = el.parentElement) {
+          if (getComputedStyle(el).position === "sticky") return false;
+        }
         return n.getBoundingClientRect().top >= barBottom;
       })[0];
       var before = anchor && anchor.getBoundingClientRect().top;
