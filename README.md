@@ -22,10 +22,10 @@ Rule: people in black and white, the place in colour.
 - `images/venue-tower.jpg`, `images/venue-aerial.jpg`: 4:5 colour, under the venue copy.
   **Interim crops from screenshots**: replace with the originals at the same paths (1000x1250 or larger)
 - `images/villa-line-drawing-ink.svg`: villa drawing in ink lines, for cream sections (used in the venue)
-- `images/villa-line-drawing-cream.svg`: the same drawing in cream lines, for brick sections
+- `images/villa-line-drawing-cream.svg`: the same drawing in cream lines, for Albano blue sections
 
 ## Icons
-`favicon.ico` (16/32), `images/icon-192.png`, `images/apple-touch-icon.png`: K&R monogram on brick.
+`favicon.ico` (16/32), `images/icon-192.png`, `images/apple-touch-icon.png`: K&R monogram on Albano blue.
 
 ## Layout
 One spacing scale (`--s-1` to `--s-6`, clamp-based) and one 12-column grid from 1024px, with named

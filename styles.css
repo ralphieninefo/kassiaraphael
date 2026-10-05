@@ -6,7 +6,7 @@
 
 :root {
   /* Palette */
-  --brick: #7A1F10;
+  --albano: #1E3440;  /* Lake Albano at depth */
   --travertine: #F6F3EC;
   --ink: #3E3E3C;
   --silver: #A9ABAD;
@@ -58,7 +58,7 @@
 html { scroll-behavior: smooth; scroll-padding-top: calc(var(--bar-h) + var(--s-3)); -webkit-text-size-adjust: 100%; }
 body {
   margin: 0;
-  background: var(--brick);
+  background: var(--albano);
   color: var(--ink);
   font: 400 var(--text)/1.65 var(--serif);
   font-kerning: normal;
@@ -90,7 +90,7 @@ a:hover { text-decoration-thickness: 2px; } /* flammeum fails AA as text colour;
   display: flex; align-items: center; justify-content: space-between; gap: var(--s-2);
   min-height: var(--bar-h);
   padding: 0 var(--pad-x);
-  background: var(--brick); color: var(--travertine);
+  background: var(--albano); color: var(--travertine);
   border-bottom: 1px solid transparent;
   transition: border-color .4s ease;
 }
@@ -126,8 +126,8 @@ a:hover { text-decoration-thickness: 2px; } /* flammeum fails AA as text colour;
 .sheet::before { inset: var(--frame-outer); border: 1.5px solid var(--frame); }
 .sheet::after { inset: var(--frame-inner); border: 1px solid var(--frame-soft); }
 
-.brick {
-  background: var(--brick); color: var(--travertine);
+.albano {
+  background: var(--albano); color: var(--travertine);
   --frame: rgba(246, 243, 236, .62);
   --frame-soft: rgba(246, 243, 236, .38);
   --rule: var(--cream-rule);
@@ -212,7 +212,7 @@ h2 { font-size: var(--h2); line-height: 1.1; letter-spacing: -.005em; }
 .print::after { content: ""; position: absolute; inset: 0; z-index: -1; background: var(--travertine); } /* the paper */
 .print::before { /* faux shadow: darker translucent sheet, offset down-right */
   content: ""; position: absolute; inset: 0; z-index: -1;
-  background: rgba(35, 6, 2, .42); transform: translate(10px, 13px); filter: blur(3px);
+  background: rgba(6, 14, 20, .5); transform: translate(10px, 13px); filter: blur(3px);
 }
 .print img { filter: grayscale(1) contrast(1.05); width: 100%; background: #8d8d8b; }
 /* Only the hero print tilts. Its width follows the height left in the viewport (16:10 photo). */
