@@ -11,6 +11,8 @@
  * "reviewed" once Raph's family has checked it.
  *
  * Section labels double as the nav labels, so the two always match.
+ *
+ * "fr_flag" marks phrases Raph's family should look at specifically (idioms, jokes, local references).
  */
 window.SITE_CONTENT = {
   meta_title: {
@@ -43,6 +45,45 @@ window.SITE_CONTENT = {
   welcome_text: {
     en: "We are getting married on Friday, October&nbsp;8, 2027, at a villa above Lake Albano, about forty minutes from Rome. A formal invitation with full details will follow. For now, we wanted you to have time to plan.",
     fr: "Nous nous marions le vendredi 8&nbsp;octobre 2027, dans une villa qui domine le lac Albano, à une quarantaine de minutes de Rome. Une invitation officielle, avec tous les détails, suivra. Nous voulions simplement vous laisser le temps de vous organiser.",
+    fr_status: "needs native review"
+  },
+
+  /* Our story */
+  story_label: { en: "Our story", fr: "Notre histoire", fr_status: "needs native review" },
+  story_title: {
+    en: "The long way around",
+    fr: "Par le chemin des écoliers",
+    fr_status: "needs native review",
+    fr_flag: "Idiom chosen for “the long way around” (taking the scenic, slow route). Does it land?"
+  },
+  story_lede: {
+    en: "Our friends would like it on the record that this took a while.",
+    fr: "Nos amis tiennent à ce que ce soit dit : cela a pris un certain temps.",
+    fr_status: "needs native review",
+    fr_flag: "The lede: should stay dry and a little cheeky."
+  },
+  story_p1: {
+    en: "We met in our first week at San Francisco State University and became fast friends, hanging out constantly years before it was anything more. Then Raphaël left for a year in Paris, and we kept chatting from nine hours apart.",
+    fr: "Nous nous sommes rencontrés dès notre première semaine à San Francisco State University et sommes très vite devenus amis, inséparables, des années avant qu’il se passe quoi que ce soit. Puis Raphaël est parti un an à Paris, et nous avons continué à nous écrire, à neuf heures de décalage.",
+    fr_status: "needs native review"
+  },
+  story_p2: {
+    en: "He spent the following summer on the American River, where he paddled the chase kayak at a raft rental and herded tipsy Sacramentans back to the dock on time, and came back tanned and noticeably stronger. Kassia noticed. By senior year she was choosing his company over almost any other plan, and he had become a fixture at her all-girls house, the lone man at wine nights, dinners, and rom coms. We did not do anything about it until nearly graduation.",
+    fr: "L’été suivant, il l’a passé sur l’American River, à pagayer dans le kayak de sécurité d’un loueur de rafts et à ramener à l’heure au ponton des habitants de Sacramento un peu éméchés. Il en est revenu bronzé et nettement plus costaud. Kassia l’a remarqué. En dernière année, elle préférait sa compagnie à presque tout autre programme, et il était devenu un habitué de sa colocation entre filles, le seul homme des soirées vin, des dîners et des comédies romantiques. Nous n’en avons rien fait avant la remise des diplômes, ou presque.",
+    fr_status: "needs native review",
+    fr_flag: "Check: “chase kayak” (kayak de sécurité), “tipsy Sacramentans” (habitants de Sacramento un peu éméchés), “tanned and noticeably stronger” (bronzé et nettement plus costaud), “all-girls house” (colocation entre filles), “rom coms” (comédies romantiques)."
+  },
+  story_p3: {
+    en: "This year marks ten years together, and we are finally ready to get married. We hope you’ll be there.",
+    fr: "Cette année, cela fait dix ans que nous sommes ensemble, et nous sommes enfin prêts à nous marier. Nous espérons que vous serez là.",
+    fr_status: "needs native review"
+  },
+
+  /* Why Italy (small block above the venue, no heading) */
+  italy_label: { en: "Why Italy", fr: "Pourquoi l’Italie", fr_status: "needs native review" },
+  italy_text: {
+    en: "Italy came to us in stages. Kassia’s aunt and cousins lived in Florence for several years, and she was spoiled with visits long before this. Then Raphaël’s parents settled a short drive from Lake Albano. We could not think of a better excuse to bring everyone we love.",
+    fr: "L’Italie est venue à nous par étapes. La tante et les cousins de Kassia ont vécu plusieurs années à Florence, et elle a eu la chance de leur rendre visite bien souvent, bien avant tout cela. Puis les parents de Raphaël se sont installés à quelques minutes du lac Albano. Nous ne pouvions rêver meilleur prétexte pour réunir tous ceux que nous aimons.",
     fr_status: "needs native review"
   },
 
@@ -124,7 +165,6 @@ window.SITE_CONTENT = {
   },
   train_label: { en: "By train", fr: "En train", fr_status: "needs native review" },
   train_text: {
-    _todo: "Verify before launch on Trenitalia: train route, station name, journey time.",
     en: "There’s no direct train from the airport. If you’re arriving early, we’d go into Rome first, stay a night or two, and take the regional train from Termini out to Castel Gandolfo station on Thursday. It’s about 45 minutes.",
     fr: "Il n’y a pas de train direct depuis l’aéroport. Si vous arrivez en avance, nous vous conseillons de passer d’abord par Rome, d’y rester une nuit ou deux, puis de prendre le jeudi le train régional de Termini jusqu’à la gare de Castel Gandolfo. Le trajet dure environ 45 minutes.",
     fr_status: "needs native review"
