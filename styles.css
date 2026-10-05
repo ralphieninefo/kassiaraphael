@@ -236,11 +236,16 @@ figcaption { margin-top: .75rem; color: var(--ink-soft); }
 
 /* ---------- Our story: four paragraphs at body size ---------- */
 .story .main p:last-child { margin-bottom: 0; }
-.story-print { max-width: 24rem; margin-top: var(--s-5); }
+.story-print { max-width: 24rem; margin-bottom: var(--s-4); } /* phones: label, heading, photo, text */
+/* Text starts at its cap height, so the first line sits flush with the top of whatever it is set beside */
+.story .main > p:first-child { text-box: trim-start cap alphabetic; }
 @media (min-width: 1024px) {
-  /* The heading stays in view while the longer story scrolls past it */
-  .story .head { position: sticky; top: calc(var(--bar-h) + var(--s-4)); }
-  .story-print { max-width: none; margin-top: 0; }
+  /* Title row on its own; photo and text start together on the row below.
+     Same 12-column grid and named areas as every section: "head ." / "photo text". */
+  .story > .head { grid-area: 1 / left; }
+  .story > .side { grid-area: 2 / left; }
+  .story > .main { grid-area: 2 / right; }
+  .story-print { max-width: none; margin-bottom: 0; }
 }
 
 /* ---------- Why Italy: a label and one paragraph, no heading ---------- */
