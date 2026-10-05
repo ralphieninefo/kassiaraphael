@@ -114,11 +114,6 @@ window.SITE_CONTENT = {
   tower_caption: { en: "The tower", fr: "La tour", fr_status: "needs native review" },
   aerial_alt: { en: "Villa del Cardinale above Lake Albano", fr: "La Villa del Cardinale au-dessus du lac Albano", fr_status: "needs native review" },
   aerial_caption: { en: "Above Lake Albano", fr: "Au-dessus du lac Albano", fr_status: "needs native review" },
-  band_alt: {
-    en: "Lake Albano from the villa’s terrace, over its terracotta roofs",
-    fr: "Le lac Albano vu de la terrasse de la villa, au-dessus de ses toits de tuiles",
-    fr_status: "needs native review"
-  },
   venue_rest: {
     en: "We’ll show you the rest in person.",
     fr: "Le reste, nous vous le montrerons sur place.",
@@ -176,10 +171,11 @@ window.SITE_CONTENT = {
   },
   lake_img_caption: { text: "Lago Albano" },
   map_alt: {
-    en: "Line map: Rome, Fiumicino and Ciampino airports, the train line to Castel Gandolfo, Lake Albano and the villa near Rocca di Papa",
-    fr: "Carte au trait : Rome, les aéroports de Fiumicino et de Ciampino, la ligne de train vers Castel Gandolfo, le lac Albano et la villa près de Rocca di Papa",
+    en: "Line map: the coast at Fiumicino, Rome, Fiumicino and Ciampino airports, the train from Termini to Castel Gandolfo, Lake Albano and the villa",
+    fr: "Carte au trait : la côte à Fiumicino, Rome, les aéroports de Fiumicino et de Ciampino, le train de Termini à Castel Gandolfo, le lac Albano et la villa",
     fr_status: "needs native review"
   },
+  map_rome: { text: "Roma" },
   map_caption: { en: "Dashed line: the train from Termini<br>◆&nbsp;Villa del&nbsp;Cardinale", fr: "En pointillé : le train depuis Termini<br>◆&nbsp;Villa del&nbsp;Cardinale", fr_status: "needs native review" },
   air_label: { en: "By air", fr: "En avion", fr_status: "needs native review" },
   air_text: {

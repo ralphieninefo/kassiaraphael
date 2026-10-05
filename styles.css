@@ -18,8 +18,8 @@
   /* Type */
   --serif: "Neuton", "Iowan Old Style", Georgia, serif;
   --script: "Pinyon Script", "Snell Roundhand", cursive; /* swap the script face here only */
-  --text: 1.125rem;           /* 18px body */
-  --measure-text: 24em;       /* ~65 characters of Neuton per line (measured) */
+  --text: clamp(1.125rem, .971rem + .24vw, 1.1875rem); /* 18px phones, 19px at 1440 */
+  --measure-text: 24em;       /* single column only: ~65 characters of Neuton per line */
   --caps: .875rem;            /* 14px tracked labels */
   --caps-small: .8125rem;     /* 13px: nav (minimum) */
   --h2: clamp(2.125rem, 1.4rem + 1.9vw, 3rem); /* 34px phones, 48px at 1440 */
@@ -30,7 +30,7 @@
   --s-3: 1.5rem;
   --s-4: clamp(2rem, 1.5rem + 1.25vw, 2.75rem);  /* heading -> body, row gaps */
   --s-5: clamp(3rem, 2rem + 2.5vw, 4.5rem);      /* between blocks inside a section */
-  --s-6: clamp(4rem, 2.5rem + 4.5vw, 7rem);      /* section padding, top = bottom */
+  --s-6: clamp(3.5rem, 1.2rem + 4.5vw, 5.25rem); /* section padding with the frame: 120px at 1440, top = bottom */
 
   /* Frame and content box */
   --frame-outer: 28px;
@@ -58,7 +58,7 @@ body {
   margin: 0;
   background: var(--albano);
   color: var(--ink);
-  font: 400 var(--text)/1.75 var(--serif);
+  font: 400 var(--text)/1.6 var(--serif);
   font-kerning: normal;
   overflow-x: clip;
 }
@@ -147,8 +147,8 @@ a:hover { text-decoration-thickness: 2px; }
 .label { margin: 0 0 var(--s-2); display: flex; align-items: center; gap: .7rem; }
 .label::before { content: ""; width: 5px; height: 5px; background: var(--marker); transform: rotate(45deg); flex: none; }
 .label .num::after { content: "·"; margin-left: .7rem; } /* "I · Welcome" */
-/* Body columns never run past ~65 characters */
-.main > p, .copy, .leg p, .days div p, .rest { max-width: var(--measure-text); }
+/* Single column: body never runs past ~65 characters. From 1024px it fills columns 7-12. */
+@media (max-width: 1023px) { .main > p, .copy, .leg p, .days div p { max-width: var(--measure-text); } }
 h2 { font-size: var(--h2); line-height: 1.1; letter-spacing: -.005em; }
 .head .aside { margin: var(--s-2) 0 0; }
 .aside { font-style: italic; font-size: max(1.125rem, .9em); opacity: .88; }
@@ -156,25 +156,20 @@ h2 { font-size: var(--h2); line-height: 1.1; letter-spacing: -.005em; }
 /* Hairlines span the full content box, never a short centred dash */
 .sheet > .rule { border: 0; border-top: 1px solid var(--rule); margin-block: var(--s-5); }
 
-/* ---------- 12-column grid (1024px+): header + image left, content right ----------
-   Named lines give named areas: `left` (columns 1-5) and `right` (7-12, or 6-12 below 1280px). */
+/* ---------- 12-column grid (1024px+), the same in every two-column section ----------
+   `left` = columns 1-5, column 6 is the gutter, `right` = columns 7-12, so right-hand text
+   starts at the same x everywhere. Short columns are top-aligned with their neighbours. */
 @media (min-width: 1024px) {
   .grid {
     display: grid; column-gap: var(--col-gap); row-gap: var(--s-4); align-items: start;
     grid-template-rows: auto 1fr; /* a tall right column grows row 2, never pushes the image down */
-    grid-template-columns: [full-start left-start] repeat(5, minmax(0, 1fr)) [left-end right-start] repeat(7, minmax(0, 1fr)) [right-end full-end];
+    grid-template-columns: [full-start left-start] repeat(5, minmax(0, 1fr)) [left-end] minmax(0, 1fr) [right-start] repeat(6, minmax(0, 1fr)) [right-end full-end];
   }
   .grid > * { margin: 0; }
   .grid > .head  { grid-area: 1 / left; }
   .grid > .side  { grid-area: 2 / left; }
   .grid > .main  { grid-area: 1 / right / span 2; }
-  .grid > .copy  { grid-area: 1 / right; }
-  .grid > .pair  { grid-area: 2 / right; }
-  .grid > .rest  { grid-area: 3 / right; }
   .grid > .strip { grid-column: full; }
-}
-@media (min-width: 1280px) {
-  .grid { grid-template-columns: [full-start left-start] repeat(5, minmax(0, 1fr)) [left-end] minmax(0, 1fr) [right-start] repeat(6, minmax(0, 1fr)) [right-end full-end]; }
 }
 
 /* ---------- Hero: the whole stack fits min(viewport, max) ---------- */
@@ -231,19 +226,29 @@ h2 { font-size: var(--h2); line-height: 1.1; letter-spacing: -.005em; }
 /* ---------- Plates: the place, in colour, in silver hairline frames ---------- */
 .plate { margin: 0; }
 .plate img { width: 100%; }
-figcaption { margin-top: .75rem; color: var(--ink-soft); }
-.drawing img { padding: clamp(.6rem, 1.2vw, 1rem); border: 1px solid var(--silver); } /* the drawing fills its frame, even margin all round */
-.framed img { padding: clamp(8px, 1.2vw, 14px); border: 1px solid var(--silver); }
-/* Two drawings of the same map: a compact one for phones, the full one from 760px.
-   Label size is in map units, set per layout so labels land at ~11-13px on screen. */
-.map.map--wide { display: none; }
-.map--narrow text { font-size: 11.5px; }
-/* Full map where it has room (single column 760-1023px, and 1280px+); compact one in the narrow 1024-1279px column */
-@media (min-width: 760px) and (max-width: 1023px), (min-width: 1280px) { .map.map--wide { display: block; } .map.map--narrow { display: none; } }
-.map text { font-family: var(--serif); letter-spacing: .16em; }
-.map--wide text { font-size: 11px; }   /* single column, map up to 608px wide */
-@media (min-width: 1280px) { .map--wide text { font-size: 13.5px; } } /* left column, 450-485px */
-.map { display: block; width: 100%; height: auto; padding: clamp(1rem, 2.5vw, 2rem); border: 1px solid var(--silver); color: var(--ink); overflow: visible; }
+figcaption { margin-top: .75rem; color: var(--ink-soft); text-align: center; text-wrap: balance; } /* centred under its frame, site-wide */
+.frame { border: 1px solid var(--silver); padding: clamp(8px, 1.2vw, 14px); }
+.drawing .frame { padding: clamp(1rem, 2.2vw, 2rem); } /* the drawing fills its plate, the same margin on all four sides */
+
+/* Map: line drawing in the villa plate's style. Labels are HTML, placed in % of the drawing. */
+.map { padding: clamp(1rem, 2.5vw, 2rem); border: 1px solid var(--silver); color: var(--ink); }
+.map-inner { position: relative; }
+.map-art { display: block; width: 100%; height: auto; overflow: hidden; }
+.pin { position: absolute; white-space: nowrap; font-size: var(--caps-small); letter-spacing: .18em; text-transform: uppercase; line-height: 1; padding: .2em .3em; background: var(--travertine); }
+.pin--right { transform: translate(.3rem, -50%); }
+.pin--left  { transform: translate(calc(-100% - .35rem), -50%); }
+.pin--fco   { transform: translate(.25rem, calc(-100% - .25rem)); }
+.pin--cia   { transform: translate(.55rem, -50%); }
+.pin-br { display: none; }
+.pin--lake  { text-transform: none; letter-spacing: .02em; font-style: italic; font-size: .875rem; transform: translate(-50%, .15rem); }
+.pin--sea   { text-transform: none; letter-spacing: .04em; font-style: italic; font-size: .875rem; transform: translateY(-100%); opacity: .8; }
+@media (max-width: 759px), (min-width: 1024px) and (max-width: 1279px) { /* where the map is narrow */
+  .map .pin-long { display: none; }
+  .map .pin--cg { line-height: 1.25; text-align: right; transform: translate(calc(-100% + .3rem), .4rem); }
+  .map .pin-br { display: inline; }
+  .map .pin--cia { transform: translate(calc(-100% - .4rem), -50%); }
+  .map .pin--lake { line-height: 1.2; transform: translate(.75rem, -50%); }
+}
 
 /* ---------- Welcome ---------- */
 .lede { font-size: clamp(1.375rem, 1.2rem + .5vw, 1.5rem); line-height: 1.55; margin: 0; } /* 22-24px */
@@ -268,7 +273,7 @@ figcaption { margin-top: .75rem; color: var(--ink-soft); }
   .story > .head { grid-area: 1 / left; }
   .story > .side { grid-area: 2 / left; }
   .story > .main { grid-area: 2 / right; }
-  .story-shot { max-width: var(--measure-text); margin-bottom: 0; } /* photo and text the same width */
+  .story-shot { max-width: none; margin-bottom: 0; } /* photo fills columns 1-5, text 7-12 */
 }
 
 /* ---------- Why Italy: a centred breather, label above, ~55 characters per line ---------- */
@@ -276,22 +281,31 @@ figcaption { margin-top: .75rem; color: var(--ink-soft); }
 .italy .label { justify-content: center; margin-bottom: var(--s-3); }
 .italy-text { max-width: 22.5em; margin: 0 auto; text-wrap: balance; }
 
-/* ---------- Venue: head | copy, drawing | the tower with the closing line beside it ---------- */
+/* ---------- Venue: head | copy, then drawing | tower + aerial, then the motto ---------- */
 .venue .drawing { margin-bottom: var(--s-4); }
-/* Venue: title row, then the drawing beside the text (tops level), then the tower under the text */
-.venue .tower { margin: var(--s-4) 0 0; max-width: var(--measure-text); }
+.pair { display: grid; grid-template-columns: 1fr 1fr; column-gap: var(--col-gap); }
+.pair .frame img { aspect-ratio: 4 / 5; object-fit: cover; }
+.pair .rest { grid-column: 1 / -1; }
+.rest { margin: var(--s-3) 0 0; font-size: .9375rem; text-align: center; } /* small italic line under the photos */
 @media (min-width: 1024px) {
-  .venue > .head  { grid-area: 1 / left; }
-  .venue > .side  { grid-area: 2 / left; margin: 0; }
-  .venue > .copy  { grid-area: 2 / right; margin: 0; text-box: trim-start cap alphabetic; }
-  .venue > .tower { grid-area: 3 / right; margin: 0; }
+  /* Rows: 1 head | copy, 2 the three frames, 3 their captions, 4 the closing line.
+     Drawing and pair share rows 2-3 (subgrid), so all three frames have level tops and bottoms;
+     the drawing sets the height and the photos crop to it. */
+  .venue { row-gap: 0; grid-template-rows: auto auto auto auto; }
+  .venue > .head { grid-area: 1 / left; }
+  .venue > .copy { grid-area: 1 / right; margin-bottom: var(--s-4); } /* row 1 -> frames: the same gap as heading -> body */
+  .venue > .drawing { grid-area: 2 / left / span 2; margin: 0; display: grid; grid-template-rows: subgrid; }
+  .venue > .pair { grid-area: 2 / right / span 3; grid-template-rows: subgrid; }
+  .pair .plate { grid-row: span 2; display: grid; grid-template-rows: subgrid; }
+  .pair .frame { position: relative; }
+  .pair .frame img { position: absolute; inset: clamp(8px, 1.2vw, 14px); width: calc(100% - 2 * clamp(8px, 1.2vw, 14px)); height: calc(100% - 2 * clamp(8px, 1.2vw, 14px)); aspect-ratio: auto; }
+  .pair .plate:first-child img { object-position: 50% 30%; } /* the tower to the doorway */
+  .pair .plate:nth-child(2) img { object-position: 50% 85%; } /* lake above the roofs */
 }
-/* Closing line, small and centred under the lake band */
-.band-note { margin: 0 auto var(--s-6); font-style: italic; font-size: .9375rem; color: var(--ink-soft); text-align: center; }
-
-/* ---------- Lake band: full bleed, between the venue and the motto ---------- */
-.band { margin: 0; line-height: 0; background: var(--albano); }
-.band img { width: 100%; height: clamp(16rem, 65vh, 46rem); object-fit: cover; object-position: 50% 60%; }
+/* Closing beat: the sundial's motto, large and centred, translation beneath */
+.motto-block { text-align: center; }
+.motto { font-style: italic; font-weight: 400; font-size: clamp(2.75rem, 1rem + 5.2vw, 5.75rem); /* the largest text after the names */ line-height: 1.15; margin: 0 auto var(--s-3); text-wrap: balance; }
+.gloss { font-style: italic; font-size: max(1.125rem, .9em); color: var(--ink-soft); margin: 0 auto; }
 
 /* ---------- Weekend ---------- */
 .days { list-style: none; padding: 0; margin: 0; border-top: 1px solid var(--rule); }
@@ -326,7 +340,7 @@ figcaption { margin-top: .75rem; color: var(--ink-soft); }
 /* ---------- Footer: the serene hours, on the same grid ---------- */
 .strip { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--col-gap); margin-bottom: var(--s-5); }
 .shot { margin: 0; }
-.shot figcaption { margin-top: var(--s-3); color: var(--travertine); opacity: .8; text-align: center; text-wrap: balance; } /* same tracked caps as THE TOWER, cream on blue */
+.shot figcaption { margin-top: var(--s-3); color: var(--travertine); opacity: .8; } /* same tracked caps as THE TOWER, cream on blue */
 @media (min-width: 1024px) { .colophon > .strip { grid-area: 1 / full; margin-bottom: var(--s-4); } }
 /* Sign-off: drawing, names and date, colophon, all centred */
 .signoff { text-align: center; }
@@ -335,10 +349,6 @@ figcaption { margin-top: .75rem; color: var(--ink-soft); }
 .signoff .quiet { margin: 0 0 var(--s-5); }
 .colophon-line { margin: 0; color: var(--silver); font-size: var(--caps-small); letter-spacing: .2em; text-transform: uppercase; }
 
-/* ---------- Motto interlude (cream band): large Neuton italic, translation beneath ---------- */
-.interlude { padding-block: calc(var(--frame-inner) + var(--s-4)) calc(var(--frame-inner) + var(--s-6) * 1.35); text-align: center; }
-.motto { font-style: italic; font-weight: 400; font-size: clamp(2.75rem, 1rem + 5.2vw, 5.75rem); /* the largest text after the names */ line-height: 1.15; margin: 0 auto var(--s-3); text-wrap: balance; }
-.gloss { font-style: italic; font-size: max(1.125rem, .9em); color: var(--ink-soft); margin: 0 auto; }
 @media (max-width: 759px) { .strip { grid-template-columns: 1fr; row-gap: var(--s-5); } } /* phones: stacked, full width, same order */
 
 /* ---------- Motion: slow fade only ---------- */

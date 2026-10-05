@@ -117,30 +117,28 @@
           <p class="label"><span class="num">IV</span><span data-t="venue_label"></span></p>
           <h2 data-t="venue_title"></h2>
         </header>
+        <p class="main copy" data-t="venue_text"></p>
+        <!-- Row 2: three frames with level tops and bottoms. The place in colour, people in black and white. -->
         <figure class="side plate drawing">
-          <img src="/images/villa-line-drawing-ink.svg" width="2000" height="893" loading="lazy" data-t-alt="venue_img_alt" alt="">
+          <div class="frame"><img src="/images/villa-line-drawing-ink.svg" width="1972" height="865" loading="lazy" data-t-alt="venue_img_alt" alt=""></div>
           <figcaption data-t="venue_img_caption"></figcaption>
         </figure>
-        <p class="copy" data-t="venue_text"></p>
-        <!-- The place in colour, people in black and white. -->
-        <!-- The tower under the text; the aerial view is the full-width band below -->
-        <figure class="plate framed tower">
-          <img src="/images/venue-tower.jpg" width="1000" height="1250" loading="lazy" data-t-alt="tower_alt" alt="">
-          <figcaption data-t="tower_caption"></figcaption>
-        </figure>
+        <div class="pair">
+          <figure class="plate framed">
+            <div class="frame"><img src="/images/venue-tower.jpg" width="1000" height="1250" loading="lazy" data-t-alt="tower_alt" alt=""></div>
+            <figcaption data-t="tower_caption"></figcaption>
+          </figure>
+          <figure class="plate framed">
+            <div class="frame"><img src="/images/venue-aerial.jpg" width="1000" height="1250" loading="lazy" data-t-alt="aerial_alt" alt=""></div>
+            <figcaption data-t="aerial_caption"></figcaption>
+          </figure>
+          <p class="aside rest" data-t="venue_rest"></p>
+        </div>
       </div>
-    </section>
 
-    <!-- LAKE BAND: edge to edge, no frame, no text over it -->
-    <div class="band">
-      <img src="/images/lake-band.jpg" srcset="/images/lake-band-1440.jpg 1440w, /images/lake-band.jpg 2880w" sizes="100vw"
-           width="2880" height="1171" loading="lazy" data-t-alt="band_alt" alt="">
-    </div>
-
-    <!-- MOTTO INTERLUDE (cream), opened by the venue's closing line, set small under the band -->
-    <section class="sheet paper interlude" aria-label="Horas non numero nisi serenas">
-      <p class="band-note" data-t="venue_rest"></p>
-      <div class="motto-block reveal">
+      <!-- Closing beat: hairline, then the sundial's motto -->
+      <hr class="rule">
+      <div class="motto-block reveal" aria-label="Horas non numero nisi serenas">
         <p class="motto" lang="la" data-t="footer_motto"></p>
         <p class="gloss" data-t="footer_translation"></p>
       </div>
@@ -182,39 +180,27 @@
           <div class="leg"><h3 class="caps" data-t="train_label"></h3><p data-t="train_text"></p></div>
           <div class="leg"><h3 class="caps" data-t="villa_label"></h3><p data-t="villa_text"></p></div>
         </div>
-        <!-- Line map (inline so it uses Neuton): Rome, the airports, the train and the lake.
-             Placed from real coordinates; the villa marker is approximate. -->
-        <figure class="side plate drawing map-plate">
-          <svg class="map map--wide" viewBox="22 0 480 250" role="img" data-t-aria="map_alt" fill="none" stroke="currentColor" stroke-width="1">
-          <circle cx="237.1" cy="48.1" r="14"/><circle cx="237.1" cy="48.1" r="1.8" fill="currentColor"/>
-          <path d="M237.1 48.1 L345.5 197.7" stroke-dasharray="3 3"/>
-          <ellipse cx="356.1" cy="196.1" rx="15.4" ry="10.1" transform="rotate(-35 356.1 196.1)"/>
-          <path d="M41.9 146.1 h10 M46.9 141.1 v10"/><path d="M300.3 147.0 h10 M305.3 142.0 v10"/>
-          <circle cx="345.5" cy="197.7" r="1.8" fill="currentColor"/><circle cx="389.2" cy="184.2" r="1.8" fill="currentColor"/>
-          <path d="M369.2 184.3 l3.5 4 l-3.5 4 l-3.5 -4 z" fill="currentColor" stroke="none"/>
-          <g class="map-labels" stroke="none" fill="currentColor">
-            <text x="258.1" y="48.1" dominant-baseline="middle">ROMA</text>
-            <text x="46.9" y="168.1" text-anchor="middle">FIUMICINO</text>
-            <text x="294.3" y="147.0" dominant-baseline="middle" text-anchor="end">CIAMPINO</text>
-            <text x="335.5" y="199.7" dominant-baseline="middle" text-anchor="end">CASTEL GANDOLFO</text>
-            <text x="397.2" y="184.2" dominant-baseline="middle">ROCCA DI PAPA</text>
-          </g>
-        </svg>
-        <svg class="map map--narrow" viewBox="0 0 300 166" role="img" data-t-aria="map_alt" fill="none" stroke="currentColor" stroke-width="1">
-          <circle cx="148.2" cy="30.1" r="10"/><circle cx="148.2" cy="30.1" r="1.6" fill="currentColor"/>
-          <path d="M148.2 30.1 L215.9 123.6" stroke-dasharray="3 3"/>
-          <ellipse cx="222.6" cy="122.6" rx="9.6" ry="6.3" transform="rotate(-35 222.6 122.6)"/>
-          <path d="M25.3 91.3 h8 M29.3 87.3 v8"/><path d="M186.8 91.9 h8 M190.8 87.9 v8"/>
-          <circle cx="215.9" cy="123.6" r="1.6" fill="currentColor"/><circle cx="243.2" cy="115.1" r="1.6" fill="currentColor"/>
-          <path d="M230.8 114.2 l3 3.5 l-3 3.5 l-3 -3.5 z" fill="currentColor" stroke="none"/>
-          <g class="map-labels" stroke="none" fill="currentColor">
-            <text x="163.2" y="30.1" dominant-baseline="middle">ROMA</text>
-            <text x="10" y="109.8">FIUMICINO</text>
-            <text x="181.8" y="91.9" dominant-baseline="middle" text-anchor="end">CIAMPINO</text>
-            <text x="206.9" y="124.6" dominant-baseline="middle" text-anchor="end">CASTEL GANDOLFO</text>
-            <text x="294" y="145.1" text-anchor="end">ROCCA DI PAPA</text>
-          </g>
-        </svg>
+        <!-- Line map. Coast: Natural Earth 1:10m. Places plotted from real latitude/longitude; Lago Albano: an ellipse fitted to
+             its shoreline on a reference map (3.5 x 2.1 km, long axis NW-SE) at its published centre; the villa marker is approximate. -->
+        <figure class="side plate map-plate">
+          <div class="map" role="img" data-t-aria="map_alt"><div class="map-inner">
+            <svg class="map-art" viewBox="0 0 480 332" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M230.9 364.1 L157.2 296.9 L147.1 287.3 L126.7 282.5 L116.6 272.9 L111.5 271.3 L88.6 266.5 L83.5 264.9 L73.4 250.5 L68.3 234.5 L65.7 215.3 L63.2 196.1 L60.7 178.5 L53 159.3 L35.2 128.9 L20 104.9 L-48.6 52.1 L-56.2 47.3 L-63.9 39.3 L-66.4 28.1 L-71.5 20.1 L-89.3 18.5 L-96.9 13.7 L-107.1 4.1 L-117.2 -7.1" vector-effect="non-scaling-stroke"/>
+              <circle cx="269.6" cy="108.1" r="89.5" stroke-width=".75" stroke-dasharray="1 3.5" opacity=".55" vector-effect="non-scaling-stroke"/>
+              <circle cx="269.6" cy="108.1" r="18.7" vector-effect="non-scaling-stroke"/>
+              <path d="M269.2 108 L374.3 253.5" stroke-dasharray="3.5 3.5" vector-effect="non-scaling-stroke"/>
+              <ellipse class="lake" cx="385.1" cy="251.6" rx="14.8" ry="9.1" transform="rotate(-140.6 385.1 251.6)" vector-effect="non-scaling-stroke"/>
+              <path d="M78.9 203.4 h10 M83.9 198.4 v10 M330.2 204.3 h10 M335.2 199.3 v10" vector-effect="non-scaling-stroke"/>
+              <circle cx="374.3" cy="253.5" r="2" fill="currentColor" stroke="none"/>
+              <path d="M396 241.4 l4 4.5 l-4 4.5 l-4 -4.5 z" fill="currentColor" stroke="none"/>
+            </svg>
+            <span class="pin pin--right" style="left:60.075229782459076%;top:32.56%"><span data-t="map_rome"></span></span>
+            <span class="pin pin--fco" style="left:17.48%;top:61.27%"><span class="pin-long">Fiumicino&nbsp;·&nbsp;</span>FCO</span>
+            <span class="pin pin--right pin--cia" style="left:69.83%;top:61.54%"><span class="pin-long">Ciampino&nbsp;·&nbsp;</span>CIA</span>
+            <span class="pin pin--left pin--cg" style="left:77.98%;top:76.36%">Castel <br class="pin-br">Gandolfo</span>
+            <span class="pin pin--lake" style="left:80.23%;top:80.27122811783354%">Lago <br class="pin-br">Albano</span>
+            <span class="pin pin--sea" style="left:2%;top:99%">Mar Tirreno</span>
+          </div></div>
           <figcaption data-t="map_caption"></figcaption>
         </figure>
       </div>
