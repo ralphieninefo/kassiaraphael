@@ -124,8 +124,8 @@ window.SITE_CONTENT = {
   weekend_label: { en: "Weekend", fr: "Week-end", fr_status: "needs native review" },
   weekend_title: { en: "Thursday to Sunday", fr: "Du jeudi au dimanche", fr_status: "needs native review" },
   toast_alt: {
-    en: "Raphaël holding Kassia from behind in front of the white glasshouse dome of the Conservatory of Flowers, black-and-white photograph",
-    fr: "Raphaël enlace Kassia devant le dôme de verre blanc du Conservatoire des fleurs, photographie en noir et blanc",
+    en: "Kassia laughing as Raphaël smiles at her on the lawn, the white glasshouse dome of the Conservatory of Flowers behind them, black-and-white photograph",
+    fr: "Kassia rit et Raphaël lui sourit sur la pelouse, devant le dôme de verre blanc du Conservatoire des fleurs, photographie en noir et blanc",
     fr_status: "needs native review"
   },
   toast_caption: {
