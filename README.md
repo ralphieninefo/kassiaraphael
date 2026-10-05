@@ -11,10 +11,11 @@ Type ordinary spaces in French; the non-breaking spaces before `: ; ! ?` and ins
 ## Language
 `/fr` (or `?lang=fr`) shows French. Otherwise: the visitor's last choice (localStorage), then browser language.
 
-## Images (placeholders for now; replace the files, keep the paths)
-- `images/hero-bw.jpg`: hero photo, shown in black and white (3:2 landscape works best)
-- `images/villa-1.jpg`, `images/lake-1.jpg`
-- optional `images/villa-line-drawing.svg`: if present, replaces the hairline divider automatically
+## Images
+- `images/hero-bw.jpg`: hero photo (shown as a tilted archival print)
+- `images/couple-2.jpg`: second print, in the Weekend section
+- `images/villa-line-drawing.svg`: villa drawing (vector trace), used as the divider
+- `images/villa-1.jpg`, `images/lake-1.jpg`: **placeholders**, replace the files and keep the paths
 
 ## Fonts
 Neuton and Pinyon Script, self-hosted in `fonts/` (SIL Open Font License).
@@ -23,7 +24,7 @@ To use a different script face, add its `@font-face` and change `--script` in `s
 ## Before launch
 - Verify the train route, station name and times on Trenitalia (`travel_2` in `content.js`).
 - French copy reviewed by a native speaker.
-- Replace the placeholder images.
+- Replace the villa and lake placeholder images.
 
 ## Local preview
     python3 -m http.server 8000

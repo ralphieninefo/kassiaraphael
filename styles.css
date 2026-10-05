@@ -158,6 +158,7 @@ h2 {
   transform: translate(9px, 12px);
   filter: blur(3px);
 }
+.print--small { width: min(78%, 20rem); margin: 4.5rem auto 0; transform: rotate(2deg); }
 .print img { filter: grayscale(1) contrast(1.05); width: 100%; background: #8d8d8b; }
 
 .caption > * { margin: 0 auto; }
@@ -171,14 +172,9 @@ h2 {
 .quiet { opacity: .72; font-size: .75rem; letter-spacing: .26em; }
 .caption { padding-bottom: 0; } /* section padding leaves 70px+ below the last line */
 
-/* ---------- Divider ---------- */
-.divider { position: relative; margin: 4.5rem auto; display: flex; justify-content: center; }
-.divider img { max-width: 14rem; opacity: .8; }
-.divider.has-drawing .ornament { display: none; }
-.ornament { position: relative; display: block; width: 9rem; height: 9px; }
-.ornament::before, .ornament::after { content: ""; position: absolute; left: 0; right: 0; border-top: 1px solid var(--silver); }
-.ornament::before { top: 2px; }
-.ornament::after { top: 6px; }
+/* ---------- Divider: line drawing of the villa ---------- */
+.divider { margin: 4.5rem auto; display: flex; justify-content: center; }
+.divider img { width: min(100%, 24rem); opacity: .78; }
 
 /* ---------- Plates (one image at a time) ---------- */
 .plate { margin: 0 0 2rem; }
