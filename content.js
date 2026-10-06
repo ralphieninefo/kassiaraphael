@@ -78,8 +78,8 @@ window.SITE_CONTENT = {
     fr_flag: "Check: “chase kayak” (kayak de sécurité), “tipsy Sacramentans” (habitants de Sacramento un peu éméchés), “returned to school tanned and noticeably stronger” (rentrer à la fac bronzé et nettement plus costaud), “all-girls house” (colocation entre filles), “rom coms” (comédies romantiques)."
   },
   story_p3: {
-    en: "Then came the firsts. The summer after graduation, Raphaël taught Kassia to drive. In the winter of 2020, mid-pandemic, he taught her to ski: six months on the road, a month at a time from Jackson&nbsp;Hole to Taos, more than thirty days on skis in her first season. Chamonix, Zermatt, the&nbsp;Dolomites. Thailand, Istanbul, Cairo. France and Italy, roughly ten times. Somewhere in there, we grew up.",
-    fr: "Puis sont venues les premières fois. Raphaël a appris à Kassia à conduire et, pendant la pandémie, à skier : six mois sur la route, un mois à la fois, de Jackson&nbsp;Hole à Taos, plus de trente jours de ski dès sa première saison. Chamonix, Zermatt, les&nbsp;Dolomites. La Thaïlande, Istanbul, Le&nbsp;Caire. La France et l’Italie, une dizaine de fois. Quelque part en chemin, nous avons grandi.",
+    en: "Then came the firsts. The summer after graduation, Raphaël taught Kassia to drive. In the winter of 2020, mid-pandemic, he taught her to ski: six months on the road, a month at a time from Jackson&nbsp;Hole to Taos, more than thirty days on skis in her first season. In return, Kassia taught him not to burn the eggs. Chamonix, Zermatt, the&nbsp;Dolomites. Thailand, Istanbul, Cairo. France and Italy, roughly ten times. Somewhere in there, we grew up.",
+    fr: "Puis sont venues les premières fois. Raphaël a appris à Kassia à conduire et, pendant la pandémie, à skier : six mois sur la route, un mois à la fois, de Jackson&nbsp;Hole à Taos, plus de trente jours de ski dès sa première saison. En échange, Kassia lui a appris à ne pas brûler les œufs. Chamonix, Zermatt, les&nbsp;Dolomites. La Thaïlande, Istanbul, Le&nbsp;Caire. La France et l’Italie, une dizaine de fois. Quelque part en chemin, nous avons grandi.",
     fr_status: "needs native review"
   },
   story_p4: {
