@@ -243,8 +243,8 @@ window.SITE_CONTENT = {
   },
   footer_motto: { text: "Horas non numero nisi serenas" },
   footer_translation: {
-    en: "I count only the serene hours. Sundial at Villa del Cardinale.",
-    fr: "Je ne compte que les heures sereines. Cadran solaire de la Villa del Cardinale.",
+    en: "On the villa’s sundial: I count only the serene hours.",
+    fr: "Sur le cadran solaire de la villa&nbsp;: je ne compte que les heures sereines.",
     fr_status: "needs native review"
   },
   colophon: {
