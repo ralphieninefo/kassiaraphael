@@ -52,9 +52,8 @@ window.SITE_CONTENT = {
   story_label: { en: "Our story", fr: "Notre histoire", fr_status: "needs native review" },
   story_title: {
     en: "The long way around",
-    fr: "Par le chemin des écoliers",
-    fr_status: "needs native review",
-    fr_flag: "Idiom chosen for “the long way around” (taking the scenic, slow route). Does it land?"
+    fr: "Rencontre à SF State",
+    fr_status: "needs native review"
   },
   story_photo_alt: {
     en: "Raphaël kissing Kassia’s cheek at their graduation, both in caps and gowns, black-and-white photograph",
@@ -68,23 +67,23 @@ window.SITE_CONTENT = {
   },
   story_p1: {
     en: "We met in our first week at San Francisco State University and became fast friends. Then Raphaël left for Paris junior year, nine hours ahead, and we kept&nbsp;chatting.",
-    fr: "Nous nous sommes rencontrés dès notre première semaine à San Francisco State University et sommes très vite devenus amis. Puis Raphaël est parti un an à Paris, avec neuf heures d’avance, et nous avons continué à nous&nbsp;écrire.",
+    fr: "On s’est rencontrés dès la première semaine à San Francisco State University, et on est rapidement devenus amis. Puis Raphaël est parti un an à Paris. Même avec neuf heures de décalage, on est restés en&nbsp;contact.",
     fr_status: "needs native review"
   },
   story_p2: {
     en: "He spent the next summer on the American River, paddling the chase kayak and herding tipsy Sacramentans to the dock, and returned to school tanned and noticeably stronger. Kassia noticed. By spring of senior year he was a fixture at her all-girls house, the lone man at wine nights and rom&nbsp;coms. It took us until almost graduation to do something about it.",
-    fr: "L’été suivant, il l’a passé sur l’American River, à pagayer dans le kayak de sécurité et à ramener au ponton des habitants de Sacramento un peu éméchés, avant de rentrer à la fac bronzé et nettement plus costaud. Kassia l’a remarqué. Au printemps de notre dernière année, il était devenu un habitué de sa colocation entre filles, le seul homme des soirées vin et des comédies romantiques. Il nous a fallu attendre presque la remise des diplômes pour nous décider.",
+    fr: "De retour aux États-Unis, Raphaël a troqué l’école pour la rivière : l’American River, à Sacramento, où il a passé ses étés en kayak de sécurité, à ramener au ponton des marins un peu pompettes ou grillés par le soleil. Cet été-là lui a permis d’être bronzé (pour une fois) et apparemment plus costaud. Kassia l’a bien remarqué. Au printemps de notre dernière année, il était devenu un habitué de la maison où Kassia vivait en colocation avec d’autres filles, parfois seul homme aux soirées vin et comédies romantiques. À la fin de l’année, on a décidé de rester ensemble à San&nbsp;Francisco.",
     fr_status: "needs native review",
-    fr_flag: "Check: “chase kayak” (kayak de sécurité), “tipsy Sacramentans” (habitants de Sacramento un peu éméchés), “returned to school tanned and noticeably stronger” (rentrer à la fac bronzé et nettement plus costaud), “all-girls house” (colocation entre filles), “rom coms” (comédies romantiques)."
+    fr_flag: "Check: “marins un peu pompettes ou grillés par le soleil” (playful for the kayak-rescue crowd), the end of the paragraph (“rester ensemble à San Francisco”)."
   },
   story_p3: {
     en: "Then came the firsts. The summer after graduation, Raphaël taught Kassia to drive. In the winter of 2020, mid-pandemic, he taught her to ski: six months on the road, a month at a time from Jackson&nbsp;Hole to Taos, more than thirty days on skis in her first season. In return, Kassia taught him not to burn the eggs. Chamonix, Zermatt, the&nbsp;Dolomites. Thailand, Istanbul, Cairo. France and Italy, roughly ten times. Somewhere in there, we grew up.",
-    fr: "Puis sont venues les premières fois. Raphaël a appris à Kassia à conduire et, pendant la pandémie, à skier : six mois sur la route, un mois à la fois, de Jackson&nbsp;Hole à Taos, plus de trente jours de ski dès sa première saison. En échange, Kassia lui a appris à ne pas brûler les œufs. Chamonix, Zermatt, les&nbsp;Dolomites. La Thaïlande, Istanbul, Le&nbsp;Caire. La France et l’Italie, une dizaine de fois. Quelque part en chemin, nous avons grandi.",
+    fr: "Puis sont venues les premières fois. Raphaël a appris à Kassia à conduire, puis à skier. Pendant la pandémie, on a passé six mois sur la route, de Mammoth en Californie à Jackson dans le Wyoming, puis à Taos au Nouveau-Mexique, en enchaînant plus de trente jours de ski en une seule saison. En échange, Kassia lui a appris à ne pas brûler les œufs. Il y a eu les Alpes, et aussi les voyages avec la famille de Raph, en France, en Italie, et partout dans le&nbsp;monde.",
     fr_status: "needs native review"
   },
   story_p4: {
     en: "Ten years in, we are finally ready to get married. We hope you’ll be there.",
-    fr: "Dix ans plus tard, nous sommes enfin prêts à nous marier. Nous espérons que vous serez là.",
+    fr: "Dix ans plus tard, on est enfin prêts à se marier. On espère que vous serez&nbsp;là.",
     fr_status: "needs native review"
   },
 
