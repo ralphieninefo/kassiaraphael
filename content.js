@@ -140,7 +140,7 @@ window.SITE_CONTENT = {
     fr_status: "needs native review"
   },
   fri_day: { en: "Friday, October&nbsp;8", fr: "vendredi 8&nbsp;octobre", fr_status: "needs native review" },
-  fri_time: { en: "5:00 pm, Villa del Cardinale", fr: "17 h, Villa del Cardinale", fr_status: "needs native review" },
+  fri_time: { en: "5:00 pm, Villa del&nbsp;Cardinale", fr: "17 h, Villa del&nbsp;Cardinale", fr_status: "needs native review" },
   fri_text: {
     en: "Guests are asked to arrive by 4:30. The ceremony begins at five, followed by dinner and celebration.",
     fr: "Merci d’arriver avant 16 h 30. La cérémonie commence à 17 h, suivie du dîner et de la fête.",
@@ -243,8 +243,8 @@ window.SITE_CONTENT = {
   },
   footer_motto: { text: "Horas non numero nisi serenas" },
   footer_translation: {
-    en: "Inscribed on the villa’s sundial in 1629, as Pope Urban VIII made Castel Gandolfo his summer seat and his cardinals built lodges around the lake. Most sundials of the age warned that time was running out. This one keeps count only while the sun shines: <em>I count only the serene hours</em>. Our ceremony falls within those serene hours, and we hope the years after it will too. The dancing comes after dark; we doubt Cardinal Colonna ever pictured E&#8209;40 in his hunting lodge.",
-    fr: "Inscrite sur le cadran solaire de la villa en 1629, alors qu’Urbain VIII faisait de Castel Gandolfo sa résidence d’été et que ses cardinaux bâtissaient des pavillons autour du lac. La plupart des cadrans solaires de l’époque rappelaient que le temps passe. Celui-ci ne compte que les heures de soleil&nbsp;: <em>je ne compte que les heures sereines</em>. Notre cérémonie s’inscrit dans ces heures sereines, et nous espérons que les années qui suivront aussi. La danse viendra à la nuit tombée&nbsp;; nous doutons que le Cardinal Colonna ait jamais imaginé du rap californien résonner dans son pavillon de chasse.",
+    en: "Inscribed on the villa’s sundial in 1629, as Pope Urban VIII made Castel Gandolfo his summer seat and his cardinals built lodges around the lake. Most sundials of the age warned that time was running out. This one keeps count only while the sun shines: <em>I count only the serene hours</em>. Our ceremony falls within those serene hours, and we hope the years after it will too. The dancing comes after dark; we doubt Cardinal Colonna ever pictured E&#8209;40 in his&nbsp;hunting&nbsp;lodge.",
+    fr: "Inscrite sur le cadran solaire de la villa en 1629, alors qu’Urbain VIII faisait de Castel Gandolfo sa résidence d’été et que ses cardinaux bâtissaient des pavillons autour du lac. La plupart des cadrans solaires de l’époque rappelaient que le temps passe. Celui-ci ne compte que les heures de soleil&nbsp;: <em>je ne compte que les heures sereines</em>. Notre cérémonie s’inscrit dans ces heures sereines, et nous espérons que les années qui suivront aussi. La danse viendra à la nuit tombée&nbsp;; nous doutons que le Cardinal Colonna ait jamais imaginé du rap californien résonner dans son&nbsp;pavillon&nbsp;de&nbsp;chasse.",
     fr_status: "needs native review"
   },
   colophon: {

@@ -330,9 +330,10 @@ figcaption { margin-top: .75rem; color: var(--ink-soft); text-align: center; tex
 .motto-block { text-align: center; }
 #venue > .rule:last-of-type { margin-block: var(--s-4) var(--s-3); }
 #venue { padding-bottom: calc(var(--frame-inner) + var(--s-5)); }
-.motto { font-style: italic; font-weight: 400; font-size: calc(var(--text) * 1.5); line-height: 1.2; margin: 0 auto var(--s-3); text-wrap: balance; }
+.motto { font-style: italic; font-weight: 400; font-size: min(calc(var(--text) * 1.85), calc(var(--h2) * .94)); /* ~23% up, always below the section heading */ line-height: 1.2; margin: 0 auto var(--s-3); text-wrap: balance; }
 /* The motto's story: set exactly like the Why Italy paragraph (.italy-text); only the translated motto is italic */
 .gloss em { font-style: italic; }
+.gloss { text-wrap: pretty; } /* long paragraph: avoid a short last line rather than balance the lines */
 @media (max-width: 767px) {
   /* Phones: paragraphs, labels and headings start at the same left edge as everything else.
      Still centred: hero, captions, the Latin motto line, "We'll show you the rest", footer. */
