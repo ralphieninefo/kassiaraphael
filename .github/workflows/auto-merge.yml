@@ -1,0 +1,38 @@
+# When an edit/* branch is pushed: open a PR into main, run the site checks,
+# and merge it (squash) only if they pass. DigitalOcean then deploys main.
+name: Ship edits
+
+on:
+  push:
+    branches: ["edit/**"]
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: ship-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  ship:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+      BRANCH: ${{ github.ref_name }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check the site
+        run: node .github/scripts/check-site.js
+
+      - name: Open the PR if there isn't one
+        run: |
+          if [ -z "$(gh pr list --head "$BRANCH" --base main --state open --json number --jq '.[0].number')" ]; then
+            gh pr create --base main --head "$BRANCH" \
+              --title "$(git log -1 --format=%s)" \
+              --body "$(git log -1 --format=%b)"$'\n\n_Opened and merged automatically after the site checks passed._'
+          fi
+
+      - name: Merge it
+        run: gh pr merge "$BRANCH" --squash --delete-branch
