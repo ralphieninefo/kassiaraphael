@@ -68,14 +68,14 @@ window.SITE_CONTENT = {
   },
   story_p1: {
     en: "We met in our first week at San Francisco State University and became fast friends. Then Raphaël left for Paris junior year, nine hours ahead, and we kept&nbsp;chatting.",
-    fr: "Nous nous sommes rencontrés dès notre première semaine à San Francisco State University et sommes très vite devenus amis. Puis Raphaël est parti un an à Paris, avec neuf heures d’avance, et nous avons continué à nous&nbsp;écrire.",
+    fr: "Nous nous sommes rencontrés dès notre première semaine à San Francisco State University et sommes très vite devenus amis. Puis Raphaël est parti à Paris, avec neuf heures d’avance, et nous sommes restés en&nbsp;contact.",
     fr_status: "needs native review"
   },
   story_p2: {
     en: "He spent the next summer on the American River, paddling the chase kayak and herding tipsy Sacramentans to the dock, and returned to school tanned and noticeably stronger. Kassia noticed. By spring of senior year he was a fixture at her all-girls house, the lone man at wine nights and rom&nbsp;coms. It took us until almost graduation to do something about it.",
-    fr: "L’été suivant, il l’a passé sur l’American River, à pagayer dans le kayak de sécurité et à ramener au ponton des habitants de Sacramento un peu éméchés, avant de rentrer à la fac bronzé et nettement plus costaud. Kassia l’a remarqué. Au printemps de notre dernière année, il était devenu un habitué de sa colocation entre filles, le seul homme des soirées vin et des comédies romantiques. Il nous a fallu attendre presque la remise des diplômes pour nous décider.",
+    fr: "L’été suivant, il l’a passé sur l’American River, à pagayer dans le kayak de sécurité et à ramener au ponton des habitants de Sacramento un peu pompettes, avant de rentrer à la fac bronzé et nettement plus costaud. Kassia l’a remarqué. Au printemps de notre dernière année, il était devenu un habitué de sa colocation entre filles, le seul homme des soirées vin et des comédies romantiques. Il nous a fallu attendre presque la remise des diplômes pour nous décider.",
     fr_status: "needs native review",
-    fr_flag: "Check: “chase kayak” (kayak de sécurité), “tipsy Sacramentans” (habitants de Sacramento un peu éméchés), “returned to school tanned and noticeably stronger” (rentrer à la fac bronzé et nettement plus costaud), “all-girls house” (colocation entre filles), “rom coms” (comédies romantiques)."
+    fr_flag: "Check: “chase kayak” (kayak de sécurité), “tipsy Sacramentans” (habitants de Sacramento un peu pompettes), “returned to school tanned and noticeably stronger” (rentrer à la fac bronzé et nettement plus costaud), “all-girls house” (colocation entre filles), “rom coms” (comédies romantiques)."
   },
   story_p3: {
     en: "Then came the firsts. The summer after graduation, Raphaël taught Kassia to drive. She taught him where he’d left the keys, then helped him land the job that started his career in tech. In the winter of 2020, mid-pandemic, he taught her to ski: six months on the road, a month at a time from Jackson&nbsp;Hole to Taos, more than thirty days on skis in her first season. She taught him to lose at cards. Somewhere in there, we grew up.",
