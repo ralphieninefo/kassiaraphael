@@ -333,6 +333,13 @@ figcaption { margin-top: .75rem; color: var(--ink-soft); text-align: center; tex
 .motto { font-style: italic; font-weight: 400; font-size: calc(var(--text) * 1.5); line-height: 1.2; margin: 0 auto var(--s-3); text-wrap: balance; }
 /* The motto's story: set exactly like the Why Italy paragraph (.italy-text); only the translated motto is italic */
 .gloss em { font-style: italic; }
+@media (max-width: 767px) {
+  /* Phones: paragraphs, labels and headings start at the same left edge as everything else.
+     Still centred: hero, captions, the Latin motto line, "We'll show you the rest", footer. */
+  .italy, .gloss { text-align: left; }
+  .italy .label { justify-content: flex-start; }
+  .italy-text, .gloss { max-width: none; margin-inline: 0; text-wrap: pretty; }
+}
 
 /* ---------- Weekend ---------- */
 .days { list-style: none; padding: 0; margin: 0; border-top: 1px solid var(--rule); }
