@@ -31,8 +31,8 @@ window.SITE_CONTENT = {
 
   /* Hero */
   hero_photo_alt: {
-    en: "Kassia and Raphaël laughing on the lawn in Golden Gate Park on their engagement day, a giant pearl-crown sculpture behind them, black-and-white photograph",
-    fr: "Kassia et Raphaël riant sur la pelouse du Golden Gate Park le jour de leurs fiançailles, devant une immense sculpture en forme de couronne de perles, photographie en noir et blanc",
+    en: "Kassia laughing as Raphaël smiles at her at a sunny café table, both in sunglasses, his arm around her shoulders, black-and-white photograph",
+    fr: "Kassia rit pendant que Raphaël lui sourit à la terrasse ensoleillée d’un café, tous deux en lunettes de soleil, son bras autour de ses épaules, photographie en noir et blanc",
     fr_status: "needs native review"
   },
   hero_date: { en: "Friday, October 8, 2027", fr: "vendredi 8 octobre 2027", fr_status: "needs native review" },
