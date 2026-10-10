@@ -35,4 +35,9 @@ jobs:
           fi
 
       - name: Merge it
-        run: gh pr merge "$BRANCH" --squash --delete-branch
+        run: |
+          # Use the API: `gh pr merge --delete-branch` also tries local git branch changes,
+          # which fail in this shallow checkout.
+          PR=$(gh pr list --head "$BRANCH" --base main --state open --json number --jq '.[0].number')
+          gh api -X PUT "repos/$GITHUB_REPOSITORY/pulls/$PR/merge" -f merge_method=squash
+          gh api -X DELETE "repos/$GITHUB_REPOSITORY/git/refs/heads/$BRANCH" || true
