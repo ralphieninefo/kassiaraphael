@@ -393,7 +393,7 @@ sup { font-size: .65em; line-height: 0; vertical-align: .5em; } /* ordinals: XVI
 .reading-list h3 .alt { font-style: normal; font-size: .72em; opacity: .85; white-space: nowrap; }
 .reading-list .by { margin: 0 0 var(--s-2); opacity: .8; }
 .reading-list p:last-child { margin: 0; }
-@media (min-width: 760px) and (max-width: 1023px) { .reading-list { grid-template-columns: 1fr 1fr; column-gap: var(--col-gap); } }
+@media (min-width: 768px) and (max-width: 1023px) { .reading-list { grid-template-columns: 1fr 1fr; column-gap: var(--col-gap); } }
 @media (min-width: 1024px) {
   .reading-list {
     column-gap: var(--col-gap); align-items: start;
@@ -402,6 +402,11 @@ sup { font-size: .65em; line-height: 0; vertical-align: .5em; } /* ordinals: XVI
   .reading-list > :first-child { grid-column: left; }
   .reading-list > :last-child { grid-column: right; }
 }
+
+/* Pointers to the Lore: a one-line note under Questions and a small link at the end of the footer */
+.sheet > .lore-nudge { margin: var(--s-4) auto 0; font-size: max(1.125rem, .9em); }
+.footer-links { margin: var(--s-2) 0 0; font-size: var(--caps-small); letter-spacing: .2em; text-transform: uppercase; }
+.footer-links a { color: var(--silver); }
 
 /* ---------- Questions ---------- */
 .email { font-size: 1.1em; word-break: break-word; }

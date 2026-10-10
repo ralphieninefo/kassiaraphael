@@ -261,9 +261,10 @@ window.SITE_CONTENT = {
   },
   lore_c3_title: { en: "The sundial that counts only the good hours", fr: "Le cadran solaire qui ne compte que les bonnes heures", fr_status: "needs native review" },
   lore_c3_p1: {
-    en: "Later, Archbishop Egidio Colonna opened the villa to the papal court at Castel Gandolfo, and it became a favorite place for celebrations. Pope Alexander VII Chigi was among the guests, and he gave Egidio the sundial on the tower. Its inscription is the one set in large type under the Venue, and a fair motto for the weekend. The festivities in the pope’s honor led to the Via Alessandrina, a wooded path along the lake to the Pontifical Palace. The villa says it still connects the two.",
+    en: "Later, Archbishop Egidio Colonna opened the villa to the papal court at Castel Gandolfo, and it became a favorite place for celebrations. Pope Alexander VII Chigi was among the guests. The sundial’s inscription is the motto at the end of the Venue section, and a fair motto for the weekend. The festivities in the pope’s honor led to the Via Alessandrina, a wooded path along the lake to the Pontifical Palace. The villa says it still connects the two.",
     fr: "Plus tard, l’archevêque Egidio Colonna ouvrit la villa à la cour pontificale de Castel Gandolfo, et elle devint un lieu de fêtes très prisé. Le pape Alexandre VII Chigi compta parmi ses hôtes et offrit à Egidio le cadran solaire de la tour. Son inscription est celle qui est écrite en grand sous la section Lieu, une devise qui convient bien à ce week-end. Les fêtes données en l’honneur du pape donnèrent naissance à la via Alessandrina, un chemin boisé qui longe le lac jusqu’au palais pontifical. La villa affirme qu’il relie encore les deux.",
-    fr_status: "needs native review"
+    fr_status: "needs native review",
+    fr_flag: "English changed (sundial gift removed, motto pointer reworded). French below is the older draft: replace with the reviewed version."
   },
   lore_c3_p2: {
     en: "The villa also tells a story about Egidio’s youth, back when he was still Carlo. As the tale goes, he took holy orders and a new name after a fatal quarrel with a Caetani prince, and Alessandro Manzoni borrowed the episode for Fra Cristoforo, the friar with a past in <em>The Betrothed</em>. We pass it along the way the villa does: as lore.",
@@ -274,6 +275,11 @@ window.SITE_CONTENT = {
   lore_note_text: {
     en: "Among the classical finds on the grounds is a rock tomb attributed to the consul Gnaeus Cornelius Scipio Hispallus, cut into the cliff above the lake. Its façade is carved with twelve fasces and a curule chair, which was the Roman way of writing “very important person” on a gravestone.",
     fr: "Parmi les vestiges antiques du domaine figure une tombe rupestre attribuée au consul Cnaeus Cornelius Scipio Hispallus, taillée dans la falaise au-dessus du lac. Sa façade est ornée de douze faisceaux et d’une chaise curule, ce qui était la façon romaine d’écrire « personnage important » sur une tombe.",
+    fr_status: "needs native review"
+  },
+  lore_nudge: {
+    en: "For the curious: the lore of the lake&nbsp;↓",
+    fr: "Pour les curieux : les légendes du lac&nbsp;↓",
     fr_status: "needs native review"
   },
   reading_label: { en: "Optional reading", fr: "Lectures facultatives", fr_status: "needs native review" },
@@ -288,10 +294,10 @@ window.SITE_CONTENT = {
   reading2_title: { en: "I promessi sposi <span class=\"alt\">(The Betrothed)</span>", fr: "Les Fiancés <span class=\"alt\">(I promessi sposi)</span>", fr_status: "needs native review" },
   reading2_by: { en: "Alessandro Manzoni", fr: "Alessandro Manzoni", fr_status: "needs native review" },
   reading2_text: {
-    en: "Italy’s great novel, set in 1628 to 1630, the very years the villa went up. Two villagers want to marry and spend most of the book prevented from doing so. We’d like to report a smoother experience. Lore has it that a Colonna prince from this villa inspired Fra Cristoforo, the friar with a past. It opens beside a lake. Try the first eight chapters, which end with the famously botched “surprise wedding”. Translation: Bruce Penman (Penguin Classics).",
+    en: "Italy’s great novel, set in 1628 to 1630, the very years the villa went up. Two villagers want to marry and spend most of the book prevented from doing so. We’d like to report a smoother experience. It features Fra Cristoforo, the friar with a past, whom the villa claims as one of its own. It opens on Lake Como, which we have decided to forgive. Try the first eight chapters, which end with the famously botched “surprise wedding”. Translations: Michael F. Moore (Modern Library) or Bruce Penman (Penguin Classics).",
     fr: "Le grand roman italien, qui se déroule de 1628 à 1630, les années mêmes où la villa fut bâtie. Deux villageois veulent se marier et passent presque tout le livre empêchés de le faire. Nous aimerions annoncer un parcours plus tranquille. La légende veut qu’un prince Colonna de cette villa ait inspiré Fra Cristoforo, le frère au passé trouble. Le roman s’ouvre au bord d’un lac. Essayez les huit premiers chapitres, qui s’achèvent sur le fameux « mariage par surprise » raté.",
     fr_status: "needs native review",
-    fr_flag: "French edition of Les Fiancés to recommend: to be confirmed."
+    fr_flag: "English changed (Fra Cristoforo line, Lake Como line, two translations). French below is the older draft: replace with the reviewed version."
   },
 
   /* Questions */
