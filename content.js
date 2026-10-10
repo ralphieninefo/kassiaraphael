@@ -51,7 +51,7 @@ window.SITE_CONTENT = {
   /* Our story */
   story_label: { en: "Our story", fr: "Notre histoire", fr_status: "needs native review" },
   story_title: {
-    en: "The long way around",
+    en: "Meeting at SF State",
     fr: "Rencontre à SF State",
     fr_status: "needs native review"
   },
@@ -66,18 +66,18 @@ window.SITE_CONTENT = {
     fr_status: "needs native review"
   },
   story_p1: {
-    en: "We met in our first week at San Francisco State University and became fast friends. Then Raphaël left for Paris junior year, nine hours ahead, and we kept&nbsp;chatting.",
+    en: "We met in our first week at San Francisco State University and quickly became friends. Then Raphaël left for a year in Paris. Even with nine hours between us, we stayed in&nbsp;touch.",
     fr: "On s’est rencontrés dès la première semaine à San Francisco State University, et on est rapidement devenus amis. Puis Raphaël est parti un an à Paris. Même avec neuf heures de décalage, on est restés en&nbsp;contact.",
     fr_status: "needs native review"
   },
   story_p2: {
-    en: "He spent the next summer on the American River, paddling the chase kayak and herding tipsy Sacramentans to the dock, and returned to school tanned and noticeably stronger. Kassia noticed. By spring of senior year he was a fixture at her all-girls house, the lone man at wine nights and rom&nbsp;coms. It took us until almost graduation to do something about it.",
+    en: "Back in the States, Raphaël traded school for the river: the American River in Sacramento, where he spent his summers in a chase kayak, ferrying sailors back to the dock, some a little tipsy, some sunburnt. That summer left him tanned (for once) and noticeably stronger. Kassia noticed. By spring of our senior year he was a fixture at the house Kassia shared with other girls, sometimes the only man at wine nights and rom&nbsp;coms. At the end of the year, we decided to stay together in San&nbsp;Francisco.",
     fr: "De retour aux États-Unis, Raphaël a troqué l’école pour la rivière : l’American River, à Sacramento, où il a passé ses étés en kayak de sécurité, à ramener au ponton des marins un peu pompettes ou grillés par le soleil. Cet été-là lui a permis d’être bronzé (pour une fois) et apparemment plus costaud. Kassia l’a bien remarqué. Au printemps de notre dernière année, il était devenu un habitué de la maison où Kassia vivait en colocation avec d’autres filles, parfois seul homme aux soirées vin et comédies romantiques. À la fin de l’année, on a décidé de rester ensemble à San&nbsp;Francisco.",
     fr_status: "needs native review",
     fr_flag: "Check: “marins un peu pompettes ou grillés par le soleil” (playful for the kayak-rescue crowd), the end of the paragraph (“rester ensemble à San Francisco”)."
   },
   story_p3: {
-    en: "Then came the firsts. The summer after graduation, Raphaël taught Kassia to drive. In the winter of 2020, mid-pandemic, he taught her to ski: six months on the road, a month at a time from Jackson&nbsp;Hole to Taos, more than thirty days on skis in her first season. In return, Kassia taught him not to burn the eggs. Chamonix, Zermatt, the&nbsp;Dolomites. Thailand, Istanbul, Cairo. France and Italy, roughly ten times. Somewhere in there, we grew up.",
+    en: "Then came the firsts. Raphaël taught Kassia to drive, then to ski. During the pandemic we spent six months on the road, from Mammoth in California to Jackson in Wyoming and Taos in New Mexico, stringing together more than thirty days of skiing in a single season. In return, Kassia taught him not to burn the eggs. There were the Alps, and trips with Raphaël’s family in France, in Italy, and all over the&nbsp;world.",
     fr: "Puis sont venues les premières fois. Raphaël a appris à Kassia à conduire, puis à skier. Pendant la pandémie, on a passé six mois sur la route, de Mammoth en Californie à Jackson dans le Wyoming, puis à Taos au Nouveau-Mexique, en enchaînant plus de trente jours de ski en une seule saison. En échange, Kassia lui a appris à ne pas brûler les œufs. Il y a eu les Alpes, et aussi les voyages avec la famille de Raph, en France, en Italie, et partout dans le&nbsp;monde.",
     fr_status: "needs native review"
   },
@@ -90,8 +90,8 @@ window.SITE_CONTENT = {
   /* Why Italy (small block above the venue, no heading) */
   italy_label: { en: "Why Italy", fr: "Pourquoi l’Italie", fr_status: "needs native review" },
   italy_text: {
-    en: "Italy came to us in stages. Kassia’s aunt and cousins lived in Florence for several years, and she was spoiled with visits long before this. Then Raphaël’s parents settled a short drive from Lake Albano. We could not think of a better excuse to bring everyone we love.",
-    fr: "L’Italie est venue à nous par étapes. La tante et les cousins de Kassia ont vécu plusieurs années à Florence, et elle a eu la chance de leur rendre visite bien souvent, bien avant tout cela. Puis les parents de Raphaël se sont installés à quelques minutes du lac Albano. Nous ne pouvions rêver meilleur prétexte pour réunir tous ceux que nous aimons.",
+    en: "Italy came to us in stages. Kassia’s aunt and cousins lived in Florence for several years, where she was lucky enough to visit often. Then Barbara and Michel settled in the Castelli Romani, a few minutes from Lake Albano. Looking at different places, we thought that somewhere close to family in Italy, with beautiful views, good food and good wine, was a very good option.",
+    fr: "L’Italie est venue à nous par étapes. La tante et les cousins de Kassia ont vécu plusieurs années à Florence, où elle a eu la chance de leur rendre visite souvent. Puis Barbara et Michel se sont installés dans les Castelli Romani, à quelques minutes du lac Albano. En regardant différents endroits, on s’est dit qu’un lieu proche des parents, en Italie, avec de belles vues, de la bonne bouffe et du bon vin, était une très bonne option.",
     fr_status: "needs native review"
   },
 
@@ -134,15 +134,15 @@ window.SITE_CONTENT = {
   },
   thu_day: { en: "Thursday, October&nbsp;7", fr: "jeudi 7&nbsp;octobre", fr_status: "needs native review" },
   thu_text: {
-    en: "Arriving early? Join us on Thursday for a walk into the old town of Castel Gandolfo, followed by an aperitivo hosted by us. Details to follow.",
-    fr: "Vous arrivez en avance ? Rejoignez-nous le jeudi pour une promenade dans le vieux bourg de Castel Gandolfo, suivie d’un aperitivo que nous offrons. Détails à suivre.",
+    en: "Arriving early? Join us on Thursday for a walk into the town of Castel Gandolfo, followed by an aperitivo hosted by us. Details to follow.",
+    fr: "Vous arrivez en avance ? Rejoignez-nous le jeudi pour une promenade dans la ville de Castel Gandolfo, suivie d’un aperitivo que nous offrons. Détails à suivre.",
     fr_status: "needs native review"
   },
   fri_day: { en: "Friday, October&nbsp;8", fr: "vendredi 8&nbsp;octobre", fr_status: "needs native review" },
   fri_time: { en: "5:00 pm, Villa del Cardinale", fr: "17 h, Villa del Cardinale", fr_status: "needs native review" },
   fri_text: {
-    en: "Guests are asked to arrive by 4:30. The ceremony begins at five, followed by dinner and celebration.",
-    fr: "Merci d’arriver avant 16 h 30. La cérémonie commence à 17 h, suivie du dîner et de la fête.",
+    en: "Guests are asked to arrive by 4:30. Cocktails will be served while you wait. The ceremony begins at five, followed by dinner and a party.",
+    fr: "Merci d’arriver avant 16 h 30. Des cocktails seront servis en attendant la cérémonie, qui commence à 17 h, suivie du dîner et d’une fête.",
     fr_status: "needs native review"
   },
   sat_day: { en: "Saturday, October&nbsp;9", fr: "samedi 9&nbsp;octobre", fr_status: "needs native review" },
