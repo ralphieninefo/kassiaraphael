@@ -362,25 +362,35 @@ sup { font-size: .65em; line-height: 0; vertical-align: .5em; } /* ordinals: XVI
 .sheet > .lore-plate { margin: var(--s-5) auto 0; } /* .plate resets margins; keep it centred in the content box */
 .lore-plate figcaption { color: var(--travertine); opacity: .8; } /* cream on blue, like the footer captions */
 .lore-plate .frame img { width: 100%; }
-/* Chapters: kicker + title in the left columns, text in columns 7-12 */
+/* Chapters: kicker + title in columns 1-5; an optional margin item in columns 7-12; then the text in two columns,
+   so there is no empty hole beside the copy. Phones: one column, margin items after the text, all left-aligned. */
 .chapter .head { margin-bottom: var(--s-3); }
 .chapter .kicker { margin: 0 0 var(--s-1); opacity: .8; }
 .chapter h3 { font-size: clamp(1.625rem, 1.2rem + 1.2vw, 2.125rem); line-height: 1.15; }
 .chapter .main > p:last-child { margin-bottom: 0; }
-@media (min-width: 1024px) { .chapter .head { margin-bottom: 0; } }
-/* One pull quote, set large and centred between chapters one and two */
-.sheet > .pull { max-width: 42rem; margin: var(--s-5) auto; padding: 0; text-align: center; }
-.pull::before { content: ""; display: block; width: 5px; height: 5px; margin: 0 auto var(--s-3); background: var(--marker); transform: rotate(45deg); }
-.pull p { margin: 0; font-style: italic; font-size: clamp(1.75rem, 1.1rem + 2vw, 2.625rem); line-height: 1.25; text-wrap: balance; }
-/* Margin note beside chapter three (a boxed aside on phones) */
-.note { border: 1px solid var(--rule); padding: var(--s-3); margin-top: var(--s-4); }
+.margin { margin: var(--s-4) 0 0; }
+/* The pull quote: large italic, left-aligned, no ornament (orange is for section dots and the Friday marker only) */
+.pull { padding: 0; }
+.pull p { margin: 0; font-style: italic; font-size: clamp(1.5rem, 1.1rem + 1.4vw, 2rem); line-height: 1.25; text-wrap: balance; }
+/* Margin note: a hairline box */
+.note { border: 1px solid var(--rule); padding: var(--s-3); }
 .note .caps { margin: 0 0 var(--s-1); opacity: .86; }
 .note p:last-child { margin: 0; font-size: .9375em; }
-@media (min-width: 1024px) { .note { margin-top: 0; } }
+@media (min-width: 1024px) {
+  .chapter { row-gap: var(--s-4); }
+  .chapter > .head { grid-area: 1 / left; margin-bottom: 0; }
+  .chapter > .margin { grid-area: 1 / right; margin: 0; align-self: start; }
+  .chapter > .main { grid-area: 2 / full; columns: 2; column-gap: var(--col-gap); } /* each column = 6 grid columns; the second starts at column 7 */
+  .chapter > .main p { orphans: 3; widows: 3; }
+  /* Chapter three is short: title and note on the left, text on the right (no gap under the title) */
+  .chapter--aside > .margin { grid-area: 2 / left; }
+  .chapter--aside > .main { grid-area: 1 / right / span 2; columns: auto; }
+}
 /* Optional reading: two entries on the same columns */
-.reading .label { margin-bottom: var(--s-4); }
+.reading-label { margin: 0 0 var(--s-4); opacity: .86; }
 .reading-list { display: grid; row-gap: var(--s-5); }
 .reading-list h3 { font-size: 1.625rem; font-style: italic; font-weight: 400; line-height: 1.2; margin: 0 0 var(--s-1); }
+.reading-list h3 .alt { font-style: normal; font-size: .72em; opacity: .85; white-space: nowrap; }
 .reading-list .by { margin: 0 0 var(--s-2); opacity: .8; }
 .reading-list p:last-child { margin: 0; }
 @media (min-width: 760px) and (max-width: 1023px) { .reading-list { grid-template-columns: 1fr 1fr; column-gap: var(--col-gap); } }

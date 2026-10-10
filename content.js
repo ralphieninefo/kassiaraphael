@@ -285,8 +285,8 @@ window.SITE_CONTENT = {
     fr_status: "needs native review",
     fr_flag: "French translation(s) to recommend: to be confirmed."
   },
-  reading2_title: { en: "I promessi sposi", fr: "Les Fiancés", fr_status: "needs native review" },
-  reading2_by: { en: "Alessandro Manzoni · <em>The Betrothed</em>", fr: "Alessandro Manzoni · <em>I promessi sposi</em>", fr_status: "needs native review" },
+  reading2_title: { en: "I promessi sposi <span class=\"alt\">(The Betrothed)</span>", fr: "Les Fiancés <span class=\"alt\">(I promessi sposi)</span>", fr_status: "needs native review" },
+  reading2_by: { en: "Alessandro Manzoni", fr: "Alessandro Manzoni", fr_status: "needs native review" },
   reading2_text: {
     en: "Italy’s great novel, set in 1628 to 1630, the very years the villa went up. Two villagers want to marry and spend most of the book prevented from doing so. We’d like to report a smoother experience. Lore has it that a Colonna prince from this villa inspired Fra Cristoforo, the friar with a past. It opens beside a lake. Try the first eight chapters, which end with the famously botched “surprise wedding”. Translation: Bruce Penman (Penguin Classics).",
     fr: "Le grand roman italien, qui se déroule de 1628 à 1630, les années mêmes où la villa fut bâtie. Deux villageois veulent se marier et passent presque tout le livre empêchés de le faire. Nous aimerions annoncer un parcours plus tranquille. La légende veut qu’un prince Colonna de cette villa ait inspiré Fra Cristoforo, le frère au passé trouble. Le roman s’ouvre au bord d’un lac. Essayez les huit premiers chapitres, qui s’achèvent sur le fameux « mariage par surprise » raté.",

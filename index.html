@@ -242,12 +242,14 @@
       </div>
 
       <figure class="plate lore-plate reveal">
-        <div class="frame"><img src="/images/lake-band-1440.jpg" srcset="/images/lake-band-1440.jpg 1440w, /images/lake-band.jpg 2880w" sizes="(min-width: 1024px) 1100px, 92vw" width="1440" height="586" loading="lazy" data-t-alt="lake_img_alt" alt=""></div>
+        <div class="frame"><img src="/images/lore-lake-1440.jpg" srcset="/images/lore-lake-1440.jpg 1440w, /images/lore-lake-2880.jpg 2880w" sizes="(min-width: 1024px) 1100px, 92vw" width="1440" height="586" loading="lazy" data-t-alt="lake_img_alt" alt=""></div>
         <figcaption data-t="lake_img_caption"></figcaption>
       </figure>
 
       <hr class="rule">
 
+      <!-- Chapters: kicker + title on the left, an optional margin item on the right, then the text in two columns
+           (7-12 starts at the same x as every other section). Margin items follow the text in the DOM, so on phones they come after it. -->
       <article class="grid chapter reveal">
         <header class="head">
           <p class="caps kicker" data-t="lore_one"></p>
@@ -258,9 +260,10 @@
           <p data-t="lore_c1_p2"></p>
           <p data-t="lore_c1_p3"></p>
         </div>
+        <blockquote class="margin pull"><p data-t="lore_pull"></p></blockquote>
       </article>
 
-      <blockquote class="pull reveal"><p data-t="lore_pull"></p></blockquote>
+      <hr class="rule">
 
       <article class="grid chapter reveal">
         <header class="head">
@@ -277,7 +280,7 @@
 
       <hr class="rule">
 
-      <article class="grid chapter reveal">
+      <article class="grid chapter chapter--aside reveal">
         <header class="head">
           <p class="caps kicker" data-t="lore_three"></p>
           <h3 data-t="lore_c3_title"></h3>
@@ -286,7 +289,7 @@
           <p data-t="lore_c3_p1"></p>
           <p data-t="lore_c3_p2"></p>
         </div>
-        <aside class="side note">
+        <aside class="margin note">
           <p class="caps" data-t="lore_note_label"></p>
           <p data-t="lore_note_text"></p>
         </aside>
@@ -295,7 +298,7 @@
       <hr class="rule">
 
       <div class="reading reveal">
-        <p class="label"><span data-t="reading_label"></span></p>
+        <p class="caps reading-label" data-t="reading_label"></p>
         <div class="reading-list">
           <article>
             <h3 data-t="reading1_title"></h3>
