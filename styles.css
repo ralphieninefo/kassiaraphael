@@ -325,13 +325,21 @@ figcaption { margin-top: .75rem; color: var(--ink-soft); text-align: center; tex
   .pair .plate:first-child img { object-position: 50% 30%; } /* the tower to the doorway */
   .pair .plate:nth-child(2) img { object-position: 50% 85%; } /* lake above the roofs */
 }
-/* Closing line of the Venue: the sundial's motto, a touch larger than a heading, translation beneath.
-   Half the usual space around it, so it closes the section rather than standing as its own band. */
+/* Closing note of the Venue: the sundial's motto at 1.5x body, its story beneath.
+   Tighter space around it than between sections, so it reads as part of the Venue. */
 .motto-block { text-align: center; }
-#venue > .rule:last-of-type { margin-block: calc(var(--s-5) / 2); }
-#venue { padding-bottom: calc(var(--frame-inner) + var(--s-6) / 2); }
-.motto { font-style: italic; font-weight: 400; font-size: calc(var(--h2) * 1.1); line-height: 1.15; margin: 0 auto var(--s-2); text-wrap: balance; }
-.gloss { font-style: italic; font-size: max(1.125rem, .9em); color: var(--ink-soft); margin: 0 auto; }
+#venue > .rule:last-of-type { margin-block: var(--s-4) var(--s-3); }
+#venue { padding-bottom: calc(var(--frame-inner) + var(--s-5)); }
+.motto { font-style: italic; font-weight: 400; font-size: calc(var(--text) * 1.5); line-height: 1.2; margin: 0 auto var(--s-3); text-wrap: balance; }
+/* The motto's story: set exactly like the Why Italy paragraph (.italy-text); only the translated motto is italic */
+.gloss em { font-style: italic; }
+@media (max-width: 767px) {
+  /* Phones: paragraphs, labels and headings start at the same left edge as everything else.
+     Still centred: hero, captions, the Latin motto line, "We'll show you the rest", footer. */
+  .italy, .gloss { text-align: left; }
+  .italy .label { justify-content: flex-start; }
+  .italy-text, .gloss { max-width: none; margin-inline: 0; text-wrap: pretty; }
+}
 
 /* ---------- Weekend ---------- */
 .days { list-style: none; padding: 0; margin: 0; border-top: 1px solid var(--rule); }
