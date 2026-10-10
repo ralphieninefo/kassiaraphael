@@ -329,11 +329,10 @@ figcaption { margin-top: .75rem; color: var(--ink-soft); text-align: center; tex
    Tighter space around it than between sections, so it reads as part of the Venue. */
 .motto-block { text-align: center; }
 #venue > .rule:last-of-type { margin-block: var(--s-4) var(--s-3); }
-#venue { padding-bottom: calc(var(--frame-inner) + var(--s-4)); }
-.motto { font-style: italic; font-weight: 400; font-size: calc(var(--text) * 1.5); line-height: 1.2; margin: 0 auto var(--s-2); text-wrap: balance; }
-/* The motto's story: small italic, centred; the translated motto itself set in roman */
-.gloss { font-style: italic; font-size: .9375rem; line-height: 1.6; color: var(--ink-soft); max-width: 36rem; margin: 0 auto; text-wrap: pretty; }
-.gloss .roman { font-style: normal; }
+#venue { padding-bottom: calc(var(--frame-inner) + var(--s-5)); }
+.motto { font-style: italic; font-weight: 400; font-size: calc(var(--text) * 1.5); line-height: 1.2; margin: 0 auto var(--s-3); text-wrap: balance; }
+/* The motto's story: set exactly like the Why Italy paragraph (.italy-text); only the translated motto is italic */
+.gloss em { font-style: italic; }
 
 /* ---------- Weekend ---------- */
 .days { list-style: none; padding: 0; margin: 0; border-top: 1px solid var(--rule); }
