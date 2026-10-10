@@ -44,7 +44,7 @@ window.SITE_CONTENT = {
   welcome_title: { en: "We hope you’ll join&nbsp;us.", fr: "Nous espérons vous y&nbsp;voir.", fr_status: "needs native review" },
   welcome_text: {
     en: "We are getting married on Friday, October&nbsp;8, 2027, at a villa above Lake Albano, about forty minutes from Rome. A formal invitation with full details will follow. For now, we wanted you to have time to plan.",
-    fr: "Nous nous marions le vendredi 8&nbsp;octobre 2027, dans une villa qui domine le lac Albano, à une quarantaine de minutes de Rome. Une invitation officielle, avec tous les détails, suivra. Nous voulions simplement vous laisser le temps de vous organiser.",
+    fr: "On va se marier le vendredi 8&nbsp;octobre 2027, à la Villa del Cardinale, à Castel Gandolfo. La villa se trouve dans le domaine du lac Albano, à 40&nbsp;minutes de Rome, dans les Castelli Romani. Une invitation officielle, avec tous les détails, suivra.",
     fr_status: "needs native review"
   },
 
