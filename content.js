@@ -52,9 +52,9 @@ window.SITE_CONTENT = {
   story_label: { en: "Our story", fr: "Notre histoire", fr_status: "needs native review" },
   story_title: {
     en: "The long way around",
-    fr: "Par le chemin des écoliers",
+    fr: "À qui sait attendre",
     fr_status: "needs native review",
-    fr_flag: "Idiom chosen for “the long way around” (taking the scenic, slow route). Does it land?"
+    fr_flag: "Chosen by Kassia for “the long way around”: from the proverb « Tout vient à point à qui sait attendre »."
   },
   story_photo_alt: {
     en: "Raphaël kissing Kassia’s cheek at their graduation, both in caps and gowns, black-and-white photograph",
