@@ -356,6 +356,43 @@ figcaption { margin-top: .75rem; color: var(--ink-soft); text-align: center; tex
 .travel .side { margin-top: var(--s-4); }
 @media (min-width: 1024px) { .travel .side { margin-top: 0; } }
 
+sup { font-size: .65em; line-height: 0; vertical-align: .5em; } /* ordinals: XVII<sup>e</sup> */
+
+/* ---------- Lore: the legends of the lake (albano). Same grid, scale and hairlines as every section. ---------- */
+.sheet > .lore-plate { margin: var(--s-5) auto 0; } /* .plate resets margins; keep it centred in the content box */
+.lore-plate figcaption { color: var(--travertine); opacity: .8; } /* cream on blue, like the footer captions */
+.lore-plate .frame img { width: 100%; }
+/* Chapters: kicker + title in the left columns, text in columns 7-12 */
+.chapter .head { margin-bottom: var(--s-3); }
+.chapter .kicker { margin: 0 0 var(--s-1); opacity: .8; }
+.chapter h3 { font-size: clamp(1.625rem, 1.2rem + 1.2vw, 2.125rem); line-height: 1.15; }
+.chapter .main > p:last-child { margin-bottom: 0; }
+@media (min-width: 1024px) { .chapter .head { margin-bottom: 0; } }
+/* One pull quote, set large and centred between chapters one and two */
+.sheet > .pull { max-width: 42rem; margin: var(--s-5) auto; padding: 0; text-align: center; }
+.pull::before { content: ""; display: block; width: 5px; height: 5px; margin: 0 auto var(--s-3); background: var(--marker); transform: rotate(45deg); }
+.pull p { margin: 0; font-style: italic; font-size: clamp(1.75rem, 1.1rem + 2vw, 2.625rem); line-height: 1.25; text-wrap: balance; }
+/* Margin note beside chapter three (a boxed aside on phones) */
+.note { border: 1px solid var(--rule); padding: var(--s-3); margin-top: var(--s-4); }
+.note .caps { margin: 0 0 var(--s-1); opacity: .86; }
+.note p:last-child { margin: 0; font-size: .9375em; }
+@media (min-width: 1024px) { .note { margin-top: 0; } }
+/* Optional reading: two entries on the same columns */
+.reading .label { margin-bottom: var(--s-4); }
+.reading-list { display: grid; row-gap: var(--s-5); }
+.reading-list h3 { font-size: 1.625rem; font-style: italic; font-weight: 400; line-height: 1.2; margin: 0 0 var(--s-1); }
+.reading-list .by { margin: 0 0 var(--s-2); opacity: .8; }
+.reading-list p:last-child { margin: 0; }
+@media (min-width: 760px) and (max-width: 1023px) { .reading-list { grid-template-columns: 1fr 1fr; column-gap: var(--col-gap); } }
+@media (min-width: 1024px) {
+  .reading-list {
+    column-gap: var(--col-gap); align-items: start;
+    grid-template-columns: [left-start] repeat(5, minmax(0, 1fr)) [left-end] minmax(0, 1fr) [right-start] repeat(6, minmax(0, 1fr)) [right-end];
+  }
+  .reading-list > :first-child { grid-column: left; }
+  .reading-list > :last-child { grid-column: right; }
+}
+
 /* ---------- Questions ---------- */
 .email { font-size: 1.1em; word-break: break-word; }
 #questions .main p { margin: 0; }

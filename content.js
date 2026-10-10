@@ -114,8 +114,8 @@ window.SITE_CONTENT = {
   aerial_alt: { en: "Villa del Cardinale above Lake Albano", fr: "La Villa del Cardinale au-dessus du lac Albano", fr_status: "needs native review" },
   aerial_caption: { en: "Above Lake Albano", fr: "Au-dessus du lac Albano", fr_status: "needs native review" },
   venue_rest: {
-    en: "We’ll show you the rest in person.",
-    fr: "Le reste, nous vous le montrerons sur place.",
+    en: "We’ll show you the rest in person. In the meantime, <a href=\"#lore\">the legends of the lake</a>.",
+    fr: "Le reste, nous vous le montrerons sur place. En attendant, <a href=\"#lore\">les légendes du lac</a>.",
     fr_status: "needs native review"
   },
 
@@ -202,6 +202,96 @@ window.SITE_CONTENT = {
     en: "Hotel Castel Vecchio in Castel Gandolfo is the hotel the villa works with, and it’s a short walk to town. Booking info is coming soon, along with a few other places at different prices.",
     fr: "L’hôtel Castel Vecchio, à Castel Gandolfo, est l’hôtel partenaire de la villa, à quelques pas du centre. Les informations de réservation arrivent bientôt, avec quelques autres adresses à différents prix.",
     fr_status: "needs native review"
+  },
+
+  /* Lore: the legends of the lake, as the villa tells them. Placed below Stay, above Questions. Not in the nav. */
+  lore_label: { en: "Lore", fr: "Légendes", fr_status: "needs native review" },
+  lore_title: { en: "The Lore of the Lake", fr: "Les légendes du lac", fr_status: "needs native review" },
+  lore_standfirst: {
+    en: "Every great city needs a founding myth. Rome’s begins a few minutes from the villa.",
+    fr: "Toute grande ville a besoin d’un mythe fondateur. Celui de Rome commence à quelques minutes de la villa.",
+    fr_status: "needs native review"
+  },
+  lore_one: { en: "One", fr: "Un", fr_status: "needs native review" },
+  lore_two: { en: "Two", fr: "Deux", fr_status: "needs native review" },
+  lore_three: { en: "Three", fr: "Trois", fr_status: "needs native review" },
+  lore_c1_title: { en: "Before Rome", fr: "Avant Rome", fr_status: "needs native review" },
+  lore_c1_p1: {
+    en: "According to legend, Ascanius, son of Aeneas, founded the city of Alba Longa on these slopes after Troy fell. Nobody has ever pinned down exactly where. Scholars have a soft spot for the heights above the lake, close to the villa.",
+    fr: "Selon la légende, Ascagne, fils d’Énée, fonda la ville d’Albe-la-Longue sur ces pentes après la chute de Troie. Nul n’a jamais pu en fixer l’emplacement exact. Les savants ont un faible pour les hauteurs au-dessus du lac, tout près de la villa.",
+    fr_status: "needs native review"
+  },
+  lore_c1_p2: {
+    en: "Alba Longa ran the Latin League, a club of neighboring towns whose headquarters was a temple of Jupiter on the summit of Monte Cavo. Once a year the members climbed up in procession along the Sacred Way for the Feriae Latinae, sacrificed a white bull, and renewed their pact. Think of it as the original annual meeting, with better views.",
+    fr: "Albe-la-Longue présidait la Ligue latine, une sorte de club de villes voisines dont le siège était un temple de Jupiter au sommet du mont Cavo. Chaque année, les membres y montaient en procession par la Voie sacrée pour les Féries latines, sacrifiaient un taureau blanc et renouvelaient leur pacte. Une assemblée générale annuelle, en somme, avec une meilleure vue.",
+    fr_status: "needs native review",
+    fr_flag: "“Original annual meeting, with better views” (assemblée générale annuelle, avec une meilleure vue): does the joke work in French?"
+  },
+  lore_c1_p3: {
+    en: "Then came a succession dispute. The rightful king, Numitor, was deposed by his brother Amulius, who made Numitor’s daughter, Rhea Silvia, a Vestal. It did not go to plan: she had twins by the god Mars. Romulus and Remus were abandoned, suckled by a she-wolf, and raised by shepherds. Grown, they restored their grandfather to the throne, then left to found a city of their own on the Tiber. You may have heard of it.",
+    fr: "Puis vint une querelle de succession. Le roi légitime, Numitor, fut détrôné par son frère Amulius, qui fit de la fille de Numitor, Rhéa Silvia, une vestale. Cela ne se passa pas comme prévu : elle eut des jumeaux du dieu Mars. Romulus et Rémus furent abandonnés, allaités par une louve, puis recueillis par des bergers. Devenus grands, ils rendirent le trône à leur grand-père, puis partirent fonder leur propre cité sur le Tibre. Vous en avez peut-être entendu parler.",
+    fr_status: "needs native review"
+  },
+  lore_pull: {
+    en: "Before there was a Rome, the story goes, there was a family feud on this lake.",
+    fr: "Avant qu’il y ait une Rome, dit la légende, il y avait une querelle de famille sur ce lac.",
+    fr_status: "needs native review"
+  },
+  lore_c2_title: { en: "The summer court", fr: "La cour d’été", fr_status: "needs native review" },
+  lore_c2_p1: {
+    en: "The Romans loved this landscape long before the popes did. From the late Republic, wealthy families built villas around the shore. In the 1600s history repeated itself with better tailoring: when Urban VIII made Castel Gandolfo his summer residence, the noble families of his court wanted to be nearby, and built country houses of their own, often on the ruins of the old ones.",
+    fr: "Les Romains aimaient ce paysage bien avant les papes. Dès la fin de la République, de riches familles bâtirent des villas autour du lac. Au XVII<sup>e</sup> siècle, l’histoire se répéta, en mieux habillée : lorsque Urbain VIII fit de Castel Gandolfo sa résidence d’été, les grandes familles de sa cour voulurent s’installer à proximité et firent construire leurs propres maisons de campagne, souvent sur les ruines des anciennes.",
+    fr_status: "needs native review",
+    fr_flag: "“Better tailoring” (en mieux habillée): check the register."
+  },
+  lore_c2_p2: {
+    en: "Villa del Cardinale is one of them. The house that stood here first was Roman: according to historical sources, it received consuls and generals during the Feriae Latinae. The villa you will visit was built in 1629 by Cardinal Gerolamo Colonna, born in 1604 and a cardinal at twenty-three, which is the kind of head start one does not forget.",
+    fr: "La Villa del Cardinale est l’une d’elles. La maison qui s’élevait ici d’abord était romaine : selon les sources historiques, elle recevait consuls et généraux lors des Féries latines. La villa que vous découvrirez fut construite en 1629 par le cardinal Gerolamo Colonna, né en 1604 et cardinal à vingt-trois ans, ce qui est le genre d’avance qu’on n’oublie pas.",
+    fr_status: "needs native review"
+  },
+  lore_c2_p3: {
+    en: "The land came through his sister Anna: when she married Taddeo Barberini, the pope’s nephew, Urban VIII gave her the ground. The villa’s story, in other words, begins with a wedding. We take it as a good sign.",
+    fr: "Le terrain lui vint par sa sœur Anna : lorsqu’elle épousa Taddeo Barberini, neveu du pape, Urbain VIII lui offrit le domaine. L’histoire de la villa commence donc par un mariage. Nous y voyons un bon présage.",
+    fr_status: "needs native review"
+  },
+  lore_c2_p4: {
+    en: "The architect was Antonio Del Grande, who later worked on the Palazzo Colonna in Rome. The style is late Renaissance with touches of Mannerism: a three-arched entrance onto the Italian garden, and interiors that are enclosed and intimate against the open views outside. Light and shadow, soul and reason, a very seventeenth-century contrast.",
+    fr: "L’architecte fut Antonio Del Grande, qui travailla plus tard au palais Colonna, à Rome. Le style est celui de la fin de la Renaissance, avec des touches maniéristes : une entrée à trois arcades donnant sur le jardin à l’italienne, et des intérieurs clos et intimes face à l’ouverture des vues extérieures. L’ombre et la lumière, l’âme et la raison : un contraste très XVII<sup>e</sup> siècle.",
+    fr_status: "needs native review"
+  },
+  lore_c3_title: { en: "The sundial that counts only the good hours", fr: "Le cadran solaire qui ne compte que les bonnes heures", fr_status: "needs native review" },
+  lore_c3_p1: {
+    en: "Later, Archbishop Egidio Colonna opened the villa to the papal court at Castel Gandolfo, and it became a favorite place for celebrations. Pope Alexander VII Chigi was among the guests, and he gave Egidio the sundial on the tower. Its inscription is the one set in large type under the Venue, and a fair motto for the weekend. The festivities in the pope’s honor led to the Via Alessandrina, a wooded path along the lake to the Pontifical Palace. The villa says it still connects the two.",
+    fr: "Plus tard, l’archevêque Egidio Colonna ouvrit la villa à la cour pontificale de Castel Gandolfo, et elle devint un lieu de fêtes très prisé. Le pape Alexandre VII Chigi compta parmi ses hôtes et offrit à Egidio le cadran solaire de la tour. Son inscription est celle qui est écrite en grand sous la section Lieu, une devise qui convient bien à ce week-end. Les fêtes données en l’honneur du pape donnèrent naissance à la via Alessandrina, un chemin boisé qui longe le lac jusqu’au palais pontifical. La villa affirme qu’il relie encore les deux.",
+    fr_status: "needs native review"
+  },
+  lore_c3_p2: {
+    en: "The villa also tells a story about Egidio’s youth, back when he was still Carlo. As the tale goes, he took holy orders and a new name after a fatal quarrel with a Caetani prince, and Alessandro Manzoni borrowed the episode for Fra Cristoforo, the friar with a past in <em>The Betrothed</em>. We pass it along the way the villa does: as lore.",
+    fr: "La villa raconte aussi une histoire sur la jeunesse d’Egidio, quand il s’appelait encore Carlo. Selon la tradition, il prit les ordres et un nouveau nom après une querelle fatale avec un prince Caetani, et Alessandro Manzoni aurait emprunté l’épisode pour Fra Cristoforo, le frère au passé trouble des <em>Fiancés</em>. Nous le rapportons comme la villa le fait : en légende.",
+    fr_status: "needs native review"
+  },
+  lore_note_label: { en: "Found in the garden", fr: "Trouvé dans le jardin", fr_status: "needs native review" },
+  lore_note_text: {
+    en: "Among the classical finds on the grounds is a rock tomb attributed to the consul Gnaeus Cornelius Scipio Hispallus, cut into the cliff above the lake. Its façade is carved with twelve fasces and a curule chair, which was the Roman way of writing “very important person” on a gravestone.",
+    fr: "Parmi les vestiges antiques du domaine figure une tombe rupestre attribuée au consul Cnaeus Cornelius Scipio Hispallus, taillée dans la falaise au-dessus du lac. Sa façade est ornée de douze faisceaux et d’une chaise curule, ce qui était la façon romaine d’écrire « personnage important » sur une tombe.",
+    fr_status: "needs native review"
+  },
+  reading_label: { en: "Optional reading", fr: "Lectures facultatives", fr_status: "needs native review" },
+  reading1_title: { en: "The Aeneid", fr: "L’Énéide", fr_status: "needs native review" },
+  reading1_by: { en: "Virgil", fr: "Virgile", fr_status: "needs native review" },
+  reading1_text: {
+    en: "The poem behind the legend. Aeneas flees Troy and reaches Italy, and Jupiter promises that his son Ascanius will found Alba Longa. If you read only three bits: Book 1 (Jupiter’s prophecy of Rome), Book 6 (the parade of Rome’s future heroes, including the kings of Alba), and Book 8 (the shield, with the she-wolf and the twins). Translations: Robert Fagles, Robert Fitzgerald or Shadi Bartsch.",
+    fr: "Le poème derrière la légende. Énée fuit Troie et gagne l’Italie, et Jupiter promet que son fils Ascagne fondera Albe-la-Longue. Si vous n’en lisez que trois passages : le livre I (la prophétie de Jupiter sur Rome), le livre VI (le défilé des futurs héros de Rome, dont les rois d’Albe) et le livre VIII (le bouclier, avec la louve et les jumeaux).",
+    fr_status: "needs native review",
+    fr_flag: "French translation(s) to recommend: to be confirmed."
+  },
+  reading2_title: { en: "I promessi sposi", fr: "Les Fiancés", fr_status: "needs native review" },
+  reading2_by: { en: "Alessandro Manzoni · <em>The Betrothed</em>", fr: "Alessandro Manzoni · <em>I promessi sposi</em>", fr_status: "needs native review" },
+  reading2_text: {
+    en: "Italy’s great novel, set in 1628 to 1630, the very years the villa went up. Two villagers want to marry and spend most of the book prevented from doing so. We’d like to report a smoother experience. Lore has it that a Colonna prince from this villa inspired Fra Cristoforo, the friar with a past. It opens beside a lake. Try the first eight chapters, which end with the famously botched “surprise wedding”. Translation: Bruce Penman (Penguin Classics).",
+    fr: "Le grand roman italien, qui se déroule de 1628 à 1630, les années mêmes où la villa fut bâtie. Deux villageois veulent se marier et passent presque tout le livre empêchés de le faire. Nous aimerions annoncer un parcours plus tranquille. La légende veut qu’un prince Colonna de cette villa ait inspiré Fra Cristoforo, le frère au passé trouble. Le roman s’ouvre au bord d’un lac. Essayez les huit premiers chapitres, qui s’achèvent sur le fameux « mariage par surprise » raté.",
+    fr_status: "needs native review",
+    fr_flag: "French edition of Les Fiancés to recommend: to be confirmed."
   },
 
   /* Questions */
