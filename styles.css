@@ -392,9 +392,7 @@ sup { font-size: .65em; line-height: 0; vertical-align: .5em; } /* ordinals: XVI
 .pull { padding: 0; margin: 0; }
 .pull p { margin: 0; font-style: italic; font-size: clamp(1.5rem, 1.1rem + 1.4vw, 2rem); line-height: 1.25; text-wrap: balance; }
 .pull em { font-style: normal; }
-.pull .credit { font-style: normal; font-size: var(--caps-small); line-height: 1.5; margin-top: var(--s-2); }
 .deck { margin-top: var(--s-3); }
-.pull--verse { margin-top: var(--s-4); }
 .pull--verse p:first-child { font-size: clamp(1.375rem, 1.05rem + 1.1vw, 1.75rem); line-height: 1.35; }
 .pull--wide { text-align: center; margin: var(--s-4) auto; max-width: 40rem; }
 .pull--wide p, .pull--big p { font-size: clamp(1.75rem, 1.2rem + 1.8vw, 2.5rem); }
@@ -498,9 +496,8 @@ sup { font-size: .65em; line-height: 0; vertical-align: .5em; } /* ordinals: XVI
    so the verse is centered under the heading and the text follows in one centered column. Phones stay left-aligned. */
 @media (min-width: 768px) and (max-width: 1279px) {
   .ch1 > .lead { text-align: center; }
-  .ch1 .pull--verse { margin: var(--s-4) auto 0; }
+  .ch1 .art--verse { margin: var(--s-4) auto 0; max-width: 36rem; } /* no wider than the text column below it */
   .ch1 .pull--verse p:first-child { font-size: clamp(1.75rem, 1.1rem + 2vw, 2.5rem); line-height: 1.25; text-wrap: balance; }
-  .ch1 .pull--verse .credit { margin-top: var(--s-3); }
   .ch1 > .col--right { max-width: 36rem; margin-inline: auto; }
 }
 @media (min-width: 1024px) and (max-width: 1279px) {
@@ -510,9 +507,8 @@ sup { font-size: .65em; line-height: 0; vertical-align: .5em; } /* ordinals: XVI
 @media (min-width: 1280px) {
   .ch1 > .lead { grid-column: left; grid-row: 1; align-self: stretch; display: flex; flex-direction: column; }
   .ch1 .head { text-align: left; }
-  .ch1 .pull--verse { margin: auto 0; text-align: center; }          /* centered both ways in the space an image would fill */
+  .ch1 .art--verse { margin: auto 0; text-align: center; }           /* centered both ways in the space an image would fill */
   .ch1 .pull--verse p:first-child { font-size: clamp(1.875rem, 1rem + 1.7vw, 2.375rem); line-height: 1.28; text-wrap: balance; }
-  .ch1 .pull--verse .credit { margin-top: var(--s-3); }
   .ch1 > .col--right { grid-column: right; grid-row: 1; margin-top: var(--to-title); }
 }
 
@@ -525,7 +521,9 @@ html[lang="fr"] .ch1 .pull--verse { --verse-em: 15.6; }
 @media (min-width: 1280px) { .ch1 .pull--verse { --verse-cap: 2.375rem; } }
 @supports not (width: 1cqi) { .ch1 .pull--verse p:first-child { white-space: normal; text-wrap: balance; } }
 
-/* Chapter one verse: the same thin silver frame and padding as the palazzo and fountain plates */
-.ch1 .pull--verse { border: 1px solid var(--silver); padding: clamp(1rem, 2.2vw, 2rem); }
+/* Chapter one verse: the same thin silver frame as the palazzo and fountain plates, a little less padding since it holds
+   only the two lines; the citation sits outside, beneath it, as a caption like theirs */
+.ch1 .pull--verse { border: 1px solid var(--silver); padding: clamp(.875rem, 1.6vw, 1.5rem) clamp(1rem, 2.2vw, 2rem); }
 .nw { white-space: nowrap; }
-@media (max-width: 767px) { .ch1 .pull--verse { margin-top: var(--s-3); } }
+
+@media (max-width: 767px) { .ch1 .pull--verse { text-align: center; } } /* a panel like the drawings: centred over its centred caption */
