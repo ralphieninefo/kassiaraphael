@@ -406,8 +406,6 @@ sup { font-size: .65em; line-height: 0; vertical-align: .5em; } /* ordinals: XVI
   .chapter .main, .chapter .col { margin-top: 0; }
   .chapter > .lead { grid-column: left; grid-row: 1; }
   .chapter .head { margin-bottom: 0; }
-  /* One: title and the prophecy | the text */
-  .ch1 > .col--right { grid-column: right; grid-row: 1; margin-top: var(--to-title); }
   /* Two: title, palace and the nepotism pull quote on the left | the text on the right, ending level */
   .ch2 > .col--right { grid-column: right; grid-row: 1 / span 2; margin-top: var(--to-title); }
   .ch2 > .pull--wide { grid-column: left; grid-row: 2; margin: 0; max-width: none; text-align: left; }
@@ -417,11 +415,11 @@ sup { font-size: .65em; line-height: 0; vertical-align: .5em; } /* ordinals: XVI
 @media (min-width: 1024px) and (max-width: 1279px) {
   /* Small laptops: the right column is too narrow to sit beside the palace without a hole,
      so chapters Two and Three put the title row first and the text in two balanced columns beneath */
-  .ch1 > .lead, .ch2 > .lead, .ch3 > .lead { grid-column: full; }
+  .ch2 > .lead, .ch3 > .lead { grid-column: full; }
   .ch2 .art--palazzo { max-width: 26rem; }
   .ch3 .art--fountain { max-width: 18rem; }
-  .ch1 > .col--right, .ch2 > .col--right, .ch3 > .col--right { grid-column: full; grid-row: 2; margin-top: 0; columns: 2; column-gap: var(--col-gap); }
-  .ch1 > .col--right p, .ch2 > .col--right p, .ch3 > .col--right p { orphans: 2; widows: 2; }
+  .ch2 > .col--right, .ch3 > .col--right { grid-column: full; grid-row: 2; margin-top: 0; columns: 2; column-gap: var(--col-gap); }
+  .ch2 > .col--right p, .ch3 > .col--right p { orphans: 2; widows: 2; }
   .ch2 > .pull--wide { grid-row: 3; }
 }
 @media (max-width: 1023px) {
@@ -487,4 +485,18 @@ sup { font-size: .65em; line-height: 0; vertical-align: .5em; } /* ordinals: XVI
   html { scroll-behavior: auto; }
   .js .reveal { opacity: 1; transition: none; }
   .topbar { transition: none; }
+}
+
+/* Chapter one opens the section: heading and the Aeneid verse centered (a pause that opens a section), then one text column.
+   Phones stay left-aligned like every other section. */
+@media (min-width: 768px) {
+  .ch1 > .lead { text-align: center; }
+  .ch1 .pull--verse { margin: var(--s-4) auto 0; }
+  .ch1 .pull--verse p:first-child { font-size: clamp(1.875rem, 1.1rem + 2.2vw, 2.75rem); line-height: 1.25; text-wrap: balance; }
+  .ch1 .pull--verse .credit { margin-top: var(--s-3); }
+  .ch1 > .col--right { max-width: 36rem; margin-inline: auto; }
+}
+@media (min-width: 1024px) {
+  .ch1 > .lead { grid-column: full; grid-row: 1; }
+  .ch1 > .col--right { grid-column: 4 / span 6; grid-row: 2; margin-top: var(--s-2); max-width: none; }
 }
