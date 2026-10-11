@@ -209,13 +209,8 @@ window.SITE_CONTENT = {
   lore_label: { en: "Lore", fr: "Légendes", fr_status: "needs native review" },
   lore_title: { en: "The Lore of the Lake", fr: "Les légendes du lac", fr_status: "needs native review" },
   lore_standfirst: {
-    en: "Every great city needs a founding myth. Rome’s begins a few minutes from the villa.",
-    fr: "Toute grande ville a besoin d’un mythe fondateur. Celui de Rome commence à quelques minutes de la villa.",
-    fr_status: "needs native review"
-  },
-  lore_aside: {
-    en: "If you talked to Kassia at all in the summer of 2026, you heard about the <em>Odyssey</em>. You will be shocked to learn the fixation has followed her into wedding planning.",
-    fr: "Si vous avez parlé à Kassia à l’été 2026, vous avez forcément entendu parler de l’<em>Odyssée</em>. Vous serez stupéfaits d’apprendre que l’obsession s’est poursuivie jusque dans l’organisation du mariage.",
+    en: "If you talked to Kassia at all in the summer of 2026, you heard about the <em>Odyssey</em>. It led to the <em>Aeneid</em>, and, you will be shocked to learn, into wedding planning.",
+    fr: "Si vous avez parlé à Kassia à l’été 2026, vous avez forcément entendu parler de l’<em>Odyssée</em>. Elle l’a menée à l’<em>Énéide</em> et, vous serez stupéfaits de l’apprendre, jusque dans l’organisation du mariage.",
     fr_status: "needs native review"
   },
   lore_c1_title: { en: "Before Rome", fr: "Avant Rome", fr_status: "needs native review" },

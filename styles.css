@@ -380,9 +380,6 @@ sup { font-size: .65em; line-height: 0; vertical-align: .5em; } /* ordinals: XVI
 }
 .lore-plate figcaption { color: var(--travertine); opacity: .8; } /* cream on blue, like the footer captions */
 .lore-plate .frame img { width: 100%; }
-/* The aside under the intro line: small italic, the same cream as the intro; book titles set in roman */
-.lore-aside { margin: var(--s-2) 0 0; opacity: 1; }
-.lore-aside em { font-style: normal; }
 /* Chapters: kicker + title in columns 1-5; an optional margin item in columns 7-12; then the text in two columns,
    so there is no empty hole beside the copy. Phones: one column, margin items after the text, all left-aligned. */
 .chapter .head { margin-bottom: var(--s-3); }
