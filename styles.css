@@ -509,3 +509,12 @@ sup { font-size: .65em; line-height: 0; vertical-align: .5em; } /* ordinals: XVI
   .ch1 .pull--verse .credit { margin-top: var(--s-3); }
   .ch1 > .col--right { grid-column: right; grid-row: 1; margin-top: var(--to-title); }
 }
+
+/* Chapter one verse: always the translator's two lines. Each line stays whole and the type size follows the width of its box
+   (14.4em is the longest English line, 15.6em the longest French one), up to a cap per breakpoint. */
+.ch1 .pull--verse { container-type: inline-size; --verse-em: 14.4; --verse-cap: 1.5rem; }
+html[lang="fr"] .ch1 .pull--verse { --verse-em: 15.6; }
+.ch1 .pull--verse p:first-child { white-space: nowrap; text-wrap: nowrap; font-size: min(var(--verse-cap), calc(100cqi / var(--verse-em))); }
+@media (min-width: 768px) { .ch1 .pull--verse { --verse-cap: 2.5rem; } }
+@media (min-width: 1280px) { .ch1 .pull--verse { --verse-cap: 2.375rem; } }
+@supports not (width: 1cqi) { .ch1 .pull--verse p:first-child { white-space: normal; text-wrap: balance; } }
