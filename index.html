@@ -256,25 +256,29 @@
       </div>
 
       <figure class="plate lore-plate reveal">
-        <div class="frame"><img src="/images/lore-lake-1440.jpg" srcset="/images/lore-lake-1440.jpg 1440w, /images/lore-lake-2880.jpg 2880w" sizes="(min-width: 1024px) 1100px, 92vw" width="1440" height="586" loading="lazy" data-t-alt="lake_img_alt" alt=""></div>
+        <div class="frame"><img src="/images/lore-plate-1440.jpg" srcset="/images/lore-plate-1440.jpg 1440w, /images/lore-plate-2880.jpg 2880w" sizes="(min-width: 1024px) 1100px, 92vw" width="1440" height="585" loading="lazy" data-t-alt="lore_plate_alt" alt=""></div>
         <figcaption data-t="lake_img_caption"></figcaption>
       </figure>
 
       <hr class="rule">
 
-      <!-- Chapters: kicker + title on the left, an optional margin item on the right, then the text in two columns
-           (7-12 starts at the same x as every other section). Margin items follow the text in the DOM, so on phones they come after it. -->
+      <!-- Chapters: kicker + title and a photo in the left columns (the photo stretches to the height of the text, so no empty
+           hole), the text in columns 7-12. Phones: heading, photo, text, then the pull quote / note, all left-aligned. -->
       <article class="grid chapter reveal">
         <header class="head">
           <p class="caps kicker" data-t="lore_one"></p>
           <h3 data-t="lore_c1_title"></h3>
         </header>
+        <figure class="plate chapter-fig">
+          <div class="frame"><img src="/images/lore-1-720.jpg" srcset="/images/lore-1-720.jpg 720w, /images/lore-1-1440.jpg 1440w" sizes="(min-width: 1024px) 480px, 92vw" width="720" height="540" loading="lazy" data-t-alt="lore_ph1_alt" alt=""></div>
+          <figcaption data-t="lore_ph1_caption"></figcaption>
+        </figure>
         <div class="main">
           <p data-t="lore_c1_p1"></p>
           <p data-t="lore_c1_p2"></p>
           <p data-t="lore_c1_p3"></p>
+          <blockquote class="pull"><p data-t="lore_pull"></p></blockquote>
         </div>
-        <blockquote class="margin pull"><p data-t="lore_pull"></p></blockquote>
       </article>
 
       <hr class="rule">
@@ -284,6 +288,10 @@
           <p class="caps kicker" data-t="lore_two"></p>
           <h3 data-t="lore_c2_title"></h3>
         </header>
+        <figure class="plate chapter-fig">
+          <div class="frame"><img src="/images/lore-2-720.jpg" srcset="/images/lore-2-720.jpg 720w, /images/lore-2-1440.jpg 1440w" sizes="(min-width: 1024px) 480px, 92vw" width="720" height="720" loading="lazy" data-t-alt="lore_ph2_alt" alt=""></div>
+          <figcaption data-t="lore_ph2_caption"></figcaption>
+        </figure>
         <div class="main">
           <p data-t="lore_c2_p1"></p>
           <p data-t="lore_c2_p2"></p>
@@ -294,19 +302,23 @@
 
       <hr class="rule">
 
-      <article class="grid chapter chapter--aside reveal">
+      <article class="grid chapter reveal">
         <header class="head">
           <p class="caps kicker" data-t="lore_three"></p>
           <h3 data-t="lore_c3_title"></h3>
         </header>
+        <figure class="plate chapter-fig chapter-fig--tall">
+          <div class="frame"><img src="/images/lore-3-720.jpg" srcset="/images/lore-3-720.jpg 720w, /images/lore-3-1440.jpg 1440w" sizes="(min-width: 1024px) 480px, 92vw" width="720" height="840" loading="lazy" data-t-alt="lore_ph3_alt" alt=""></div>
+          <figcaption data-t="lore_ph3_caption"></figcaption>
+        </figure>
         <div class="main">
           <p data-t="lore_c3_p1"></p>
           <p data-t="lore_c3_p2"></p>
+          <aside class="note">
+            <p class="caps" data-t="lore_note_label"></p>
+            <p data-t="lore_note_text"></p>
+          </aside>
         </div>
-        <aside class="margin note">
-          <p class="caps" data-t="lore_note_label"></p>
-          <p data-t="lore_note_text"></p>
-        </aside>
       </article>
 
       <hr class="rule">

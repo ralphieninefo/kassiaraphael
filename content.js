@@ -282,6 +282,41 @@ window.SITE_CONTENT = {
     fr: "Pour les curieux : les légendes du lac&nbsp;↓",
     fr_status: "needs native review"
   },
+  lore_plate_alt: {
+    en: "Lake Albano and its crater rim, seen from above",
+    fr: "Le lac Albano et le bord de son cratère, vus d’en haut",
+    fr_status: "needs native review"
+  },
+  lore_ph1_alt: {
+    en: "Lake Albano and its far crater rim, seen over a brick pergola",
+    fr: "Le lac Albano et le bord lointain de son cratère, vus par-dessus une pergola de brique",
+    fr_status: "needs native review"
+  },
+  lore_ph1_caption: {
+    en: "Above Lago Albano",
+    fr: "Au-dessus du lac Albano",
+    fr_status: "needs native review"
+  },
+  lore_ph2_alt: {
+    en: "Semicircular stone steps and white chairs set out in a garden, with a glimpse of the lake beyond the trees",
+    fr: "Des gradins de pierre en demi-cercle et des chaises blanches dans un jardin, avec un aperçu du lac derrière les arbres",
+    fr_status: "needs native review"
+  },
+  lore_ph2_caption: {
+    en: "The ceremony garden",
+    fr: "Le jardin de la cérémonie",
+    fr_status: "needs native review"
+  },
+  lore_ph3_alt: {
+    en: "A railed garden path under old oak trees, with the lake glimmering below",
+    fr: "Un chemin de jardin bordé d’une balustrade sous de vieux chênes, avec le lac qui scintille en contrebas",
+    fr_status: "needs native review"
+  },
+  lore_ph3_caption: {
+    en: "Down to the lake",
+    fr: "Vers le lac",
+    fr_status: "needs native review"
+  },
   reading_label: { en: "Optional reading", fr: "Lectures facultatives", fr_status: "needs native review" },
   reading1_title: { en: "The Aeneid", fr: "L’Énéide", fr_status: "needs native review" },
   reading1_by: { en: "Virgil", fr: "Virgile", fr_status: "needs native review" },
