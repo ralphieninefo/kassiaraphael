@@ -372,6 +372,9 @@ sup { font-size: .65em; line-height: 0; vertical-align: .5em; } /* ordinals: XVI
 .chapter-fig .frame { position: relative; aspect-ratio: 4 / 3; }
 .chapter-fig .frame img { position: absolute; inset: clamp(8px, 1.2vw, 14px); width: calc(100% - 2 * clamp(8px, 1.2vw, 14px)); height: calc(100% - 2 * clamp(8px, 1.2vw, 14px)); object-fit: cover; }
 .chapter-fig--tall .frame { aspect-ratio: 6 / 7; }
+.chapter-figs { display: flex; flex-direction: column; gap: var(--s-3); margin: 0 0 var(--s-4); }
+.chapter-figs .chapter-fig { margin: 0; flex: 1; }
+.chapter-fig--wide .frame { aspect-ratio: 5 / 2; }
 /* The pull quote (end of chapter one): large italic, left-aligned, no ornament (orange is for section dots and the Friday marker only) */
 .pull { margin: var(--s-4) 0 0; padding: 0; }
 .pull p { margin: 0; font-style: italic; font-size: clamp(1.5rem, 1.1rem + 1.4vw, 2rem); line-height: 1.25; text-wrap: balance; }
@@ -381,8 +384,8 @@ sup { font-size: .65em; line-height: 0; vertical-align: .5em; } /* ordinals: XVI
 .note p:last-child { margin: 0; font-size: .9375em; }
 @media (min-width: 1024px) {
   .chapter > .head { grid-area: 1 / left; margin-bottom: 0; }
-  .chapter > .chapter-fig { grid-area: 2 / left; align-self: stretch; margin: 0; }
-  .chapter > .chapter-fig .frame { flex: 1; aspect-ratio: auto; min-height: 12rem; }
+  .chapter > .chapter-fig, .chapter > .chapter-figs { grid-area: 2 / left; align-self: stretch; margin: 0; }
+  .chapter > .chapter-fig .frame, .chapter-figs .chapter-fig .frame { flex: 1; aspect-ratio: auto; min-height: 7rem; }
   .chapter > .main { grid-area: 1 / right / span 2; }
 }
 /* Optional reading: two entries on the same columns */

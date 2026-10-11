@@ -288,21 +288,11 @@ window.SITE_CONTENT = {
     fr_status: "needs native review"
   },
   lore_ph1_alt: {
-    en: "Lake Albano and its far crater rim, seen over a brick pergola",
-    fr: "Le lac Albano et le bord lointain de son cratère, vus par-dessus une pergola de brique",
-    fr_status: "needs native review"
-  },
-  lore_ph1_caption: {
-    en: "Above Lago Albano",
-    fr: "Au-dessus du lac Albano",
-    fr_status: "needs native review"
-  },
-  lore_ph2_alt: {
     en: "Semicircular stone steps and white chairs set out in a garden, with a glimpse of the lake beyond the trees",
     fr: "Des gradins de pierre en demi-cercle et des chaises blanches dans un jardin, avec un aperçu du lac derrière les arbres",
     fr_status: "needs native review"
   },
-  lore_ph2_caption: {
+  lore_ph1_caption: {
     en: "The ceremony garden",
     fr: "Le jardin de la cérémonie",
     fr_status: "needs native review"
@@ -315,6 +305,26 @@ window.SITE_CONTENT = {
   lore_ph3_caption: {
     en: "Down to the lake",
     fr: "Vers le lac",
+    fr_status: "needs native review"
+  },
+  lore_ph2a_alt: {
+    en: "The long pale facade of Castel Gandolfo on the far rim of the lake, under a cloudy sky",
+    fr: "La longue façade claire de Castel Gandolfo sur le bord opposé du lac, sous un ciel nuageux",
+    fr_status: "needs native review"
+  },
+  lore_ph2a_caption: {
+    en: "Castel Gandolfo, across the lake",
+    fr: "Castel Gandolfo, de l’autre côté du lac",
+    fr_status: "needs native review"
+  },
+  lore_ph2b_alt: {
+    en: "A cream villa with a terracotta tower on a wooded ridge above the lake, beneath a line of umbrella pines",
+    fr: "Une villa crème à la tour terracotta sur une crête boisée au-dessus du lac, sous une rangée de pins parasols",
+    fr_status: "needs native review"
+  },
+  lore_ph2b_caption: {
+    en: "The villa on its ridge, seen from the shore",
+    fr: "La villa sur sa crête, vue depuis la rive",
     fr_status: "needs native review"
   },
   reading_label: { en: "Optional reading", fr: "Lectures facultatives", fr_status: "needs native review" },
