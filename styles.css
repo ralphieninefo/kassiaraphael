@@ -333,6 +333,7 @@ figcaption { margin-top: .75rem; color: var(--ink-soft); text-align: center; tex
 .motto { font-style: italic; font-weight: 400; font-size: min(calc(var(--text) * 1.85), calc(var(--h2) * .94)); /* ~23% up, always below the section heading */ line-height: 1.2; margin: 0 auto var(--s-3); text-wrap: balance; }
 /* The motto's story: set exactly like the Why Italy paragraph (.italy-text); only the translated motto is italic */
 .gloss em { font-style: italic; }
+
 .gloss { text-wrap: pretty; } /* long paragraph: avoid a short last line rather than balance the lines */
 @media (max-width: 767px) {
   /* Phones: paragraphs, labels and headings start at the same left edge as everything else.
@@ -380,30 +381,69 @@ sup { font-size: .65em; line-height: 0; vertical-align: .5em; } /* ordinals: XVI
 .chapter .kicker { margin: 0 0 var(--s-1); opacity: .8; }
 .chapter h3 { font-size: clamp(1.625rem, 1.2rem + 1.2vw, 2.125rem); line-height: 1.15; }
 .chapter .main > p:last-child { margin-bottom: 0; }
-.margin { margin: var(--s-4) 0 0; }
-/* The pull quote: large italic, left-aligned, no ornament (orange is for section dots and the Friday marker only) */
-.pull { padding: 0; }
+/* Lore spacing system, one set of gaps everywhere:
+   label -> title: --s-1 · title -> deck: --s-3 · top row -> body row (and between rows): --s-4 ·
+   around every hairline and the fountain ornament: --s-5 (the site's .rule spacing). */
+.pull { padding: 0; margin: 0; }
 .pull p { margin: 0; font-style: italic; font-size: clamp(1.5rem, 1.1rem + 1.4vw, 2rem); line-height: 1.25; text-wrap: balance; }
-/* Margin note: a hairline box */
-.note { border: 1px solid var(--rule); padding: var(--s-3); }
-.note .caps { margin: 0 0 var(--s-1); opacity: .86; }
-.note p:last-child { margin: 0; font-size: .9375em; }
+.pull em { font-style: normal; }
+.pull .credit { font-style: normal; font-size: var(--caps-small); line-height: 1.5; margin-top: var(--s-2); }
+.deck { margin-top: var(--s-3); }
+.pull--verse { margin-top: var(--s-4); }
+.pull--verse p:first-child { font-size: clamp(1.375rem, 1.05rem + 1.1vw, 1.75rem); line-height: 1.35; }
+.pull--wide { text-align: center; margin: var(--s-4) auto; max-width: 40rem; }
+.pull--wide p, .pull--big p { font-size: clamp(1.75rem, 1.2rem + 1.8vw, 2.5rem); }
+/* Kassia's drawings, cream on blue like the footer villa */
+.art { margin: var(--s-4) 0 0; }
+.art img { width: 100%; height: auto; opacity: .85; }
+.art figcaption, .lore-ornament figcaption { color: var(--travertine); opacity: .8; }
+/* Section break between Two and Three: Bernini's fountain in place of the hairline, same space above and below */
+.sheet > .lore-ornament { margin: var(--s-5) auto; max-width: 14rem; text-align: center; }
+.lore-ornament img { width: 100%; height: auto; opacity: .85; }
+.chapter .main > :last-child, .chapter .col > :last-child { margin-bottom: 0; }
+.chapter .main, .chapter .col { margin-top: var(--s-4); }
 @media (min-width: 1024px) {
-  .chapter { row-gap: var(--s-4); }
-  .chapter > .head { grid-area: 1 / left; margin-bottom: 0; }
-  .chapter > .margin { grid-area: 1 / right; margin: 0; align-self: start; }
-  .chapter > .main { grid-area: 2 / full; columns: 2; column-gap: var(--col-gap); } /* each column = 6 grid columns; the second starts at column 7 */
-  .chapter > .main p { orphans: 3; widows: 3; }
-  /* Chapter three is short: title and note on the left, text on the right (no gap under the title) */
-  .chapter--aside > .margin { grid-area: 2 / left; }
-  .chapter--aside > .main { grid-area: 1 / right / span 2; columns: auto; }
+  .chapter { row-gap: var(--s-4); grid-template-rows: none; align-items: start;
+             --to-title: calc(var(--caps) * 1.5 + var(--s-1)); } /* height of the label line: right columns start level with the title */
+  .chapter .main, .chapter .col { margin-top: 0; }
+  .chapter > .lead { grid-column: left; grid-row: 1; }
+  .chapter .head { margin-bottom: 0; }
+  /* One: title and deck | the prophecy; then the text in two balanced columns (the second starts at column 7) */
+  .ch1 > .pull--verse { grid-column: right; grid-row: 1; margin-top: var(--to-title); }
+  .ch1 > .main { grid-column: full; grid-row: 2; columns: 2; column-gap: var(--col-gap); }
+  .ch1 > .main p { orphans: 2; widows: 2; }
+  /* Two: title, palace and the nepotism pull quote on the left | the text on the right, ending level */
+  .ch2 > .col--right { grid-column: right; grid-row: 1 / span 2; margin-top: var(--to-title); }
+  .ch2 > .pull--wide { grid-column: left; grid-row: 2; margin: 0; max-width: none; text-align: left; }
+  /* Three: title and pull quote | text */
+  .ch3 > .col--right { grid-column: right; grid-row: 1; margin-top: var(--to-title); }
+}
+@media (min-width: 1024px) and (max-width: 1279px) {
+  /* Small laptops: the right column is too narrow to sit beside the palace without a hole,
+     so chapters Two and Three put the title row first and the text in two balanced columns beneath */
+  .ch2 > .lead, .ch3 > .lead { grid-column: full; }
+  .ch2 .art--palazzo { max-width: 26rem; }
+  .ch2 > .col--right, .ch3 > .col--right { grid-column: full; grid-row: 2; margin-top: 0; columns: 2; column-gap: var(--col-gap); }
+  .ch2 > .col--right p, .ch3 > .col--right p { orphans: 2; widows: 2; }
+  .ch2 > .pull--wide { grid-row: 3; }
+}
+@media (max-width: 1023px) {
+  .chapter .lead > .art { margin-bottom: 0; }
+  .art--palazzo { max-width: 30rem; }
 }
 /* Optional reading: two entries on the same columns */
+/* Lore: citation line and the closing line of the section */
+.credit { margin: 0; opacity: .75; font-size: var(--caps-small); letter-spacing: .16em; }
+.credit em { font-style: italic; }
+.lore-close { text-align: center; }
+.lore-close .motto { margin-bottom: var(--s-2); }
+.lore-close-line { font-style: italic; font-size: var(--text); line-height: var(--leading); margin: 0 auto var(--s-2); }
 .reading-label { margin: 0 0 var(--s-4); opacity: .86; }
 .reading-list { display: grid; row-gap: var(--s-5); }
 .reading-list h3 { font-size: 1.625rem; font-style: italic; font-weight: 400; line-height: 1.2; margin: 0 0 var(--s-1); }
 .reading-list h3 .alt { font-style: normal; font-size: .72em; opacity: .85; white-space: nowrap; }
 .reading-list .by { margin: 0 0 var(--s-2); opacity: .8; }
+.reading-list > article { border-top: 1px solid var(--silver); padding-top: var(--s-3); } /* book cards: a thin silver rule above each */
 .reading-list p:last-child { margin: 0; }
 @media (min-width: 768px) and (max-width: 1023px) { .reading-list { grid-template-columns: 1fr 1fr; column-gap: var(--col-gap); } }
 @media (min-width: 1024px) {
