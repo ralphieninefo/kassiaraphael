@@ -121,7 +121,7 @@ window.SITE_CONTENT = {
   aerial_alt: { en: "Villa del Cardinale above Lake Albano", fr: "La Villa del Cardinale au-dessus du lac Albano", fr_status: "needs native review" },
   aerial_caption: { en: "Above Lake Albano", fr: "Au-dessus du lac Albano", fr_status: "needs native review" },
   venue_rest: {
-    en: "We’ll show you the rest in person. In the meantime, <a href=\"#lore\">the legends of the lake</a>.",
+    en: "We’ll show you the rest in person. In the meantime, <a href=\"#lore\">the lore of the lake</a>.",
     fr: "Le reste, nous vous le montrerons sur place. En attendant, <a href=\"#lore\">les légendes du lac</a>.",
     fr_status: "needs native review"
   },
