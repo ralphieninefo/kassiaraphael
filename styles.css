@@ -396,22 +396,16 @@ sup { font-size: .65em; line-height: 0; vertical-align: .5em; } /* ordinals: XVI
 /* Kassia's drawings, cream on blue like the footer villa */
 .art { margin: var(--s-4) 0 0; }
 .art img { width: 100%; height: auto; opacity: .85; }
-.art figcaption, .lore-ornament figcaption { color: var(--travertine); opacity: .8; }
+.art figcaption { color: var(--travertine); opacity: .8; }
 /* Section break between Two and Three: Bernini's fountain in place of the hairline, same space above and below */
-.sheet > .lore-ornament { margin: var(--s-5) auto; max-width: 14rem; text-align: center; }
-.lore-ornament img { width: 100%; height: auto; opacity: .85; }
 .chapter .main > :last-child, .chapter .col > :last-child { margin-bottom: 0; }
 .chapter .main, .chapter .col { margin-top: var(--s-4); }
 @media (min-width: 1024px) {
   .chapter { row-gap: var(--s-4); grid-template-rows: none; align-items: start;
-             --to-title: calc(var(--caps) * 1.5 + var(--s-1)); } /* height of the label line: right columns start level with the title */
+             --to-title: 0px; } /* no kicker line any more: right columns start level with the title */
   .chapter .main, .chapter .col { margin-top: 0; }
   .chapter > .lead { grid-column: left; grid-row: 1; }
   .chapter .head { margin-bottom: 0; }
-  /* One: title and deck | the prophecy; then the text in two balanced columns (the second starts at column 7) */
-  .ch1 > .pull--verse { grid-column: right; grid-row: 1; margin-top: var(--to-title); }
-  .ch1 > .main { grid-column: full; grid-row: 2; columns: 2; column-gap: var(--col-gap); }
-  .ch1 > .main p { orphans: 2; widows: 2; }
   /* Two: title, palace and the nepotism pull quote on the left | the text on the right, ending level */
   .ch2 > .col--right { grid-column: right; grid-row: 1 / span 2; margin-top: var(--to-title); }
   .ch2 > .pull--wide { grid-column: left; grid-row: 2; margin: 0; max-width: none; text-align: left; }
@@ -423,6 +417,7 @@ sup { font-size: .65em; line-height: 0; vertical-align: .5em; } /* ordinals: XVI
      so chapters Two and Three put the title row first and the text in two balanced columns beneath */
   .ch2 > .lead, .ch3 > .lead { grid-column: full; }
   .ch2 .art--palazzo { max-width: 26rem; }
+  .ch3 .art--fountain { max-width: 18rem; }
   .ch2 > .col--right, .ch3 > .col--right { grid-column: full; grid-row: 2; margin-top: 0; columns: 2; column-gap: var(--col-gap); }
   .ch2 > .col--right p, .ch3 > .col--right p { orphans: 2; widows: 2; }
   .ch2 > .pull--wide { grid-row: 3; }
@@ -430,6 +425,7 @@ sup { font-size: .65em; line-height: 0; vertical-align: .5em; } /* ordinals: XVI
 @media (max-width: 1023px) {
   .chapter .lead > .art { margin-bottom: 0; }
   .art--palazzo { max-width: 30rem; }
+.art--fountain { max-width: 20rem; }
 }
 /* Optional reading: two entries on the same columns */
 /* Lore: citation line and the closing line of the section */
@@ -489,4 +485,27 @@ sup { font-size: .65em; line-height: 0; vertical-align: .5em; } /* ordinals: XVI
   html { scroll-behavior: auto; }
   .js .reveal { opacity: 1; transition: none; }
   .topbar { transition: none; }
+}
+
+/* Chapter one: the Aeneid verse sits where an image would, centered in the left column under the heading (like the drawings in
+   Two and Three), larger than the other pull quotes; the text stays on the right. Below 1280px there is no room beside the text,
+   so the verse is centered under the heading and the text follows in one centered column. Phones stay left-aligned. */
+@media (min-width: 768px) and (max-width: 1279px) {
+  .ch1 > .lead { text-align: center; }
+  .ch1 .pull--verse { margin: var(--s-4) auto 0; }
+  .ch1 .pull--verse p:first-child { font-size: clamp(1.75rem, 1.1rem + 2vw, 2.5rem); line-height: 1.25; text-wrap: balance; }
+  .ch1 .pull--verse .credit { margin-top: var(--s-3); }
+  .ch1 > .col--right { max-width: 36rem; margin-inline: auto; }
+}
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .ch1 > .lead { grid-column: full; grid-row: 1; }
+  .ch1 > .col--right { grid-column: 4 / span 6; grid-row: 2; margin-top: var(--s-2); max-width: none; }
+}
+@media (min-width: 1280px) {
+  .ch1 > .lead { grid-column: left; grid-row: 1; align-self: stretch; display: flex; flex-direction: column; }
+  .ch1 .head { text-align: left; }
+  .ch1 .pull--verse { margin: auto 0; text-align: center; }          /* centered both ways in the space an image would fill */
+  .ch1 .pull--verse p:first-child { font-size: clamp(1.875rem, 1rem + 1.7vw, 2.375rem); line-height: 1.28; text-wrap: balance; }
+  .ch1 .pull--verse .credit { margin-top: var(--s-3); }
+  .ch1 > .col--right { grid-column: right; grid-row: 1; margin-top: var(--to-title); }
 }
