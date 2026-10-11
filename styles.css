@@ -293,10 +293,8 @@ figcaption { margin-top: .75rem; color: var(--ink-soft); text-align: center; tex
   .story .story-shot { max-width: none; margin-bottom: 0; } /* photo fills columns 1-5, text 7-12 */
 }
 
-/* ---------- Why Italy: a centred breather, label above, ~55 characters per line ---------- */
-.italy { text-align: center; }
-.italy .label { justify-content: center; margin-bottom: var(--s-3); }
-.italy-text { font-size: var(--text); line-height: var(--leading); max-width: 34rem; margin: 0 auto; text-wrap: balance; } /* the same body token as every section */
+/* ---------- Why Italy: the standard two columns, like Welcome (label + heading left, body right) ---------- */
+.italy .main > p:last-child { margin-bottom: 0; } /* standard 1em between paragraphs, none after the last */
 
 /* ---------- Venue: head | copy, then drawing | tower + aerial, then the motto ---------- */
 .venue .drawing { margin-bottom: var(--s-4); }
@@ -331,16 +329,13 @@ figcaption { margin-top: .75rem; color: var(--ink-soft); text-align: center; tex
 #venue > .rule:last-of-type { margin-block: var(--s-4) var(--s-3); }
 #venue { padding-bottom: calc(var(--frame-inner) + var(--s-5)); }
 .motto { font-style: italic; font-weight: 400; font-size: min(calc(var(--text) * 1.85), calc(var(--h2) * .94)); /* ~23% up, always below the section heading */ line-height: 1.2; margin: 0 auto var(--s-3); text-wrap: balance; }
-/* The motto's story: set exactly like the Why Italy paragraph (.italy-text); only the translated motto is italic */
+/* The motto's story: body text in a narrow column centred on the page, the lines set ragged right; only the translated motto is italic */
+.gloss { font-size: var(--text); line-height: var(--leading); max-width: 34rem; margin: 0 auto; text-align: left; text-wrap: pretty; }
 .gloss em { font-style: italic; }
-
-.gloss { text-wrap: pretty; } /* long paragraph: avoid a short last line rather than balance the lines */
 @media (max-width: 767px) {
   /* Phones: paragraphs, labels and headings start at the same left edge as everything else.
      Still centred: hero, captions, the Latin motto line, "We'll show you the rest", footer. */
-  .italy, .gloss { text-align: left; }
-  .italy .label { justify-content: flex-start; }
-  .italy-text, .gloss { max-width: none; margin-inline: 0; text-wrap: pretty; }
+  .gloss { max-width: none; margin-inline: 0; }
 }
 
 /* ---------- Weekend ---------- */
