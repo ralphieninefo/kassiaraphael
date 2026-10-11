@@ -282,6 +282,10 @@ figcaption { margin-top: .75rem; color: var(--ink-soft); text-align: center; tex
   @supports (initial-letter: 3) { .story .main > p:first-child::first-letter { initial-letter: 3; } }
   @supports not (initial-letter: 3) { .story .main > p:first-child::first-letter { font-size: 4.6em; } }
 }
+/* One measure for all four paragraphs: plain (greedy) wrapping, so every line runs out to the column's right edge.
+   Safari's text-wrap: pretty pulls whole paragraphs in from the edge, which left the drop-cap paragraph looking wider
+   than the ones below. Short last lines are handled in the copy with non-breaking spaces instead. */
+.story .main > p { text-wrap: wrap; }
 /* Text starts at its cap height, so the first line sits flush with the top of whatever it is set beside */
 @media (min-width: 1024px) { .story .main > p:first-child { text-box: trim-start cap alphabetic; } }
 @media (min-width: 1024px) {

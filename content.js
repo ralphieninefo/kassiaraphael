@@ -72,19 +72,19 @@ window.SITE_CONTENT = {
     fr_status: "needs native review"
   },
   story_p2: {
-    en: "He spent the next summer on the American River, paddling the chase kayak and herding tipsy Sacramentans to the dock, and returned to school tanned and noticeably stronger. Kassia noticed. By spring of senior year he was a fixture at her all-girls house, the lone man at wine nights and rom&nbsp;coms. It took us until almost graduation to do something about it.",
-    fr: "L’été suivant, il l’a passé sur l’American River, à pagayer dans le kayak de sécurité et à ramener au ponton des habitants de Sacramento un peu pompettes, avant de rentrer à la fac bronzé et nettement plus costaud. Kassia l’a remarqué. Au printemps de notre dernière année, il était devenu un habitué de sa colocation entre filles, le seul homme des soirées vin et des comédies romantiques. Il nous a fallu attendre presque la remise des diplômes pour nous décider.",
+    en: "He spent the next summer on the American River, paddling the chase kayak and herding tipsy Sacramentans to the dock, and returned to school tanned and noticeably stronger. Kassia noticed. By spring of senior year he was a fixture at her all-girls house, the lone man at wine nights and rom&nbsp;coms. It took us until almost graduation to do something about&nbsp;it.",
+    fr: "L’été suivant, il l’a passé sur l’American River, à pagayer dans le kayak de sécurité et à ramener au ponton des habitants de Sacramento un peu pompettes, avant de rentrer à la fac bronzé et nettement plus costaud. Kassia l’a remarqué. Au printemps de notre dernière année, il était devenu un habitué de sa colocation entre filles, le seul homme des soirées vin et des comédies romantiques. Il nous a fallu attendre presque la remise des diplômes pour nous&nbsp;décider.",
     fr_status: "needs native review",
     fr_flag: "Check: “chase kayak” (kayak de sécurité), “tipsy Sacramentans” (habitants de Sacramento un peu pompettes), “returned to school tanned and noticeably stronger” (rentrer à la fac bronzé et nettement plus costaud), “all-girls house” (colocation entre filles), “rom coms” (comédies romantiques)."
   },
   story_p3: {
-    en: "Then came the firsts. The summer after graduation, Raphaël taught Kassia to drive. She taught him where he’d left the keys, then helped him land the job that started his career in tech. In the winter of 2020, mid-pandemic, he taught her to ski: six months on the road, a month at a time from Jackson&nbsp;Hole to Taos, more than thirty days on skis in her first season. She taught him to lose at cards. Somewhere in there, we grew up.",
-    fr: "Puis sont venues les premières fois. L’été après nos diplômes, Raphaël a appris à Kassia à conduire. Elle lui a appris à retrouver ses clés, puis l’a aidé à décrocher le poste qui a lancé sa carrière dans la tech. Pendant l’hiver 2020, en pleine pandémie, il lui a appris à skier&nbsp;: six mois sur la route, un mois à la fois de Jackson&nbsp;Hole à Taos, plus de trente jours de ski dès sa première saison. Elle lui a appris à perdre aux cartes. Quelque part en chemin, nous avons grandi.",
+    en: "Then came the firsts. The summer after graduation, Raphaël taught Kassia to drive. She taught him where he’d left the keys, then helped him land the job that started his career in tech. In the winter of 2020, mid-pandemic, he taught her to ski: six months on the road, a month at a time from Jackson&nbsp;Hole to Taos, more than thirty days on skis in her first season. She taught him to lose at cards. Somewhere in there, we grew&nbsp;up.",
+    fr: "Puis sont venues les premières fois. L’été après nos diplômes, Raphaël a appris à Kassia à conduire. Elle lui a appris à retrouver ses clés, puis l’a aidé à décrocher le poste qui a lancé sa carrière dans la tech. Pendant l’hiver 2020, en pleine pandémie, il lui a appris à skier&nbsp;: six mois sur la route, un mois à la fois de Jackson&nbsp;Hole à Taos, plus de trente jours de ski dès sa première saison. Elle lui a appris à perdre aux cartes. Quelque part en chemin, nous avons&nbsp;grandi.",
     fr_status: "needs native review"
   },
   story_p4: {
-    en: "Ten years in, we are finally ready to get married. We hope you’ll be there.",
-    fr: "Dix ans plus tard, nous sommes enfin prêts à nous marier. Nous espérons que vous serez là.",
+    en: "Ten years in, we are finally ready to get married. We hope you’ll be&nbsp;there.",
+    fr: "Dix ans plus tard, nous sommes enfin prêts à nous marier. Nous espérons que vous serez&nbsp;là.",
     fr_status: "needs native review"
   },
 
