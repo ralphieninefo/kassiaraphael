@@ -208,11 +208,6 @@ window.SITE_CONTENT = {
   /* Lore: the legends of the lake, as the villa tells them. Last section, after Questions; linked from the Venue, Questions and footer. Not in the nav. */
   lore_label: { en: "Lore", fr: "Légendes", fr_status: "needs native review" },
   lore_title: { en: "The Lore of the Lake", fr: "Les légendes du lac", fr_status: "needs native review" },
-  lore_standfirst: {
-    en: "Every great city needs a founding myth. Rome’s begins a few minutes from the villa.",
-    fr: "Toute grande ville a besoin d’un mythe fondateur. Celui de Rome commence à quelques minutes de la villa.",
-    fr_status: "needs native review"
-  },
   lore_one: { en: "One", fr: "Un", fr_status: "needs native review" },
   lore_two: { en: "Two", fr: "Deux", fr_status: "needs native review" },
   lore_three: { en: "Three", fr: "Trois", fr_status: "needs native review" },
@@ -240,11 +235,6 @@ window.SITE_CONTENT = {
   lore_c1_p3: {
     en: "The myth tells that a descendant of Aeneas, Rhea Silvia, bore twins by the god Mars: Romulus and Remus. Her uncle Amulius had seized the throne of Alba Longa, and the twins were abandoned, suckled by a she-wolf, and raised by a shepherd. After restoring their grandfather to the throne, they went on to found Rome. Well, Romulus did anyway, after a touch of fratricide.",
     fr: "Selon le mythe, une descendante d’Énée, Rhéa Silvia, eut du dieu Mars des jumeaux : Romulus et Rémus. Son oncle Amulius s’était emparé du trône d’Albe-la-Longue ; les jumeaux furent abandonnés, allaités par une louve et élevés par un berger. Après avoir rendu le trône à leur grand-père, ils partirent fonder Rome. Enfin, Romulus, du moins, après un léger fratricide.",
-    fr_status: "needs native review"
-  },
-  lore_pull: {
-    en: "Before there was a Rome, the story goes, there was a family feud on this lake.",
-    fr: "Avant qu’il y ait une Rome, dit la légende, il y avait une querelle de famille sur ce lac.",
     fr_status: "needs native review"
   },
   lore_c2_title: { en: "The summer court", fr: "La cour d’été", fr_status: "needs native review" },
@@ -276,11 +266,6 @@ window.SITE_CONTENT = {
   lore_c2_pull: {
     en: "“Nepotism” comes from <em>nipote</em>, Italian for nephew.",
     fr: "« Népotisme » vient de <em>nipote</em>, « neveu » en italien.",
-    fr_status: "needs native review"
-  },
-  lore_c3_pull: {
-    en: "He took a new name, Egidio, and a new life.",
-    fr: "Il prit un nouveau nom, Egidio, et une nouvelle vie.",
     fr_status: "needs native review"
   },
   lore_nudge: {

@@ -396,10 +396,8 @@ sup { font-size: .65em; line-height: 0; vertical-align: .5em; } /* ordinals: XVI
 /* Kassia's drawings, cream on blue like the footer villa */
 .art { margin: var(--s-4) 0 0; }
 .art img { width: 100%; height: auto; opacity: .85; }
-.art figcaption, .lore-ornament figcaption { color: var(--travertine); opacity: .8; }
+.art figcaption { color: var(--travertine); opacity: .8; }
 /* Section break between Two and Three: Bernini's fountain in place of the hairline, same space above and below */
-.sheet > .lore-ornament { margin: var(--s-5) auto; max-width: 14rem; text-align: center; }
-.lore-ornament img { width: 100%; height: auto; opacity: .85; }
 .chapter .main > :last-child, .chapter .col > :last-child { margin-bottom: 0; }
 .chapter .main, .chapter .col { margin-top: var(--s-4); }
 @media (min-width: 1024px) {
@@ -423,6 +421,7 @@ sup { font-size: .65em; line-height: 0; vertical-align: .5em; } /* ordinals: XVI
      so chapters Two and Three put the title row first and the text in two balanced columns beneath */
   .ch2 > .lead, .ch3 > .lead { grid-column: full; }
   .ch2 .art--palazzo { max-width: 26rem; }
+  .ch3 .art--fountain { max-width: 18rem; }
   .ch2 > .col--right, .ch3 > .col--right { grid-column: full; grid-row: 2; margin-top: 0; columns: 2; column-gap: var(--col-gap); }
   .ch2 > .col--right p, .ch3 > .col--right p { orphans: 2; widows: 2; }
   .ch2 > .pull--wide { grid-row: 3; }
@@ -430,6 +429,7 @@ sup { font-size: .65em; line-height: 0; vertical-align: .5em; } /* ordinals: XVI
 @media (max-width: 1023px) {
   .chapter .lead > .art { margin-bottom: 0; }
   .art--palazzo { max-width: 30rem; }
+.art--fountain { max-width: 20rem; }
 }
 /* Optional reading: two entries on the same columns */
 /* Lore: citation line and the closing line of the section */
