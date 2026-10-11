@@ -135,8 +135,8 @@ window.SITE_CONTENT = {
     fr_status: "needs native review"
   },
   toast_caption: {
-    en: "The Conservatory of&nbsp;Flowers · The day we got engaged",
-    fr: "Le Conservatory of&nbsp;Flowers · Le jour de nos fiançailles",
+    en: "The Conservatory of&nbsp;Flowers<br>The day we got engaged",
+    fr: "Le Conservatory of&nbsp;Flowers<br>Le jour de nos fiançailles",
     fr_status: "needs native review"
   },
   thu_day: { en: "Thursday, October&nbsp;7", fr: "jeudi 7&nbsp;octobre", fr_status: "needs native review" },
@@ -148,8 +148,8 @@ window.SITE_CONTENT = {
   fri_day: { en: "Friday, October&nbsp;8", fr: "vendredi 8&nbsp;octobre", fr_status: "needs native review" },
   fri_time: { en: "5:00 pm, Villa del&nbsp;Cardinale", fr: "17 h, Villa del&nbsp;Cardinale", fr_status: "needs native review" },
   fri_text: {
-    en: "Guests are asked to arrive by 4:30. Cocktails will be served while you wait. The ceremony begins at five, followed by dinner and a party.",
-    fr: "Merci d’arriver avant 16 h 30. Des cocktails seront servis en attendant la cérémonie, qui commence à 17 h, suivie du dîner et d’une fête.",
+    en: "Guests are asked to arrive by 4:30, when cocktails begin. The ceremony starts at five, followed by dinner and a party.",
+    fr: "Accueil des invités à 16&nbsp;h&nbsp;30 autour d’un cocktail. La cérémonie commence à 17&nbsp;h, suivie du dîner et de la fête.",
     fr_status: "needs native review"
   },
   sat_day: { en: "Saturday, October&nbsp;9", fr: "samedi 9&nbsp;octobre", fr_status: "needs native review" },
@@ -197,8 +197,8 @@ window.SITE_CONTENT = {
   },
   villa_label: { en: "To the villa", fr: "Jusqu’à la villa", fr_status: "needs native review" },
   villa_text: {
-    en: "The villa is up the hill in Rocca di Papa, so you’ll need a car, taxi, or shuttle from the hotel. We’re sorting out a shuttle and will post it here.",
-    fr: "La villa se trouve en haut de la colline, à Rocca di Papa : il vous faudra une voiture, un taxi ou la navette depuis l’hôtel. Nous organisons une navette et en donnerons les détails ici.",
+    en: "The villa sits on the crater rim above Castel Gandolfo (technically in Rocca di&nbsp;Papa), so you’ll need a car, taxi, or shuttle from the hotel. We’re sorting out a shuttle and will post it here.",
+    fr: "La villa se trouve sur le bord du cratère, au-dessus de Castel Gandolfo (sur la commune de Rocca di&nbsp;Papa), il vous faudra une voiture, un taxi ou la navette depuis l’hôtel. Nous organisons une navette et en donnerons les détails ici.",
     fr_status: "needs native review"
   },
 
@@ -369,8 +369,8 @@ window.SITE_CONTENT = {
     fr_status: "needs native review"
   },
   colophon: {
-    en: "Words&nbsp;by&nbsp;Kassia. Built&nbsp;by&nbsp;Raphaël.<br>Set&nbsp;in&nbsp;Neuton.",
-    fr: "Textes&nbsp;de&nbsp;Kassia. Réalisé&nbsp;par&nbsp;Raphaël.<br>Composé&nbsp;en&nbsp;Neuton.",
+    en: "Words&nbsp;by&nbsp;Kassia&nbsp;· Site&nbsp;by&nbsp;Raphaël<br>Set&nbsp;in&nbsp;Neuton",
+    fr: "Textes&nbsp;de&nbsp;Kassia&nbsp;· Site&nbsp;de&nbsp;Raphaël<br>Composé&nbsp;en&nbsp;Neuton",
     fr_status: "needs native review"
   },
   footer_names: {
