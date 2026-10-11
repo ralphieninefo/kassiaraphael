@@ -372,7 +372,12 @@ figcaption { margin-top: .75rem; color: var(--ink-soft); text-align: center; tex
 sup { font-size: .65em; line-height: 0; vertical-align: .5em; } /* ordinals: XVII<sup>e</sup> */
 
 /* ---------- Lore: the legends of the lake (albano). Same grid, scale and hairlines as every section. ---------- */
-.sheet > .lore-plate { margin: var(--s-5) auto 0; } /* .plate resets margins; keep it centred in the content box */
+.sheet > .lore-plate { margin: var(--s-4) auto 0; } /* the standard heading-row-to-content gap; .plate resets margins */
+/* Intro line beside the heading: its first line shares the heading's cap height (label line + gap + the h2/lede cap offsets) */
+@media (min-width: 1024px) {
+  .lore > .grid:first-child { grid-template-rows: auto; } /* one row only, so no empty second row adds to the gap */
+  .lore > .grid > .lede { grid-row: 1; margin-top: calc(.342 * var(--h2) + 1.5rem); }
+}
 .lore-plate figcaption { color: var(--travertine); opacity: .8; } /* cream on blue, like the footer captions */
 .lore-plate .frame img { width: 100%; }
 /* Chapters: kicker + title in columns 1-5; an optional margin item in columns 7-12; then the text in two columns,
@@ -520,7 +525,7 @@ html[lang="fr"] .ch1 .pull--verse { --verse-em: 15.6; }
 @media (min-width: 1280px) { .ch1 .pull--verse { --verse-cap: 2.375rem; } }
 @supports not (width: 1cqi) { .ch1 .pull--verse p:first-child { white-space: normal; text-wrap: balance; } }
 
-/* Chapter one verse: hairlines above and below, like the plates in chapters two and three */
-.ch1 .pull--verse { border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); padding-block: var(--s-4); }
+/* Chapter one verse: the same thin silver frame and padding as the palazzo and fountain plates */
+.ch1 .pull--verse { border: 1px solid var(--silver); padding: clamp(1rem, 2.2vw, 2rem); }
 .nw { white-space: nowrap; }
 @media (max-width: 767px) { .ch1 .pull--verse { margin-top: var(--s-3); } }

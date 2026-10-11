@@ -208,9 +208,14 @@ window.SITE_CONTENT = {
   /* Lore: the legends of the lake, as the villa tells them. Last section, after Questions; linked from the Venue, Questions and footer. Not in the nav. */
   lore_label: { en: "Lore", fr: "Légendes", fr_status: "needs native review" },
   lore_title: { en: "The Lore of the Lake", fr: "Les légendes du lac", fr_status: "needs native review" },
+  lore_standfirst: {
+    en: "Every great city needs a founding myth. Rome’s begins a few minutes from the villa.",
+    fr: "Toute grande ville a besoin d’un mythe fondateur. Celui de Rome commence à quelques minutes de la villa.",
+    fr_status: "needs native review"
+  },
   lore_c1_title: { en: "Before Rome", fr: "Avant Rome", fr_status: "needs native review" },
   lore_c1_p1: {
-    en: "The legend of Lake Albano is older than Rome. Ascanius, son of Aeneas, better known as Iulus to the Romans who traced Julius Caesar’s family to his line, founded Alba Longa along the crater edge of the lake. In Vergil’s <em>Aeneid</em>, old man Tiberinus, the river god, foretells it.",
+    en: "The legend of Lake Albano is older than Rome. Ascanius, son of Aeneas, better known as Iulus to the Romans who traced Julius Caesar’s family to his line, founded Alba Longa along the crater’s edge. In Vergil’s <em>Aeneid</em>, old man Tiberinus, the river god, foretells it.",
     fr: "La légende du lac Albano est plus ancienne que Rome. Ascagne, fils d’Énée, que les Romains appelaient Iule et dont la famille de Jules César se disait descendre, fonda Albe-la-Longue sur le bord du cratère. Dans l’<em>Énéide</em> de Virgile, le vieux Tibérinus, dieu du fleuve, l’annonce.",
     fr_status: "needs native review"
   },
@@ -256,10 +261,10 @@ window.SITE_CONTENT = {
     fr_status: "needs native review"
   },
   lore_c3_p1: {
-    en: "The cardinal’s little brother had a past. As the villa tells it, young Carlo Colonna, before he found his calling, had a fatal quarrel with a Caetani prince, from a rival Roman family. Afterwards he took a new name, Egidio, and the vows: a fresh start, and a very Roman one. Rome began with a fratricide, after all, so he was in good company. He rose to archbishop, and the villa became the papal court’s favorite place to be entertained, Pope Alexander VII among the guests. Nobody, as far as the story goes, asked after the Caetani prince. Egidio’s youth is said to have inspired Fra Cristoforo, the friar with a past in Manzoni’s <em>The Betrothed</em> (<em>I&nbsp;promessi&nbsp;sposi</em>). You will have to read it and let us know if you see the similarities.",
-    fr: "Le petit frère du cardinal avait un passé. Selon la villa, le jeune Carlo Colonna, avant de trouver sa vocation, aurait eu une querelle fatale avec un prince Caetani, d’une famille rivale de Rome. Après quoi il prit un nouveau nom, Egidio, et les vœux : un nouveau départ, et très romain. Rome est née d’un fratricide, après tout ; il était en bonne compagnie. Il devint archevêque, et la villa devint le lieu de divertissement préféré de la cour pontificale, le pape Alexandre VII compris parmi ses invités. Personne, d’après l’histoire, ne s’est enquis du prince Caetani. La jeunesse d’Egidio aurait inspiré Fra Cristoforo, le frère au passé trouble des <em>Fiancés</em> (<em>I&nbsp;promessi&nbsp;sposi</em>) de Manzoni. À vous de le lire et de nous dire si vous voyez les ressemblances.",
+    en: "The cardinal’s little brother had a past. As the villa tells it, young Carlo Colonna, before he found his calling, had a fatal quarrel with a Caetani prince, from a rival Roman family. Afterwards he took a new name, Egidio, and the vows: a fresh start, and a very Roman one. Rome began with a fratricide, after all, so he was in good company. He rose to archbishop, and the villa became the papal court’s favorite place to be entertained, with Pope Alexander VII among the guests. Egidio’s youth is said to have inspired Fra Cristoforo, the friar with a past in Manzoni’s <em>The Betrothed</em> (<em>I&nbsp;promessi&nbsp;sposi</em>). You will have to read it and let us know if you see the similarities.",
+    fr: "Le petit frère du cardinal avait un passé. Selon la villa, le jeune Carlo Colonna, avant de trouver sa vocation, aurait eu une querelle fatale avec un prince Caetani, d’une famille rivale de Rome. Après quoi il prit un nouveau nom, Egidio, et les vœux : un nouveau départ, et très romain. Rome est née d’un fratricide, après tout ; il était en bonne compagnie. Il devint archevêque, et la villa devint le lieu de divertissement préféré de la cour pontificale, avec le pape Alexandre VII parmi ses invités. La jeunesse d’Egidio aurait inspiré Fra Cristoforo, le frère au passé trouble des <em>Fiancés</em> (<em>I&nbsp;promessi&nbsp;sposi</em>) de Manzoni. À vous de le lire et de nous dire si vous voyez les ressemblances.",
     fr_status: "needs native review",
-    fr_flag: "Check the dry tone: “trouver sa vocation” (found his calling), “un nouveau départ, et très romain”, “ne s’est enquis du prince Caetani”."
+    fr_flag: "Check the dry tone: “trouver sa vocation” (found his calling), “un nouveau départ, et très romain”."
   },
   lore_nudge: {
     en: "For the curious: the lore of the lake&nbsp;↓",
@@ -279,15 +284,15 @@ window.SITE_CONTENT = {
     fr_status: "needs native review"
   },
   reading1_text: {
-    en: "The poem behind the legend. Aeneas flees Troy and reaches Italy, and the gods keep announcing what his son Ascanius will found: Alba Longa first, Rome eventually. If you read only three bits: Book 1 (Jupiter’s prophecy of Rome), Book 6 (the parade of Rome’s future heroes, including the kings of Alba), and Book 8 (the shield, with the she-wolf and the twins). Translations: Sarah Ruden (our pick), Robert Fagles or Robert Fitzgerald.",
-    fr: "Le poème derrière la légende. Énée fuit Troie et gagne l’Italie, et les dieux n’en finissent pas d’annoncer ce que son fils Ascagne fondera : Albe-la-Longue d’abord, Rome ensuite. Si vous n’en lisez que trois passages : le livre I (la prophétie de Jupiter sur Rome), le livre VI (le défilé des futurs héros de Rome, dont les rois d’Albe) et le livre VIII (le bouclier, avec la louve et les jumeaux).",
+    en: "The poem behind the legend. Aeneas flees Troy and reaches Italy, and the gods keep announcing what his son Ascanius will found: Alba Longa first, Rome eventually. If you read only three bits: Book&nbsp;1 (Jupiter’s prophecy of Rome), Book&nbsp;6 (the parade of Rome’s future heroes, including the kings of Alba), and Book&nbsp;8 (the shield, with the she-wolf and the twins). Translations: Sarah Ruden (our pick), Robert Fagles or Robert Fitzgerald.",
+    fr: "Le poème derrière la légende. Énée fuit Troie et gagne l’Italie, et les dieux n’en finissent pas d’annoncer ce que son fils Ascagne fondera : Albe-la-Longue d’abord, Rome ensuite. Si vous n’en lisez que trois passages : le livre&nbsp;I (la prophétie de Jupiter sur Rome), le livre&nbsp;VI (le défilé des futurs héros de Rome, dont les rois d’Albe) et le livre&nbsp;VIII (le bouclier, avec la louve et les jumeaux).",
     fr_status: "needs native review",
     fr_flag: "French translation(s) to recommend: to be confirmed."
   },
   reading2_title: { en: "I promessi sposi <span class=\"alt\">(The Betrothed)</span>", fr: "Les Fiancés <span class=\"alt\">(I promessi sposi)</span>", fr_status: "needs native review" },
   reading2_by: { en: "Alessandro Manzoni", fr: "Alessandro Manzoni", fr_status: "needs native review" },
   reading2_text: {
-    en: "Italy’s great novel, set in 1628 to 1630, the very years the villa went up. Two villagers want to marry and spend most of the book prevented from doing so. It features Fra Cristoforo, whom the villa claims as one of its own. It opens on Lake Como, which we have decided to forgive. Try the first eight chapters, which end with the famously botched “surprise wedding”. Translations: Michael F. Moore (Modern Library) or Bruce Penman (Penguin Classics).",
+    en: "Italy’s great novel, set in 1628 to 1630, the very years the villa went up. Two villagers want to marry and spend most of the book prevented from doing so. It features Fra Cristoforo, whom the villa claims as one of its own. It opens on Lake Como, which we have decided to forgive. Try the first eight chapters, which end with the famously botched “surprise wedding.” Translations: Michael F. Moore (Modern Library) or Bruce Penman (Penguin Classics).",
     fr: "Le grand roman italien, qui se déroule de 1628 à 1630, les années mêmes où la villa fut bâtie. Deux villageois veulent se marier et passent presque tout le livre empêchés de le faire. On y croise Fra Cristoforo, que la villa revendique comme l’un des siens. Le roman s’ouvre sur le lac de Côme, que nous avons décidé de pardonner. Essayez les huit premiers chapitres, qui s’achèvent sur le fameux « mariage par surprise » raté.",
     fr_status: "needs native review"
   },
