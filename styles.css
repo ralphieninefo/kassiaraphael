@@ -487,16 +487,25 @@ sup { font-size: .65em; line-height: 0; vertical-align: .5em; } /* ordinals: XVI
   .topbar { transition: none; }
 }
 
-/* Chapter one opens the section: heading and the Aeneid verse centered (a pause that opens a section), then one text column.
-   Phones stay left-aligned like every other section. */
-@media (min-width: 768px) {
+/* Chapter one: the Aeneid verse sits where an image would, centered in the left column under the heading (like the drawings in
+   Two and Three), larger than the other pull quotes; the text stays on the right. Below 1280px there is no room beside the text,
+   so the verse is centered under the heading and the text follows in one centered column. Phones stay left-aligned. */
+@media (min-width: 768px) and (max-width: 1279px) {
   .ch1 > .lead { text-align: center; }
   .ch1 .pull--verse { margin: var(--s-4) auto 0; }
-  .ch1 .pull--verse p:first-child { font-size: clamp(1.875rem, 1.1rem + 2.2vw, 2.75rem); line-height: 1.25; text-wrap: balance; }
+  .ch1 .pull--verse p:first-child { font-size: clamp(1.75rem, 1.1rem + 2vw, 2.5rem); line-height: 1.25; text-wrap: balance; }
   .ch1 .pull--verse .credit { margin-top: var(--s-3); }
   .ch1 > .col--right { max-width: 36rem; margin-inline: auto; }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1024px) and (max-width: 1279px) {
   .ch1 > .lead { grid-column: full; grid-row: 1; }
   .ch1 > .col--right { grid-column: 4 / span 6; grid-row: 2; margin-top: var(--s-2); max-width: none; }
+}
+@media (min-width: 1280px) {
+  .ch1 > .lead { grid-column: left; grid-row: 1; align-self: stretch; display: flex; flex-direction: column; }
+  .ch1 .head { text-align: left; }
+  .ch1 .pull--verse { margin: auto 0; text-align: center; }          /* centered both ways in the space an image would fill */
+  .ch1 .pull--verse p:first-child { font-size: clamp(1.875rem, 1rem + 1.7vw, 2.375rem); line-height: 1.28; text-wrap: balance; }
+  .ch1 .pull--verse .credit { margin-top: var(--s-3); }
+  .ch1 > .col--right { grid-column: right; grid-row: 1; margin-top: var(--to-title); }
 }

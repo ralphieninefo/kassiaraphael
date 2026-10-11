@@ -215,7 +215,7 @@ window.SITE_CONTENT = {
     fr_status: "needs native review"
   },
   lore_c1_verse: {
-    en: "In thirty circling years, Ascanius<br>Will found the city Alba — glorious&nbsp;name.",
+    en: "In thirty circling years, Ascanius <br>Will found the city Alba — glorious&nbsp;name.",
     fr: "Quand trente années auront tourné, Ascagne<br>fondera la ville d’Albe au nom&nbsp;glorieux.",
     fr_status: "needs native review"
   },
