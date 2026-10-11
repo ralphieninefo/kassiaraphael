@@ -172,7 +172,7 @@ window.SITE_CONTENT = {
   lake_img_caption: { text: "Lago Albano" },
   map_alt: {
     en: "Line map: the coast at Fiumicino, Rome, Fiumicino and Ciampino airports, the train from Termini to Castel Gandolfo, Lake Albano and the villa",
-    fr: "Carte au trait : la côte à Fiumicino, Rome, les aéroports de Fiumicino et de Ciampino, le train de Termini à Castel Gandolfo, le lac Albano et la villa",
+    fr: "Carte au trait&nbsp;: la côte à Fiumicino, Rome, les aéroports de Fiumicino et de Ciampino, le train de Termini à Castel Gandolfo, le lac Albano et la villa",
     fr_status: "needs native review"
   },
   map_rome: { text: "Roma" },
@@ -213,10 +213,15 @@ window.SITE_CONTENT = {
     fr: "Toute grande ville a besoin d’un mythe fondateur. Celui de Rome commence à quelques minutes de la villa.",
     fr_status: "needs native review"
   },
+  lore_aside: {
+    en: "If you talked to Kassia at all in the summer of 2026, you heard about the <em>Odyssey</em>. You will be shocked to learn the fixation has followed her into wedding planning.",
+    fr: "Si vous avez parlé à Kassia à l’été 2026, vous avez forcément entendu parler de l’<em>Odyssée</em>. Vous serez stupéfaits d’apprendre que l’obsession s’est poursuivie jusque dans l’organisation du mariage.",
+    fr_status: "needs native review"
+  },
   lore_c1_title: { en: "Before Rome", fr: "Avant Rome", fr_status: "needs native review" },
   lore_c1_p1: {
-    en: "The legend of Lake Albano is older than Rome. Ascanius, son of Aeneas, better known as Iulus to the Romans who traced Julius Caesar’s family to his line, founded Alba Longa along the crater’s edge. In Vergil’s <em>Aeneid</em>, old man Tiberinus, the river god, foretells it.",
-    fr: "La légende du lac Albano est plus ancienne que Rome. Ascagne, fils d’Énée, que les Romains appelaient Iule et dont la famille de Jules César se disait descendre, fonda Albe-la-Longue sur le bord du cratère. Dans l’<em>Énéide</em> de Virgile, le vieux Tibérinus, dieu du fleuve, l’annonce.",
+    en: "The legend of Lake Albano is older than Rome. Ascanius, son of Aeneas, founded Alba Longa along the crater’s edge. The Romans knew him as Iulus, and Julius Caesar traced his family to him. In Vergil’s <em>Aeneid</em>, old man Tiberinus, the river god, foretells it.",
+    fr: "La légende du lac Albano est plus ancienne que Rome. Ascagne, fils d’Énée, fonda Albe-la-Longue sur le bord du cratère. Les Romains l’appelaient Iule, et Jules César faisait remonter sa famille jusqu’à lui. Dans l’<em>Énéide</em> de Virgile, le vieux Tibérinus, dieu du fleuve, l’annonce.",
     fr_status: "needs native review"
   },
   lore_c1_verse: {
@@ -231,28 +236,28 @@ window.SITE_CONTENT = {
   },
   lore_c1_p2: {
     en: "The name comes from the white sow, with her thirty piglets, that Tiberinus offered as proof his prophecy was true: <em>alba</em> means white. Scholars have never pinned down exactly where Alba Longa stood; we like to imagine it on the heights above the lake, conveniently close to the villa.",
-    fr: "Le nom vient de la truie blanche et de ses trente porcelets, que Tibérinus donna pour preuve de sa prophétie : <em>alba</em> veut dire blanche. Nul n’a jamais pu situer exactement Albe-la-Longue ; nous aimons l’imaginer sur les hauteurs au-dessus du lac, opportunément près de la villa.",
+    fr: "Le nom vient de la truie blanche et de ses trente porcelets, que Tibérinus donna pour preuve de sa prophétie&nbsp;: <em>alba</em> veut dire blanche. Nul n’a jamais pu situer exactement Albe-la-Longue&nbsp;; nous aimons l’imaginer sur les hauteurs au-dessus du lac, opportunément près de la villa.",
     fr_status: "needs native review"
   },
   lore_c1_p3: {
     en: "The myth tells that a descendant of Aeneas, Rhea Silvia, bore twins by the god Mars: Romulus and Remus. Her uncle Amulius had seized the throne of Alba Longa from her father, Numitor, and the twins were abandoned, suckled by a she-wolf, and raised by a shepherd. After restoring their grandfather to the throne, they went on to found Rome. Well, Romulus did anyway, after a touch of fratricide.",
-    fr: "Selon le mythe, une descendante d’Énée, Rhéa Silvia, eut du dieu Mars des jumeaux : Romulus et Rémus. Son oncle Amulius avait pris à son père, Numitor, le trône d’Albe-la-Longue ; les jumeaux furent abandonnés, allaités par une louve et élevés par un berger. Après avoir rendu le trône à leur grand-père, ils partirent fonder Rome. Enfin, Romulus, du moins, après un léger fratricide.",
+    fr: "Selon le mythe, une descendante d’Énée, Rhéa Silvia, eut du dieu Mars des jumeaux&nbsp;: Romulus et Rémus. Son oncle Amulius avait pris à son père, Numitor, le trône d’Albe-la-Longue&nbsp;; les jumeaux furent abandonnés, allaités par une louve et élevés par un berger. Après avoir rendu le trône à leur grand-père, ils partirent fonder Rome. Enfin, Romulus, du moins, après un léger fratricide.",
     fr_status: "needs native review"
   },
   lore_c2_title: { en: "The summer court", fr: "La cour d’été", fr_status: "needs native review" },
   lore_c2_p1: {
-    en: "Romans loved the rolling hills around Lake Albano long before the popes did. From the late Roman Republic, wealthy families built villas along the shore. In the 1600s, Pope Urban VIII made Castel Gandolfo his summer residence, and the nobility of his court, naturally wanting to be nearby, built houses of their own, often on top of Roman ruins. Villa del Cardinale is one of them. According to the villa, the house that first stood here was Roman, and it lodged consuls and generals during the Feriae Latinae, an ancient festival of truce when Rome’s consuls climbed Monte Cavo, above the lake, to sacrifice a white bull to Jupiter.",
-    fr: "Les Romains aimaient les collines autour du lac Albano bien avant les papes. Dès la fin de la République romaine, de riches familles bâtirent des villas sur ses rives. Au XVIIe siècle, le pape Urbain VIII fit de Castel Gandolfo sa résidence d’été, et la noblesse de sa cour, tenant naturellement à rester proche, s’y fit construire des maisons, souvent sur des ruines romaines. La Villa del Cardinale est l’une d’elles. Selon la villa, la maison qui s’élevait ici d’abord était romaine et logeait consuls et généraux pendant les Féries latines, une fête antique de trêve où les consuls de Rome montaient au mont Cavo, au-dessus du lac, sacrifier un taureau blanc à Jupiter.",
+    en: "Romans loved the rolling hills around Lake Albano long before the popes did. From the late Roman Republic, wealthy families built villas along the shore. In the 1600s, Pope Urban VIII made Castel Gandolfo his summer residence, and the nobility of his court, naturally wanting to be nearby, built houses of their own, often on top of Roman ruins. Villa del Cardinale is one of them. According to the villa, the house that first stood here was Roman, and it lodged consuls and generals during the Feriae Latinae. Once a year, in a truce, Rome’s consuls climbed Monte Cavo above the lake to sacrifice a white bull to Jupiter.",
+    fr: "Les Romains aimaient les collines autour du lac Albano bien avant les papes. Dès la fin de la République romaine, de riches familles bâtirent des villas sur ses rives. Au XVIIe siècle, le pape Urbain VIII fit de Castel Gandolfo sa résidence d’été, et la noblesse de sa cour, tenant naturellement à rester proche, s’y fit construire des maisons, souvent sur des ruines romaines. La Villa del Cardinale est l’une d’elles. Selon la villa, la maison qui s’élevait ici d’abord était romaine et logeait consuls et généraux pendant les Féries latines. Une fois l’an, à la faveur d’une trêve, les consuls de Rome montaient au mont Cavo, au-dessus du lac, sacrifier un taureau blanc à Jupiter.",
     fr_status: "needs native review"
   },
   lore_c2_p2: {
     en: "The villa you will visit in October 2027 was built in 1629 by Cardinal Gerolamo Colonna, who became a cardinal at twenty-three. It came to be through a wedding: as the villa tells it, his sister Anna married Taddeo Barberini, nephew of Pope Urban VIII, and the pope gifted her the grounds. Apropos of nothing, the term “nepotism” comes from <em>nipote</em>, Italian for nephew, and Pope Urban VIII was among its champions.",
-    fr: "La villa que vous découvrirez en octobre 2027 fut construite en 1629 par le cardinal Gerolamo Colonna, devenu cardinal à vingt-trois ans. Elle doit son existence à un mariage : selon la villa, sa sœur Anna épousa Taddeo Barberini, neveu du pape Urbain VIII, et le pape lui offrit le terrain. Sans aucun rapport, le mot « népotisme » vient de <em>nipote</em>, « neveu » en italien, et Urbain VIII en fut l’un des champions.",
+    fr: "La villa que vous découvrirez en octobre 2027 fut construite en 1629 par le cardinal Gerolamo Colonna, devenu cardinal à vingt-trois ans. Elle doit son existence à un mariage&nbsp;: selon la villa, sa sœur Anna épousa Taddeo Barberini, neveu du pape Urbain VIII, et le pape lui offrit le terrain. Sans aucun rapport, le mot « népotisme » vient de <em>nipote</em>, « neveu » en italien, et Urbain VIII en fut l’un des champions.",
     fr_status: "needs native review"
   },
   lore_c2_p3: {
     en: "The architect associated with the villa is Antonio Del Grande, working in the style of the late Renaissance with Mannerist influences. As you walk in through the three-arched entrance, you’ll notice the contrast: dark, intimate interiors against light, open views and gardens along the villa walls.",
-    fr: "L’architecte associé à la villa est Antonio Del Grande, dans le style de la fin de la Renaissance aux influences maniéristes. En franchissant l’entrée à trois arcades, vous remarquerez le contraste : des intérieurs sombres et intimes face aux vues ouvertes et lumineuses et aux jardins qui longent les murs de la villa.",
+    fr: "L’architecte associé à la villa est Antonio Del Grande, dans le style de la fin de la Renaissance aux influences maniéristes. En franchissant l’entrée à trois arcades, vous remarquerez le contraste&nbsp;: des intérieurs sombres et intimes face aux vues ouvertes et lumineuses et aux jardins qui longent les murs de la villa.",
     fr_status: "needs native review"
   },
   lore_c3_title: {
@@ -261,14 +266,14 @@ window.SITE_CONTENT = {
     fr_status: "needs native review"
   },
   lore_c3_p1: {
-    en: "The cardinal’s little brother had a past. As the villa tells it, young Carlo Colonna, before he found his calling, had a fatal quarrel with a Caetani prince, from a rival Roman family. Afterwards he took a new name, Egidio, and the vows: a fresh start, and a very Roman one. Rome began with a fratricide, after all, so he was in good company. He rose to archbishop, and the villa became the papal court’s favorite place to be entertained, with Pope Alexander VII among the guests. Egidio’s youth is said to have inspired Fra Cristoforo, the friar with a past in Manzoni’s <em>The Betrothed</em> (<em>I&nbsp;promessi&nbsp;sposi</em>). You will have to read it and let us know if you see the similarities.",
-    fr: "Le petit frère du cardinal avait un passé. Selon la villa, le jeune Carlo Colonna, avant de trouver sa vocation, aurait eu une querelle fatale avec un prince Caetani, d’une famille rivale de Rome. Après quoi il prit un nouveau nom, Egidio, et les vœux : un nouveau départ, et très romain. Rome est née d’un fratricide, après tout ; il était en bonne compagnie. Il devint archevêque, et la villa devint le lieu de divertissement préféré de la cour pontificale, avec le pape Alexandre VII parmi ses invités. La jeunesse d’Egidio aurait inspiré Fra Cristoforo, le frère au passé trouble des <em>Fiancés</em> (<em>I&nbsp;promessi&nbsp;sposi</em>) de Manzoni. À vous de le lire et de nous dire si vous voyez les ressemblances.",
+    en: "The cardinal’s little brother had a past. As the villa tells it, young Carlo Colonna had a fatal quarrel with a Caetani prince from a rival Roman family, before he found his calling. Afterwards he took a new name, Egidio, and the vows: a fresh start, and a very Roman one. Rome began with a fratricide, after all, so he was in good company. He rose to archbishop, and the villa became the papal court’s favorite place to be entertained, with Pope Alexander VII among the guests. Egidio’s youth is said to have inspired Fra Cristoforo, the friar with a past in Manzoni’s <em>The Betrothed</em> (<em>I&nbsp;promessi&nbsp;sposi</em>). You will have to read it and let us know if you see the similarities.",
+    fr: "Le petit frère du cardinal avait un passé. Selon la villa, le jeune Carlo Colonna aurait eu une querelle fatale avec un prince Caetani, d’une famille rivale de Rome, avant de trouver sa vocation. Après quoi il prit un nouveau nom, Egidio, et les vœux&nbsp;: un nouveau départ, et très romain. Rome est née d’un fratricide, après tout&nbsp;; il était en bonne compagnie. Il devint archevêque, et la villa devint le lieu de divertissement préféré de la cour pontificale, avec le pape Alexandre VII parmi ses invités. La jeunesse d’Egidio aurait inspiré Fra Cristoforo, le frère au passé trouble des <em>Fiancés</em> (<em>I&nbsp;promessi&nbsp;sposi</em>) de Manzoni. À vous de le lire et de nous dire si vous voyez les ressemblances.",
     fr_status: "needs native review",
     fr_flag: "Check the dry tone: “trouver sa vocation” (found his calling), “un nouveau départ, et très romain”."
   },
   lore_nudge: {
     en: "For the curious: the lore of the lake&nbsp;↓",
-    fr: "Pour les curieux : les légendes du lac&nbsp;↓",
+    fr: "Pour les curieux&nbsp;: les légendes du lac&nbsp;↓",
     fr_status: "needs native review"
   },
   lore_plate_alt: {
@@ -285,7 +290,7 @@ window.SITE_CONTENT = {
   },
   reading1_text: {
     en: "The poem behind the legend. Aeneas flees Troy and reaches Italy, and the gods keep announcing what his son Ascanius will found: Alba Longa first, Rome eventually. If you read only three bits: Book&nbsp;1 (Jupiter’s prophecy of Rome), Book&nbsp;6 (the parade of Rome’s future heroes, including the kings of Alba), and Book&nbsp;8 (the shield, with the she-wolf and the twins). Translations: Sarah Ruden (our pick), Robert Fagles or Robert Fitzgerald.",
-    fr: "Le poème derrière la légende. Énée fuit Troie et gagne l’Italie, et les dieux n’en finissent pas d’annoncer ce que son fils Ascagne fondera : Albe-la-Longue d’abord, Rome ensuite. Si vous n’en lisez que trois passages : le livre&nbsp;I (la prophétie de Jupiter sur Rome), le livre&nbsp;VI (le défilé des futurs héros de Rome, dont les rois d’Albe) et le livre&nbsp;VIII (le bouclier, avec la louve et les jumeaux).",
+    fr: "Le poème derrière la légende. Énée fuit Troie et gagne l’Italie, et les dieux n’en finissent pas d’annoncer ce que son fils Ascagne fondera&nbsp;: Albe-la-Longue d’abord, Rome ensuite. Si vous n’en lisez que trois passages&nbsp;: le livre&nbsp;I (la prophétie de Jupiter sur Rome), le livre&nbsp;VI (le défilé des futurs héros de Rome, dont les rois d’Albe) et le livre&nbsp;VIII (le bouclier, avec la louve et les jumeaux).",
     fr_status: "needs native review",
     fr_flag: "French translation(s) to recommend: to be confirmed."
   },
@@ -299,7 +304,7 @@ window.SITE_CONTENT = {
   lore_close_la: { text: "Tantae molis erat Romanam condere gentem." },
   lore_close: {
     en: "A weighty work, to found the Roman nation!",
-    fr: "Si lourde tâche, fonder la nation romaine !",
+    fr: "Si lourde tâche, fonder la nation romaine&nbsp;!",
     fr_status: "needs native review"
   },
   lore_close_credit: {
