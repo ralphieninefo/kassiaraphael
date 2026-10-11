@@ -21,15 +21,16 @@ No gold, no teal or green, no Italian-flag combinations.
 
 ## Images
 Rule: people in black and white, the place in colour (and only on cream).
-- `images/hero-bw.jpg` + `hero-bw-800.jpg`: hero photo (1600px and an 800px copy for phones); the only tilted print
-- `images/weekend-toast.jpg`: Weekend print (4:5)
-- `images/serene-dip.jpg`, `serene-conservatory.jpg`, `serene-sculpture.jpg`: footer triptych (1:1)
-- `images/lake-1.jpg`: Lake Albano from the villa, cropped 2:1, colour
-- `images/venue-tower.jpg`, `images/venue-aerial.jpg`: 4:5 colour, under the venue copy.
-  **Interim crops from screenshots**: replace with the originals at the same paths (1000x1250 or larger)
-- `images/villa-line-drawing-ink.svg`: villa drawing in ink lines, for cream sections (used in the venue)
-- `images/villa-line-drawing-cream.svg`: the same drawing in cream lines, for blue sections (footer)
-- `images/story-graduation.jpg`: Our story print (4:5), graduation day, cropped so no strangers appear
+Each photo has a JPG (the fallback) plus AVIF and WebP copies at one or more widths (`name-<width>.avif|webp`),
+served through `<picture>` with `sizes`; the hero is preloaded. Regenerate the copies whenever a JPG changes.
+- `images/hero-cafe-graded.jpg` (+ `-800.jpg`): hero print
+- `images/story-graduation-graded.jpg`: Our story print (4:5)
+- `images/weekend-conservatory-lawn.jpg`: Weekend print (4:5)
+- `images/venue-tower.jpg`, `images/venue-aerial.jpg`: 4:5 colour, under the venue copy
+- `images/lore-plate-1440.jpg`, `lore-plate-2880.jpg`: Lake Albano, Lore section (AVIF/WebP as `lore-plate-<width>`)
+- `images/footer-*-graded.jpg`: footer triptych (1:1)
+- `images/villa-line-drawing-ink.svg` / `-cream.svg`: villa drawing (venue on cream, footer on blue)
+- `images/castel-gandolfo-palazzo-cream.svg`, `castel-gandolfo-fountain-cream.svg`: Kassia's drawings in the Lore
 
 ## Mockups
 `mockups/` (screenshots, contact sheet, French review sheet) is for review only. It's in `.gitignore`, so it is never deployed.

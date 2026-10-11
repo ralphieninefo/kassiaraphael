@@ -232,7 +232,7 @@ window.SITE_CONTENT = {
   },
   lore_c1_verse_credit: {
     en: "Vergil, <em>Aeneid</em> <span class='nw'>8.47–48</span> · trans. Sarah Ruden",
-    fr: "Virgile, <em>Énéide</em> VIII, <span class='nw'>47-48</span> · traduction libre",
+    fr: "Virgile, <em>Énéide</em> VIII, <span class='nw'>47–48</span> · traduction libre",
     fr_status: "needs native review"
   },
   lore_c1_p2: {

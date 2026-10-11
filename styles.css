@@ -50,6 +50,19 @@
   :root { --frame-outer: 12px; --frame-inner: 18px; --print-border: 12px; }
 }
 @media (min-width: 1024px) { :root { --content: 75rem; } } /* ~1200px, never stretched wider */
+/* Vertical rhythm: every spacing step rounded to the body line (text size x 1.6): quarter lines for the small steps,
+   half lines for the large ones. Browsers without round() keep the plain values above. */
+:root { --line: calc(var(--text) * var(--leading)); }
+@supports (width: round(nearest, 10px, 4px)) {
+  :root {
+    --s-1: round(nearest, .5rem, calc(var(--line) / 4));
+    --s-2: round(nearest, 1rem, calc(var(--line) / 4));
+    --s-3: round(nearest, 1.5rem, calc(var(--line) / 4));
+    --s-4: round(nearest, clamp(2rem, 1.5rem + 1.25vw, 2.75rem), calc(var(--line) / 2));
+    --s-5: round(nearest, clamp(3rem, 2rem + 2.5vw, 4.5rem), calc(var(--line) / 2));
+    --s-6: round(nearest, clamp(3.5rem, 1.2rem + 4.5vw, 5.25rem), calc(var(--line) / 2));
+  }
+}
 
 *, *::before, *::after { box-sizing: border-box; }
 html { scroll-behavior: smooth; scroll-padding-top: calc(var(--bar-h) + var(--s-3)); -webkit-text-size-adjust: 100%; }
@@ -62,13 +75,20 @@ body {
   overflow-x: clip;
 }
 img { display: block; max-width: 100%; height: auto; }
+picture { display: contents; } /* AVIF/WebP wrappers: the <img> inside lays out exactly as before */
 p { margin: 0 0 1em; }
 h1, h2, h3 { margin: 0; font-weight: 300; text-wrap: balance; }
 p, li, figcaption { text-wrap: pretty; } /* no one-word last lines */
 /* Links: underline in the text colour (charcoal on cream, cream on navy), never orange */
-a { color: inherit; text-decoration-color: currentColor; text-decoration-thickness: 1px; text-underline-offset: .22em; }
-a:hover { text-decoration-thickness: 2px; }
-:focus-visible { outline: 1px solid currentColor; outline-offset: 4px; }
+a { color: inherit; text-decoration-color: currentColor; text-decoration-thickness: 1px; text-underline-offset: .22em;
+    transition: text-underline-offset .2s ease, text-decoration-color .2s ease; }
+/* Hover: the underline drops a touch and softens; no other motion */
+a:hover { text-underline-offset: .3em; text-decoration-color: color-mix(in srgb, currentColor 60%, transparent); }
+/* Keyboard focus: a 2px outline in the text colour on every link, button and nav item */
+:focus-visible { outline: 2px solid currentColor; outline-offset: 4px; }
+/* Hanging punctuation: an opening quotation mark or bracket hangs into the margin, so the text edge stays straight
+   (Safari applies it; other browsers ignore it). Nothing in the current copy opens with one, but quotes will hang if added. */
+blockquote, .pull, .lede, .motto, .gloss, .lore-close-line, .main > p { hanging-punctuation: first allow-end; }
 
 /* Visually hidden, still read by screen readers and search (the script lines' words) */
 .vh { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
@@ -115,7 +135,11 @@ html[lang="fr"] .only-en, html:not([lang="fr"]) .only-fr { display: none; }
 }
 .nav::-webkit-scrollbar { display: none; }
 .nav a { text-decoration: none; opacity: .86; padding: .35rem 0; letter-spacing: .16em; font-size: var(--caps-small); }
-.nav a:hover, .nav a:focus-visible { opacity: 1; text-decoration: underline; }
+.nav a { text-decoration: underline; text-decoration-color: transparent; text-underline-offset: .3em; text-decoration-thickness: 1px;
+         transition: opacity .2s ease, text-decoration-color .2s ease; }
+.nav a:hover, .nav a:focus-visible { opacity: 1; text-decoration-color: currentColor; }
+.nav { padding-block: 6px; margin-block: -6px; } /* room for the 2px focus outline inside the scrolling nav */
+.nav a:focus-visible { outline-offset: 2px; }
 .lang { display: flex; align-items: center; gap: .35rem; flex: none; }
 .lang span { opacity: .7; }
 .lang button {
@@ -123,6 +147,7 @@ html[lang="fr"] .only-en, html:not([lang="fr"]) .only-fr { display: none; }
   padding: .35rem .25rem; cursor: pointer; opacity: .78;
 }
 .lang button[aria-pressed="true"] { opacity: 1; text-decoration: underline; text-underline-offset: .3em; }
+.lang button { transition: opacity .2s ease; }
 .lang button:hover { opacity: 1; }
 /* Monogram: phones only, in place of the section links */
 .mono { display: none; font-family: var(--serif); font-size: 1.1875rem; letter-spacing: .06em; text-decoration: none; white-space: nowrap; padding: .35rem 0; }
@@ -375,7 +400,7 @@ sup { font-size: .65em; line-height: 0; vertical-align: .5em; } /* ordinals: XVI
 /* Intro line beside the heading: its first line shares the heading's cap height (label line + gap + the h2/lede cap offsets) */
 @media (min-width: 1024px) {
   .lore > .grid:first-child { grid-template-rows: auto; } /* one row only, so no empty second row adds to the gap */
-  .lore > .grid > .main { grid-row: 1; margin-top: calc(.342 * var(--h2) + 1.5rem); }
+  .lore > .grid > .main { grid-row: 1; margin-top: calc(.342 * var(--h2) + .5rem + var(--s-2)); }
 }
 .lore-plate figcaption { color: var(--travertine); opacity: .8; } /* cream on blue, like the footer captions */
 .lore-plate .frame img { width: 100%; }
@@ -485,7 +510,7 @@ sup { font-size: .65em; line-height: 0; vertical-align: .5em; } /* ordinals: XVI
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   .js .reveal { opacity: 1; transition: none; }
-  .topbar { transition: none; }
+  .topbar, a, .nav a, .lang button { transition: none; }
 }
 
 /* Chapter one: the Aeneid verse sits where an image would, centered in the left column under the heading (like the drawings in
@@ -524,3 +549,31 @@ html[lang="fr"] .ch1 .pull--verse { --verse-em: 15.6; }
 .nw { white-space: nowrap; }
 
 @media (max-width: 767px) { .ch1 .pull--verse { text-align: center; } } /* a panel like the drawings: centred over its centred caption */
+
+/* ---------- Print: cream paper, charcoal ink, one section per page ---------- */
+@media print {
+  @page { margin: 0; } /* the cream runs to the paper's edge; the sections carry their own margins */
+  html { scroll-behavior: auto; }
+  html, body, .sheet, .albano, .paper { background: var(--travertine) !important; color: #2b2b2a !important;
+                                        -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body { font-size: 11pt; }
+  .albano, .paper { --rule: #bdbdbd; --frame: #bdbdbd; --frame-soft: #dcdcdc; --marker: var(--terracotta); }
+  .topbar, .skip, .noscript, .lore-nudge, .footer .strip { display: none !important; }
+  .sheet { padding: 12mm 15mm 6mm; -webkit-box-decoration-break: clone; box-decoration-break: clone; } /* the margin repeats on every page a section runs onto */
+  .hero { padding-top: 18mm; }
+  .sheet::before, .sheet::after { display: none; }
+  .lore { break-before: page; } /* sections flow on from one another; the Lore starts a fresh page */
+  .grid, .chapter, .italy, .motto-block, .days li, .leg { break-inside: avoid-page; }
+  .story-shot, #weekend .shot, .story .side { max-width: 8cm; margin-inline: auto; } /* portrait prints sized so a section's text follows on the same page */
+  .print--hero { max-width: 14cm; margin-inline: auto; }
+  .hero { break-after: page; }
+  h1, h2, h3, .label, .head { break-after: avoid; }
+  .lore-close, .signoff, figure, .frame, .print, .pull, .motto-block, .reading-list > article, .days li { break-inside: avoid; }
+  p { orphans: 3; widows: 3; }
+  .js .reveal { opacity: 1 !important; transition: none !important; }
+  img { filter: none; }
+  .art img, .footer-drawing { opacity: 1; filter: invert(1) grayscale(1) brightness(.35); } /* cream line drawings print in charcoal */
+  .albano figcaption, .albano .credit, .lore-plate figcaption, .art figcaption, .shot figcaption { color: #55534e !important; opacity: 1 !important; }
+  a { text-decoration: none; }
+  a[href^="mailto:"]::after { content: ""; }
+}
