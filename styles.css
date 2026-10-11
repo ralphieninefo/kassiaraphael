@@ -396,6 +396,7 @@ sup { font-size: .65em; line-height: 0; vertical-align: .5em; } /* ordinals: XVI
 /* Kassia's drawings, cream on blue like the footer villa */
 .art { margin: var(--s-4) 0 0; }
 .art img { width: 100%; height: auto; opacity: .85; }
+.art .frame { padding: clamp(1rem, 2.2vw, 2rem); } /* the same hairline plate as the Venue drawing */
 .art figcaption { color: var(--travertine); opacity: .8; }
 /* Section break between Two and Three: Bernini's fountain in place of the hairline, same space above and below */
 .chapter .main > :last-child, .chapter .col > :last-child { margin-bottom: 0; }
@@ -518,3 +519,8 @@ html[lang="fr"] .ch1 .pull--verse { --verse-em: 15.6; }
 @media (min-width: 768px) { .ch1 .pull--verse { --verse-cap: 2.5rem; } }
 @media (min-width: 1280px) { .ch1 .pull--verse { --verse-cap: 2.375rem; } }
 @supports not (width: 1cqi) { .ch1 .pull--verse p:first-child { white-space: normal; text-wrap: balance; } }
+
+/* Chapter one verse: hairlines above and below, like the plates in chapters two and three */
+.ch1 .pull--verse { border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); padding-block: var(--s-4); }
+.nw { white-space: nowrap; }
+@media (max-width: 767px) { .ch1 .pull--verse { margin-top: var(--s-3); } }
