@@ -230,8 +230,8 @@ window.SITE_CONTENT = {
     fr_status: "needs native review"
   },
   lore_c1_p3: {
-    en: "The myth tells that a descendant of Aeneas, Rhea Silvia, bore twins by the god Mars: Romulus and Remus. Her uncle Amulius had seized the throne of Alba Longa, and the twins were abandoned, suckled by a she-wolf, and raised by a shepherd. After restoring their grandfather to the throne, they went on to found Rome. Well, Romulus did anyway, after a touch of fratricide.",
-    fr: "Selon le mythe, une descendante d’Énée, Rhéa Silvia, eut du dieu Mars des jumeaux : Romulus et Rémus. Son oncle Amulius s’était emparé du trône d’Albe-la-Longue ; les jumeaux furent abandonnés, allaités par une louve et élevés par un berger. Après avoir rendu le trône à leur grand-père, ils partirent fonder Rome. Enfin, Romulus, du moins, après un léger fratricide.",
+    en: "The myth tells that a descendant of Aeneas, Rhea Silvia, bore twins by the god Mars: Romulus and Remus. Her uncle Amulius had seized the throne of Alba Longa from her father, Numitor, and the twins were abandoned, suckled by a she-wolf, and raised by a shepherd. After restoring their grandfather to the throne, they went on to found Rome. Well, Romulus did anyway, after a touch of fratricide.",
+    fr: "Selon le mythe, une descendante d’Énée, Rhéa Silvia, eut du dieu Mars des jumeaux : Romulus et Rémus. Son oncle Amulius avait pris à son père, Numitor, le trône d’Albe-la-Longue ; les jumeaux furent abandonnés, allaités par une louve et élevés par un berger. Après avoir rendu le trône à leur grand-père, ils partirent fonder Rome. Enfin, Romulus, du moins, après un léger fratricide.",
     fr_status: "needs native review"
   },
   lore_c2_title: { en: "The summer court", fr: "La cour d’été", fr_status: "needs native review" },
