@@ -288,43 +288,33 @@ window.SITE_CONTENT = {
     fr_status: "needs native review"
   },
   lore_ph1_alt: {
-    en: "Semicircular stone steps and white chairs set out in a garden, with a glimpse of the lake beyond the trees",
-    fr: "Des gradins de pierre en demi-cercle et des chaises blanches dans un jardin, avec un aperçu du lac derrière les arbres",
+    en: "Line drawing of a Roman temple with six columns at the end of a paved road lined with cypresses, with hills behind",
+    fr: "Dessin au trait d’un temple romain à six colonnes au bout d’une route pavée bordée de cyprès, avec des collines à l’arrière-plan",
     fr_status: "needs native review"
   },
   lore_ph1_caption: {
-    en: "The ceremony garden",
-    fr: "Le jardin de la cérémonie",
+    en: "The Sacred Way to the temple of Jupiter, imagined",
+    fr: "La Voie sacrée vers le temple de Jupiter, imaginée",
     fr_status: "needs native review"
   },
   lore_ph3_alt: {
-    en: "A railed garden path under old oak trees, with the lake glimmering below",
-    fr: "Un chemin de jardin bordé d’une balustrade sous de vieux chênes, avec le lac qui scintille en contrebas",
+    en: "Line drawing of a wall sundial in an arched stone niche, with its hour lines fanning out and the motto Horas non numero nisi serenas beneath",
+    fr: "Dessin au trait d’un cadran solaire mural dans une niche de pierre cintrée, ses lignes d’heures en éventail, avec la devise Horas non numero nisi serenas en dessous",
     fr_status: "needs native review"
   },
   lore_ph3_caption: {
-    en: "Down to the lake",
-    fr: "Vers le lac",
+    en: "The sundial and its motto",
+    fr: "Le cadran solaire et sa devise",
     fr_status: "needs native review"
   },
-  lore_ph2a_alt: {
-    en: "The long pale facade of Castel Gandolfo on the far rim of the lake, under a cloudy sky",
-    fr: "La longue façade claire de Castel Gandolfo sur le bord opposé du lac, sous un ciel nuageux",
+  lore_ph2_alt: {
+    en: "Line drawing of two hilltop buildings facing each other across a lake: a long palace with a dome on the left and a villa with a tower on the right",
+    fr: "Dessin au trait de deux bâtiments sur des hauteurs, face à face de part et d’autre d’un lac : un long palais à dôme à gauche et une villa à tour à droite",
     fr_status: "needs native review"
   },
-  lore_ph2a_caption: {
-    en: "Castel Gandolfo, across the lake",
-    fr: "Castel Gandolfo, de l’autre côté du lac",
-    fr_status: "needs native review"
-  },
-  lore_ph2b_alt: {
-    en: "A cream villa with a terracotta tower on a wooded ridge above the lake, beneath a line of umbrella pines",
-    fr: "Une villa crème à la tour terracotta sur une crête boisée au-dessus du lac, sous une rangée de pins parasols",
-    fr_status: "needs native review"
-  },
-  lore_ph2b_caption: {
-    en: "The villa on its ridge, seen from the shore",
-    fr: "La villa sur sa crête, vue depuis la rive",
+  lore_ph2_caption: {
+    en: "Castel Gandolfo and the villa, facing across the lake",
+    fr: "Castel Gandolfo et la villa, face à face de part et d’autre du lac",
     fr_status: "needs native review"
   },
   reading_label: { en: "Optional reading", fr: "Lectures facultatives", fr_status: "needs native review" },
