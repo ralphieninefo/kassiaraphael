@@ -261,11 +261,6 @@ window.SITE_CONTENT = {
     fr_status: "needs native review",
     fr_flag: "Check the dry tone: “trouver sa vocation” (found his calling), “un nouveau départ, et très romain”, “ne s’est enquis du prince Caetani”."
   },
-  lore_c2_pull: {
-    en: "Cardinal Colonna: Lake Albano’s original nepo-baby.",
-    fr: "Le cardinal Colonna : le tout premier <em>nepo baby</em> du lac Albano.",
-    fr_status: "needs native review"
-  },
   lore_nudge: {
     en: "For the curious: the lore of the lake&nbsp;↓",
     fr: "Pour les curieux : les légendes du lac&nbsp;↓",
