@@ -363,8 +363,8 @@ window.SITE_CONTENT = {
     fr_status: "needs native review"
   },
   colophon: {
-    en: "Set in Neuton. Built by Raphaël.",
-    fr: "Composé en Neuton. Réalisé par Raphaël.",
+    en: "Words&nbsp;by&nbsp;Kassia. Built&nbsp;by&nbsp;Raphaël.<br>Set&nbsp;in&nbsp;Neuton.",
+    fr: "Textes&nbsp;de&nbsp;Kassia. Réalisé&nbsp;par&nbsp;Raphaël.<br>Composé&nbsp;en&nbsp;Neuton.",
     fr_status: "needs native review"
   },
   footer_names: {
