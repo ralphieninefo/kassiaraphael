@@ -208,13 +208,10 @@ window.SITE_CONTENT = {
   /* Lore: the legends of the lake, as the villa tells them. Last section, after Questions; linked from the Venue, Questions and footer. Not in the nav. */
   lore_label: { en: "Lore", fr: "Légendes", fr_status: "needs native review" },
   lore_title: { en: "The Lore of the Lake", fr: "Les légendes du lac", fr_status: "needs native review" },
-  lore_one: { en: "One", fr: "Un", fr_status: "needs native review" },
-  lore_two: { en: "Two", fr: "Deux", fr_status: "needs native review" },
-  lore_three: { en: "Three", fr: "Trois", fr_status: "needs native review" },
   lore_c1_title: { en: "Before Rome", fr: "Avant Rome", fr_status: "needs native review" },
   lore_c1_p1: {
-    en: "The legend of Lake Albano dates back to the founding of Rome. Ascanius, son of Aeneas, better known as Iulus to the Romans who traced Julius Caesar’s family to his line, founded Alba Longa along the crater edge of the lake. In Vergil’s <em>Aeneid</em>, old man Tiberinus, the river god, foretells it.",
-    fr: "La légende du lac Albano remonte à la fondation de Rome. Ascagne, fils d’Énée, que les Romains appelaient Iule et dont la famille de Jules César se disait descendre, fonda Albe-la-Longue sur le bord du cratère. Dans l’<em>Énéide</em> de Virgile, le vieux Tibérinus, dieu du fleuve, l’annonce.",
+    en: "The legend of Lake Albano is older than Rome. Ascanius, son of Aeneas, better known as Iulus to the Romans who traced Julius Caesar’s family to his line, founded Alba Longa along the crater edge of the lake. In Vergil’s <em>Aeneid</em>, old man Tiberinus, the river god, foretells it.",
+    fr: "La légende du lac Albano est plus ancienne que Rome. Ascagne, fils d’Énée, que les Romains appelaient Iule et dont la famille de Jules César se disait descendre, fonda Albe-la-Longue sur le bord du cratère. Dans l’<em>Énéide</em> de Virgile, le vieux Tibérinus, dieu du fleuve, l’annonce.",
     fr_status: "needs native review"
   },
   lore_c1_verse: {
@@ -228,7 +225,7 @@ window.SITE_CONTENT = {
     fr_status: "needs native review"
   },
   lore_c1_p2: {
-    en: "The name comes from the white sow, with her thirty piglets, that Tiberinus offered as proof his prophecy was true: <em>alba</em> means white. Scholars have never pinned down exactly where Alba Longa stood; we like to imagine somewhere on the heights above the lake, conveniently close to the villa.",
+    en: "The name comes from the white sow, with her thirty piglets, that Tiberinus offered as proof his prophecy was true: <em>alba</em> means white. Scholars have never pinned down exactly where Alba Longa stood; we like to imagine it on the heights above the lake, conveniently close to the villa.",
     fr: "Le nom vient de la truie blanche et de ses trente porcelets, que Tibérinus donna pour preuve de sa prophétie : <em>alba</em> veut dire blanche. Nul n’a jamais pu situer exactement Albe-la-Longue ; nous aimons l’imaginer sur les hauteurs au-dessus du lac, opportunément près de la villa.",
     fr_status: "needs native review"
   },
@@ -239,13 +236,13 @@ window.SITE_CONTENT = {
   },
   lore_c2_title: { en: "The summer court", fr: "La cour d’été", fr_status: "needs native review" },
   lore_c2_p1: {
-    en: "Romans loved the rolling hills around Lake Albano long before the popes did. From the late Roman Republic, wealthy families built villas along the shore. In the 1600s, Pope Urban VIII made Castel Gandolfo his summer residence, and the nobility of his court, wanting to be nearby, built houses of their own, often on top of Roman ruins. Villa del Cardinale is one of them. According to the villa, the house that first stood here was Roman, and it lodged consuls and generals during the Feriae Latinae, an ancient festival of truce when Rome’s consuls climbed Monte Cavo, above the lake, to sacrifice a white bull to Jupiter.",
-    fr: "Les Romains aimaient les collines autour du lac Albano bien avant les papes. Dès la fin de la République romaine, de riches familles bâtirent des villas sur ses rives. Au XVIIe siècle, le pape Urbain VIII fit de Castel Gandolfo sa résidence d’été, et la noblesse de sa cour, tenant à rester proche, s’y fit construire des maisons, souvent sur des ruines romaines. La Villa del Cardinale est l’une d’elles. Selon la villa, la maison qui s’élevait ici d’abord était romaine et logeait consuls et généraux pendant les Féries latines, une fête antique de trêve où les consuls de Rome montaient au mont Cavo, au-dessus du lac, sacrifier un taureau blanc à Jupiter.",
+    en: "Romans loved the rolling hills around Lake Albano long before the popes did. From the late Roman Republic, wealthy families built villas along the shore. In the 1600s, Pope Urban VIII made Castel Gandolfo his summer residence, and the nobility of his court, naturally wanting to be nearby, built houses of their own, often on top of Roman ruins. Villa del Cardinale is one of them. According to the villa, the house that first stood here was Roman, and it lodged consuls and generals during the Feriae Latinae, an ancient festival of truce when Rome’s consuls climbed Monte Cavo, above the lake, to sacrifice a white bull to Jupiter.",
+    fr: "Les Romains aimaient les collines autour du lac Albano bien avant les papes. Dès la fin de la République romaine, de riches familles bâtirent des villas sur ses rives. Au XVIIe siècle, le pape Urbain VIII fit de Castel Gandolfo sa résidence d’été, et la noblesse de sa cour, tenant naturellement à rester proche, s’y fit construire des maisons, souvent sur des ruines romaines. La Villa del Cardinale est l’une d’elles. Selon la villa, la maison qui s’élevait ici d’abord était romaine et logeait consuls et généraux pendant les Féries latines, une fête antique de trêve où les consuls de Rome montaient au mont Cavo, au-dessus du lac, sacrifier un taureau blanc à Jupiter.",
     fr_status: "needs native review"
   },
   lore_c2_p2: {
-    en: "The villa you will visit in October 2027 was built in 1629 by Cardinal Gerolamo Colonna, who became a cardinal at twenty-three. The villa came to be through a wedding: his sister Anna married Taddeo Barberini, nephew of Pope Urban VIII, and the pope gifted her the grounds. Cardinal Colonna: Lake Albano’s original nepo-baby. Apropos of nothing, the term “nepotism” comes from <em>nipote</em>, Italian for nephew, and Pope Urban VIII was among its champions.",
-    fr: "La villa que vous découvrirez en octobre 2027 fut construite en 1629 par le cardinal Gerolamo Colonna, devenu cardinal à vingt-trois ans. Elle doit son existence à un mariage : sa sœur Anna épousa Taddeo Barberini, neveu du pape Urbain VIII, et le pape lui offrit le terrain. Le cardinal Colonna : le tout premier <em>nepo baby</em> du lac Albano. Sans aucun rapport, le mot « népotisme » vient de <em>nipote</em>, « neveu » en italien, et Urbain VIII en fut l’un des champions.",
+    en: "The villa you will visit in October 2027 was built in 1629 by Cardinal Gerolamo Colonna, who became a cardinal at twenty-three. It came to be through a wedding: as the villa tells it, his sister Anna married Taddeo Barberini, nephew of Pope Urban VIII, and the pope gifted her the grounds. Apropos of nothing, the term “nepotism” comes from <em>nipote</em>, Italian for nephew, and Pope Urban VIII was among its champions.",
+    fr: "La villa que vous découvrirez en octobre 2027 fut construite en 1629 par le cardinal Gerolamo Colonna, devenu cardinal à vingt-trois ans. Elle doit son existence à un mariage : selon la villa, sa sœur Anna épousa Taddeo Barberini, neveu du pape Urbain VIII, et le pape lui offrit le terrain. Sans aucun rapport, le mot « népotisme » vient de <em>nipote</em>, « neveu » en italien, et Urbain VIII en fut l’un des champions.",
     fr_status: "needs native review"
   },
   lore_c2_p3: {
@@ -265,8 +262,8 @@ window.SITE_CONTENT = {
     fr_flag: "Check the dry tone: “trouver sa vocation” (found his calling), “un nouveau départ, et très romain”, “ne s’est enquis du prince Caetani”."
   },
   lore_c2_pull: {
-    en: "“Nepotism” comes from <em>nipote</em>, Italian for nephew.",
-    fr: "« Népotisme » vient de <em>nipote</em>, « neveu » en italien.",
+    en: "Cardinal Colonna: Lake Albano’s original nepo-baby.",
+    fr: "Le cardinal Colonna : le tout premier <em>nepo baby</em> du lac Albano.",
     fr_status: "needs native review"
   },
   lore_nudge: {
@@ -287,18 +284,17 @@ window.SITE_CONTENT = {
     fr_status: "needs native review"
   },
   reading1_text: {
-    en: "The poem behind the legend. Aeneas flees Troy and reaches Italy, and Jupiter promises that his son Ascanius will found Alba Longa. If you read only three bits: Book 1 (Jupiter’s prophecy of Rome), Book 6 (the parade of Rome’s future heroes, including the kings of Alba), and Book 8 (the shield, with the she-wolf and the twins). Translations: Sarah Ruden (our pick), Robert Fagles, Robert Fitzgerald or Shadi Bartsch.",
-    fr: "Le poème derrière la légende. Énée fuit Troie et gagne l’Italie, et Jupiter promet que son fils Ascagne fondera Albe-la-Longue. Si vous n’en lisez que trois passages : le livre I (la prophétie de Jupiter sur Rome), le livre VI (le défilé des futurs héros de Rome, dont les rois d’Albe) et le livre VIII (le bouclier, avec la louve et les jumeaux).",
+    en: "The poem behind the legend. Aeneas flees Troy and reaches Italy, and the gods keep announcing what his son Ascanius will found: Alba Longa first, Rome eventually. If you read only three bits: Book 1 (Jupiter’s prophecy of Rome), Book 6 (the parade of Rome’s future heroes, including the kings of Alba), and Book 8 (the shield, with the she-wolf and the twins). Translations: Sarah Ruden (our pick), Robert Fagles or Robert Fitzgerald.",
+    fr: "Le poème derrière la légende. Énée fuit Troie et gagne l’Italie, et les dieux n’en finissent pas d’annoncer ce que son fils Ascagne fondera : Albe-la-Longue d’abord, Rome ensuite. Si vous n’en lisez que trois passages : le livre I (la prophétie de Jupiter sur Rome), le livre VI (le défilé des futurs héros de Rome, dont les rois d’Albe) et le livre VIII (le bouclier, avec la louve et les jumeaux).",
     fr_status: "needs native review",
     fr_flag: "French translation(s) to recommend: to be confirmed."
   },
   reading2_title: { en: "I promessi sposi <span class=\"alt\">(The Betrothed)</span>", fr: "Les Fiancés <span class=\"alt\">(I promessi sposi)</span>", fr_status: "needs native review" },
   reading2_by: { en: "Alessandro Manzoni", fr: "Alessandro Manzoni", fr_status: "needs native review" },
   reading2_text: {
-    en: "Italy’s great novel, set in 1628 to 1630, the very years the villa went up. Two villagers want to marry and spend most of the book prevented from doing so. We’d like to report a smoother experience. It features Fra Cristoforo, the friar with a past, whom the villa claims as one of its own. It opens on Lake Como, which we have decided to forgive. Try the first eight chapters, which end with the famously botched “surprise wedding”. Translations: Michael F. Moore (Modern Library) or Bruce Penman (Penguin Classics).",
-    fr: "Le grand roman italien, qui se déroule de 1628 à 1630, les années mêmes où la villa fut bâtie. Deux villageois veulent se marier et passent presque tout le livre empêchés de le faire. Nous aimerions annoncer un parcours plus tranquille. On y croise Fra Cristoforo, le frère au passé trouble, que la villa revendique comme l’un des siens. Le roman s’ouvre sur le lac de Côme, que nous avons décidé de pardonner. Essayez les huit premiers chapitres, qui s’achèvent sur le fameux « mariage par surprise » raté.",
-    fr_status: "needs native review",
-    fr_flag: "English changed (Fra Cristoforo line, Lake Como line, two translations). French below is the older draft: replace with the reviewed version."
+    en: "Italy’s great novel, set in 1628 to 1630, the very years the villa went up. Two villagers want to marry and spend most of the book prevented from doing so. It features Fra Cristoforo, whom the villa claims as one of its own. It opens on Lake Como, which we have decided to forgive. Try the first eight chapters, which end with the famously botched “surprise wedding”. Translations: Michael F. Moore (Modern Library) or Bruce Penman (Penguin Classics).",
+    fr: "Le grand roman italien, qui se déroule de 1628 à 1630, les années mêmes où la villa fut bâtie. Deux villageois veulent se marier et passent presque tout le livre empêchés de le faire. On y croise Fra Cristoforo, que la villa revendique comme l’un des siens. Le roman s’ouvre sur le lac de Côme, que nous avons décidé de pardonner. Essayez les huit premiers chapitres, qui s’achèvent sur le fameux « mariage par surprise » raté.",
+    fr_status: "needs native review"
   },
   lore_close_la: { text: "Tantae molis erat Romanam condere gentem." },
   lore_close: {
