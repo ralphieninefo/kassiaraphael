@@ -360,37 +360,31 @@ sup { font-size: .65em; line-height: 0; vertical-align: .5em; } /* ordinals: XVI
 
 /* ---------- Lore: the legends of the lake (albano). Same grid, scale and hairlines as every section. ---------- */
 .sheet > .lore-plate { margin: var(--s-5) auto 0; } /* .plate resets margins; keep it centred in the content box */
-.lore-plate figcaption, .chapter-fig figcaption { color: var(--travertine); opacity: .8; } /* cream on blue, like the footer captions */
+.lore-plate figcaption { color: var(--travertine); opacity: .8; } /* cream on blue, like the footer captions */
 .lore-plate .frame img { width: 100%; }
-/* Chapters: kicker + title and a photo in columns 1-5, text in columns 7-12. The photo stretches to the height of the text
-   (like the Venue frames), so there is no empty hole. Phones: heading, photo, text, all left-aligned. */
+/* Chapters: kicker + title in columns 1-5; an optional margin item in columns 7-12; then the text in two columns,
+   so there is no empty hole beside the copy. Phones: one column, margin items after the text, all left-aligned. */
 .chapter .head { margin-bottom: var(--s-3); }
 .chapter .kicker { margin: 0 0 var(--s-1); opacity: .8; }
 .chapter h3 { font-size: clamp(1.625rem, 1.2rem + 1.2vw, 2.125rem); line-height: 1.15; }
-.chapter .main > :last-child { margin-bottom: 0; }
-.chapter-fig { display: flex; flex-direction: column; margin: 0 0 var(--s-4); }
-.chapter-fig .frame { position: relative; aspect-ratio: 4 / 3; }
-.chapter-fig .frame img { position: absolute; inset: clamp(8px, 1.2vw, 14px); width: calc(100% - 2 * clamp(8px, 1.2vw, 14px)); height: calc(100% - 2 * clamp(8px, 1.2vw, 14px)); object-fit: cover; }
-.chapter-fig--tall .frame { aspect-ratio: 6 / 7; }
-.chapter-figs { display: flex; flex-direction: column; gap: var(--s-3); margin: 0 0 var(--s-4); }
-.chapter-figs .chapter-fig { margin: 0; flex: 1; }
-.chapter-fig--wide .frame { aspect-ratio: 5 / 2; }
-/* Line drawings: the whole drawing shows (no cropping), with the same generous margin as the villa plate */
-.chapter-fig--draw .frame { aspect-ratio: 9 / 8; }
-.chapter-fig--wide-draw .frame { aspect-ratio: 4 / 3; }
-.chapter-fig--draw .frame img { inset: clamp(12px, 2vw, 24px); width: calc(100% - 2 * clamp(12px, 2vw, 24px)); height: calc(100% - 2 * clamp(12px, 2vw, 24px)); object-fit: contain; }
-/* The pull quote (end of chapter one): large italic, left-aligned, no ornament (orange is for section dots and the Friday marker only) */
-.pull { margin: var(--s-4) 0 0; padding: 0; }
+.chapter .main > p:last-child { margin-bottom: 0; }
+.margin { margin: var(--s-4) 0 0; }
+/* The pull quote: large italic, left-aligned, no ornament (orange is for section dots and the Friday marker only) */
+.pull { padding: 0; }
 .pull p { margin: 0; font-style: italic; font-size: clamp(1.5rem, 1.1rem + 1.4vw, 2rem); line-height: 1.25; text-wrap: balance; }
-/* The garden note (end of chapter three): a hairline box */
-.note { border: 1px solid var(--rule); padding: var(--s-3); margin: var(--s-4) 0 0; }
+/* Margin note: a hairline box */
+.note { border: 1px solid var(--rule); padding: var(--s-3); }
 .note .caps { margin: 0 0 var(--s-1); opacity: .86; }
 .note p:last-child { margin: 0; font-size: .9375em; }
 @media (min-width: 1024px) {
+  .chapter { row-gap: var(--s-4); }
   .chapter > .head { grid-area: 1 / left; margin-bottom: 0; }
-  .chapter > .chapter-fig, .chapter > .chapter-figs { grid-area: 2 / left; align-self: stretch; margin: 0; }
-  .chapter > .chapter-fig .frame, .chapter-figs .chapter-fig .frame { flex: 1; aspect-ratio: auto; min-height: 7rem; }
-  .chapter > .main { grid-area: 1 / right / span 2; }
+  .chapter > .margin { grid-area: 1 / right; margin: 0; align-self: start; }
+  .chapter > .main { grid-area: 2 / full; columns: 2; column-gap: var(--col-gap); } /* each column = 6 grid columns; the second starts at column 7 */
+  .chapter > .main p { orphans: 3; widows: 3; }
+  /* Chapter three is short: title and note on the left, text on the right (no gap under the title) */
+  .chapter--aside > .margin { grid-area: 2 / left; }
+  .chapter--aside > .main { grid-area: 1 / right / span 2; columns: auto; }
 }
 /* Optional reading: two entries on the same columns */
 .reading-label { margin: 0 0 var(--s-4); opacity: .86; }

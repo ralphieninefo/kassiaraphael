@@ -287,36 +287,6 @@ window.SITE_CONTENT = {
     fr: "Le lac Albano et le bord de son cratère, vus d’en haut",
     fr_status: "needs native review"
   },
-  lore_ph1_alt: {
-    en: "Line drawing of a Roman temple with six columns at the end of a paved road lined with cypresses, with hills behind",
-    fr: "Dessin au trait d’un temple romain à six colonnes au bout d’une route pavée bordée de cyprès, avec des collines à l’arrière-plan",
-    fr_status: "needs native review"
-  },
-  lore_ph1_caption: {
-    en: "The Sacred Way to the temple of Jupiter, imagined",
-    fr: "La Voie sacrée vers le temple de Jupiter, imaginée",
-    fr_status: "needs native review"
-  },
-  lore_ph3_alt: {
-    en: "Line drawing of a wall sundial in an arched stone niche, with its hour lines fanning out and the motto Horas non numero nisi serenas beneath",
-    fr: "Dessin au trait d’un cadran solaire mural dans une niche de pierre cintrée, ses lignes d’heures en éventail, avec la devise Horas non numero nisi serenas en dessous",
-    fr_status: "needs native review"
-  },
-  lore_ph3_caption: {
-    en: "The sundial and its motto",
-    fr: "Le cadran solaire et sa devise",
-    fr_status: "needs native review"
-  },
-  lore_ph2_alt: {
-    en: "Line drawing of two hilltop buildings facing each other across a lake: a long palace with a dome on the left and a villa with a tower on the right",
-    fr: "Dessin au trait de deux bâtiments sur des hauteurs, face à face de part et d’autre d’un lac : un long palais à dôme à gauche et une villa à tour à droite",
-    fr_status: "needs native review"
-  },
-  lore_ph2_caption: {
-    en: "Castel Gandolfo and the villa, facing across the lake",
-    fr: "Castel Gandolfo et la villa, face à face de part et d’autre du lac",
-    fr_status: "needs native review"
-  },
   reading_label: { en: "Optional reading", fr: "Lectures facultatives", fr_status: "needs native review" },
   reading1_title: { en: "The Aeneid", fr: "L’Énéide", fr_status: "needs native review" },
   reading1_by: { en: "Virgil", fr: "Virgile", fr_status: "needs native review" },
