@@ -375,8 +375,8 @@ window.SITE_CONTENT = {
     fr_status: "needs native review"
   },
   colophon: {
-    en: "Words&nbsp;by&nbsp;Kassia&nbsp;· Site&nbsp;by&nbsp;Raphaël<br>Set&nbsp;in&nbsp;Neuton",
-    fr: "Textes&nbsp;de&nbsp;Kassia&nbsp;· Site&nbsp;de&nbsp;Raphaël<br>Composé&nbsp;en&nbsp;Neuton",
+    en: "Words&nbsp;by&nbsp;Kassia&nbsp;· Site&nbsp;by&nbsp;Raphaël<br>Film&nbsp;photographs&nbsp;by&nbsp;Nick&nbsp;Dean&nbsp;· Set&nbsp;in&nbsp;Neuton",
+    fr: "Textes&nbsp;de&nbsp;Kassia&nbsp;· Site&nbsp;de&nbsp;Raphaël<br>Photographies&nbsp;argentiques de&nbsp;Nick&nbsp;Dean&nbsp;· Composé&nbsp;en&nbsp;Neuton",
     fr_status: "needs native review"
   },
   footer_names: {
