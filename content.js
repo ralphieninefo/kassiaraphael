@@ -130,10 +130,16 @@ window.SITE_CONTENT = {
   weekend_label: { en: "Weekend", fr: "Week-end", fr_status: "needs native review" },
   weekend_title: { en: "Thursday to Sunday", fr: "Du jeudi au dimanche", fr_status: "needs native review" },
   toast_alt: {
-    en: "Kassia laughing as Raphaël smiles at her on the lawn, the white glasshouse dome of the Conservatory of Flowers behind them, black-and-white photograph",
-    fr: "Kassia rit et Raphaël lui sourit sur la pelouse, devant le dôme de verre blanc du Conservatoire des fleurs, photographie en noir et blanc",
+    en: "Raphaël swinging Kassia around on a lawn, her dress flying, black-and-white film photograph",
+    fr: "Raphaël fait tourner Kassia sur une pelouse, sa robe envolée, photographie argentique en noir et blanc",
     fr_status: "needs native review"
   },
+  film_alt: {
+    en: "Kassia and Raphaël laughing beside a sculpture of giant pearls in a park, black-and-white film photograph",
+    fr: "Kassia et Raphaël riant à côté d’une sculpture de perles géantes dans un parc, photographie argentique en noir et blanc",
+    fr_status: "needs native review"
+  },
+  film_caption: { text: "Golden Gate Park · San Francisco" },
   toast_caption: {
     en: "The Conservatory of&nbsp;Flowers<br>The day we got engaged",
     fr: "Le Conservatory of&nbsp;Flowers<br>Le jour de nos fiançailles",

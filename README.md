@@ -25,7 +25,8 @@ Each photo has a JPG (the fallback) plus AVIF and WebP copies at one or more wid
 served through `<picture>` with `sizes`; the hero is preloaded. Regenerate the copies whenever a JPG changes.
 - `images/hero-cafe-graded.jpg` (+ `-800.jpg`): hero print
 - `images/story-graduation-graded.jpg`: Our story print (4:5)
-- `images/weekend-conservatory-lawn.jpg`: Weekend print (4:5)
+- `images/weekend-swing.jpg`: Weekend print (4:5), film
+- `images/film-sculpture.jpg`: the one full-width film photo, after Our story
 - `images/venue-tower.jpg`, `images/venue-aerial.jpg`: 4:5 colour, under the venue copy
 - `images/lore-plate-1440.jpg`, `lore-plate-2880.jpg`: Lake Albano, Lore section (AVIF/WebP as `lore-plate-<width>`)
 - `images/footer-*-graded.jpg`: footer triptych (1:1)
