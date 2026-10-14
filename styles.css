@@ -550,6 +550,13 @@ html[lang="fr"] .ch1 .pull--verse { --verse-em: 15.6; }
 
 @media (max-width: 767px) { .ch1 .pull--verse { text-align: center; } } /* a panel like the drawings: centred over its centred caption */
 
+/* ---------- Full-width film photo between Our story and Why Italy: edge to edge, no text on it, caption beneath ---------- */
+.interstitial { margin: 0; background: var(--albano); color: var(--travertine); }
+.interstitial img { width: 100%; aspect-ratio: 16 / 9; max-height: 88vh; object-fit: cover; object-position: 50% 29%; /* the whole pearl crown */
+                    filter: grayscale(1) contrast(1.04); }
+.interstitial figcaption { color: var(--travertine); opacity: .8; margin: 0; padding: var(--s-3) var(--pad-x); } /* same caps caption as every photo, cream on blue */
+@media (max-width: 767px) { .interstitial img { aspect-ratio: 1 / 1; max-height: none; object-position: 28% 62%; } } /* phones: square, the two of you and the sculpture */
+
 /* ---------- Print: cream paper, charcoal ink, one section per page ---------- */
 @media print {
   @page { margin: 0; } /* the cream runs to the paper's edge; the sections carry their own margins */
@@ -568,6 +575,7 @@ html[lang="fr"] .ch1 .pull--verse { --verse-em: 15.6; }
   .print--hero { max-width: 14cm; margin-inline: auto; }
   .hero { break-after: page; }
   h1, h2, h3, .label, .head { break-after: avoid; }
+  .interstitial img { max-height: 12cm; }
   .lore-close, .signoff, figure, .frame, .print, .pull, .motto-block, .reading-list > article, .days li { break-inside: avoid; }
   p { orphans: 3; widows: 3; }
   .js .reveal { opacity: 1 !important; transition: none !important; }
