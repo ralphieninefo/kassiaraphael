@@ -72,6 +72,25 @@
   window.addEventListener("scroll", onScroll, { passive: true });
   onScroll();
 
+  // Phone menu: "Menu" opens the sections as a full page under the bar; a section link, "Close" or Escape closes it.
+  var menuBtn = document.querySelector(".menu-btn"), menu = document.getElementById("menu");
+  if (menuBtn && menu) {
+    var setMenu = function (open, returnFocus) {
+      menuBtn.setAttribute("aria-expanded", String(open));
+      if (open) menu.style.top = bar.getBoundingClientRect().bottom + "px";
+      menu.hidden = !open;
+      root.classList.toggle("menu-open", open);
+      if (open) { var first = menu.querySelector("a"); if (first) first.focus({ preventScroll: true }); }
+      else if (returnFocus) menuBtn.focus();
+    };
+    menuBtn.addEventListener("click", function () { setMenu(menuBtn.getAttribute("aria-expanded") !== "true", false); });
+    menu.addEventListener("click", function (e) { if (e.target.closest("a")) setMenu(false, false); });
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" && !menu.hidden) setMenu(false, true);
+    });
+    window.matchMedia("(min-width: 768px)").addEventListener("change", function (m) { if (m.matches) setMenu(false, false); });
+  }
+
   // Slow fade-in on scroll. CSS skips it entirely for prefers-reduced-motion.
   var items = document.querySelectorAll(".reveal");
   if (!("IntersectionObserver" in window)) {
