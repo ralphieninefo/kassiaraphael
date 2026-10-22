@@ -56,12 +56,26 @@
       <a href="#stay" data-t="stay_label"></a>
       <a href="#questions" data-t="questions_label"></a>
     </nav>
+    <!-- Phones: a "Menu" button opens the sections as a table of contents -->
+    <button type="button" class="menu-btn" aria-expanded="false" aria-controls="menu"><span class="open-l" data-t="menu_open"></span><span class="close-l" data-t="menu_close"></span></button>
     <div class="lang" role="group" data-t-aria="lang_label">
       <button type="button" data-lang="en" aria-pressed="true" lang="en">EN</button>
       <span aria-hidden="true">|</span>
       <button type="button" data-lang="fr" aria-pressed="false" lang="fr">FR</button>
     </div>
   </header>
+  <!-- Phone menu: a full navy page under the bar, the sections numbered as on the page (same content keys as the nav) -->
+  <nav class="menu" id="menu" data-t-aria="nav_label" hidden>
+    <p class="menu-label" data-t="menu_label"></p>
+    <ol>
+      <li><a href="#story"><span class="n">II</span><span data-t="story_label"></span></a></li>
+      <li><a href="#venue"><span class="n">IV</span><span data-t="venue_label"></span></a></li>
+      <li><a href="#weekend"><span class="n">V</span><span data-t="weekend_label"></span></a></li>
+      <li><a href="#travel"><span class="n">VI</span><span data-t="travel_label"></span></a></li>
+      <li><a href="#stay"><span class="n">VII</span><span data-t="stay_label"></span></a></li>
+      <li><a href="#questions"><span class="n">VIII</span><span data-t="questions_label"></span></a></li>
+    </ol>
+  </nav>
 
   <noscript><p class="noscript">This page needs JavaScript to show its text. · Cette page a besoin de JavaScript pour afficher son texte. · raphaelkassia2027@gmail.com</p></noscript>
 

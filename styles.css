@@ -155,6 +155,26 @@ html[lang="fr"] .only-en, html:not([lang="fr"]) .only-fr { display: none; }
   .nav { display: none; }
   .mono { display: block; }
 }
+/* ---------- Phone menu: "Menu" in the bar opens a table of contents on navy ---------- */
+.menu-btn, .menu { display: none; }
+@media (max-width: 767px) {
+  .menu-btn { display: block; margin-left: auto; font: inherit; font-size: var(--caps); letter-spacing: .2em; line-height: 1.5; text-transform: uppercase;
+              color: inherit; background: none; border: 0; padding: .85rem .25rem; cursor: pointer; } /* same caps and baseline as EN | FR beside it; 44px+ tap height */
+  .menu-btn .close-l, .menu-open .menu-btn .open-l { display: none; }
+  .menu-open .menu-btn .close-l { display: inline; }
+  .menu-open { overflow: hidden; } /* the page stays put behind the menu */
+  .menu-open .topbar { border-bottom-color: var(--cream-rule); }
+  .menu:not([hidden]) { display: block; position: fixed; top: var(--bar-h); right: 0; bottom: 0; left: 0; z-index: 19; overflow-y: auto;
+       background: var(--albano); color: var(--travertine); padding: var(--s-4) var(--pad-x) var(--s-5); } /* left edge = the bar's K & R */
+  .menu-label { margin: 0 0 var(--s-2); text-transform: uppercase; letter-spacing: .2em; font-size: var(--caps); line-height: 1.5; opacity: .8; } /* like a section label */
+  .menu ol { list-style: none; margin: 0; padding: 0; }
+  .menu li { border-top: 1px solid var(--cream-rule); }
+  .menu li:last-child { border-bottom: 1px solid var(--cream-rule); }
+  .menu a { display: flex; align-items: baseline; gap: var(--s-2); padding: var(--s-2) 0; text-decoration: none;
+            font-size: clamp(1.625rem, 1.2rem + 1.2vw, 2.125rem); font-weight: 300; line-height: 1.2; } /* the Lore chapter-title size */
+  .menu .n { flex: none; width: 3.25em; font-size: var(--caps); letter-spacing: .2em; opacity: .7; } /* numerals as on the section labels */
+  .menu a:focus-visible { outline-offset: 2px; }
+}
 @media (min-width: 900px) { /* six items fit in both languages from here; below, the row scrolls with a fade */
   .nav { gap: 1.75rem; overflow: visible; -webkit-mask-image: none; mask-image: none; }
 }
@@ -565,7 +585,7 @@ html[lang="fr"] .ch1 .pull--verse { --verse-em: 15.6; }
                                         -webkit-print-color-adjust: exact; print-color-adjust: exact; }
   body { font-size: 11pt; }
   .albano, .paper { --rule: #bdbdbd; --frame: #bdbdbd; --frame-soft: #dcdcdc; --marker: var(--terracotta); }
-  .topbar, .skip, .noscript, .lore-nudge, .footer .strip { display: none !important; }
+  .menu, .menu-btn, .topbar, .skip, .noscript, .lore-nudge, .footer .strip { display: none !important; }
   .sheet { padding: 12mm 15mm 6mm; -webkit-box-decoration-break: clone; box-decoration-break: clone; } /* the margin repeats on every page a section runs onto */
   .hero { padding-top: 18mm; }
   .sheet::before, .sheet::after { display: none; }

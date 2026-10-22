@@ -27,6 +27,9 @@ window.SITE_CONTENT = {
   },
   skip_link: { en: "Skip to content", fr: "Aller au contenu", fr_status: "needs native review" },
   lang_label: { en: "Language", fr: "Langue", fr_status: "needs native review" },
+  menu_open: { en: "Menu", fr: "Menu", fr_status: "needs native review" },
+  menu_close: { en: "Close", fr: "Fermer", fr_status: "needs native review" },
+  menu_label: { en: "Contents", fr: "Sommaire", fr_status: "needs native review" },
   nav_label: { en: "Sections", fr: "Rubriques", fr_status: "needs native review" },
 
   /* Hero */
@@ -62,8 +65,8 @@ window.SITE_CONTENT = {
     fr_status: "needs native review"
   },
   story_caption: {
-    en: "San Francisco State · Graduation",
-    fr: "San Francisco State · Remise des diplômes",
+    en: "San&nbsp;Francisco&nbsp;State&nbsp;· Graduation",
+    fr: "San&nbsp;Francisco&nbsp;State&nbsp;· Remise des diplômes",
     fr_status: "needs native review"
   },
   story_p1: {
@@ -139,7 +142,7 @@ window.SITE_CONTENT = {
     fr: "Kassia et Raphaël riant à côté d’une sculpture de perles géantes dans un parc, photographie argentique en noir et blanc",
     fr_status: "needs native review"
   },
-  film_caption: { text: "Golden Gate Park · San Francisco" },
+  film_caption: { text: "Golden&nbsp;Gate&nbsp;Park&nbsp;· San&nbsp;Francisco" },
   toast_caption: {
     en: "The Conservatory of&nbsp;Flowers<br>The day we got engaged",
     fr: "Le Conservatory of&nbsp;Flowers<br>Le jour de nos fiançailles",
