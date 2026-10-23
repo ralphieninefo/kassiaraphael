@@ -214,12 +214,13 @@ window.SITE_CONTENT = {
   /* Stay */
   stay_label: { en: "Stay", fr: "Hébergement", fr_status: "needs native review" },
   stay_title: { en: "In Castel Gandolfo", fr: "À Castel Gandolfo", fr_status: "needs native review" },
-  /* FR: needs Raph’s review (stay_text, stay_text2, stay_link) */
+  /* FR: needs Raph’s review (stay_text, stay_hotel_link, stay_text2, stay_link) */
   stay_text: {
-    en: "Hotel Castel Vecchio in Castel Gandolfo is the hotel the villa works with, and it’s a short walk to town. Booking info is coming soon.",
-    fr: "L’hôtel Castel Vecchio, à Castel Gandolfo, est l’hôtel partenaire de la villa, à quelques pas du centre. Les informations de réservation arrivent bientôt.",
+    en: "Hotel Castel Vecchio in Castel Gandolfo is the hotel the villa works with, and it’s a short walk to town. The rooms were redone in 2026, and many look out over the lake. We’re arranging a block of rooms at a special rate for our guests, with booking details coming soon.",
+    fr: "L’hôtel Castel Vecchio, à Castel Gandolfo, est l’hôtel partenaire de la villa, à quelques pas du centre. Les chambres ont été refaites en 2026, et beaucoup donnent sur le lac. Nous réservons des chambres à un tarif préférentiel pour nos invités, et les détails de réservation arrivent bientôt.",
     fr_status: "needs native review"
   },
+  stay_hotel_link: { en: "See the rooms&nbsp;→", fr: "Voir les chambres&nbsp;→", fr_status: "needs native review" },
   stay_text2: {
     en: "If you’d rather rent a place, especially with friends, we’ve saved some Airbnbs nearby at different prices.",
     fr: "Si vous préférez louer un logement, surtout entre amis, nous avons repéré quelques Airbnb à proximité, pour tous les budgets.",

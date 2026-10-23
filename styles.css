@@ -505,6 +505,7 @@ sup { font-size: .65em; line-height: 0; vertical-align: .5em; } /* ordinals: XVI
 /* ---------- Questions ---------- */
 .email { font-size: 1.1em; word-break: break-word; }
 #questions .main p { margin: 0; }
+#stay .email { line-height: var(--line); } /* the links under each Stay paragraph keep the body line, so the column stays on its rhythm */
 
 /* ---------- Footer: the serene hours, on the same grid ---------- */
 .strip { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--col-gap); margin-bottom: var(--s-5); }
