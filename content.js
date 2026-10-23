@@ -214,11 +214,18 @@ window.SITE_CONTENT = {
   /* Stay */
   stay_label: { en: "Stay", fr: "Hébergement", fr_status: "needs native review" },
   stay_title: { en: "In Castel Gandolfo", fr: "À Castel Gandolfo", fr_status: "needs native review" },
+  /* FR: needs Raph’s review (stay_text, stay_text2, stay_link) */
   stay_text: {
-    en: "Hotel Castel Vecchio in Castel Gandolfo is the hotel the villa works with, and it’s a short walk to town. Booking info is coming soon, along with a few other places at different prices.",
-    fr: "L’hôtel Castel Vecchio, à Castel Gandolfo, est l’hôtel partenaire de la villa, à quelques pas du centre. Les informations de réservation arrivent bientôt, avec quelques autres adresses à différents prix.",
+    en: "Hotel Castel Vecchio in Castel Gandolfo is the hotel the villa works with, and it’s a short walk to town. Booking info is coming soon.",
+    fr: "L’hôtel Castel Vecchio, à Castel Gandolfo, est l’hôtel partenaire de la villa, à quelques pas du centre. Les informations de réservation arrivent bientôt.",
     fr_status: "needs native review"
   },
+  stay_text2: {
+    en: "If you’d rather rent a place, especially with friends, we’ve saved some Airbnbs nearby at different prices.",
+    fr: "Si vous préférez louer un logement, surtout entre amis, nous avons repéré quelques Airbnb à proximité, pour tous les budgets.",
+    fr_status: "needs native review"
+  },
+  stay_link: { en: "Our Airbnb list&nbsp;→", fr: "Notre liste Airbnb&nbsp;→", fr_status: "needs native review" },
 
   /* Lore: the legends of the lake, as the villa tells them. Last section, after Questions; linked from the Venue, Questions and footer. Not in the nav. */
   lore_label: { en: "Lore", fr: "Légendes", fr_status: "needs native review" },
