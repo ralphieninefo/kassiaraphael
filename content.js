@@ -155,12 +155,20 @@ window.SITE_CONTENT = {
     fr_status: "needs native review"
   },
   fri_day: { en: "Friday, October&nbsp;8", fr: "vendredi 8&nbsp;octobre", fr_status: "needs native review" },
-  fri_time: { en: "5:00 pm, Villa del&nbsp;Cardinale", fr: "17 h, Villa del&nbsp;Cardinale", fr_status: "needs native review" },
+  fri_time: { en: "4:30 pm, Villa del&nbsp;Cardinale", fr: "16&nbsp;h&nbsp;30, Villa del&nbsp;Cardinale", fr_status: "needs native review" },
   fri_text: {
-    en: "Guests are asked to arrive by 4:30, when cocktails begin. The ceremony starts at five, followed by dinner and a party.",
-    fr: "Accueil des invités à 16&nbsp;h&nbsp;30 autour d’un cocktail. La cérémonie commence à 17&nbsp;h, suivie du dîner et de la fête.",
+    en: "Guests are asked to arrive by 4:30, when cocktails begin. The ceremony follows, then dinner and a party.",
+    fr: "Accueil des invités à 16&nbsp;h&nbsp;30 autour d’un cocktail. Suivront la cérémonie, puis le dîner et la fête.",
     fr_status: "needs native review"
   },
+  /* "Add to calendar" line under a schedule entry. The same keys serve every day that gets one (Friday now, Thursday later). */
+  cal_label: { en: "Add to calendar", fr: "Ajouter au calendrier", fr_status: "needs native review" },
+  cal_google: { text: "Google" },
+  cal_apple: { text: "Apple" },
+  cal_outlook: { text: "Outlook" },
+  cal_google_aria: { en: "Add to Google Calendar", fr: "Ajouter à Google Agenda", fr_status: "needs native review" },
+  cal_apple_aria: { en: "Add to Apple Calendar", fr: "Ajouter à Apple Calendrier", fr_status: "needs native review" },
+  cal_outlook_aria: { en: "Add to Outlook", fr: "Ajouter à Outlook", fr_status: "needs native review" },
   sat_day: { en: "Saturday, October&nbsp;9", fr: "samedi 9&nbsp;octobre", fr_status: "needs native review" },
   sat_text: {
     en: "No plans. A day to rest by the lake, visit the papal palace and gardens in Castel Gandolfo, or take the train into Rome.",
