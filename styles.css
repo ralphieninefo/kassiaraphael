@@ -398,6 +398,10 @@ figcaption { margin-top: .75rem; color: var(--ink-soft); text-align: center; tex
 .days .fri .when { font-size: 1.35em; line-height: 1.3; margin: 0 0 var(--s-1); }
 .days .fri div p:not(.when) { font-size: 1.08em; }
 .days .dress { border-bottom: 0; padding-top: var(--s-4); }
+/* "Add to calendar" under a day: the section-label caps, links underlined like every link, one small step below the copy */
+.days li div p.cal:not(.when) { font-size: var(--caps); line-height: 1.5; margin: 0 0 var(--s-1); opacity: .86; }
+.days .cal-label { display: block; } /* the label on its own line, the two links together on the next */
+.days .cal a { white-space: nowrap; }
 .weekend-shot { margin-top: var(--s-5); max-width: 24rem; }
 @media (min-width: 760px) {
   .days li { display: grid; grid-template-columns: 13rem 1fr; gap: 1.25rem; align-items: baseline; }
@@ -586,7 +590,7 @@ html[lang="fr"] .ch1 .pull--verse { --verse-em: 15.6; }
                                         -webkit-print-color-adjust: exact; print-color-adjust: exact; }
   body { font-size: 11pt; }
   .albano, .paper { --rule: #bdbdbd; --frame: #bdbdbd; --frame-soft: #dcdcdc; --marker: var(--terracotta); }
-  .menu, .menu-btn, .topbar, .skip, .noscript, .lore-nudge, .footer .strip { display: none !important; }
+  .cal, .menu, .menu-btn, .topbar, .skip, .noscript, .lore-nudge, .footer .strip { display: none !important; }
   .sheet { padding: 12mm 15mm 6mm; -webkit-box-decoration-break: clone; box-decoration-break: clone; } /* the margin repeats on every page a section runs onto */
   .hero { padding-top: 18mm; }
   .sheet::before, .sheet::after { display: none; }
