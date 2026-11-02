@@ -560,9 +560,9 @@ sup { font-size: .65em; line-height: 0; vertical-align: .5em; } /* ordinals: XVI
 }
 
 /* Chapter one verse: always the translator's two lines. Each line stays whole and the type size follows the width of its box
-   (14.4em is the longest English line, 15.6em the longest French one), up to a cap per breakpoint. */
+   (14.4em is the longest English line, 15.1em the longest French one), up to a cap per breakpoint. */
 .ch1 .pull--verse { container-type: inline-size; --verse-em: 14.4; --verse-cap: 1.5rem; }
-html[lang="fr"] .ch1 .pull--verse { --verse-em: 15.6; }
+html[lang="fr"] .ch1 .pull--verse { --verse-em: 15.1; } /* Pongerville (1843), three lines; the longest is 14.97em */
 .ch1 .pull--verse p:first-child { white-space: nowrap; text-wrap: nowrap; font-size: min(var(--verse-cap), calc(100cqi / var(--verse-em))); }
 @media (min-width: 768px) { .ch1 .pull--verse { --verse-cap: 2.5rem; } }
 @media (min-width: 1280px) { .ch1 .pull--verse { --verse-cap: 2.375rem; } }
