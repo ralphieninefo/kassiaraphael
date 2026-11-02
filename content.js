@@ -22,7 +22,7 @@ window.SITE_CONTENT = {
   },
   meta_description: {
     en: "Kassia & Raphaël are getting married on Friday, October 8, 2027, at Villa del Cardinale above Lake Albano, near Rome.",
-    fr: "Kassia & Raphaël se marient le vendredi 8 octobre 2027 à la Villa del Cardinale, au-dessus du lac Albano, près de Rome.",
+    fr: "Kassia & Raphaël se marient le vendredi 8 octobre 2027 à la Villa del Cardinale, au-dessus du lac d’Albano, près de Rome.",
     fr_status: "needs native review"
   },
   skip_link: { en: "Skip to content", fr: "Aller au contenu", fr_status: "needs native review" },
@@ -40,14 +40,14 @@ window.SITE_CONTENT = {
   },
   hero_date: { en: "Friday, October 8, 2027", fr: "vendredi 8 octobre 2027", fr_status: "needs native review" },
   hero_place: { en: "Castel Gandolfo, Italy", fr: "Castel Gandolfo, Italie", fr_status: "needs native review" },
-  hero_note: { en: "Formal invitation to follow", fr: "Les détails suivront.", fr_status: "needs native review" },
+  hero_note: { en: "Formal invitation to follow", fr: "Les détails suivront", fr_status: "needs native review" },
 
   /* Welcome */
   welcome_label: { en: "Welcome", fr: "Bienvenue", fr_status: "needs native review" },
   welcome_title: { en: "We hope you’ll join&nbsp;us.", fr: "Nous espérons vous y&nbsp;voir.", fr_status: "needs native review" },
   welcome_text: {
     en: "We are getting married on Friday, October&nbsp;8, 2027, at a villa above Lake Albano, about forty minutes from Rome. A formal invitation with full details will follow. For now, we wanted you to have time to plan.",
-    fr: "On va se marier le vendredi 8&nbsp;octobre 2027, à la Villa del Cardinale, à Castel Gandolfo. La villa se trouve dans le domaine du lac Albano, à 40&nbsp;minutes de Rome, dans les Castelli Romani. Une invitation officielle, avec tous les détails, suivra.",
+    fr: "Nous nous marions le vendredi 8&nbsp;octobre 2027 à la Villa del Cardinale. La Villa offre un panorama unique au-dessus du lac d’Albano, à environ quarante minutes de Rome. Une invitation officielle, avec tous les détails, suivra.",
     fr_status: "needs native review"
   },
 
@@ -95,13 +95,13 @@ window.SITE_CONTENT = {
   italy_label: { en: "Why Italy", fr: "Pourquoi l’Italie", fr_status: "needs native review" },
   italy_title: { en: "Two roads to Italy", fr: "Deux chemins vers l’Italie", fr_status: "needs native review" },
   italy_text: {
-    en: "Italy made an indelible imprint on both of our lives from a young age. For&nbsp;Raph, it was the 2006 World Cup final, when Italy beat France on penalties and he swore off anything Italian for life, despite his mother being a professor of Italian. Raph would like the record to show that France went on to win the World Cup in 2018, and that Italy has missed the last three.",
-    fr: "L’Italie a marqué nos deux vies dès notre jeunesse. Pour&nbsp;Raph, ce fut la finale de la Coupe du monde 2006, quand l’Italie a battu la France aux tirs au but et qu’il a juré de bouder tout ce qui était italien pour le reste de sa vie, alors même que sa mère était professeure d’italien. Raph tient à ce qu’il soit consigné que la France a remporté la Coupe du monde en 2018, et que l’Italie a manqué les trois suivantes.",
+    en: "Italy made an indelible imprint on both of our lives from a young age. For&nbsp;Raph, it was the 2006 World Cup final, when Italy beat France on penalties and he swore off anything Italian for life, despite his mother being an Italian prof. Raph would like the record to show that France went on to win the World Cup in 2018, and that Italy has missed the last three.",
+    fr: "L’Italie a marqué nos deux vies dès notre jeunesse. Pour&nbsp;Raph, ce fut la finale de la Coupe du monde 2006, quand l’Italie a battu la France aux tirs au but et qu’il a juré de bouder tout ce qui était italien pour le reste de sa vie, alors même que sa mère était prof d’italien. Raph tient à ce qu’il soit consigné que la France a remporté la Coupe du monde en 2018, et que l’Italie a manqué les trois suivantes.",
     fr_status: "needs native review"
   },
   italy_text2: {
     en: "For Kassia, it was college, when her aunt and cousins lived in Florence and she could spend weeks at a time visiting and exploring. After Raph’s parents retired near Lake&nbsp;Albano, we couldn’t think of a better excuse to bring everyone we love to one of our favorite corners of the world. Ask Raph in October 2027 whether he has lifted his embargo on&nbsp;Italy.",
-    fr: "Pour Kassia, ce furent ses années d’université, quand sa tante et ses cousins vivaient à Florence et qu’elle pouvait y passer des semaines entières à visiter et à explorer. Quand les parents de Raph ont pris leur retraite près du lac&nbsp;Albano, nous n’avons pas trouvé de meilleur prétexte pour réunir tous ceux que nous aimons dans l’un de nos coins du monde préférés. Demandez à Raph en octobre 2027 s’il a levé son embargo sur&nbsp;l’Italie.",
+    fr: "Pour Kassia, ce furent ses années d’université, quand sa tante et ses cousins vivaient à Florence et qu’elle pouvait y passer des semaines entières à visiter et à explorer. Quand les parents de Raph ont pris leur retraite près du lac&nbsp;d’Albano, nous n’avons pas trouvé de meilleur prétexte pour réunir tous ceux que nous aimons dans l’un de nos coins du monde préférés. Demandez à Raph en octobre 2027 s’il a levé son embargo sur&nbsp;l’Italie.",
     fr_status: "needs native review"
   },
 
@@ -116,13 +116,13 @@ window.SITE_CONTENT = {
   venue_img_caption: { text: "Villa del Cardinale, 1629" },
   venue_text: {
     en: "Villa del Cardinale was built in 1629 as a hunting lodge for Cardinal Gerolamo Colonna. It stands on the remains of a Roman house, at the highest point of the crater that holds Lake Albano, a short distance from the papal summer palace at Castel Gandolfo. Its frescoes are original. Of all the villas we saw in a week, it is the one we knew at once.",
-    fr: "La Villa del Cardinale a été construite en 1629 comme pavillon de chasse pour le cardinal Gerolamo Colonna. Elle s’élève sur les vestiges d’une maison romaine, au point le plus haut du cratère qui abrite le lac Albano, non loin du palais d’été des papes à Castel Gandolfo. Ses fresques sont d’origine. De toutes les villas visitées en une semaine, c’est celle que nous avons reconnue tout de suite.",
+    fr: "La Villa del Cardinale a été construite en 1629 comme pavillon de chasse pour le cardinal Gerolamo Colonna. Elle s’élève sur les vestiges d’une maison romaine, au point le plus haut du cratère qui abrite le lac d’Albano, non loin du palais d’été des papes à Castel Gandolfo. Ses fresques sont d’origine. De toutes les villas visitées en une semaine, c’est celle que nous avons reconnue tout de suite.",
     fr_status: "needs native review"
   },
   tower_alt: { en: "Tower of Villa del Cardinale", fr: "La tour de la Villa del Cardinale", fr_status: "needs native review" },
   tower_caption: { en: "The tower", fr: "La tour", fr_status: "needs native review" },
-  aerial_alt: { en: "Villa del Cardinale above Lake Albano", fr: "La Villa del Cardinale au-dessus du lac Albano", fr_status: "needs native review" },
-  aerial_caption: { en: "Above Lake Albano", fr: "Au-dessus du lac Albano", fr_status: "needs native review" },
+  aerial_alt: { en: "Villa del Cardinale above Lake Albano", fr: "La Villa del Cardinale au-dessus du lac d’Albano", fr_status: "needs native review" },
+  aerial_caption: { en: "Above Lake Albano", fr: "Au-dessus du lac d’Albano", fr_status: "needs native review" },
   venue_rest: {
     en: "We’ll show you the rest in person. In the meantime, <a href=\"#lore\">the lore of the lake</a>.",
     fr: "Le reste, nous vous le montrerons sur place. En attendant, <a href=\"#lore\">les légendes du lac</a>.",
@@ -189,13 +189,13 @@ window.SITE_CONTENT = {
   travel_title: { en: "From Rome to the lake", fr: "De Rome au lac", fr_status: "needs native review" },
   lake_img_alt: {
     en: "Lake Albano from above, photographed at the villa",
-    fr: "Le lac Albano vu d’en haut, photographié depuis la villa",
+    fr: "Le lac d’Albano vu d’en haut, photographié depuis la villa",
     fr_status: "needs native review"
   },
   lake_img_caption: { text: "Lago Albano" },
   map_alt: {
     en: "Line map: the coast at Fiumicino, Rome, Fiumicino and Ciampino airports, the train from Termini to Castel Gandolfo, Lake Albano and the villa",
-    fr: "Carte au trait&nbsp;: la côte à Fiumicino, Rome, les aéroports de Fiumicino et de Ciampino, le train de Termini à Castel Gandolfo, le lac Albano et la villa",
+    fr: "Carte au trait&nbsp;: la côte à Fiumicino, Rome, les aéroports de Fiumicino et de Ciampino, le train de Termini à Castel Gandolfo, le lac d’Albano et la villa",
     fr_status: "needs native review"
   },
   map_rome: { text: "Roma" },
@@ -214,8 +214,8 @@ window.SITE_CONTENT = {
   },
   villa_label: { en: "To the villa", fr: "Jusqu’à la villa", fr_status: "needs native review" },
   villa_text: {
-    en: "The villa sits on the crater rim above Castel Gandolfo (technically in Rocca di&nbsp;Papa), so you’ll need a car, taxi, or shuttle from the hotel. We’re sorting out a shuttle and will post it here.",
-    fr: "La villa se trouve sur le bord du cratère, au-dessus de Castel Gandolfo (sur la commune de Rocca di&nbsp;Papa), il vous faudra une voiture, un taxi ou la navette depuis l’hôtel. Nous organisons une navette et en donnerons les détails ici.",
+    en: "The villa sits on the crater rim across the lake from Castel Gandolfo, in Rocca di&nbsp;Papa, so you’ll need a car, taxi, or shuttle from the hotel. We’re sorting out a shuttle and will post it here.",
+    fr: "La villa se trouve sur le bord du cratère, en face de Castel Gandolfo, sur la commune de Rocca di&nbsp;Papa, il vous faudra une voiture, un taxi ou la navette depuis l’hôtel. Nous organisons une navette et en donnerons les détails ici.",
     fr_status: "needs native review"
   },
 
@@ -247,7 +247,7 @@ window.SITE_CONTENT = {
   lore_c1_title: { en: "Before Rome", fr: "Avant Rome", fr_status: "needs native review" },
   lore_c1_p1: {
     en: "The legend of Lake Albano is older than Rome. Ascanius, son of Aeneas, founded Alba Longa along the crater’s edge. The Romans knew him as Iulus, and Julius Caesar traced his family to him. In Vergil’s <em>Aeneid</em>, old man Tiberinus, the river god, foretells it.",
-    fr: "La légende du lac Albano est plus ancienne que Rome. Ascagne, fils d’Énée, fonda Albe-la-Longue sur le bord du cratère. Les Romains l’appelaient Iule, et Jules César faisait remonter sa famille jusqu’à lui. Dans l’<em>Énéide</em> de Virgile, le vieux Tibérinus, dieu du fleuve, l’annonce.",
+    fr: "La légende du lac d’Albano est plus ancienne que Rome. Ascagne, fils d’Énée, fonda Albe-la-Longue sur le bord du cratère. Les Romains l’appelaient Iule, et Jules César faisait remonter sa famille jusqu’à lui. Dans l’<em>Énéide</em> de Virgile, le vieux Tibérinus, dieu du fleuve, l’annonce.",
     fr_status: "needs native review"
   },
   lore_c1_verse: {
@@ -273,7 +273,7 @@ window.SITE_CONTENT = {
   lore_c2_title: { en: "The summer court", fr: "La cour d’été", fr_status: "needs native review" },
   lore_c2_p1: {
     en: "Romans loved the rolling hills around Lake Albano long before the popes did. From the late Roman Republic, wealthy families built villas along the shore. In the 1600s, Pope Urban VIII made Castel Gandolfo his summer residence, and the nobility of his court, naturally wanting to be nearby, built houses of their own, often on top of Roman ruins. Villa del Cardinale is one of them. According to the villa, the house that first stood here was Roman, and it lodged consuls and generals during the Feriae Latinae. Once a year, in a truce, Rome’s consuls climbed Monte Cavo above the lake to sacrifice a white bull to Jupiter.",
-    fr: "Les Romains aimaient les collines autour du lac Albano bien avant les papes. Dès la fin de la République romaine, de riches familles bâtirent des villas sur ses rives. Au XVIIe siècle, le pape Urbain VIII fit de Castel Gandolfo sa résidence d’été, et la noblesse de sa cour, tenant naturellement à rester proche, s’y fit construire des maisons, souvent sur des ruines romaines. La Villa del Cardinale est l’une d’elles. Selon la villa, la maison qui s’élevait ici d’abord était romaine et logeait consuls et généraux pendant les Féries latines. Une fois l’an, à la faveur d’une trêve, les consuls de Rome montaient au mont Cavo, au-dessus du lac, sacrifier un taureau blanc à Jupiter.",
+    fr: "Les Romains aimaient les collines autour du lac d’Albano bien avant les papes. Dès la fin de la République romaine, de riches familles bâtirent des villas sur ses rives. Au XVIIe siècle, le pape Urbain VIII fit de Castel Gandolfo sa résidence d’été, et la noblesse de sa cour, tenant naturellement à rester proche, s’y fit construire des maisons, souvent sur des ruines romaines. La Villa del Cardinale est l’une d’elles. Selon la villa, la maison qui s’élevait ici d’abord était romaine et logeait consuls et généraux pendant les Féries latines. Une fois l’an, à la faveur d’une trêve, les consuls de Rome montaient au mont Cavo, au-dessus du lac, sacrifier un taureau blanc à Jupiter.",
     fr_status: "needs native review"
   },
   lore_c2_p2: {
@@ -304,7 +304,7 @@ window.SITE_CONTENT = {
   },
   lore_plate_alt: {
     en: "Lake Albano and its crater rim, seen from above",
-    fr: "Le lac Albano et le bord de son cratère, vus d’en haut",
+    fr: "Le lac d’Albano et le bord de son cratère, vus d’en haut",
     fr_status: "needs native review"
   },
   reading_label: { en: "Optional reading", fr: "Lectures facultatives", fr_status: "needs native review" },
