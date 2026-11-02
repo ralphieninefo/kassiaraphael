@@ -252,12 +252,12 @@ window.SITE_CONTENT = {
   },
   lore_c1_verse: {
     en: "In thirty circling years, Ascanius <br>Will found the city Alba — glorious&nbsp;name.",
-    fr: "Quand trente années auront tourné, Ascagne<br>fondera la ville d’Albe au nom&nbsp;glorieux.",
+    fr: "Lorsque les années auront achevé six lustres,<br>là ton fils Ascagne fondera la cité d’Albe,<br>dont le nom sera fameux.",
     fr_status: "needs native review"
   },
   lore_c1_verse_credit: {
     en: "Vergil, <em>Aeneid</em> <span class='nw'>8.47–48</span> · trans. Sarah Ruden",
-    fr: "Virgile, <em>Énéide</em> VIII, <span class='nw'>47–48</span> · traduction libre",
+    fr: "Virgile, <em>Énéide</em> VIII, <span class='nw'>47–48</span>&nbsp;· trad.&nbsp;Pongerville,&nbsp;1843",
     fr_status: "needs native review"
   },
   lore_c1_p2: {
@@ -330,12 +330,12 @@ window.SITE_CONTENT = {
   lore_close_la: { text: "Tantae molis erat Romanam condere gentem." },
   lore_close: {
     en: "A weighty work, to found the Roman nation!",
-    fr: "Si lourde tâche, fonder la nation romaine&nbsp;!",
+    fr: "Tant il était pesant de fonder la nation romaine&nbsp;!",
     fr_status: "needs native review"
   },
   lore_close_credit: {
     en: "Vergil, <em>Aeneid</em> 1.33 · trans. Sarah Ruden",
-    fr: "Virgile, <em>Énéide</em> I, 33 · traduction libre",
+    fr: "Virgile, <em>Énéide</em> I,&nbsp;33&nbsp;· trad.&nbsp;Pongerville,&nbsp;1843",
     fr_status: "needs native review"
   },
 
