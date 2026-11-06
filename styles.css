@@ -397,7 +397,8 @@ figcaption { margin-top: .75rem; color: var(--ink-soft); text-align: center; tex
 .days .fri > .caps::after { content: ""; display: inline-block; width: 5px; height: 5px; margin-left: .7rem; background: var(--marker); transform: rotate(45deg); vertical-align: .15em; }
 .days .fri .when { font-size: 1.35em; line-height: 1.3; margin: 0 0 var(--s-1); }
 .days .fri div p:not(.when) { font-size: 1.08em; }
-.days .dress { border-bottom: 0; padding-top: var(--s-4); }
+.days .dress { padding-top: var(--s-4); } /* the practical rows (what to wear, children) start a step below the schedule */
+.days li:last-child { border-bottom: 0; }
 /* "Add to calendar" under a day: the section-label caps, links underlined like every link, one small step below the copy */
 .days li div p.cal:not(.when) { font-size: var(--caps); line-height: 1.5; margin: 0 0 var(--s-1); opacity: .86; }
 .days .cal-label { display: block; } /* the label on its own line, the two links together on the next */

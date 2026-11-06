@@ -183,6 +183,12 @@ window.SITE_CONTENT = {
     fr: "Tenue de soirée : smoking ou robe longue souhaités. Un costume sombre convient également. La villa mérite un peu de cérémonie. D’autres précisions suivront.",
     fr_status: "needs native review"
   },
+  kids_label: { en: "Children", fr: "Enfants", fr_status: "needs native review" },
+  kids_text: {
+    en: "We love your little ones, but the wedding is adults&#8209;only, except for immediate family.",
+    fr: "Nous adorons vos petits, mais le mariage se fera entre adultes, sauf pour la famille proche.",
+    fr_status: "needs native review"
+  },
 
   /* Travel */
   travel_label: { en: "Travel", fr: "Accès", fr_status: "needs native review" },
