@@ -228,12 +228,25 @@ window.SITE_CONTENT = {
   /* Stay */
   stay_label: { en: "Stay", fr: "Hébergement", fr_status: "needs native review" },
   stay_title: { en: "In Castel Gandolfo", fr: "À Castel Gandolfo", fr_status: "needs native review" },
-  /* FR: needs Raph’s review (stay_text, stay_hotel_link, stay_text2, stay_link) */
-  stay_text: {
-    en: "Hotel Castel Vecchio in Castel Gandolfo is the hotel the villa works with, and it’s a short walk to town. The rooms were redone in 2026, and many look out over the lake. We’re arranging a block of rooms at a special rate for our guests, with booking details coming soon.",
-    fr: "L’hôtel Castel Vecchio, à Castel Gandolfo, est l’hôtel partenaire de la villa, à quelques pas du centre. Les chambres ont été refaites en 2026, et beaucoup donnent sur le lac. Nous réservons des chambres à un tarif préférentiel pour nos invités, et les détails de réservation arrivent bientôt.",
+  /* Room block at Hotel Castel Vecchio, first in Stay. FR: needs Raph’s review (block_*) */
+  stay_photo_alt: { en: "Lake Albano from a room at Hotel Castel Vecchio", fr: "Le lac d’Albano depuis une chambre de l’Hôtel Castel Vecchio", fr_status: "needs native review" },
+  block_name: { en: "Hotel Castel Vecchio <span class=\"stars\" aria-label=\"four stars\">★★★★</span>, Castel&nbsp;Gandolfo", fr: "Hôtel Castel Vecchio <span class=\"stars\" aria-label=\"quatre étoiles\">★★★★</span>, Castel&nbsp;Gandolfo", fr_status: "needs native review" },
+  block_text1: {
+    en: "This four-star hotel overlooking Lake Albano is the villa’s partner hotel, a short walk from town, with rooms newly renovated in 2026. We’ve reserved a block of rooms for our guests for the nights of October&nbsp;7 and&nbsp;8, 2027. Rooms start at €140 per night, with breakfast included, and lake-view doubles are €190. There is a two&#8209;night minimum.",
+    fr: "Cet hôtel quatre étoiles surplombant le lac d’Albano est l’hôtel partenaire de la villa, à quelques pas du centre, avec des chambres entièrement rénovées en 2026. Nous y avons réservé un bloc de chambres pour nos invités, pour les nuits du 7 et 8&nbsp;octobre 2027. Les chambres sont proposées à partir de 140&nbsp;€ la nuit, petit-déjeuner inclus, et 190&nbsp;€ pour une chambre double avec vue sur le lac. Un séjour minimum de deux nuits est requis.",
     fr_status: "needs native review"
   },
+  block_text2: {
+    en: "<strong>Booking opens February&nbsp;1 and closes February&nbsp;28, 2027.</strong> To reserve, email <a href=\"mailto:info@hotelcastelvecchio.com?subject=Sirvent%E2%80%93Filkins%20wedding%20%E2%80%93%20room%20block\">info@hotelcastelvecchio.com</a> and mention the Sirvent–Filkins wedding. After February&nbsp;28, any remaining rooms are released at the hotel’s regular prices, so we’d encourage you to book within that window.",
+    fr: "<strong>Les réservations seront ouvertes du 1<sup>er</sup> au 28&nbsp;février 2027.</strong> Pour réserver, écrivez à <a href=\"mailto:info@hotelcastelvecchio.com?subject=Sirvent%E2%80%93Filkins%20wedding%20%E2%80%93%20room%20block\">info@hotelcastelvecchio.com</a> en mentionnant le mariage Sirvent–Filkins. Après le 28&nbsp;février, les chambres restantes seront remises en vente au tarif habituel de l’hôtel&nbsp;; nous vous invitons donc à réserver pendant cette période.",
+    fr_status: "needs native review"
+  },
+  block_text3: {
+    en: "The hotel asks for a €100 deposit per room, with free cancellation until March&nbsp;31, 2027. If you’d like to arrive earlier or stay on, extra nights can be added at the same rate from July&nbsp;1, 2027.",
+    fr: "L’hôtel demande un acompte de 100&nbsp;€ par chambre, avec annulation gratuite jusqu’au 31&nbsp;mars 2027. Si vous souhaitez arriver plus tôt ou prolonger votre séjour, des nuits supplémentaires pourront être ajoutées au même tarif à partir du 1<sup>er</sup>&nbsp;juillet 2027.",
+    fr_status: "needs native review"
+  },
+  /* FR: needs Raph’s review (stay_hotel_link, stay_text2, stay_link) */
   stay_hotel_link: { en: "See the rooms&nbsp;→", fr: "Voir les chambres&nbsp;→", fr_status: "needs native review" },
   stay_text2: {
     en: "If you’d rather rent a place, especially with friends, we’ve saved some Airbnbs nearby at different prices.",
