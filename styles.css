@@ -511,6 +511,18 @@ sup { font-size: .65em; line-height: 0; vertical-align: .5em; } /* ordinals: XVI
 .email { font-size: 1.1em; word-break: break-word; }
 #questions .main p { margin: 0; }
 #stay .email { line-height: var(--line); } /* the links under each Stay paragraph keep the body line, so the column stays on its rhythm */
+/* Room block at Castel Vecchio: the hotel's name a step up from body text (like Friday's time), the booking window
+   set off by a thin rule on its left and a touch more weight, then a hairline before the other lodging options */
+/* The hotel photo: plain, no frame or shadow; full width on phones, the left column on desktop */
+#stay .stay-photo { margin: 0 0 var(--s-4); }
+#stay .stay-photo img { width: 100%; height: auto; }
+@media (min-width: 1024px) { #stay .stay-photo { margin: 0; max-width: 26rem; } }
+#stay .block { padding-bottom: var(--s-4); margin-bottom: var(--s-4); border-bottom: 1px solid var(--rule); }
+#stay .block-name { font-size: 1.35em; line-height: 1.3; margin: 0 0 var(--s-1); }
+#stay .stars { font-size: .55em; letter-spacing: .12em; vertical-align: .3em; opacity: .75; white-space: nowrap; }
+#stay .block-window { border-left: 1px solid var(--terracotta); padding-left: var(--s-2); }
+#stay .block-window strong { font-weight: 400; color: var(--ink); text-decoration: none; font-style: italic; }
+#stay .block > p:last-child { margin-bottom: 0; }
 
 /* ---------- Footer: the serene hours, on the same grid ---------- */
 .strip { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--col-gap); margin-bottom: var(--s-5); }
