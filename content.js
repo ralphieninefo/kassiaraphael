@@ -229,7 +229,8 @@ window.SITE_CONTENT = {
   stay_label: { en: "Stay", fr: "Hébergement", fr_status: "needs native review" },
   stay_title: { en: "In Castel Gandolfo", fr: "À Castel Gandolfo", fr_status: "needs native review" },
   /* Room block at Hotel Castel Vecchio, first in Stay. FR: needs Raph’s review (block_*) */
-  stay_photo_alt: { en: "Lake Albano from a room at Hotel Castel Vecchio", fr: "Le lac d’Albano depuis une chambre de l’Hôtel Castel Vecchio", fr_status: "needs native review" },
+  stay_photo_caption: { en: "The front door", fr: "La porte d’entrée", fr_status: "needs native review" },
+  stay_photo_alt: { en: "The front door of Hotel Castel Vecchio", fr: "La porte d’entrée de l’Hôtel Castel Vecchio", fr_status: "needs native review" },
   block_name: { en: "Hotel Castel Vecchio <span class=\"stars\" aria-label=\"four stars\">★★★★</span>, Castel&nbsp;Gandolfo", fr: "Hôtel Castel Vecchio <span class=\"stars\" aria-label=\"quatre étoiles\">★★★★</span>, Castel&nbsp;Gandolfo", fr_status: "needs native review" },
   block_text1: {
     en: "This four-star hotel overlooking Lake Albano is the villa’s partner hotel, a short walk from town, with rooms newly renovated in 2026. We’ve reserved a block of rooms for our guests for the nights of October&nbsp;7 and&nbsp;8, 2027. Rooms start at €140 per night, with breakfast included, and lake-view doubles are €190. There is a two&#8209;night minimum.",
