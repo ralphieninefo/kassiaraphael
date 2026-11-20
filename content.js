@@ -55,7 +55,7 @@ window.SITE_CONTENT = {
   story_label: { en: "Our story", fr: "Notre histoire", fr_status: "needs native review" },
   story_title: {
     en: "The long way around",
-    fr: "À qui sait attendre",
+    fr: "À qui sait attendre…",
     fr_status: "needs native review",
     fr_flag: "Chosen by Kassia for “the long way around”: from the proverb « Tout vient à point à qui sait attendre »."
   },
@@ -71,23 +71,23 @@ window.SITE_CONTENT = {
   },
   story_p1: {
     en: "We met in our first week at San Francisco State University and became fast friends. Then Raphaël left for Paris junior year, nine hours ahead, and we kept&nbsp;chatting.",
-    fr: "Nous nous sommes rencontrés dès notre première semaine à San Francisco State University et sommes très vite devenus amis. Puis Raphaël est parti à Paris, avec neuf heures d’avance, et nous sommes restés en&nbsp;contact.",
+    fr: "Nous nous sommes rencontrés dès notre première semaine à San Francisco State University et sommes très vite devenus amis. Puis Raphaël est parti à Paris, et nous sommes restés en contact malgré les neuf heures de décalage&nbsp;horaire.",
     fr_status: "needs native review"
   },
   story_p2: {
     en: "He spent the next summer on the American River, paddling the chase kayak and herding tipsy Sacramentans to the dock, and returned to school tanned and noticeably stronger. Kassia noticed. By spring of senior year he was a fixture at her all-girls house, the lone man at wine nights and rom&nbsp;coms. It took us until almost graduation to do something about&nbsp;it.",
-    fr: "L’été suivant, il l’a passé sur l’American River, à pagayer dans le kayak de sécurité et à ramener au ponton des habitants de Sacramento un peu pompettes, avant de rentrer à la fac bronzé et nettement plus costaud. Kassia l’a remarqué. Au printemps de notre dernière année, il était devenu un habitué de sa colocation entre filles, le seul homme des soirées vin et des comédies romantiques. Il nous a fallu attendre presque la remise des diplômes pour nous&nbsp;décider.",
+    fr: "L’été suivant, il l’a passé sur l’American River à secourir en kayak les fêtards de Sacramento. Il est revenu bronzé et costaud. Kassia a&nbsp;remarqué. Au printemps de notre dernière année d’université, il est devenu un habitué de sa colocation entre filles, le seul garçon des soirées vin et des comédies romantiques. Il nous a fallu attendre la remise des diplômes pour nous&nbsp;décider.",
     fr_status: "needs native review",
     fr_flag: "Check: “chase kayak” (kayak de sécurité), “tipsy Sacramentans” (habitants de Sacramento un peu pompettes), “returned to school tanned and noticeably stronger” (rentrer à la fac bronzé et nettement plus costaud), “all-girls house” (colocation entre filles), “rom coms” (comédies romantiques)."
   },
   story_p3: {
     en: "Then came the firsts. The summer after graduation, Raphaël taught Kassia to drive. She taught him where he’d left the keys, then helped him land the job that started his career in tech. In the winter of 2020, mid-pandemic, he taught her to ski: six months on the road, a month at a time from Jackson&nbsp;Hole to Taos, more than thirty days on skis in her first season. She taught him to lose at cards. Somewhere in there, we grew&nbsp;up.",
-    fr: "Puis sont venues les premières fois. L’été après nos diplômes, Raphaël a appris à Kassia à conduire. Elle lui a appris à retrouver ses clés, puis l’a aidé à décrocher le poste qui a lancé sa carrière dans la tech. Pendant l’hiver 2020, en pleine pandémie, il lui a appris à skier&nbsp;: six mois sur la route, un mois à la fois de Jackson&nbsp;Hole à Taos, plus de trente jours de ski dès sa première saison. Elle lui a appris à perdre aux cartes. Quelque part en chemin, nous avons&nbsp;grandi.",
+    fr: "Puis sont arrivées les premières fois. L’été après nos diplômes, Kassia a appris à conduire grâce à&nbsp;Raphaël. Elle lui a appris à retrouver ses clés puis l’a aidé à décrocher le poste qui a lancé sa carrière dans la tech. En pleine pandémie, pendant l’hiver 2020, il lui a appris à skier&nbsp;: six mois sur la route, de Jackson&nbsp;Hole, dans le Wyoming, à Taos, au Nouveau-Mexique. Elle a skié trente jours dès sa première&nbsp;saison. Elle lui a appris à jouer au&nbsp;poker. Quelque part en chemin, nous avons grandi&nbsp;ensemble.",
     fr_status: "needs native review"
   },
   story_p4: {
     en: "Ten years in, we are finally ready to get married. We hope you’ll be&nbsp;there.",
-    fr: "Dix ans plus tard, nous sommes enfin prêts à nous marier. Nous espérons que vous serez&nbsp;là.",
+    fr: "Dix ans plus tard, nous sommes prêts à nous marier. Nous espérons que vous serez tous avec nous pour partager notre&nbsp;joie.",
     fr_status: "needs native review"
   },
 
@@ -96,12 +96,12 @@ window.SITE_CONTENT = {
   italy_title: { en: "Two roads to Italy", fr: "Deux chemins vers l’Italie", fr_status: "needs native review" },
   italy_text: {
     en: "Italy made an indelible imprint on both of our lives from a young age. For&nbsp;Raph, it was the 2006 World Cup final, when Italy beat France on penalties and he swore off anything Italian for life, despite his mother being an Italian prof. Raph would like the record to show that France went on to win the World Cup in 2018, and that Italy has missed the last three.",
-    fr: "L’Italie a marqué nos deux vies dès notre jeunesse. Pour&nbsp;Raph, ce fut la finale de la Coupe du monde 2006, quand l’Italie a battu la France aux tirs au but et qu’il a juré de bouder tout ce qui était italien pour le reste de sa vie, alors même que sa mère était prof d’italien. Raph tient à ce qu’il soit consigné que la France a remporté la Coupe du monde en 2018, et que l’Italie a manqué les trois suivantes.",
+    fr: "L’Italie a marqué notre jeunesse. Pour&nbsp;Raph, ce fut la finale de la Coupe du monde 2006, quand l’Italie a battu la France aux tirs au but et qu’il a juré de bouder tout ce qui était italien pour le reste de sa vie, alors même que sa mère était prof d’italien. Heureusement, comme Raphaël tient à le préciser&nbsp;: la France a remporté la Coupe du monde en 2018 et l’Italie a manqué les trois&nbsp;suivantes.",
     fr_status: "needs native review"
   },
   italy_text2: {
     en: "For Kassia, it was college, when her aunt and cousins lived in Florence and she could spend weeks at a time visiting and exploring. After Raph’s parents retired near Lake&nbsp;Albano, we couldn’t think of a better excuse to bring everyone we love to one of our favorite corners of the world. Ask Raph in October 2027 whether he has lifted his embargo on&nbsp;Italy.",
-    fr: "Pour Kassia, ce furent ses années d’université, quand sa tante et ses cousins vivaient à Florence et qu’elle pouvait y passer des semaines entières à visiter et à explorer. Quand les parents de Raph ont pris leur retraite près du lac&nbsp;d’Albano, nous n’avons pas trouvé de meilleur prétexte pour réunir tous ceux que nous aimons dans l’un de nos coins du monde préférés. Demandez à Raph en octobre 2027 s’il a levé son embargo sur&nbsp;l’Italie.",
+    fr: "Pour Kassia, ses années d’université furent aussi marquantes, car ses cousins vivaient à Florence. Elle pouvait ainsi y passer des semaines entières à découvrir le pays en famille. Par Toutatis&nbsp;! Les parents de Raph ont pris leur retraite à Genzano di&nbsp;Roma, près du lac&nbsp;d’Albano. Une occasion magnifique de réunir tous ceux que nous aimons dans l’un de nos coins préférés du&nbsp;monde. Demandez à Raph en octobre 2027 s’il a levé son embargo sur&nbsp;l’Italie.",
     fr_status: "needs native review"
   },
 
@@ -116,7 +116,7 @@ window.SITE_CONTENT = {
   venue_img_caption: { text: "Villa del Cardinale, 1629" },
   venue_text: {
     en: "Villa del Cardinale was built in 1629 as a hunting lodge for Cardinal Gerolamo Colonna. It stands on the remains of a Roman house, at the highest point of the crater that holds Lake Albano, a short distance from the papal summer palace at Castel Gandolfo. Its frescoes are original. Of all the villas we saw in a week, it is the one we knew at once.",
-    fr: "La Villa del Cardinale a été construite en 1629 comme pavillon de chasse pour le cardinal Gerolamo Colonna. Elle s’élève sur les vestiges d’une maison romaine, au point le plus haut du cratère qui abrite le lac d’Albano, non loin du palais d’été des papes à Castel Gandolfo. Ses fresques sont d’origine. De toutes les villas visitées en une semaine, c’est celle que nous avons reconnue tout de suite.",
+    fr: "La Villa del Cardinale est un lieu historique&nbsp;: elle a été construite en 1629 comme pavillon de chasse pour le cardinal Gerolamo Colonna. Elle s’élève sur les vestiges d’une maison romaine, au point le plus haut du cratère volcanique qui abrite le lac d’Albano, en face de la résidence d’été du pape à Castel&nbsp;Gandolfo. Ses fresques sont d’origine. De toutes les villas visitées en une semaine, c’est celle qui nous a le plus&nbsp;touchés.",
     fr_status: "needs native review"
   },
   tower_alt: { en: "Tower of Villa del Cardinale", fr: "La tour de la Villa del Cardinale", fr_status: "needs native review" },
